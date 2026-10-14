@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indira Gandhi Co-operative Hospital · Kadavanthra, Kochi</title>
+  <meta name="description" content="Cardiology, cancer care for adults and children, dialysis and 24/7 emergency in Kadavanthra, Kochi — a co-operative hospital serving Kochi for 50+ years." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ SVG sprite: icons + reusable figures ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- icons (24x24, stroke) -->
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></symbol>
+    <symbol id="i-parking" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-cup" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><path d="M6 2v2M10 2v2M14 2v2"/></symbol>
+    <symbol id="i-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></symbol>
+    <symbol id="i-megaphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="m7 4 13 8-13 8z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+
+    <!-- figures: colours via CSS custom properties on <use> -->
+    <symbol id="fig-doctor" viewBox="0 0 200 260">
+      <path d="M22 260V205c0-32 22-55 52-58h52c30 3 52 26 52 58v55z" style="fill:var(--coat,#fff)"/>
+      <rect x="86" y="112" width="28" height="44" rx="10" style="fill:var(--skin)"/>
+      <path d="M74 147h52l-26 50z" style="fill:var(--scrub,#2c7560)"/>
+      <ellipse cx="100" cy="84" rx="38" ry="44" style="fill:var(--skin)"/>
+      <path d="M61 82c-3-38 18-50 39-50s42 12 39 50c-10-14-24-20-39-20s-29 6-39 20z" style="fill:var(--hair)"/>
+      <path d="M72 150c-10 30-6 58 22 64M128 150c10 30 6 58-22 64" fill="none" stroke="#1f3a35" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="100" cy="216" r="9" fill="#1f3a35"/>
+    </symbol>
+
+    <symbol id="fig-patient" viewBox="0 0 200 260">
+      <rect x="28" y="150" width="144" height="120" rx="44" style="fill:var(--body)"/>
+      <rect x="86" y="118" width="28" height="40" rx="10" style="fill:var(--skin)"/>
+      <circle cx="100" cy="30" r="17" style="fill:var(--hair)"/>
+      <ellipse cx="100" cy="90" rx="46" ry="52" style="fill:var(--hair)"/>
+      <ellipse cx="100" cy="98" rx="32" ry="36" style="fill:var(--skin)"/>
+    </symbol>
+
+    <symbol id="fig-person" viewBox="0 0 200 260">
+      <rect x="22" y="146" width="156" height="124" rx="40" style="fill:var(--body)"/>
+      <rect x="84" y="112" width="32" height="44" rx="10" style="fill:var(--skin)"/>
+      <ellipse cx="100" cy="82" rx="40" ry="44" style="fill:var(--skin)"/>
+      <path d="M58 80c-3-36 18-50 42-50s45 14 42 50c-12-12-26-16-42-16s-30 4-42 16z" style="fill:var(--hair)"/>
+    </symbol>
+
+    <symbol id="fig-ambulance" viewBox="50 74 230 112">
+      <rect x="130" y="80" width="26" height="10" rx="3" fill="#3f6fb0"/>
+      <rect class="siren-red" x="130" y="80" width="26" height="10" rx="3" fill="#e5484d"/>
+      <path d="M58 90h158v18h28l26 30v28H58z" fill="#fff"/>
+      <path d="M226 110h22l18 22h-40z" fill="#a9cbe0"/>
+      <rect x="58" y="136" width="212" height="6" fill="#e0372f"/>
+      <path d="M106 102h12v12h12v12h-12v12h-12v-12H94v-12h12z" fill="#e0372f"/>
+      <circle cx="100" cy="168" r="16" fill="#2b2b2b"/><circle cx="100" cy="168" r="6" fill="#b7b7b7"/>
+      <circle cx="236" cy="168" r="16" fill="#2b2b2b"/><circle cx="236" cy="168" r="6" fill="#b7b7b7"/>
+    </symbol>
+    <symbol id="fig-heart" viewBox="-60 -50 120 120">
+      <path d="M0-20C-22-55-72-30-56 10-46 34-14 52 0 68 14 52 46 34 56 10 72-30 22-55 0-20z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="container">
+
+  <!-- ============ Header ============ -->
+  <header class="header" id="header">
+    <div class="header__top">
+      <a href="#" class="brand" aria-label="IGCH home">
+        <span class="brand__logo"><img decoding="async" src="images/logo.png" alt="Indira Gandhi Co-operative Hospital logo" width="48" height="48" /></span>
+        <span>
+          <span class="brand__name">Indira Gandhi Co-operative Hospital</span><br />
+          <span class="brand__loc">Kadavanthra · Kochi</span>
+        </span>
+      </a>
+      <div class="header__actions">
+        <div class="lang" role="group" aria-label="Language"><button class="is-on" aria-pressed="true">EN</button><button aria-pressed="false" lang="ml">മലയാളം</button></div>
+        <a href="tel:04842941600" class="emergency-pill" aria-label="Emergency: call 0484 294 1600"><span class="ep-ico"><svg><use href="#i-phone"/></svg></span><span class="ep-text"><small>24/7 Emergency</small><b>0484 294 1600</b></span></a>
+        <a href="#" class="btn btn--onbrand"><svg><use href="#i-calendar"/></svg>Book appointment</a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a href="#about">About <svg><use href="#i-chev"/></svg></a>
+      <a href="#specialities">Specialities <svg><use href="#i-chev"/></svg></a>
+      <a href="#guide">Patient &amp; Visitor Guide <svg><use href="#i-chev"/></svg></a>
+      <a href="#facilities">Facilities &amp; Services <svg><use href="#i-chev"/></svg></a>
+      <a href="#walkthrough">IGCH Walk-through</a>
+      <a href="#blogs">Blogs</a>
+      <a href="#news">News &amp; Updates</a>
+      <a href="#nursing">Nursing School</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="about">
+      <div class="hero__main">
+        <span class="tag">Kochi's co-operative hospital · 50+ years</span>
+        <h1 class="hero__title">Advanced care.<br /><span class="nowrap"><span class="accent">Co-operative</span> at heart.</span></h1>
+        <p class="hero__lead">Cardiology, cancer care for adults and children, dialysis and 24/7 emergency in Kadavanthra — from a hospital that has spent five decades keeping specialist care within reach.</p>
+        <div class="hero__ctas">
+          <a href="#" class="btn btn--primary">Book appointment <svg data-arrow><use href="#i-arrow"/></svg></a>
+          <a href="#doctors" class="btn btn--light">Find a doctor</a>
+        </div>
+        <form class="search-form" role="search" onsubmit="return false">
+          <label class="search-label" for="q">What do you need help with?</label>
+          <div class="search">
+            <input id="q" type="search" placeholder="A condition, treatment or doctor" />
+            <button class="btn btn--primary" type="submit"><svg><use href="#i-search"/></svg><span>Search</span></button>
+          </div>
+        </form>
+        <div class="chips">
+          <a href="#" class="chip">Cardiology</a>
+          <a href="#" class="chip">Cancer care</a>
+          <a href="#" class="chip">Child cancer care</a>
+          <a href="#" class="chip">Dialysis</a>
+          <a href="#" class="chip">Pregnancy care</a>
+          <a href="#" class="chip">Varicose veins</a>
+        </div>
+      </div>
+
+      <div class="hero__art">
+        <img decoding="async" class="hero__photo" src="images/igch-building.jpg" alt="Indira Gandhi Co-operative Hospital building in Kadavanthra, with the 24x7 Emergency entrance" width="1024" height="1536" fetchpriority="high" />
+        <div class="hero__badges"><span>NABH Accredited</span><span>CGHS Empanelled</span></div>
+        <div class="hero__5g">
+          <a href="#ambulance" class="hero__5g-main">
+            <span class="hero__5g-text">
+              <span class="hero__5g-chips"><span class="chip-5g">5G</span><span class="chip-new">New · Kerala's first</span></span>
+              <strong>5G Smart Ambulance</strong>
+              <span class="hero__5g-sub">Care begins before you reach us. <u>Learn more →</u></span>
+            </span>
+            <span class="hero__5g-art" aria-hidden="true">
+              <svg class="waves" viewBox="0 0 60 30"><path d="M18 24a12 12 0 0 1 24 0"/><path d="M10 24a20 20 0 0 1 40 0"/><path d="M2 24a28 28 0 0 1 56 0"/></svg>
+              <svg class="amb" viewBox="50 74 230 112"><use href="#fig-ambulance" x="50" y="74" width="230" height="112"/></svg>
+              <span class="road"></span>
+            </span>
+          </a>
+          <a href="tel:04842941600" class="hero__5g-call">
+            <span><small><span class="dot"></span>Emergency &amp; ambulance · 24/7</small><b>0484 294 1600</b></span>
+            <span class="call-btn"><svg><use href="#i-phone"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Stats ============ -->
+    <section class="stats" aria-label="IGCH in numbers">
+      <div class="stat stat--green"><strong>50+</strong><p>years serving Kochi as a co-operative</p></div>
+      <div class="stat"><strong>15,000+</strong><p>haemodialysis sessions completed</p></div>
+      <div class="stat"><strong>200</strong><p>cardiothoracic surgeries in 15 months</p></div>
+      <div class="stat stat--lime"><strong>25+</strong><p>specialities, with 24/7 ICU, OT and blood bank</p></div>
+    </section>
+
+    <!-- ============ Centres of excellence ============ -->
+    <section class="section" id="centres">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Centres of excellence</p>
+          <h2 class="h2">Where Kochi comes to us for the hard cases.</h2>
+        </div>
+        <a href="#specialities" class="pill-link">All specialities →</a>
+      </div>
+
+      <div class="centres">
+        <article class="centre-feature">
+          <div class="centre-feature__art">
+            <img decoding="async" src="images/cardiology.jpg" alt="Patient resting beside a cardiac monitor showing heart rhythm and blood pressure" loading="lazy" />
+          </div>
+          <div class="centre-feature__body">
+            <span class="tag tag--red">Cardiology · Karunya Hridayalaya Cardiac Centre</span>
+            <h3 class="h3">Heart care, from the first ECG to bypass surgery.</h3>
+            <p>Interventional cardiology and cardiothoracic &amp; vascular surgery in one team — including the leadless pacemaker, implanted without open surgery.</p>
+            <a href="#" class="text-link">Meet the cardiac team <svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <article class="centre-card centre-card--purple">
+          <div class="centre-card__art">
+            <img decoding="async" src="images/gangadharan.jpg" alt="Dr. V.P. Gangadharan, oncologist" loading="lazy" />
+          </div>
+          <div class="centre-card__body">
+            <span><span class="tag tag--purple">Oncology</span></span>
+            <h3 class="h3">Cancer care led by Dr. V.P. Gangadharan.</h3>
+            <p>Medical and surgical oncology — diagnosis, chemotherapy and surgery coordinated by one team.</p>
+            <a href="#" class="text-link">Meet the oncology team <svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <article class="centre-card centre-card--cream">
+          <div class="centre-card__art">
+            <img decoding="async" src="images/paediatric-oncology.jpg" alt="Doctor talking with a young boy and his mother" loading="lazy" />
+          </div>
+          <div class="centre-card__body">
+            <span><span class="tag tag--yellow">Paediatric Oncology</span></span>
+            <h3 class="h3">Cancer care built around the child — and the family.</h3>
+            <p>Specialist treatment for children, with a gentler setting. [Team and services — to confirm with the hospital]</p>
+            <a href="#" class="text-link">Learn more <svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ Specialities ============ -->
+    <section class="section" id="specialities">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Specialities</p>
+          <h2 class="h2">Find the right department, then the right doctor.</h2>
+        </div>
+        <a href="#" class="pill-link">All departments →</a>
+      </div>
+
+      <div class="spec">
+        <div class="spec__bar">
+          <div class="journey" aria-live="polite">
+            <div class="journey__head">
+              <span>How it works</span>
+              <span class="journey__count"><b id="journey-step">1</b> / 3</span>
+            </div>
+            <div class="journey__bar"><i id="journey-bar"></i></div>
+            <ol class="journey__steps">
+              <li class="is-active">
+                <span class="journey__icon"><svg class="ico"><use href="#i-grid"/></svg><svg class="chk"><use href="#i-check"/></svg></span>
+                <span><small>Step 01</small><strong>Choose a group</strong><em id="journey-group">Hover a column below</em></span>
+              </li>
+              <li>
+                <span class="journey__icon"><svg class="ico"><use href="#i-search"/></svg><svg class="chk"><use href="#i-check"/></svg></span>
+                <span><small>Step 02</small><strong>Pick a department</strong><em id="journey-dept">Point to any department</em></span>
+              </li>
+              <li>
+                <span class="journey__icon"><svg class="ico"><use href="#i-calendar"/></svg><svg class="chk"><use href="#i-check"/></svg></span>
+                <span><small>Step 03</small><strong>Meet doctors &amp; book</strong><em>Profiles, OP timings, booking</em></span>
+              </li>
+            </ol>
+          </div>
+
+          <div class="spec__search">
+            <label class="spec__filter">
+              <svg><use href="#i-search"/></svg>
+              <input type="search" id="spec-filter" placeholder="Search 30 departments" aria-label="Search departments" />
+            </label>
+            <p>Not sure? Call <a href="tel:04842941600">0484 294 1600</a> and we'll guide you.</p>
+          </div>
+        </div>
+
+        <div class="spec__cols">
+        <article class="spec-group spec-group--green" data-title="Super Specialities">
+          <header class="spec-group__head">
+            <span class="spec-group__icon"><svg><use href="#i-pulse"/></svg></span>
+            <span class="spec-group__count" data-total="10">10 departments</span>
+            <h3>Super Specialities</h3>
+            <p>Advanced, focused care</p>
+          </header>
+          <ul class="dept-list">
+            <li><a href="#" class="dept" style="--i:0"><span class="dept__no">01</span><span class="dept__name">Cardiology</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:1"><span class="dept__no">02</span><span class="dept__name">Cardiothoracic &amp; Vascular Surgery</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:2"><span class="dept__no">03</span><span class="dept__name">Medical Oncology</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:3"><span class="dept__no">04</span><span class="dept__name">Surgical Oncology</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:4"><span class="dept__no">05</span><span class="dept__name">Paediatric Oncology</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:5"><span class="dept__no">06</span><span class="dept__name">Neurology</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:6"><span class="dept__no">07</span><span class="dept__name">Neurosurgery</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:7"><span class="dept__no">08</span><span class="dept__name">Gastroenterology</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:8"><span class="dept__no">09</span><span class="dept__name">Nephrology</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:9"><span class="dept__no">10</span><span class="dept__name">Urology</span><svg><use href="#i-arrow"/></svg></a></li>
+          </ul>
+          <p class="spec-group__empty" hidden>No matches in this group.</p>
+          <a href="#" class="text-link spec-group__all">View all super specialities <svg><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="spec-group spec-group--amber" data-title="Broad Specialities">
+          <header class="spec-group__head">
+            <span class="spec-group__icon"><svg><use href="#i-heart"/></svg></span>
+            <span class="spec-group__count" data-total="12">12 departments</span>
+            <h3>Broad Specialities</h3>
+            <p>Everyday and family care</p>
+          </header>
+          <ul class="dept-list">
+            <li><a href="#" class="dept" style="--i:0"><span class="dept__no">01</span><span class="dept__name">General Medicine</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:1"><span class="dept__no">02</span><span class="dept__name">General &amp; Laparoscopic Surgery</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:2"><span class="dept__no">03</span><span class="dept__name">Obstetrics &amp; Gynaecology</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:3"><span class="dept__no">04</span><span class="dept__name">Paediatrics</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:4"><span class="dept__no">05</span><span class="dept__name">Orthopaedics</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:5"><span class="dept__no">06</span><span class="dept__name">Diabetology</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:6"><span class="dept__no">07</span><span class="dept__name">Pulmonology</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:7"><span class="dept__no">08</span><span class="dept__name">ENT</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:8"><span class="dept__no">09</span><span class="dept__name">Ophthalmology</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:9"><span class="dept__no">10</span><span class="dept__name">Dermatology</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:10"><span class="dept__no">11</span><span class="dept__name">Dental</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:11"><span class="dept__no">12</span><span class="dept__name">Psychiatry</span><svg><use href="#i-arrow"/></svg></a></li>
+          </ul>
+          <p class="spec-group__empty" hidden>No matches in this group.</p>
+          <a href="#" class="text-link spec-group__all">View all broad specialities <svg><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="spec-group spec-group--blue" data-title="Clinical Support">
+          <header class="spec-group__head">
+            <span class="spec-group__icon"><svg><use href="#i-clipboard"/></svg></span>
+            <span class="spec-group__count" data-total="8">8 departments</span>
+            <h3>Clinical Support</h3>
+            <p>Diagnosis and recovery</p>
+          </header>
+          <ul class="dept-list">
+            <li><a href="#" class="dept" style="--i:0"><span class="dept__no">01</span><span class="dept__name">Emergency Medicine</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:1"><span class="dept__no">02</span><span class="dept__name">Anaesthesiology</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:2"><span class="dept__no">03</span><span class="dept__name">Radiology &amp; Imaging</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:3"><span class="dept__no">04</span><span class="dept__name">Microbiology</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:4"><span class="dept__no">05</span><span class="dept__name">Pain &amp; Palliative Care</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:5"><span class="dept__no">06</span><span class="dept__name">EECP</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:6"><span class="dept__no">07</span><span class="dept__name">Physiotherapy</span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#" class="dept" style="--i:7"><span class="dept__no">08</span><span class="dept__name">Dietetics</span><svg><use href="#i-arrow"/></svg></a></li>
+          </ul>
+          <p class="spec-group__empty" hidden>No matches in this group.</p>
+          <a href="#" class="text-link spec-group__all">View all clinical support <svg><use href="#i-arrow"/></svg></a>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <!-- ============ Doctors ============ -->
+    <section class="section" id="doctors">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Our doctors</p>
+          <h2 class="h2 h2--wide">Names Kerala already trusts.</h2>
+        </div>
+        <a href="#" class="pill-link">Find a doctor →</a>
+      </div>
+
+      <div class="doctors">
+        <a href="#" class="doctor">
+          <div class="doctor__art">
+            <img decoding="async" src="images/gangadharan.jpg" alt="Portrait of Dr. V.P. Gangadharan" width="660" height="570" loading="lazy" />
+          </div>
+          <h3>Dr. V.P. Gangadharan</h3>
+          <span class="doctor__dept">Oncology</span>
+          <p>MD (Radiotherapy), DM (Medical Oncology)</p>
+        </a>
+        <a href="#" class="doctor">
+          <div class="doctor__art">
+            <img decoding="async" src="images/nigil.jpg" alt="Portrait of Dr. Nigil Cletus" width="660" height="570" loading="lazy" />
+          </div>
+          <h3>Dr. Nigil Cletus</h3>
+          <span class="doctor__dept">Cardiology</span>
+          <p>MBBS, MD (General Medicine), DM (Cardiology)</p>
+        </a>
+        <a href="#" class="doctor">
+          <div class="doctor__art">
+            <img decoding="async" src="images/george.jpg" alt="Portrait of Dr. George J. Valooran" width="660" height="570" loading="lazy" />
+          </div>
+          <h3>Dr. George J. Valooran</h3>
+          <span class="doctor__dept">Cardiothoracic &amp; Vascular Surgery</span>
+          <p>MBBS, MS (Gen. Surgery), MCh (CTVS)</p>
+        </a>
+        <a href="#" class="doctor">
+          <div class="doctor__art">
+            <img decoding="async" src="images/jojo.jpg" alt="Portrait of Dr. Jojo V. Joseph" width="660" height="570" loading="lazy" />
+          </div>
+          <h3>Dr. Jojo V. Joseph</h3>
+          <span class="doctor__dept">Surgical Oncology</span>
+          <p>MBBS, MS (General Surgery), MCh (Surgical Oncology)</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ Patient & visitor guide ============ -->
+    <section class="section" id="guide">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Patient &amp; visitor guide</p>
+          <h2 class="h2 h2--wide">Planning a visit? Start here.</h2>
+        </div>
+        <a href="#" class="pill-link">Open the full guide →</a>
+      </div>
+
+      <div class="guide">
+        <div class="guide-hero">
+          <div class="guide-hero__art">
+            <img decoding="async" src="images/front-desk.jpg" alt="Smiling doctor in a white coat with a stethoscope, ready to help" loading="lazy" />
+          </div>
+          <div class="guide-hero__body">
+            <h3>Everything you'd ask at the front desk, in one place.</h3>
+            <p>Seven short guides — from reaching us to what happens after your consultation.</p>
+          </div>
+        </div>
+
+        <a href="#" class="guide-card">
+          <span class="icon-box icon-box--sky"><svg><use href="#i-pin"/></svg></span>
+          <h3>How to reach</h3>
+          <p>Gandhinagar Road, opposite Rajiv Gandhi Indoor Stadium, Kadavanthra.</p>
+        </a>
+        <a href="#" class="guide-card">
+          <span class="icon-box icon-box--lav"><svg><use href="#i-doc"/></svg></span>
+          <h3>Documents to carry</h3>
+          <p>ID proof, past reports, referral letter, insurance or CGHS card.</p>
+        </a>
+        <a href="#" class="guide-card">
+          <span class="icon-box icon-box--lime"><svg><use href="#i-parking"/></svg></span>
+          <h3>Parking</h3>
+          <p>Limited parking on campus.</p>
+          <span class="tag">Valet available</span>
+        </a>
+
+        <a href="#" class="guide-card">
+          <span class="icon-box icon-box--yellow"><svg><use href="#i-bed"/></svg></span>
+          <h3>Nearby accommodation</h3>
+          <p>Hotels and lodges close to the hospital for families travelling in.</p>
+        </a>
+        <a href="#" class="guide-card">
+          <span class="icon-box icon-box--mint"><svg><use href="#i-route"/></svg></span>
+          <h3>Approximate visit process</h3>
+          <p>A typical visit, step by step.</p>
+          <div class="steps">
+            <span><b>1</b>Register</span><span><b>2</b>Consult</span>
+            <span><b>3</b>Tests</span><span><b>4</b>Follow-up</span>
+          </div>
+        </a>
+        <a href="#" class="guide-card">
+          <span class="icon-box icon-box--rose"><svg><use href="#i-clipboard"/></svg></span>
+          <h3>After consultation</h3>
+          <p>Medicines, follow-up dates, diet advice and when to call us.</p>
+        </a>
+
+        <a href="#" class="guide-card">
+          <span class="icon-box icon-box--grey"><svg><use href="#i-plus"/></svg></span>
+          <h3>Other facilities</h3>
+          <p>Canteen, pharmacy and more, within the campus.</p>
+        </a>
+        <a href="#" class="guide-cta">
+          <h3>See the complete visitor guide</h3>
+          <span class="round"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+
+      <!-- Walk-through -->
+      <div class="walk" id="walkthrough">
+        <div class="walk__body">
+          <span><span class="tag tag--blue">IGCH Walk-through</span></span>
+          <h3 class="h3">See the hospital before you arrive.</h3>
+          <p>A short guided tour of reception, OP, wards and the cardiac and cancer centres — so a first visit feels familiar.</p>
+          <a href="#" class="btn btn--primary"><svg><use href="#i-play"/></svg>Start the walk-through</a>
+        </div>
+        <div class="walk__art">
+          <img decoding="async" src="images/reception.jpg" alt="Hospital reception and front desk" loading="lazy" />
+          <a href="#" class="walk__play" aria-label="Start the walk-through"><svg><use href="#i-play"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Facilities & services ============ -->
+    <section class="section" id="facilities">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Facilities &amp; services</p>
+          <h2 class="h2">Care that goes beyond the consultation.</h2>
+        </div>
+        <a href="#" class="pill-link">All facilities →</a>
+      </div>
+
+      <div class="ambulance" id="ambulance">
+        <div class="ambulance__body">
+          <span class="tag tag--dark">5G Smart Ambulance · Emergency 24/7</span>
+          <h3>Kerala's first 5G Smart Ambulance — care begins before you reach us.</h3>
+          <a href="tel:04842941600" class="btn btn--red"><svg><use href="#i-phone"/></svg>Call 0484 294 1600</a>
+        </div>
+        <div class="ambulance__art">
+          <img decoding="async" src="images/ambulance.jpg" alt="Ambulance on the road with lights on" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="facilities">
+        <a href="#" class="facility" style="--tone:#0e6e58;--tint:#e3f3ea">
+          <svg class="facility__bg" aria-hidden="true"><use href="#i-shield"/></svg>
+          <h3>Insurance &amp; TPA</h3>
+          <p>CGHS empanelled, with cashless treatment through major TPAs.</p>
+        </a>
+        <a href="#" class="facility" style="--tone:#b07a10;--tint:#fdf1d6">
+          <svg class="facility__bg" aria-hidden="true"><use href="#i-cup"/></svg>
+          <h3>Canteen</h3>
+          <p>Fresh meals and refreshments for patients and visitors.</p>
+        </a>
+        <a href="#" class="facility" style="--tone:#c4302b;--tint:#fde8e6">
+          <svg class="facility__bg" aria-hidden="true"><use href="#i-pulse"/></svg>
+          <h3>ICU, OT &amp; Blood Bank</h3>
+          <p>Running 24/7 for emergencies and surgery.</p>
+        </a>
+        <a href="#" class="facility" style="--tone:#1d5e73;--tint:#e2eef7">
+          <svg class="facility__bg" aria-hidden="true"><use href="#i-heart"/></svg>
+          <h3>Dialysis Unit</h3>
+          <p>15,000+ sessions completed — 7,000 of them free.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ Co-operative difference ============ -->
+    <section class="section">
+      <div class="coop">
+        <div class="coop__body">
+          <span class="tag tag--glass">The co-operative difference</span>
+          <h2>7,000 dialysis sessions, <em>given free.</em></h2>
+          <p>We were built as a co-operative, not a corporation. So we measure ourselves by one thing: whether a family in Kochi could get the care they needed.</p>
+          <div class="coop__points">
+            <div><strong>Free dialysis</strong><span>for economically disadvantaged patients</span></div>
+            <div><strong>Weekly camps</strong><span>free or subsidised specialist consultations</span></div>
+            <div><strong>80G exempt</strong><span>donations go straight into patient care</span></div>
+          </div>
+          <div class="coop__ctas">
+            <a href="#" class="btn btn--white">Support the dialysis fund</a>
+            <a href="#" class="btn btn--outline">Our history &amp; team</a>
+          </div>
+        </div>
+        <div class="coop__art">
+          <img decoding="async" src="images/dialysis.jpg" alt="Dialysis machine beside a patient bed" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ News, announcements & tenders ============ -->
+    <section class="section" id="news">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">News, announcements &amp; tenders</p>
+          <h2 class="h2 h2--wide">What's happening at IGCH.</h2>
+        </div>
+        <a href="#" class="pill-link">All news &amp; updates →</a>
+      </div>
+
+      <div class="news">
+        <div class="news__left">
+          <a href="#" class="news-lead news-lead--split">
+            <img decoding="async" src="images/smallest-pacemaker.jpg" alt="Illustration of a leadless pacemaker placed inside the heart's right ventricle" loading="lazy" />
+            <span class="news-lead__shade"></span>
+            <span class="news-lead__top">
+              <span class="tag tag--red">Cardiology</span>
+              <span class="news-badge">Featured story</span>
+            </span>
+            <span class="news-lead__body">
+              <small>[Date] · 3 min read</small>
+              <strong>World's smallest pacemaker implanted without surgery</strong>
+              <span class="news-lead__more">A device the size of a vitamin capsule, placed through a vein — no chest incision, no scar. <u>Read story <svg><use href="#i-arrow"/></svg></u></span>
+            </span>
+          </a>
+
+          <div class="news__pair">
+            <a href="#" class="news-card">
+              <span class="news-card__img"><img decoding="async" src="images/ambulance.jpg" alt="IGCH 5G Smart Ambulance on the road" loading="lazy" /></span>
+              <span class="news-card__body">
+                <span class="tag">Emergency</span>
+                <strong>IGCH launches Kerala's first 5G Smart Ambulance</strong>
+                <small>[Date] <svg><use href="#i-arrow"/></svg></small>
+              </span>
+            </a>
+            <a href="#" class="news-card">
+              <span class="news-card__img"><img decoding="async" src="images/news-ctvs.jpg" alt="Cardiothoracic surgeons operating" loading="lazy" /></span>
+              <span class="news-card__body">
+                <span class="tag tag--purple">CTVS</span>
+                <strong>200 cardiothoracic surgeries in 15 months</strong>
+                <small>[Date] <svg><use href="#i-arrow"/></svg></small>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="board" aria-label="Notice board">
+          <div class="board__head">
+            <h3>Notice board</h3>
+            <div class="board__tabs" role="tablist">
+              <button role="tab" id="tab-ann" aria-controls="panel-ann" aria-selected="true"><svg><use href="#i-megaphone"/></svg>Announcements <b>3</b></button>
+              <button role="tab" id="tab-ten" aria-controls="panel-ten" aria-selected="false" tabindex="-1"><svg><use href="#i-file"/></svg>Tenders <b>2</b></button>
+              <span class="board__pill" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <ul class="board__list" role="tabpanel" id="panel-ann" aria-labelledby="tab-ann">
+            <li><a href="#"><span class="board__date"><b>[DD]</b>[Mon]</span><span class="board__text"><strong>[Announcement title]</strong><small>Announcement</small></span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#"><span class="board__date"><b>[DD]</b>[Mon]</span><span class="board__text"><strong>[Announcement title]</strong><small>Announcement</small></span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#"><span class="board__date"><b>[DD]</b>[Mon]</span><span class="board__text"><strong>[Announcement title]</strong><small>Announcement</small></span><svg><use href="#i-arrow"/></svg></a></li>
+          </ul>
+          <ul class="board__list" role="tabpanel" id="panel-ten" aria-labelledby="tab-ten" hidden>
+            <li><a href="#"><span class="board__date board__date--tender"><b>[DD]</b>[Mon]</span><span class="board__text"><strong>[Tender notice title]</strong><small><span class="status">Open</span> Last date: [date]</small></span><svg><use href="#i-arrow"/></svg></a></li>
+            <li><a href="#"><span class="board__date board__date--tender"><b>[DD]</b>[Mon]</span><span class="board__text"><strong>[Tender notice title]</strong><small><span class="status">Open</span> Last date: [date]</small></span><svg><use href="#i-arrow"/></svg></a></li>
+          </ul>
+
+          <a href="#" class="board__all" id="board-all">View all announcements <svg><use href="#i-arrow"/></svg></a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ Blogs ============ -->
+    <section class="section" id="blogs">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Blogs</p>
+          <h2 class="h2">Health advice from our own doctors.</h2>
+        </div>
+        <a href="#" class="pill-link">All blogs →</a>
+      </div>
+
+      <div class="blogs">
+        <a href="#" class="blog blog--red">
+          <span><span class="tag tag--red">Cardiology</span></span>
+          <h3>Chest pain: when to wait, and when to come to the emergency room</h3>
+          <small>5 min read · Sample title</small>
+        </a>
+        <a href="#" class="blog blog--brown">
+          <span><span class="tag tag--yellow">Paediatric Oncology</span></span>
+          <h3>Childhood cancer: early signs every parent should know</h3>
+          <small>6 min read · Sample title</small>
+        </a>
+        <a href="#" class="blog blog--purple">
+          <span><span class="tag tag--purple">Oncology</span></span>
+          <h3>Questions to ask your doctor after a cancer diagnosis</h3>
+          <small>5 min read · Sample title</small>
+        </a>
+        <a href="#" class="blog blog--teal">
+          <span><span class="tag tag--blue">Nephrology</span></span>
+          <h3>Living well on dialysis: food, fluids and routine</h3>
+          <small>4 min read · Sample title</small>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section">
+      <div class="faq">
+        <div>
+          <span class="tag">Quick answers</span>
+          <h2>Questions patients ask us most.</h2>
+        </div>
+        <div class="faq__list">
+          <details name="faq" open>
+            <summary>Is IGCH empanelled under CGHS?</summary>
+            <p>Yes. IGCH is CGHS-empanelled and NABH-accredited (Entry Level), and accepts referrals from CGHS wellness centres. In an emergency, come directly — no referral needed.</p>
+          </details>
+          <details name="faq">
+            <summary>Is the emergency department open 24 hours?</summary>
+            <p>Yes — emergency, ICU, operation theatre and blood bank run 24/7. Call 0484 294 1600.</p>
+          </details>
+          <details name="faq">
+            <summary>Is parking available at the hospital?</summary>
+            <p>Parking on campus is limited, and valet service is available. [Parking tips and nearby options — to confirm]</p>
+          </details>
+          <details name="faq">
+            <summary>Where exactly is the hospital?</summary>
+            <p>Gandhinagar Road, opposite Rajiv Gandhi Indoor Stadium, Kadavanthra, Kochi 682020.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Nursing school ============ -->
+    <section class="section" id="nursing">
+      <div class="nursing">
+        <div class="nursing__art">
+          <img decoding="async" src="images/nursing.jpg" alt="Healthcare trainees in blue scrubs practising with a stethoscope" loading="lazy" />
+        </div>
+        <div class="nursing__body">
+          <span><span class="tag tag--white">[Nursing school name]</span></span>
+          <h2>Training the nurses who'll care for Kochi next.</h2>
+          <p>Students learn on the wards of a working multi-speciality hospital. [Courses, affiliation and admission window.]</p>
+          <a href="#" class="btn btn--primary">Courses &amp; admissions</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#" class="brand">
+          <span class="brand__logo"><img decoding="async" src="images/logo.png" alt="Indira Gandhi Co-operative Hospital logo" width="48" height="48" /></span>
+          <span>
+            <span class="brand__name">Indira Gandhi Co-operative Hospital</span><br />
+            <span class="brand__loc">Kadavanthra · Kochi</span>
+          </span>
+        </a>
+        <address>Gandhinagar Road, opposite Rajiv Gandhi Indoor Stadium, Kadavanthra, Kochi 682020</address>
+        <p class="unit">A unit of the Cochin Co-operative Hospitals Society Ltd. No. E.288</p>
+      </div>
+      <div class="footer__emergency">
+        <div>
+          <small><span class="dot"></span>Emergency &amp; Ambulance</small>
+          <a href="tel:04842941600" class="phone">0484 294 1600</a>
+          <p class="open">Open 24 hours, every day</p>
+        </div>
+        <div class="footer__emergency-ctas">
+          <a href="#" class="btn btn--white">Book appointment <svg data-arrow><use href="#i-arrow"/></svg></a>
+          <a href="tel:04842941600" class="btn btn--red"><svg><use href="#i-phone"/></svg>Call now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__links">
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Achievements</a></li>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Specialities</h4>
+        <ul>
+          <li><a href="#specialities">Super Specialities</a></li>
+          <li><a href="#specialities">Broad Specialities</a></li>
+          <li><a href="#specialities">Clinical Support</a></li>
+          <li><a href="#doctors">Find a doctor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visitors</h4>
+        <ul>
+          <li><a href="#guide">How to reach</a></li>
+          <li><a href="#guide">Documents to carry</a></li>
+          <li><a href="#guide">Parking</a></li>
+          <li><a href="#guide">Visit process</a></li>
+          <li><a href="#facilities">Insurance &amp; TPA</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="#walkthrough">Walk-through</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#news">News &amp; Updates</a></li>
+          <li><a href="#news">Tenders</a></li>
+          <li><a href="#nursing">Nursing School</a></li>
+          <li><a href="#">Donate</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2026 Indira Gandhi Co-operative Hospital</span>
+      <div class="footer__badges"><span>NABH Accredited</span><span>CGHS Empanelled</span></div>
+      <div class="footer__social">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+
+  </footer>
+
+</div>
+
+<script>
+  // Mobile menu
+  const header = document.getElementById('header');
+  const toggle = header.querySelector('.menu-toggle');
+  toggle.addEventListener('click', () => {
+    const open = header.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+
+  // Language toggle (visual state only until a Malayalam version exists)
+  document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.lang button').forEach(x => {
+      x.classList.toggle('is-on', x === b);
+      x.setAttribute('aria-pressed', x === b);
+    });
+  }));
+  // Specialities: search across all groups
+  const filter = document.getElementById('spec-filter');
+  const groups = [...document.querySelectorAll('.spec-group')];
+  filter.addEventListener('input', () => {
+    const q = filter.value.trim().toLowerCase();
+    groups.forEach(g => {
+      let shown = 0;
+      g.querySelectorAll('.dept-list li').forEach(li => {
+        const match = li.textContent.toLowerCase().includes(q);
+        li.hidden = !match;
+        if (match) shown++;
+      });
+      const count = g.querySelector('.spec-group__count');
+      count.textContent = q ? `${shown} of ${count.dataset.total}` : `${count.dataset.total} departments`;
+      g.querySelector('.spec-group__empty').hidden = shown > 0;
+      g.classList.toggle('is-dim', q && !shown);
+    });
+  });
+
+  // Notice board tabs
+  const boardTabs = [...document.querySelectorAll('.board__tabs [role="tab"]')];
+  const boardAll = document.getElementById('board-all');
+  function selectBoard(tab) {
+    boardTabs.forEach(t => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    tab.parentElement.dataset.active = boardTabs.indexOf(tab);
+    boardAll.firstChild.textContent = tab.id === 'tab-ten' ? 'View all tenders ' : 'View all announcements ';
+  }
+  boardTabs.forEach((t, i) => {
+    t.addEventListener('click', () => selectBoard(t));
+    t.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      const next = boardTabs[(i + 1) % boardTabs.length];
+      next.focus(); selectBoard(next);
+    });
+  });
+
+  // Live "How it works" tracker
+  const steps = [...document.querySelectorAll('.journey__steps li')];
+  const groupLabel = document.getElementById('journey-group');
+  const deptLabel = document.getElementById('journey-dept');
+  function setStep(done) { // number of completed steps (0-3)
+    steps.forEach((li, i) => {
+      li.classList.toggle('is-done', i < done);
+      li.classList.toggle('is-active', i === done);
+    });
+    document.getElementById('journey-bar').style.width = (done / 3 * 100) + '%';
+    document.getElementById('journey-step').textContent = Math.min(done + 1, 3);
+  }
+  groups.forEach(g => {
+    g.addEventListener('mouseenter', () => {
+      groupLabel.textContent = g.dataset.title;
+      deptLabel.textContent = 'Point to any department';
+      setStep(1);
+    });
+    g.querySelectorAll('.dept').forEach(d => {
+      const name = d.querySelector('.dept__name').textContent;
+      const pick = () => { groupLabel.textContent = g.dataset.title; deptLabel.textContent = name; setStep(2); };
+      d.addEventListener('mouseenter', pick);
+      d.addEventListener('focus', pick);
+      d.addEventListener('click', e => { e.preventDefault(); pick(); setStep(3); });
+    });
+  });
+  setStep(0);
+</script>
+</body>
+</html>
