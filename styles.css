@@ -597,6 +597,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   margin-bottom: 8px;
 }
 .stat p { font-size: 15px; color: var(--ink-2); max-width: 260px; }
+.stat--green p { max-width: none; }
 .stat--green { background: var(--green); color: var(--white); }
 .stat--green p { color: rgba(255,255,255,.85); }
 .stat--lime { background: var(--lime); }
@@ -1451,15 +1452,18 @@ ul { list-style: none; margin: 0; padding: 0; }
 .footer__top {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
+  align-items: center;
   gap: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
-.footer__brand .brand { margin-bottom: 18px; }
-.footer__brand .brand__loc { color: rgba(255,255,255,.55); }
+.footer__brand .brand { margin-bottom: 22px; gap: 22px; align-items: center; }
+.footer__brand .brand__logo { width: 104px; height: 104px; }
+.footer__brand .brand__logo img { width: 96px; height: 96px; }
+.footer__brand .brand__name { font-size: 26px; letter-spacing: -0.01em; }
+.footer__brand .brand__loc { display: block; margin-top: 8px; font-style: normal; font-size: 17px; line-height: 1.5; color: rgba(255,255,255,.75); max-width: 440px; }
 .footer__brand .brand__logo { box-shadow: 0 0 0 3px rgba(255,255,255,.08); }
-.footer address { font-style: normal; font-size: 15px; color: rgba(255,255,255,.8); line-height: 1.6; max-width: 380px; }
-.footer .unit { font-size: 13px; color: rgba(255,255,255,.5); margin-top: 10px; }
+.footer .unit { font-size: 15px; color: rgba(255,255,255,.5); margin-top: 10px; }
 
 .footer__emergency {
   background: #13302a;
@@ -1517,13 +1521,6 @@ ul { list-style: none; margin: 0; padding: 0; }
   color: rgba(255,255,255,.65);
   gap: 16px;
   flex-wrap: wrap;
-}
-.footer__badges { display: flex; gap: 8px; }
-.footer__badges span {
-  font-size: 12px; font-weight: 700;
-  padding: 5px 12px; border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.15);
-  color: rgba(255,255,255,.8);
 }
 .footer__social { display: flex; gap: 8px; }
 .footer__social a {
@@ -1598,6 +1595,11 @@ ul { list-style: none; margin: 0; padding: 0; }
   .section-head { flex-direction: column; align-items: flex-start; }
   .walk__body, .ambulance__body { padding: 36px 24px; }
   .footer { padding: 36px 22px 0; }
+  .footer__brand .brand { gap: 14px; }
+  .footer__brand .brand__logo { width: 72px; height: 72px; }
+  .footer__brand .brand__logo img { width: 66px; height: 66px; }
+  .footer__brand .brand__name { font-size: 19px; }
+  .footer__brand .brand__loc { font-size: 15px; }
   .journey__steps { grid-template-columns: 1fr; }
   .spec__bar { padding: 20px; }
 }
