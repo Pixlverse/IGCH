@@ -579,7 +579,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
   margin-top: var(--gap);
 }
@@ -1419,6 +1419,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .faq details[open] summary { padding-bottom: 10px; }
 .faq details[open] summary::after { transform: rotate(45deg); }
 .faq details p { font-size: 16px; color: var(--ink-2); padding-bottom: 22px; line-height: 1.6; }
+.faq details p:not(:last-child) { padding-bottom: 12px; }
 
 /* ---------- Nursing school ---------- */
 
@@ -1434,6 +1435,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .nursing__body { padding: 44px 56px 44px 48px; display: flex; flex-direction: column; justify-content: center; }
 .nursing__body h2 { font-size: clamp(28px, 2.6vw, 38px); line-height: 1.08; font-weight: 800; letter-spacing: -0.04em; margin: 18px 0 16px; }
 .nursing__body p { font-size: 17px; color: var(--ink-2); margin-bottom: 26px; }
+.nursing__body p:has(+ p) { margin-bottom: 12px; }
 .nursing__body .btn { align-self: flex-start; }
 
 /* ---------- Footer ---------- */
@@ -1562,7 +1564,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   .hero, .centres, .walk, .ambulance, .coop, .news, .faq, .nursing { grid-template-columns: 1fr; }
   .centre-feature { grid-row: auto; }
   .hero__art { min-height: 480px; }
-  .stats, .doctors, .facilities, .blogs { grid-template-columns: repeat(2, 1fr); }
+  .doctors, .facilities, .blogs { grid-template-columns: repeat(2, 1fr); }
   .spec__cols { grid-template-columns: 1fr; }
   .journey__steps em { display: none; }
   .footer__top { grid-template-columns: 1fr; }
