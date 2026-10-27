@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Dr. V.P. Gangadharan",
+    "department": "Oncology",
+    "qualifications": "MD (Radiotherapy), DM (Medical Oncology)",
+    "groups": ["super-specialities"],
+    "featured": true,
+    "days": [],
+    "href": "#",
+    "order": 1,
+    "published": true,
+    "image": {
+      "src": "/images/gangadharan.jpg",
+      "alt": "Portrait of Dr. V.P. Gangadharan",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Nigil Cletus",
+    "department": "Cardiology",
+    "qualifications": "MBBS, MD (General Medicine), DM (Cardiology)",
+    "groups": ["super-specialities"],
+    "featured": true,
+    "days": [],
+    "href": "#",
+    "order": 2,
+    "published": true,
+    "image": {
+      "src": "/images/nigil.jpg",
+      "alt": "Portrait of Dr. Nigil Cletus",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. George J. Valooran",
+    "department": "Cardiothoracic & Vascular Surgery",
+    "qualifications": "MBBS, MS (Gen. Surgery), MCh (CTVS)",
+    "groups": ["super-specialities"],
+    "featured": true,
+    "days": [],
+    "href": "#",
+    "order": 3,
+    "published": true,
+    "image": {
+      "src": "/images/george.jpg",
+      "alt": "Portrait of Dr. George J. Valooran",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Jojo V. Joseph",
+    "department": "Surgical Oncology",
+    "qualifications": "MBBS, MS (General Surgery), MCh (Surgical Oncology)",
+    "groups": ["super-specialities"],
+    "featured": true,
+    "days": [],
+    "href": "#",
+    "order": 4,
+    "published": true,
+    "image": {
+      "src": "/images/jojo.jpg",
+      "alt": "Portrait of Dr. Jojo V. Joseph",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "[Doctor name]",
+    "department": "General Medicine",
+    "qualifications": "",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 5,
+    "published": true
+  },
+  {
+    "name": "[Doctor name]",
+    "department": "Paediatrics",
+    "qualifications": "",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 6,
+    "published": true
+  },
+  {
+    "name": "[Doctor name]",
+    "department": "Orthopaedics",
+    "qualifications": "",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 7,
+    "published": true
+  },
+  {
+    "name": "[Doctor name]",
+    "department": "Obstetrics & Gynaecology",
+    "qualifications": "",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 8,
+    "published": true
+  },
+  {
+    "name": "[Doctor name]",
+    "department": "Emergency Medicine",
+    "qualifications": "",
+    "groups": ["clinical-support"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 9,
+    "published": true
+  },
+  {
+    "name": "[Doctor name]",
+    "department": "Anaesthesiology",
+    "qualifications": "",
+    "groups": ["clinical-support"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 10,
+    "published": true
+  },
+  {
+    "name": "[Doctor name]",
+    "department": "Radiology & Imaging",
+    "qualifications": "",
+    "groups": ["clinical-support"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 11,
+    "published": true
+  },
+  {
+    "name": "[Doctor name]",
+    "department": "Microbiology",
+    "qualifications": "",
+    "groups": ["clinical-support"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 12,
+    "published": true
+  }
+]

@@ -1,0 +1,94 @@
+/* ---------- Patient & visitor guide ---------- */
+
+.guide {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(0, auto);
+  gap: var(--gap);
+}
+.guide-hero {
+  grid-row: span 3;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--ink);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 420px;
+}
+.guide-hero__art { position: absolute; inset: 0; }
+.guide-hero__art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 15%;
+  transition: transform .8s cubic-bezier(.2,.8,.2,1);
+}
+.guide-hero:hover .guide-hero__art img { transform: scale(1.04); }
+.guide-hero__art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(13,31,28,.95) 0%, rgba(13,31,28,.75) 28%, rgba(13,31,28,0) 60%);
+}
+.guide-hero__body { position: relative; padding: 32px 30px; }
+.guide-hero__body h3 { font-size: 23px; line-height: 1.15; font-weight: 800; letter-spacing: -0.025em; margin-bottom: 12px; }
+.guide-hero__body p { color: rgba(255,255,255,.8); font-size: 15px; }
+
+.guide-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 26px 26px 28px;
+  transition: transform .2s, box-shadow .2s;
+}
+.guide-card:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(13,31,28,.25); }
+.guide-card h3 { font-size: 19px; font-weight: 800; letter-spacing: -0.01em; margin: 26px 0 12px; line-height: 1.35; }
+.guide-card p { font-size: 15px; color: var(--ink-2); }
+.guide-card .tag { margin-top: 12px; }
+
+.steps {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px 14px;
+  margin-top: 14px;
+  justify-content: start;
+}
+.steps span { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; }
+.steps b {
+  width: 20px; height: 20px; border-radius: 50%;
+  background: var(--green); color: var(--white);
+  display: grid; place-items: center;
+  font-size: 11px;
+}
+
+.guide-cta {
+  background: var(--green);
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  transition: background .2s;
+}
+.guide-cta:hover { background: #0b5c49; }
+.guide-cta:hover .round { background: var(--lime); }
+.guide-cta .round { transition: background .25s; }
+.guide-cta h3 { font-size: 22px; line-height: 1.2; font-weight: 800; letter-spacing: -0.02em; }
+.guide-cta .round {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--white); color: var(--ink);
+  display: grid; place-items: center;
+}
+.guide-cta .round svg { width: 18px; height: 18px; }
+
+.icon-box--sky { background: #dfeef3; color: #1d5e73; }
+.icon-box--lav { background: #e9e5f5; color: #4b3a8c; }
+.icon-box--lime { background: var(--lime); color: var(--ink); }
+.icon-box--yellow { background: #fbe6a8; color: #7a5208; }
+.icon-box--mint { background: #e3efe9; color: var(--green); }
+.icon-box--rose { background: #fde4e1; color: #b0302a; }
+.icon-box--grey { background: #e8edf3; color: #2d4560; }

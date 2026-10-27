@@ -1,0 +1,164 @@
+[
+  {
+    "slug": "worlds-smallest-pacemaker",
+    "title": "World's smallest pacemaker, now at IGCH.",
+    "summary": "A leadless pacemaker implanted without open surgery, bringing a new standard of heart care to Kochi. [Story summary to be supplied.]",
+    "body": [],
+    "tag": {
+      "label": "Cardiology",
+      "tone": "red"
+    },
+    "readTime": "3 min read",
+    "image": {
+      "src": "/images/smallest-pacemaker.jpg",
+      "alt": "Illustration of a leadless pacemaker placed inside the heart's right ventricle",
+      "width": 750,
+      "height": 400
+    },
+    "illustration": "pacemaker",
+    "link": "#",
+    "featured": true,
+    "order": 1,
+    "published": true
+  },
+  {
+    "slug": "kerala-first-5g-smart-ambulance",
+    "title": "Kerala's first 5G Smart Ambulance goes on call",
+    "summary": "",
+    "body": [],
+    "tag": {
+      "label": "Emergency",
+      "tone": "green"
+    },
+    "readTime": "",
+    "image": {
+      "src": "/images/ambulance.jpg",
+      "alt": "IGCH 5G Smart Ambulance on the road",
+      "width": 1200,
+      "height": 1800
+    },
+    "illustration": "ambulance",
+    "link": "#",
+    "featured": false,
+    "order": 2,
+    "published": true
+  },
+  {
+    "slug": "200-cardiothoracic-surgeries",
+    "title": "200 cardiothoracic surgeries in 15 months",
+    "summary": "",
+    "body": [],
+    "tag": {
+      "label": "CTVS",
+      "tone": "purple"
+    },
+    "readTime": "",
+    "image": {
+      "src": "/images/news-ctvs.jpg",
+      "alt": "Cardiothoracic surgeons operating",
+      "width": 800,
+      "height": 521
+    },
+    "illustration": "support",
+    "link": "#",
+    "featured": false,
+    "order": 3,
+    "published": true
+  },
+  {
+    "slug": "headline-1",
+    "title": "[Headline]",
+    "summary": "",
+    "body": [],
+    "tag": {
+      "label": "News",
+      "tone": "green"
+    },
+    "readTime": "",
+    "illustration": "pacemaker",
+    "link": "#",
+    "featured": false,
+    "order": 10,
+    "published": true
+  },
+  {
+    "slug": "headline-2",
+    "title": "[Headline]",
+    "summary": "",
+    "body": [],
+    "tag": {
+      "label": "News",
+      "tone": "green"
+    },
+    "readTime": "",
+    "illustration": "ambulance",
+    "link": "#",
+    "featured": false,
+    "order": 11,
+    "published": true
+  },
+  {
+    "slug": "headline-3",
+    "title": "[Headline]",
+    "summary": "",
+    "body": [],
+    "tag": {
+      "label": "News",
+      "tone": "green"
+    },
+    "readTime": "",
+    "illustration": "support",
+    "link": "#",
+    "featured": false,
+    "order": 12,
+    "published": true
+  },
+  {
+    "slug": "headline-4",
+    "title": "[Headline]",
+    "summary": "",
+    "body": [],
+    "tag": {
+      "label": "News",
+      "tone": "green"
+    },
+    "readTime": "",
+    "illustration": "pacemaker",
+    "link": "#",
+    "featured": false,
+    "order": 13,
+    "published": true
+  },
+  {
+    "slug": "headline-5",
+    "title": "[Headline]",
+    "summary": "",
+    "body": [],
+    "tag": {
+      "label": "News",
+      "tone": "green"
+    },
+    "readTime": "",
+    "illustration": "ambulance",
+    "link": "#",
+    "featured": false,
+    "order": 14,
+    "published": true
+  },
+  {
+    "slug": "headline-6",
+    "title": "[Headline]",
+    "summary": "",
+    "body": [],
+    "tag": {
+      "label": "News",
+      "tone": "green"
+    },
+    "readTime": "",
+    "illustration": "support",
+    "link": "#",
+    "featured": false,
+    "order": 15,
+    "published": true
+  }
+]

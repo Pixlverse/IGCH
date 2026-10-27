@@ -1,0 +1,45 @@
+{
+  "seo": {
+    "title": "News & Updates · Indira Gandhi Co-operative Hospital, Kochi",
+    "description": "Milestones, announcements and tenders from Indira Gandhi Co-operative Hospital, Kadavanthra, Kochi."
+  },
+  "hero": {
+    "crumbs": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "News & Updates",
+        "href": "/news"
+      }
+    ],
+    "title": {
+      "before": "News &",
+      "accent": "Updates",
+      "after": ""
+    },
+    "lead": "Milestones, announcements and tenders from Indira Gandhi Co-operative Hospital."
+  },
+  "filters": {
+    "ariaLabel": "Filter updates",
+    "all": "All",
+    "news": "News",
+    "announcements": "Announcements",
+    "tenders": "Tenders"
+  },
+  "featured": {
+    "badge": "Featured",
+    "linkLabel": "Read the story →"
+  },
+  "latest": {
+    "heading": "Latest news",
+    "pageSize": 6
+  },
+  "board": {
+    "heading": "Notice board",
+    "announcementsHeading": "Announcements",
+    "tendersHeading": "Tenders",
+    "documentLabel": "PDF"
+  }
+}

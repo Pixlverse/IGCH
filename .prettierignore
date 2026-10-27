@@ -1,0 +1,10 @@
+.next
+.next-admin
+.data
+node_modules
+legacy
+pnpm-lock.yaml
+test-results
+playwright-report
+tests/.artifacts
+styles

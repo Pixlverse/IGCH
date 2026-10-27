@@ -1,0 +1,23 @@
+/* ---------- Blogs ---------- */
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap);
+}
+.blog {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 34px 28px 28px;
+  border-top: 6px solid var(--accent, var(--green));
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s, box-shadow .2s;
+}
+.blog:hover { transform: translateY(-4px); box-shadow: 0 18px 40px -24px rgba(13,31,28,.3); }
+.blog h3 { font-size: 20px; line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; margin: 18px 0 18px; }
+.blog small { margin-top: auto; font-size: 13px; color: var(--muted); }
+.blog--red { --accent: #a8322a; }
+.blog--brown { --accent: #8e5a12; }
+.blog--purple { --accent: #4c3d8a; }
+.blog--teal { --accent: #1f5b78; }

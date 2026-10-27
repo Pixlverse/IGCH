@@ -1,0 +1,82 @@
+/* ---------- Footer (Phase 1 design) ---------- */
+
+.footer {
+  background: var(--ink);
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 64px 64px 0;
+  margin: 56px auto 24px;
+  overflow: hidden;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 44px 32px;
+}
+.footer h3,
+.footer__name {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+.footer address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,.8);
+}
+.footer .unit { font-size: 12.5px; line-height: 1.5; color: rgba(255,255,255,.55); margin-top: 10px; }
+
+.footer .phone {
+  display: block;
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  transition: color .2s;
+}
+.footer .phone:hover { color: var(--lime); }
+.footer .open { font-size: 14px; color: rgba(255,255,255,.75); margin: 8px 0 14px; }
+.footer__ctas { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.footer__ctas .btn { padding: 10px 18px; font-size: 14.5px; }
+
+.footer ul li { margin-bottom: 10px; }
+.footer ul a { font-size: 14.5px; color: rgba(255,255,255,.82); transition: color .2s; }
+.footer ul a:hover { color: var(--lime); }
+
+.footer__wordmark {
+  margin: 48px 0 24px;
+  font-size: clamp(90px, 13vw, 190px);
+  font-weight: 800;
+  line-height: .78;
+  letter-spacing: -0.05em;
+  color: #1c3530;
+  user-select: none;
+}
+.footer__wordmark::before { content: attr(data-wordmark); }
+
+.footer__bottom {
+  border-top: 1px solid rgba(255,255,255,.1);
+  padding: 24px 0 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13.5px;
+  color: rgba(255,255,255,.65);
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.footer__social { display: flex; gap: 20px; }
+.footer__social a { color: rgba(255,255,255,.85); transition: color .2s; }
+.footer__social a:hover { color: var(--lime); }
+
+@media (max-width: 1180px) {
+  .footer__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .footer { padding: 40px 24px 0; margin-top: 56px; }
+  .footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 20px; }
+  .footer__brand, .footer__emergency { grid-column: 1 / -1; }
+  .footer__wordmark { margin-top: 32px; }
+}

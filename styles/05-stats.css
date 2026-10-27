@@ -1,0 +1,26 @@
+/* ---------- Stats ---------- */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+  margin-top: var(--gap);
+}
+.stat {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 22px 26px 24px;
+}
+.stat strong {
+  display: block;
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin-bottom: 8px;
+}
+.stat p { font-size: 15px; color: var(--ink-2); max-width: 260px; }
+.stat--green p { max-width: none; }
+.stat--green { background: var(--green); color: var(--white); }
+.stat--green p { color: rgba(255,255,255,.85); }
+.stat--lime { background: var(--lime); }

@@ -1,0 +1,443 @@
+[
+  {
+    "group": "super-specialities",
+    "name": "Cardiology",
+    "shortName": "",
+    "description": "Heart and vascular care, from the first ECG to interventions.",
+    "featured": true,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 1,
+    "published": true
+  },
+  {
+    "group": "super-specialities",
+    "name": "Cardiothoracic & Vascular Surgery",
+    "shortName": "CTVS",
+    "description": "Cardiothoracic and vascular surgery, including bypass.",
+    "featured": true,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 2,
+    "published": true
+  },
+  {
+    "group": "super-specialities",
+    "name": "Medical Oncology",
+    "shortName": "",
+    "description": "Chemotherapy and medical treatment of cancer.",
+    "featured": true,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 3,
+    "published": true
+  },
+  {
+    "group": "super-specialities",
+    "name": "Surgical Oncology",
+    "shortName": "",
+    "description": "Surgery for cancers, planned with the oncology team.",
+    "featured": true,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 4,
+    "published": true
+  },
+  {
+    "group": "super-specialities",
+    "name": "Paediatric Oncology",
+    "shortName": "",
+    "description": "Specialist cancer care for children.",
+    "featured": true,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 5,
+    "published": true
+  },
+  {
+    "group": "super-specialities",
+    "name": "Neurology",
+    "shortName": "",
+    "description": "Care for the brain, nerves and spine.",
+    "featured": true,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 6,
+    "published": true
+  },
+  {
+    "group": "super-specialities",
+    "name": "Neurosurgery",
+    "shortName": "",
+    "description": "Surgery of the brain, spine and nerves.",
+    "featured": false,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 7,
+    "published": true
+  },
+  {
+    "group": "super-specialities",
+    "name": "Gastroenterology",
+    "shortName": "",
+    "description": "Digestive system and liver care.",
+    "featured": false,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 8,
+    "published": true
+  },
+  {
+    "group": "super-specialities",
+    "name": "Nephrology",
+    "shortName": "",
+    "description": "Kidney care, including dialysis.",
+    "featured": false,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 9,
+    "published": true
+  },
+  {
+    "group": "super-specialities",
+    "name": "Urology",
+    "shortName": "",
+    "description": "Urinary tract and male reproductive health.",
+    "featured": false,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 10,
+    "published": true
+  },
+  {
+    "group": "broad-specialities",
+    "name": "General Medicine",
+    "shortName": "",
+    "description": "Diagnosis and treatment of adult illness.",
+    "featured": true,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 1,
+    "published": true
+  },
+  {
+    "group": "broad-specialities",
+    "name": "General & Laparoscopic Surgery",
+    "shortName": "",
+    "description": "Open and keyhole surgery.",
+    "featured": false,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 2,
+    "published": true
+  },
+  {
+    "group": "broad-specialities",
+    "name": "Obstetrics & Gynaecology",
+    "shortName": "",
+    "description": "Pregnancy, childbirth and women’s health.",
+    "featured": true,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 3,
+    "published": true
+  },
+  {
+    "group": "broad-specialities",
+    "name": "Paediatrics",
+    "shortName": "",
+    "description": "Healthcare for infants, children and teens.",
+    "featured": true,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 4,
+    "published": true
+  },
+  {
+    "group": "broad-specialities",
+    "name": "Orthopaedics",
+    "shortName": "",
+    "description": "Bones, joints and sports injuries.",
+    "featured": true,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 5,
+    "published": true
+  },
+  {
+    "group": "broad-specialities",
+    "name": "Diabetology",
+    "shortName": "",
+    "description": "Diabetes and hormone care.",
+    "featured": false,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 6,
+    "published": true
+  },
+  {
+    "group": "broad-specialities",
+    "name": "Pulmonology",
+    "shortName": "",
+    "description": "Lungs and breathing.",
+    "featured": false,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 7,
+    "published": true
+  },
+  {
+    "group": "broad-specialities",
+    "name": "ENT",
+    "shortName": "",
+    "description": "Ear, nose and throat.",
+    "featured": false,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 8,
+    "published": true
+  },
+  {
+    "group": "broad-specialities",
+    "name": "Ophthalmology",
+    "shortName": "",
+    "description": "Eye care and vision.",
+    "featured": false,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 9,
+    "published": true
+  },
+  {
+    "group": "broad-specialities",
+    "name": "Dermatology",
+    "shortName": "",
+    "description": "Skin, hair and nails.",
+    "featured": false,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 10,
+    "published": true
+  },
+  {
+    "group": "broad-specialities",
+    "name": "Dental",
+    "shortName": "",
+    "description": "Teeth and oral health.",
+    "featured": true,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 11,
+    "published": true
+  },
+  {
+    "group": "broad-specialities",
+    "name": "Psychiatry",
+    "shortName": "",
+    "description": "Mental health and wellbeing.",
+    "featured": false,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 12,
+    "published": true
+  },
+  {
+    "group": "broad-specialities",
+    "name": "Palliative Medicine",
+    "shortName": "",
+    "description": "Comfort and support through serious illness.",
+    "featured": false,
+    "badge": {
+      "label": "New",
+      "tone": "lime"
+    },
+    "href": "#",
+    "order": 13,
+    "published": true
+  },
+  {
+    "group": "broad-specialities",
+    "name": "Ayurveda",
+    "shortName": "",
+    "description": "Traditional Ayurvedic care.",
+    "featured": true,
+    "badge": {
+      "label": "Traditional",
+      "tone": "lime"
+    },
+    "href": "#",
+    "order": 14,
+    "published": true
+  },
+  {
+    "group": "clinical-support",
+    "name": "Emergency Medicine",
+    "shortName": "",
+    "description": "Round-the-clock emergency and trauma care.",
+    "featured": true,
+    "badge": {
+      "label": "24/7",
+      "tone": "emergency"
+    },
+    "href": "#",
+    "order": 1,
+    "published": true,
+    "tone": "red"
+  },
+  {
+    "group": "clinical-support",
+    "name": "Anaesthesiology",
+    "shortName": "",
+    "description": "Safe anaesthesia and pain control for surgery.",
+    "featured": true,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 2,
+    "published": true,
+    "tone": "purple"
+  },
+  {
+    "group": "clinical-support",
+    "name": "Radiology & Imaging",
+    "shortName": "",
+    "description": "X-ray, ultrasound, CT and other scans.",
+    "featured": true,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 3,
+    "published": true,
+    "tone": "blue"
+  },
+  {
+    "group": "clinical-support",
+    "name": "Microbiology",
+    "shortName": "",
+    "description": "Laboratory testing to identify infections.",
+    "featured": true,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 4,
+    "published": true,
+    "tone": "green"
+  },
+  {
+    "group": "clinical-support",
+    "name": "EECP",
+    "shortName": "",
+    "description": "Non-invasive therapy to improve heart circulation.",
+    "featured": true,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 5,
+    "published": true,
+    "tone": "yellow"
+  },
+  {
+    "group": "clinical-support",
+    "name": "Physiotherapy",
+    "shortName": "",
+    "description": "Rehabilitation to restore movement and strength.",
+    "featured": false,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 6,
+    "published": true,
+    "tone": "red"
+  },
+  {
+    "group": "clinical-support",
+    "name": "Dietetics",
+    "shortName": "",
+    "description": "Nutrition planning for recovery and long-term health.",
+    "featured": false,
+    "badge": {
+      "label": "",
+      "tone": "green"
+    },
+    "href": "#",
+    "order": 7,
+    "published": true,
+    "tone": "purple"
+  }
+]

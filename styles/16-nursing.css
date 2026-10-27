@@ -1,0 +1,16 @@
+/* ---------- Nursing school ---------- */
+
+.nursing {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  background: #e4edf5;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.nursing__art { background: #e1eaf3; min-height: 300px; }
+.nursing__art { overflow: hidden; }
+.nursing__body { padding: 44px 56px 44px 48px; display: flex; flex-direction: column; justify-content: center; }
+.nursing__body h2 { font-size: clamp(28px, 2.6vw, 38px); line-height: 1.08; font-weight: 800; letter-spacing: -0.04em; margin: 18px 0 16px; }
+.nursing__body p { font-size: 17px; color: var(--ink-2); margin-bottom: 26px; }
+.nursing__body p:has(+ p) { margin-bottom: 12px; }
+.nursing__body .btn { align-self: flex-start; }

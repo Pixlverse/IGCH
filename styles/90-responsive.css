@@ -1,0 +1,42 @@
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1180px) {
+  .hero__main { padding: 48px; }
+  .guide { grid-template-columns: repeat(3, 1fr); }
+  .guide-hero { grid-column: span 3; grid-row: auto; min-height: 360px; }
+  .spec__bar { flex-direction: column; align-items: stretch; gap: 20px; }
+  .spec__search { width: auto; }
+}
+
+@media (max-width: 960px) {
+
+  .hero, .centres, .walk, .ambulance, .coop, .news, .faq, .nursing { grid-template-columns: 1fr; }
+  .centre-feature { grid-row: auto; }
+  .hero__art { min-height: 480px; }
+  .doctors, .facilities, .blogs { grid-template-columns: repeat(2, 1fr); }
+  .spec__cols { grid-template-columns: 1fr; }
+  .journey__steps em { display: none; }
+  .coop__art, .walk__art, .ambulance__art { min-height: 300px; }
+  .coop__body { padding: 48px 36px; }
+  .faq { padding: 36px; gap: 24px; }
+  .nursing__body { padding: 40px 36px; }
+  .section { padding-top: 88px; }
+}
+
+@media (max-width: 640px) {
+  .container { width: calc(100% - 24px); }
+  .hero__main { padding: 32px 24px; }
+  .hero__lead { font-size: 17px; }
+  .hero__title .nowrap { white-space: normal; }
+  .search .btn span { display: none; }
+  .stats, .doctors, .facilities, .blogs, .guide, .coop__points { grid-template-columns: 1fr; }
+  .guide-hero { grid-column: auto; }
+  .news__pair { grid-template-columns: 1fr; }
+  .news-lead { min-height: 340px; }
+  .centre-card { grid-template-columns: 1fr; }
+  .centre-card__art { height: 200px; }
+  .section-head { flex-direction: column; align-items: flex-start; }
+  .walk__body, .ambulance__body { padding: 36px 24px; }
+  .journey__steps { grid-template-columns: 1fr; }
+  .spec__bar { padding: 20px; }
+}

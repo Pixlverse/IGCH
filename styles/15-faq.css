@@ -1,0 +1,40 @@
+/* ---------- FAQ ---------- */
+
+.faq {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 40px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 44px 48px;
+}
+.faq h2 { font-size: clamp(28px, 2.5vw, 36px); line-height: 1.05; font-weight: 800; letter-spacing: -0.04em; margin-top: 18px; }
+.faq__list { display: grid; gap: 8px; }
+.faq details {
+  background: var(--bg);
+  border-radius: 14px;
+  padding: 0 24px;
+}
+.faq summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 0;
+  font-weight: 700;
+  font-size: 16.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+";
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--muted);
+  transition: transform .2s;
+}
+.faq details[open] summary { padding-bottom: 10px; }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { font-size: 16px; color: var(--ink-2); padding-bottom: 22px; line-height: 1.6; }
+.faq details p:not(:last-child) { padding-bottom: 12px; }

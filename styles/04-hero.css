@@ -1,0 +1,206 @@
+/* ---------- Hero ---------- */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.59fr 1fr;
+  gap: var(--gap);
+  margin-top: var(--gap);
+}
+.hero__main {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 44px 52px;
+}
+.hero__title {
+  margin: 20px 0 18px;
+  font-size: clamp(42px, 4.6vw, 70px);
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.055em;
+}
+.hero__title .accent { color: var(--green); }
+.hero__title .nowrap { white-space: nowrap; }
+.hero__lead {
+  font-size: 18px;
+  color: var(--ink-2);
+  max-width: 560px;
+  line-height: 1.5;
+}
+.hero__ctas { display: flex; gap: 12px; margin: 24px 0 28px; flex-wrap: wrap; }
+.hero__ctas .btn { padding: 14px 24px; font-size: 16px; }
+
+.search-label { font-size: 14px; font-weight: 700; color: var(--ink-2); margin-bottom: 12px; display: block; }
+.search {
+  display: flex;
+  align-items: center;
+  background: #f1f2f1;
+  border-radius: 999px;
+  padding: 6px 6px 6px 24px;
+  max-width: 640px;
+}
+.search input {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 16px;
+  color: var(--ink);
+  outline: none;
+  min-width: 0;
+}
+.search input::placeholder { color: #8b9592; }
+.search .btn { padding: 11px 22px; font-size: 15px; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; max-width: 640px; }
+.chip {
+  padding: 8px 14px;
+  border: 1px solid #dfe3e1;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  background: var(--white);
+  transition: border-color .2s, background .2s;
+}
+.chip:hover { border-color: var(--green); background: var(--green-soft); }
+
+.hero__art {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #cfe0d8;
+  min-height: 520px;
+}
+.hero__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 100%;
+  transition: transform 1.2s cubic-bezier(.2,.8,.2,1);
+}
+.hero__art:hover .hero__photo { transform: scale(1.03); }
+/* soft fade so badges and the 5G card sit cleanly on the photo */
+.hero__art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(13,31,28,.25) 0%, transparent 22%),
+    linear-gradient(0deg, rgba(13,31,28,.55) 0%, transparent 40%);
+}
+.hero__badges {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+.hero__badges span {
+  background: var(--white);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+/* 5G Smart Ambulance spotlight */
+.hero__5g {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2;
+  background: var(--ink);
+  color: var(--white);
+  border-radius: 20px;
+  padding: 6px;
+  box-shadow: 0 20px 40px -20px rgba(13,31,28,.6);
+}
+.hero__5g-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 16px 14px;
+  border-radius: 16px;
+  background: radial-gradient(120% 140% at 100% 0%, rgba(229,72,77,.28), transparent 55%);
+  transition: background-color .25s;
+}
+.hero__5g-main:hover { background-color: rgba(255,255,255,.04); }
+.hero__5g-text { flex: 1; min-width: 0; }
+.hero__5g-chips { display: flex; gap: 6px; margin-bottom: 8px; }
+.chip-5g {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: var(--red-text-bg); /* a11y: was var(--red) */
+  color: var(--white);
+  letter-spacing: .04em;
+}
+.chip-new {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: var(--lime);
+  color: var(--ink);
+}
+.hero__5g-text strong { display: block; font-size: 20px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; }
+.hero__5g-sub { display: block; font-size: 13px; color: rgba(255,255,255,.7); margin-top: 2px; }
+.hero__5g-sub u { text-decoration: none; color: var(--lime); font-weight: 700; white-space: nowrap; }
+
+.hero__5g-art { position: relative; width: 130px; height: 78px; flex-shrink: 0; overflow: hidden; }
+.hero__5g-art .amb { position: absolute; left: 4px; bottom: 8px; width: 100px; animation: drive 1.2s ease-in-out infinite; will-change: transform; }
+.siren-red { animation: siren .8s steps(1) infinite; }
+
+.hero__5g-art .waves { position: absolute; right: 4px; top: 0; width: 40px; fill: none; stroke: var(--lime); stroke-width: 3; stroke-linecap: round; }
+.hero__5g-art .waves path { opacity: .15; animation: wave 1.8s infinite; }
+.hero__5g-art .waves path:nth-child(2) { animation-delay: .3s; }
+.hero__5g-art .waves path:nth-child(3) { animation-delay: .6s; }
+.hero__5g-art .road {
+  position: absolute; left: 0; right: -18px; bottom: 4px; height: 2px;
+  background: repeating-linear-gradient(90deg, rgba(255,255,255,.35) 0 10px, transparent 10px 18px);
+  animation: road .6s linear infinite;
+  will-change: transform;
+}
+@keyframes drive { 50% { transform: translateY(-1.5px); } }
+@keyframes siren { 0% { opacity: 0; } 50% { opacity: 1; } }
+@keyframes wave { 0%, 100% { opacity: .15; } 40% { opacity: 1; } }
+@keyframes road { to { transform: translateX(-18px); } }
+
+.hero__5g-call {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 10px 10px 16px;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+.hero__5g-call small {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #f49b8f;
+}
+.hero__5g-call small .dot { position: relative; width: 7px; height: 7px; border-radius: 50%; background: var(--red); }
+.hero__5g-call b { display: block; font-size: 22px; letter-spacing: -0.02em; margin-top: 2px; }
+.call-btn {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: var(--red);
+  display: grid;
+  place-items: center;
+  transition: transform .2s, background .2s;
+}
+.hero__5g-call:hover .call-btn { transform: scale(1.08) rotate(-8deg); background: #cc3439; }
+.call-btn svg { width: 20px; height: 20px; color: var(--white); }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__5g-art *, .hero__5g-art .waves path, .siren-red { animation: none !important; }
+  .emergency-pill .ep-dot::after, .hero__5g-call small .dot::after, .is-active .journey__icon::after { animation: none; display: none; }
+}

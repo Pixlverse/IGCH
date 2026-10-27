@@ -1,0 +1,85 @@
+{
+  "name": "Indira Gandhi Co-operative Hospital",
+  "shortName": "IGCH",
+  "locationLine": "Kadavanthra · Kochi",
+  "shortAddress": "Gandhinagar Road, Kadavanthra, Kochi",
+  "logo": {
+    "src": "/images/officiallog.png",
+    "alt": "Indira Gandhi Co-operative Hospital logo",
+    "width": 1320,
+    "height": 1387
+  },
+  "address": {
+    "full": "Gandhinagar Road, opposite Rajiv Gandhi Indoor Stadium, Kadavanthra, Kochi 682020",
+    "streetAddress": "Gandhinagar Road, opposite Rajiv Gandhi Indoor Stadium, Kadavanthra",
+    "locality": "Kochi",
+    "region": "Kerala",
+    "postalCode": "682020",
+    "country": "IN"
+  },
+  "unitLine": "A unit of the Cochin Co-operative Hospitals Society Ltd. No. E.288",
+  "careersEmail": "",
+  "announcement": {
+    "badge": "NEW",
+    "label": "Kerala's first 5G Smart Ambulance is now on call",
+    "href": "/facilities#ambulance",
+    "ariaLabel": "Announcement"
+  },
+  "emergency": {
+    "phone": {
+      "display": "0484 294 1600",
+      "tel": "04842941600",
+      "international": "+91-484-294-1600"
+    },
+    "headerLabel": "Emergency",
+    "heroLabel": "Emergency & ambulance · 24/7",
+    "footerLabel": "Emergency & Ambulance",
+    "hours": "Open 24 hours, every day",
+    "callNowLabel": "Call now",
+    "callLabel": "Call {phone}"
+  },
+  "booking": {
+    "label": "Book appointment",
+    "href": "#"
+  },
+  "languages": [
+    {
+      "code": "en",
+      "label": "EN"
+    },
+    {
+      "code": "ml",
+      "label": "മലയാളം"
+    }
+  ],
+  "languageGroupLabel": "Language",
+  "menuLabel": "Open menu",
+  "accreditations": ["NABH Accredited", "CGHS Empanelled"],
+  "social": [
+    {
+      "label": "Facebook",
+      "href": "#"
+    },
+    {
+      "label": "Instagram",
+      "href": "#"
+    },
+    {
+      "label": "YouTube",
+      "href": "#"
+    }
+  ],
+  "copyright": "© 2026 Indira Gandhi Co-operative Hospital",
+  "seo": {
+    "siteUrl": "https://igchkochi.com",
+    "defaultTitle": "Indira Gandhi Co-operative Hospital · Kadavanthra, Kochi",
+    "defaultDescription": "Cardiology, cancer care for adults and children, dialysis and 24/7 emergency in Kadavanthra, Kochi — a co-operative hospital serving Kochi for 50+ years.",
+    "ogImage": {
+      "src": "/images/igch-building.jpg",
+      "alt": "Indira Gandhi Co-operative Hospital building in Kadavanthra, with the 24x7 Emergency entrance",
+      "width": 1024,
+      "height": 1536
+    },
+    "locale": "en_IN"
+  }
+}

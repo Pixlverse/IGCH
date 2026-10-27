@@ -1,0 +1,50 @@
+[
+  {
+    "question": "I'm coming from out of town. How do I plan my visit to IGCH?",
+    "answer": [
+      "You can book your appointment online through our Book an Appointment page, or call us on 0484 294 1600 or [mobile number]. Please bring your ID, past medical reports, any referral letter and your insurance card.",
+      "IGCH is on Gandhinagar Road, Kadavanthra, Kochi. Our Contact Us page has directions from Cochin Airport, Ernakulam South railway station and the KSRTC bus stand. Valet parking is available, so you can drop your car at the entrance and go straight in. Kadavanthra is a busy part of Kochi, so there are hotels and lodges close by if you’re staying over."
+    ],
+    "open": true,
+    "order": 1,
+    "published": true
+  },
+  {
+    "question": "What cancer treatments are available at IGCH, Kochi?",
+    "answer": [
+      "IGCH in Kadavanthra offers cancer treatment in Kochi through medical and surgical oncology. Our oncology team is led by Dr. V.P. Gangadharan, who set up Kerala’s first medical oncology department at the Regional Cancer Centre, Thiruvananthapuram. Dr. Jojo V. Joseph (Surgical Oncology) and Dr. Anupama G (Medical Oncology) work with him.",
+      "We treat all kinds of cancer, with special expertise in breast cancer, colorectal cancer, lung cancer and endocrine tumours. We are also expanding care for head and neck cancer. A team of oncologists, surgeons, radiologists and pathologists reviews every case together, so treatment can start sooner. Counselling, nutrition advice and pain management are part of your care."
+    ],
+    "open": false,
+    "order": 2,
+    "published": true
+  },
+  {
+    "question": "Does IGCH treat children with cancer?",
+    "answer": [
+      "Yes. IGCH in Kadavanthra offers Paediatric Cancer treatment in Kochi. Dr. Anupama G, a Paediatric Oncologist (Child Cancer Specialist) with an MD in Paediatrics and a DM in Medical Oncology, treats children with cancer. Paediatrics, paediatric surgery and neonatology are in the same hospital, along with a 24-hour ICU, operation theatre and blood bank. Counselling and nutrition support are available for children and parents. We plan every child’s care around the child and the family."
+    ],
+    "open": false,
+    "order": 3,
+    "published": true
+  },
+  {
+    "question": "Does IGCH, Kochi, offer bypass surgery?",
+    "answer": [
+      "Yes. IGCH offers heart surgery in Kochi, including bypass surgery, at the Karunya Hridayalaya Cardiac Centre in Kadavanthra. Our cardiac care team coordinates your evaluation, surgery and recovery to ensure continuity of care. With 200 cardiothoracic surgeries completed in 15 months, the centre has experience in managing a range of heart conditions. The hospital also has a 24-hour emergency department, supported by round-the-clock ICU, operation theatre and blood bank facilities."
+    ],
+    "open": false,
+    "order": 4,
+    "published": true
+  },
+  {
+    "question": "Does IGCH offer dialysis, and is cashless treatment available?",
+    "answer": [
+      "Yes. IGCH in Kadavanthra offers dialysis in Kochi. Our dialysis unit has completed over 15,000 hemodialysis sessions. The hospital’s 24-hour emergency care and ICU are on the same campus.",
+      "We offer cashless treatment through major TPAs and insurance companies. IGCH is also a CGHS-empanelled, NABH-accredited hospital in Kochi. For planned treatment, CGHS patients should bring a referral from their wellness centre. In an emergency, come directly. Please carry your insurance card, photo ID and past reports. As a co-operative hospital, we try to keep care within reach. If cost is a worry, please talk to our team before treatment starts."
+    ],
+    "open": false,
+    "order": 5,
+    "published": true
+  }
+]

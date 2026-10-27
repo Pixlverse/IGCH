@@ -1,0 +1,104 @@
+{
+  "seo": {
+    "title": "Wellness Library · Indira Gandhi Co-operative Hospital, Kochi",
+    "description": "Clear, trustworthy health guidance from the doctors of IGCH — written for patients and families."
+  },
+  "hero": {
+    "crumbs": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Wellness Library",
+        "href": "/wellness-library"
+      }
+    ],
+    "title": {
+      "before": "Wellness",
+      "accent": "Library",
+      "after": ""
+    },
+    "lead": "Clear, trustworthy health guidance from the doctors of IGCH — written for patients and families.",
+    "search": {
+      "label": "Search the library",
+      "placeholder": "A condition, symptom or treatment",
+      "buttonLabel": "Search"
+    },
+    "allLabel": "All",
+    "filterLabel": "Filter articles by topic"
+  },
+  "categories": [
+    {
+      "key": "heart",
+      "label": "Heart",
+      "tone": "red",
+      "illustration": "heart",
+      "accent": "red"
+    },
+    {
+      "key": "cancer",
+      "label": "Cancer care",
+      "tone": "purple",
+      "illustration": "oncology",
+      "accent": "purple"
+    },
+    {
+      "key": "children",
+      "label": "Children's health",
+      "tone": "yellow",
+      "illustration": "paediatric",
+      "accent": "brown"
+    },
+    {
+      "key": "kidney",
+      "label": "Kidney & dialysis",
+      "tone": "blue",
+      "illustration": "kidney",
+      "accent": "teal"
+    },
+    {
+      "key": "mental",
+      "label": "Mental health",
+      "tone": "purple",
+      "illustration": "consult",
+      "accent": "purple"
+    },
+    {
+      "key": "general",
+      "label": "General health",
+      "tone": "green",
+      "illustration": "consult",
+      "accent": "teal"
+    }
+  ],
+  "featuredLinkLabel": "Read article →",
+  "latestHeading": "Latest articles",
+  "emptyText": "No articles match your search yet.",
+  "pageSize": 9,
+  "quickCheck": {
+    "eyebrow": "Quick check",
+    "heading": "",
+    "items": [
+      {
+        "question": "Planning a visit from out of town?",
+        "answer": ["[Guidance to be confirmed.]"],
+        "open": true
+      },
+      {
+        "question": "How is cancer treatment planned?",
+        "answer": ["[Guidance to be confirmed.]"],
+        "open": false
+      },
+      {
+        "question": "Is dialysis available with cashless treatment?",
+        "answer": ["[Guidance to be confirmed.]"],
+        "open": false
+      }
+    ]
+  },
+  "askDoctor": {
+    "heading": "Still have a question? Ask a doctor in person.",
+    "note": "Articles are for guidance only and are not a substitute for medical advice."
+  }
+}

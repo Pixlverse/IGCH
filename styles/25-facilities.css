@@ -1,0 +1,121 @@
+/* ---------- Facilities & Services ---------- */
+
+.page-hero__art--sky { background: var(--sky); }
+
+.fac-ambulance {
+  display: grid;
+  grid-template-columns: .84fr 1fr;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--ink);
+  color: var(--white);
+}
+.fac-ambulance__art { min-height: 380px; }
+.fac-ambulance__body { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 18px; padding: 48px 56px; }
+.fac-ambulance h2 { font-size: clamp(32px, 3.3vw, 50px); line-height: 1; font-weight: 800; letter-spacing: -0.045em; }
+.fac-ambulance p { max-width: 560px; color: rgba(255,255,255,.85); }
+
+.critical { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--gap); }
+.critical__card {
+  --tone: var(--green);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 290px;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  background: var(--green-soft);
+  transition: transform .2s;
+}
+.critical__card:hover { transform: translateY(-3px); }
+.critical__card--red { --tone: #b0302a; background: var(--red-soft); }
+.critical__card--purple { --tone: #4b3a8c; background: #ebe7f7; }
+.critical__card--yellow { --tone: #6d4b05; background: #fdf1c8; }
+.critical__card--blue { --tone: #1d4e6e; background: var(--sky); }
+.critical__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  display: grid;
+  place-items: center;
+  background: var(--white);
+  color: var(--tone);
+}
+.critical__icon svg { width: 18px; height: 18px; }
+.critical__card h3 { font-size: 20px; font-weight: 800; letter-spacing: -0.02em; margin: 20px 0 8px; }
+.critical__card p { font-size: 14.5px; line-height: 1.5; color: var(--ink-2); }
+.critical__link { margin-top: auto; padding-top: 20px; font-weight: 700; }
+.critical__card:hover .critical__link { color: var(--tone); }
+
+.fac-dialysis {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #e5eef4;
+}
+.fac-dialysis__body { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; padding: 44px 56px; }
+.fac-dialysis__body p { max-width: 640px; color: var(--ink-2); }
+.fac-dialysis__art { min-height: 300px; }
+
+.tpa-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--gap); }
+.tpa-steps li { padding: 26px 28px 30px; border-radius: var(--radius-lg); background: var(--white); }
+.tpa-steps__no {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+.tpa-steps__no--green { background: var(--green-soft); color: var(--green); }
+.tpa-steps__no--purple { background: #ebe7f7; color: #4b3a8c; }
+.tpa-steps__no--yellow { background: #fdf0c8; color: #6d4b05; }
+.tpa-steps__no--red { background: #fbe3df; color: #b0302a; }
+.tpa-steps__no--blue { background: #e1ebf3; color: #1d4e6e; }
+.tpa-steps__no--lime { background: var(--lime); color: var(--ink); }
+.tpa-steps h3 { font-size: 18px; font-weight: 800; margin: 20px 0 8px; }
+.tpa-steps p { font-size: 14.5px; line-height: 1.5; color: var(--ink-2); }
+
+.tpa-partners {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px 28px;
+  margin-top: var(--gap);
+  padding: 22px 28px;
+  border-radius: var(--radius-lg);
+  background: var(--white);
+}
+.tpa-partners strong { font-size: 15px; }
+.tpa-partners ul { display: flex; flex-wrap: wrap; gap: 10px; }
+.tpa-partners li { padding: 8px 16px; border-radius: 10px; background: var(--bg); font-size: 13.5px; color: var(--ink-2); }
+.tpa-partners .tpa-partners__badge { background: var(--green-soft); color: var(--green); font-weight: 700; }
+
+.fac-canteen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 48px 56px;
+  border-radius: var(--radius-lg);
+  background: #fdf6e0;
+}
+.fac-canteen .h2 { margin: 16px 0 14px; max-width: 16ch; }
+.fac-canteen p { max-width: 620px; color: var(--ink-2); }
+.fac-canteen__timings { display: grid; gap: 4px; min-width: 280px; padding: 22px 28px; border-radius: var(--radius); background: var(--white); }
+.fac-canteen__timings small { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #6d4b05; }
+.fac-canteen__timings strong { font-size: 17px; }
+.fac-canteen__timings span { font-size: 13.5px; color: var(--muted); }
+
+@media (max-width: 960px) {
+  .fac-ambulance, .fac-dialysis { grid-template-columns: 1fr; }
+  .fac-ambulance__art, .fac-dialysis__art { min-height: 240px; }
+  .critical, .tpa-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fac-canteen { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 640px) {
+  .critical, .tpa-steps { grid-template-columns: 1fr; }
+  .fac-ambulance__body, .fac-dialysis__body, .fac-canteen { padding: 32px 24px; }
+  .fac-canteen__timings { min-width: 0; width: 100%; }
+}

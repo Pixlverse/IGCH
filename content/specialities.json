@@ -1,0 +1,43 @@
+{
+  "groups": [
+    {
+      "slug": "super-specialities",
+      "title": "Super Specialities",
+      "tagline": "You’re in experienced hands.",
+      "summary": "Advanced, single-organ expertise for complex conditions.",
+      "icon": "pulse",
+      "color": "green",
+      "illustration": "heart",
+      "viewAll": {
+        "label": "View all super specialities",
+        "href": "/specialities/super-specialities"
+      }
+    },
+    {
+      "slug": "broad-specialities",
+      "title": "Broad Specialities",
+      "tagline": "Your family’s health matters at IGCH.",
+      "summary": "Everyday and family care, from medicine and surgery to Ayurveda.",
+      "icon": "heart",
+      "color": "amber",
+      "illustration": "consult",
+      "viewAll": {
+        "label": "View all broad specialities",
+        "href": "/specialities/broad-specialities"
+      }
+    },
+    {
+      "slug": "clinical-support",
+      "title": "Clinical Support",
+      "tagline": "Quick, careful and kind in our care.",
+      "summary": "The teams and technology behind every diagnosis and treatment.",
+      "icon": "clipboard",
+      "color": "blue",
+      "illustration": "support",
+      "viewAll": {
+        "label": "View all clinical support",
+        "href": "/specialities/clinical-support"
+      }
+    }
+  ]
+}

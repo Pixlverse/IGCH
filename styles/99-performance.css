@@ -1,0 +1,6 @@
+/* ---------- Performance ---------- */
+/* Hover-zoom images get their own layer so zooming never repaints the card */
+.hero__photo, .doctor__art img, .centre-feature__art img, .centre-card__art img,
+.walk__art > img, .ambulance__art img, .coop__art img, .nursing__art img,
+.guide-hero__art img, .news-lead img, .news-card__img img { backface-visibility: hidden; transform: translateZ(0); }
+.hero__art:hover .hero__photo { transform: translateZ(0) scale(1.03); }

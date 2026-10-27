@@ -1,0 +1,97 @@
+{
+  "header": [
+    {
+      "label": "About",
+      "href": "/about",
+      "hasMenu": true,
+      "children": [
+        { "label": "Our story", "href": "/about#story" },
+        { "label": "Leadership", "href": "/about#leadership" },
+        { "label": "Team", "href": "/about#team" },
+        { "label": "Achievements", "href": "/about#achievements" },
+        { "label": "Careers", "href": "/careers" }
+      ]
+    },
+    {
+      "label": "Specialities",
+      "href": "/specialities",
+      "hasMenu": true,
+      "children": [
+        { "label": "Super Specialities", "href": "/specialities/super-specialities" },
+        { "label": "Broad Specialities", "href": "/specialities/broad-specialities" },
+        { "label": "Clinical Support", "href": "/specialities/clinical-support" },
+        { "label": "Find a doctor", "href": "/specialities#find-a-doctor" }
+      ]
+    },
+    {
+      "label": "Patient & Visitor Guide",
+      "href": "/#guide",
+      "hasMenu": true,
+      "children": [
+        { "label": "How to reach", "href": "/#guide" },
+        { "label": "Documents to carry", "href": "/#guide" },
+        { "label": "Parking", "href": "/#guide" },
+        { "label": "Visit process", "href": "/#guide" },
+        { "label": "Insurance & TPA", "href": "/facilities#insurance" }
+      ]
+    },
+    {
+      "label": "Facilities & Services",
+      "href": "/facilities",
+      "hasMenu": true,
+      "children": [
+        { "label": "5G Ambulance", "href": "/facilities#ambulance" },
+        { "label": "Emergency · ICU · OT", "href": "/facilities#emergency" },
+        { "label": "Dialysis", "href": "/facilities#dialysis" },
+        { "label": "Insurance & TPA", "href": "/facilities#insurance" },
+        { "label": "Canteen", "href": "/facilities#canteen" }
+      ]
+    },
+    { "label": "IGCH Walk-through", "href": "/#walkthrough", "hasMenu": false },
+    { "label": "Wellness Library", "href": "/wellness-library", "hasMenu": false },
+    { "label": "News & Updates", "href": "/news", "hasMenu": false },
+    { "label": "College of Nursing", "href": "/#nursing", "hasMenu": false }
+  ],
+  "footer": [
+    {
+      "heading": "About",
+      "links": [
+        { "label": "History", "href": "/about#story" },
+        { "label": "Team", "href": "/about#team" },
+        { "label": "Achievements", "href": "/about#achievements" },
+        { "label": "Leadership", "href": "/about#leadership" },
+        { "label": "Careers", "href": "/careers" }
+      ]
+    },
+    {
+      "heading": "Specialities",
+      "links": [
+        { "label": "Super Specialities", "href": "/specialities/super-specialities" },
+        { "label": "Broad Specialities", "href": "/specialities/broad-specialities" },
+        { "label": "Clinical Support", "href": "/specialities/clinical-support" },
+        { "label": "Find a doctor", "href": "/specialities#find-a-doctor" }
+      ]
+    },
+    {
+      "heading": "Visitors",
+      "links": [
+        { "label": "How to reach", "href": "/#guide" },
+        { "label": "Documents to carry", "href": "/#guide" },
+        { "label": "Parking", "href": "/#guide" },
+        { "label": "Visit process", "href": "/#guide" },
+        { "label": "Insurance & TPA", "href": "/facilities#insurance" }
+      ]
+    },
+    {
+      "heading": "More",
+      "links": [
+        { "label": "Walk-through", "href": "/#walkthrough" },
+        { "label": "Wellness Library", "href": "/wellness-library" },
+        { "label": "News & Updates", "href": "/news" },
+        { "label": "Tenders", "href": "/news#tenders" },
+        { "label": "College of Nursing", "href": "/#nursing" },
+        { "label": "Donate", "href": "#" }
+      ]
+    }
+  ]
+}

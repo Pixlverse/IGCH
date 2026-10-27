@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "image": {
+      "src": "/images/front-desk.jpg",
+      "alt": "Smiling doctor in a white coat with a stethoscope, ready to help",
+      "width": 1000,
+      "height": 667
+    },
+    "title": "Everything you'd ask at the front desk, in one place.",
+    "body": "Seven short guides — from reaching us to what happens after your consultation."
+  },
+  "cards": [
+    {
+      "icon": "pin",
+      "tone": "sky",
+      "title": "How to reach",
+      "body": "Gandhinagar Road, opposite Rajiv Gandhi Indoor Stadium, Kadavanthra.",
+      "href": "#"
+    },
+    {
+      "icon": "doc",
+      "tone": "lav",
+      "title": "Documents to carry",
+      "body": "ID proof, past reports, referral letter, insurance or CGHS card.",
+      "href": "#"
+    },
+    {
+      "icon": "parking",
+      "tone": "lime",
+      "title": "Parking",
+      "body": "Limited parking on campus.",
+      "href": "#",
+      "tag": "Valet available"
+    },
+    {
+      "icon": "bed",
+      "tone": "yellow",
+      "title": "Nearby accommodation",
+      "body": "Hotels and lodges close to the hospital for families travelling in.",
+      "href": "#"
+    },
+    {
+      "icon": "route",
+      "tone": "mint",
+      "title": "Approximate visit process",
+      "body": "A typical visit, step by step.",
+      "href": "#",
+      "steps": ["Register", "Consult", "Tests", "Follow-up"]
+    },
+    {
+      "icon": "clipboard",
+      "tone": "rose",
+      "title": "After consultation",
+      "body": "Medicines, follow-up dates, diet advice and when to call us.",
+      "href": "#"
+    },
+    {
+      "icon": "plus",
+      "tone": "grey",
+      "title": "Other facilities",
+      "body": "Canteen, pharmacy and more, within the campus.",
+      "href": "#"
+    }
+  ],
+  "cta": { "label": "See the complete visitor guide", "href": "#" }
+}

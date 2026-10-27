@@ -1,0 +1,196 @@
+{
+  "seo": {
+    "title": "Indira Gandhi Co-operative Hospital · Kadavanthra, Kochi",
+    "description": "Cardiology, cancer care for adults and children, dialysis and 24/7 emergency in Kadavanthra, Kochi — a co-operative hospital serving Kochi for 50+ years."
+  },
+  "hero": {
+    "tag": "Kochi's Very Own Hospital. 50+ Years.",
+    "title": { "line1": "Advanced care.", "accent": "Co-operative", "rest": "at heart." },
+    "lead": "For over 50 years, IGCH has provided specialist healthcare with a people-first approach, guided by its co-operative values. We believe everyone deserves equal respect and care that responds to their individual needs. From heart and cancer care to dialysis and 24/7 emergency services, we strive to make quality healthcare accessible to individuals and families from all walks of life.",
+    "secondaryCta": { "label": "Meet your doctor", "href": "#doctors" },
+    "search": {
+      "label": "What do you need today?",
+      "placeholder": "A condition, treatment or doctor",
+      "buttonLabel": "Search"
+    },
+    "chips": [
+      { "label": "Cardiology", "href": "#" },
+      { "label": "Cancer care", "href": "#" },
+      { "label": "Paediatric cancer care", "href": "#" },
+      { "label": "Dialysis", "href": "#" },
+      { "label": "Emergency care", "href": "#" },
+      { "label": "Psychiatry", "href": "#" }
+    ],
+    "image": {
+      "src": "/images/igch-building.jpg",
+      "alt": "Indira Gandhi Co-operative Hospital building in Kadavanthra, with the 24x7 Emergency entrance",
+      "width": 1024,
+      "height": 1536
+    },
+    "fiveG": {
+      "badge": "5G",
+      "newLabel": "New · Kerala's first",
+      "title": "5G Smart Ambulance",
+      "subtitle": "Care begins before you reach us.",
+      "linkLabel": "Learn more →",
+      "href": "#ambulance"
+    }
+  },
+  "stats": {
+    "ariaLabel": "IGCH in numbers",
+    "items": [
+      { "value": "50+", "caption": "years of healthcare built around people", "style": "green" },
+      { "value": "15,000+", "caption": "haemodialysis sessions completed", "style": "plain" },
+      {
+        "value": "25+",
+        "caption": "specialities, with 24/7 ICU, operation theatre and blood bank facilities",
+        "style": "lime"
+      }
+    ]
+  },
+  "centres": {
+    "head": {
+      "eyebrow": "Centres of Excellence",
+      "heading": "Specialist and multi-speciality healthcare in Kochi.",
+      "wide": false,
+      "link": { "label": "All specialities →", "href": "/specialities" }
+    }
+  },
+  "specialities": {
+    "head": {
+      "eyebrow": "Specialities",
+      "heading": "Find the right department, then the right doctor.",
+      "wide": false,
+      "link": { "label": "All departments →", "href": "/specialities" }
+    },
+    "journey": {
+      "heading": "How it works",
+      "steps": [
+        {
+          "label": "Step 01",
+          "title": "Choose a group",
+          "hint": "Hover a column below",
+          "icon": "grid"
+        },
+        {
+          "label": "Step 02",
+          "title": "Pick a department",
+          "hint": "Point to any department",
+          "icon": "search"
+        },
+        {
+          "label": "Step 03",
+          "title": "Meet doctors & book",
+          "hint": "Profiles, OP timings, booking",
+          "icon": "calendar"
+        }
+      ]
+    },
+    "filterPlaceholder": "Search {count} departments",
+    "filterAriaLabel": "Search departments",
+    "helpText": "Not sure? Call {phone} and we'll guide you.",
+    "countSuffix": "departments",
+    "countOf": "of",
+    "emptyText": "No matches in this group."
+  },
+  "doctors": {
+    "head": {
+      "eyebrow": "Our doctors",
+      "heading": "The Strength of IGCH.",
+      "wide": true,
+      "link": { "label": "Meet your doctors →", "href": "/specialities#find-a-doctor" }
+    }
+  },
+  "guide": {
+    "head": {
+      "eyebrow": "Patient & visitor guide",
+      "heading": "Planning a visit? Start here.",
+      "wide": true,
+      "link": { "label": "Open the full guide →", "href": "#" }
+    }
+  },
+  "walkthrough": {
+    "tag": { "label": "IGCH Walk-through", "tone": "blue" },
+    "title": "See the hospital before you arrive.",
+    "body": "A short guided tour of reception, OP, wards and the cardiac and cancer centres — so a first visit feels familiar.",
+    "cta": { "label": "Start the walk-through", "href": "#" },
+    "playLabel": "Start the walk-through",
+    "image": {
+      "src": "/images/reception.jpg",
+      "alt": "Hospital reception and front desk",
+      "width": 1200,
+      "height": 817
+    }
+  },
+  "facilities": {
+    "head": {
+      "eyebrow": "Facilities & services",
+      "heading": "Care that goes beyond the consultation.",
+      "wide": false,
+      "link": { "label": "All facilities →", "href": "/facilities" }
+    },
+    "ambulance": {
+      "tag": { "label": "5G Smart Ambulance · Emergency 24/7", "tone": "dark" },
+      "heading": "Kerala's first 5G Smart Ambulance — care begins before you reach us.",
+      "callLabel": "Call {phone}",
+      "image": {
+        "src": "/images/ambulance.jpg",
+        "alt": "Ambulance on the road with lights on",
+        "width": 1200,
+        "height": 1800
+      }
+    }
+  },
+  "coop": {
+    "tag": { "label": "The co-operative difference", "tone": "glass" },
+    "heading": { "main": "7,000 free dialysis sessions", "emphasis": "for those in need." },
+    "body": "We believe everyone deserves access to essential healthcare, regardless of their financial circumstances. As a co-operative hospital in Kochi, IGCH works to make healthcare more accessible through community care initiatives, including free dialysis services and subsidised specialist consultations. Through this model, we aim to reduce the financial burden of medical treatment and help more patients and families access the care they need.",
+    "points": [
+      { "title": "Free dialysis", "caption": "for economically disadvantaged patients" },
+      { "title": "Weekly camps", "caption": "free or subsidised specialist consultations" },
+      { "title": "80G exempt", "caption": "donations go straight into patient care" }
+    ],
+    "ctas": [
+      { "label": "Make a Difference - Support Our Dialysis Fund", "href": "#", "style": "white" },
+      { "label": "Learn About Us", "href": "/about", "style": "outline" }
+    ],
+    "image": {
+      "src": "/images/dialysis.jpg",
+      "alt": "Dialysis machine beside a patient bed",
+      "width": 1000,
+      "height": 1500
+    }
+  },
+  "news": {
+    "head": {
+      "eyebrow": "News, announcements & tenders",
+      "heading": "Latest News and Updates from IGCH.",
+      "wide": true,
+      "link": { "label": "All news & updates →", "href": "/news" }
+    }
+  },
+  "blogs": {
+    "head": {
+      "eyebrow": "Your Wellness Library",
+      "heading": "Worth a Read: What Our Specialists Want You to Know",
+      "wide": false,
+      "link": { "label": "All blogs →", "href": "/wellness-library" }
+    }
+  },
+  "faq": { "tag": "Quick Check", "heading": "What Our Patients Often Ask" },
+  "nursing": {
+    "tag": { "label": "Nursing Education", "tone": "white" },
+    "heading": "College of Nursing, Indira Gandhi Co-operative Hospital, Kochi, Kerala",
+    "paragraphs": [
+      "Indira Gandhi College of Nursing offers B.Sc Nursing in Kadavanthra, Ernakulam, with classroom learning and clinical training in our own multi-speciality hospital. Students gain clinical experience and build the skills to give quality nursing care.",
+      "Check course details, eligibility criteria and the admission process."
+    ],
+    "cta": { "label": "B.Sc Nursing Admission & Eligibility", "href": "#" },
+    "image": {
+      "src": "/images/nursing.jpg",
+      "alt": "Healthcare trainees in blue scrubs practising with a stethoscope",
+      "width": 1200,
+      "height": 800
+    }
+  }
+}

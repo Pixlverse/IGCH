@@ -1,0 +1,42 @@
+{
+  "feature": {
+    "image": {
+      "src": "/images/cardiology.jpg",
+      "alt": "Patient resting beside a cardiac monitor showing heart rhythm and blood pressure",
+      "width": 1400,
+      "height": 1050
+    },
+    "tag": { "label": "Cardiology · Karunya Hridayalaya Cardiac Centre", "tone": "red" },
+    "title": "Comprehensive Cardiac Care",
+    "body": "IGCH offers cardiology and cardiothoracic and vascular surgery, alongside specialised services such as interventional cardiology and leadless pacemaker implantation.",
+    "link": { "label": "Meet the cardiac team", "href": "#" }
+  },
+  "cards": [
+    {
+      "variant": "purple",
+      "image": {
+        "src": "/images/gangadharan.jpg",
+        "alt": "Dr. V.P. Gangadharan, oncologist",
+        "width": 660,
+        "height": 570
+      },
+      "tag": { "label": "Oncology", "tone": "purple" },
+      "title": "Cancer care led by Dr. V.P. Gangadharan.",
+      "body": "Medical and surgical oncology — diagnosis, chemotherapy and surgery coordinated by one team.",
+      "link": { "label": "Meet the oncology team", "href": "#" }
+    },
+    {
+      "variant": "cream",
+      "image": {
+        "src": "/images/paediatric-oncology.jpg",
+        "alt": "Doctor talking with a young boy and his mother",
+        "width": 1000,
+        "height": 563
+      },
+      "tag": { "label": "Paediatric Oncology", "tone": "yellow" },
+      "title": "Specialist cancer care for little ones.",
+      "body": "IGCH provides specialised cancer care for children, with support for their families throughout treatment.",
+      "link": { "label": "Learn more", "href": "#" }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Notice board",
+  "ariaLabel": "Notice board",
+  "announcements": {
+    "tabLabel": "Announcements",
+    "viewAll": {
+      "label": "View all announcements",
+      "href": "#"
+    },
+    "kindLabel": "Announcement"
+  },
+  "tenders": {
+    "tabLabel": "Tenders",
+    "viewAll": {
+      "label": "View all tenders",
+      "href": "#"
+    },
+    "lastDateLabel": "Last date: {date}"
+  },
+  "dateTbc": {
+    "day": "–",
+    "month": "TBC"
+  }
+}

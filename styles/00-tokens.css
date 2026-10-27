@@ -1,0 +1,35 @@
+/* =========================================================
+   IGCH — Indira Gandhi Co-operative Hospital · Homepage
+   ========================================================= */
+
+:root {
+  --bg: #f3f4f3;
+  --white: #ffffff;
+  --ink: #0d1f1c;
+  --ink-2: #3c4a47;
+  --muted: #66716e;
+  --line: #e4e8e6;
+
+  --green: #0e6e58;
+  --green-2: #1f7f69;
+  --green-soft: #e3efe9;
+  --lime: #d9f26a;
+  --red: #e5484d;
+  --red-soft: #fde8e6;
+  --red-text-bg: #d93a40; /* a11y: AA (4.5:1) for white text; was var(--red) #e5484d */
+
+  --sage: #cfe0d8;
+  --sky: #e4edf5;
+  --lavender: #ebe8f5;
+  --cream: #fdf3d8;
+  --peach: #f5e4da;
+
+  --radius-sm: 12px;
+  --radius: 20px;
+  --radius-lg: 28px;
+
+  --container: 1520px;
+  --gap: 14px;
+
+  --font: var(--font-jakarta, "Plus Jakarta Sans"), system-ui, -apple-system, "Segoe UI", sans-serif;
+}

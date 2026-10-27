@@ -1,0 +1,183 @@
+{
+  "seo": {
+    "title": "Specialities · Indira Gandhi Co-operative Hospital, Kochi",
+    "description": "Over 25 specialities under one roof — from heart and cancer care to children's health and emergency medicine. Find the right specialist in three steps."
+  },
+  "hero": {
+    "crumbs": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Specialities",
+        "href": "/specialities"
+      }
+    ],
+    "title": {
+      "before": "Find the right",
+      "accent": "specialist",
+      "after": ", in three steps."
+    },
+    "lead": "Over 25 specialities under one roof — from heart and cancer care to children's health and emergency medicine.",
+    "search": {
+      "label": "What do you need help with?",
+      "placeholder": "A condition, treatment or doctor",
+      "buttonLabel": "Search",
+      "emptyText": "No department matches that yet — call us and we'll guide you to the right one."
+    },
+    "chips": [
+      {
+        "label": "Cardiology",
+        "href": "/specialities/super-specialities"
+      },
+      {
+        "label": "Cancer care",
+        "href": "/specialities/super-specialities"
+      },
+      {
+        "label": "Paediatric cancer care",
+        "href": "/specialities/super-specialities"
+      },
+      {
+        "label": "Dialysis",
+        "href": "/facilities#dialysis"
+      },
+      {
+        "label": "Emergency care",
+        "href": "/specialities/clinical-support"
+      },
+      {
+        "label": "Psychiatry",
+        "href": "/specialities/broad-specialities"
+      }
+    ],
+    "countLabel": "departments across three groups",
+    "illustration": "consult"
+  },
+  "steps": [
+    {
+      "title": "Choose a group",
+      "hint": "Super, broad or clinical support",
+      "href": "#groups"
+    },
+    {
+      "title": "Pick a department",
+      "hint": "See what each one treats",
+      "href": "#groups"
+    },
+    {
+      "title": "Meet doctors & book",
+      "hint": "Profiles, timings, appointment",
+      "href": "#find-a-doctor"
+    }
+  ],
+  "groups": {
+    "head": {
+      "eyebrow": "Step 1 · Choose a group",
+      "heading": "Three ways into the right department.",
+      "wide": false,
+      "link": {
+        "label": "",
+        "href": "#"
+      }
+    },
+    "viewAllLabel": "View all {count} departments",
+    "moreLabel": "+{count} more"
+  },
+  "centres": {
+    "head": {
+      "eyebrow": "Centres of excellence",
+      "heading": "Where Kochi comes to us for the hard cases.",
+      "wide": false,
+      "link": {
+        "label": "",
+        "href": "#"
+      }
+    },
+    "items": [
+      {
+        "illustration": "heart",
+        "tag": {
+          "label": "Cardiology",
+          "tone": "red"
+        },
+        "title": "Karunya Hridayalaya Cardiac Centre",
+        "body": "Interventional cardiology and cardiothoracic surgery in one team, including the leadless pacemaker.",
+        "link": {
+          "label": "Meet the cardiac team",
+          "href": "/specialities/super-specialities"
+        }
+      },
+      {
+        "illustration": "oncology",
+        "tag": {
+          "label": "Oncology",
+          "tone": "purple"
+        },
+        "title": "Cancer care led by Dr. V.P. Gangadharan",
+        "body": "Medical and surgical oncology — diagnosis, chemotherapy and surgery coordinated by one team.",
+        "link": {
+          "label": "Meet the oncology team",
+          "href": "/specialities/super-specialities"
+        }
+      },
+      {
+        "illustration": "paediatric",
+        "tag": {
+          "label": "Paediatric Oncology",
+          "tone": "yellow"
+        },
+        "title": "Cancer care for children",
+        "body": "Specialist treatment for childhood cancers, with families supported at every step.",
+        "link": {
+          "label": "Learn more",
+          "href": "/specialities/super-specialities"
+        }
+      }
+    ]
+  },
+  "finder": {
+    "eyebrow": "Step 3 · Meet your doctor",
+    "heading": "Already know who you need?",
+    "specialityLabel": "Speciality",
+    "allSpecialities": "All specialities",
+    "nameLabel": "Doctor's name",
+    "namePlaceholder": "Search by name",
+    "dayLabel": "Day",
+    "anyDay": "Any day",
+    "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "buttonLabel": "Find a doctor",
+    "resultsLabel": "Doctors found: {count}",
+    "emptyText": "No doctors match those filters yet. Try another speciality or call us."
+  },
+  "quickCheck": {
+    "eyebrow": "Quick check",
+    "heading": "Not sure which department?",
+    "items": [
+      {
+        "question": "I have chest pain. Where do I go?",
+        "answer": [
+          "Go straight to Emergency, open 24 hours. For a planned check-up, book Cardiology. [Medical review pending]"
+        ],
+        "open": true
+      },
+      {
+        "question": "Can I see a doctor without a referral?",
+        "answer": ["[Referral and walk-in policy — to confirm.]"],
+        "open": false
+      },
+      {
+        "question": "Do you treat children with cancer?",
+        "answer": [
+          "Yes — through our Paediatric Oncology centre of excellence. [Details to confirm.]"
+        ],
+        "open": false
+      }
+    ]
+  },
+  "emergency": {
+    "tag": "Emergency · 24 × 7",
+    "heading": "Don't wait for an appointment in an emergency."
+  }
+}

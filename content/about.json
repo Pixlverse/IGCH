@@ -1,0 +1,245 @@
+{
+  "seo": {
+    "title": "About IGCH · Indira Gandhi Co-operative Hospital, Kochi",
+    "description": "Fifty years of caring for Kochi, together. The story, leadership, team and achievements of Indira Gandhi Co-operative Hospital, Kadavanthra."
+  },
+  "hero": {
+    "crumbs": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      }
+    ],
+    "tag": "Kochi's very own hospital",
+    "title": {
+      "before": "Fifty years of",
+      "accent": "caring for Kochi",
+      "after": ", together."
+    },
+    "lead": "Indira Gandhi Co-operative Hospital is owned by the community it serves — a hospital built on co-operation, now bringing advanced specialist care to Kadavanthra and beyond.",
+    "links": [
+      {
+        "label": "Our story",
+        "href": "#story"
+      },
+      {
+        "label": "Leadership",
+        "href": "#leadership"
+      },
+      {
+        "label": "Team",
+        "href": "#team"
+      },
+      {
+        "label": "Achievements",
+        "href": "#achievements"
+      },
+      {
+        "label": "Careers",
+        "href": "#careers"
+      }
+    ],
+    "illustration": "building"
+  },
+  "stats": {
+    "ariaLabel": "IGCH in numbers",
+    "items": [
+      {
+        "value": "50+",
+        "caption": "years serving Kochi as a co-operative",
+        "style": "plain"
+      },
+      {
+        "value": "25+",
+        "caption": "specialities under one roof",
+        "style": "plain"
+      },
+      {
+        "value": "24/7",
+        "caption": "emergency, ICU, OT and blood bank",
+        "style": "plain"
+      },
+      {
+        "value": "7,000",
+        "caption": "free dialysis sessions for those in need",
+        "style": "lime"
+      }
+    ]
+  },
+  "story": {
+    "head": {
+      "eyebrow": "Our story",
+      "heading": "A hospital the community built for itself.",
+      "wide": false,
+      "link": {
+        "label": "",
+        "href": "#"
+      }
+    },
+    "paragraphs": [
+      "IGCH began as a co-operative effort: citizens of Kochi pooling together so that good medical care would be within everyone's reach. Five decades on, that idea still shapes how we work.",
+      "[Founding story, the people behind it and the early years — to be supplied by IGCH.]"
+    ],
+    "society": {
+      "name": "Cochin Co-operative Hospitals Society Ltd.",
+      "note": "Registration No. E.288 · IGCH is a unit of the Society"
+    },
+    "timeline": [
+      {
+        "year": "[Year]",
+        "title": "The idea",
+        "body": "A group of citizens proposes a co-operative hospital for Kochi. [to confirm]"
+      },
+      {
+        "year": "[Year]",
+        "title": "Doors open",
+        "body": "The first OPD and wards begin serving patients. [to confirm]"
+      },
+      {
+        "year": "[Year]",
+        "title": "Super specialities arrive",
+        "body": "Cardiology, oncology and other specialist services are added. [to confirm]"
+      },
+      {
+        "year": "[Year]",
+        "title": "Accreditation",
+        "body": "NABH accreditation and CGHS empanelment. [to confirm]"
+      },
+      {
+        "year": "2026",
+        "title": "A new chapter",
+        "body": "A new identity, a new website and Kerala's first 5G Smart Ambulance."
+      }
+    ]
+  },
+  "coop": {
+    "tag": "The co-operative difference",
+    "heading": "Care that does not turn anyone away for want of means.",
+    "points": [
+      {
+        "title": "Free dialysis",
+        "caption": "For patients who need it and cannot afford it."
+      },
+      {
+        "title": "Weekly camps",
+        "caption": "Free or subsidised consultations."
+      },
+      {
+        "title": "80G donations",
+        "caption": "Tax-exempt gifts fund this work."
+      }
+    ],
+    "ctas": [
+      {
+        "label": "Make a difference",
+        "href": "#",
+        "style": "primary"
+      },
+      {
+        "label": "How donations help",
+        "href": "#",
+        "style": "white"
+      }
+    ],
+    "illustration": "family"
+  },
+  "leadership": {
+    "head": {
+      "eyebrow": "Leadership messages",
+      "heading": "The people who steer IGCH.",
+      "wide": true,
+      "link": {
+        "label": "",
+        "href": "#"
+      }
+    },
+    "items": [
+      {
+        "quote": "[Message from President — to be supplied.]",
+        "name": "[Name]",
+        "role": "President"
+      },
+      {
+        "quote": "[Message from Secretary — to be supplied.]",
+        "name": "[Name]",
+        "role": "Secretary"
+      },
+      {
+        "quote": "[Message from Medical Superintendent — to be supplied.]",
+        "name": "[Name]",
+        "role": "Medical Superintendent"
+      }
+    ]
+  },
+  "team": {
+    "head": {
+      "eyebrow": "Team",
+      "heading": "Specialists who stay close to their patients.",
+      "wide": false,
+      "link": {
+        "label": "Meet all doctors →",
+        "href": "/specialities#find-a-doctor"
+      }
+    }
+  },
+  "achievements": {
+    "head": {
+      "eyebrow": "Achievements & accreditations",
+      "heading": "Recognised for quality, proud of firsts.",
+      "wide": false,
+      "link": {
+        "label": "",
+        "href": "#"
+      }
+    },
+    "accreditation": {
+      "tag": "Accreditation",
+      "title": "NABH Accredited"
+    },
+    "empanelment": {
+      "tag": "Empanelment",
+      "title": "CGHS Empanelled"
+    },
+    "first": {
+      "tag": "A first for Kerala",
+      "title": "Kerala's first 5G Smart Ambulance.",
+      "body": "Patient data reaches the ER team before the vehicle reaches the door."
+    },
+    "pacemaker": {
+      "title": "World's smallest pacemaker, implanted without open surgery."
+    },
+    "stat": {
+      "value": "200",
+      "caption": "cardiothoracic surgeries in 15 months"
+    }
+  },
+  "careers": {
+    "tag": "Careers",
+    "heading": "Build your career where patients come first.",
+    "body": "Doctors, nurses, technicians and support staff — see our current openings or send us your CV.",
+    "ctas": [
+      {
+        "label": "View openings",
+        "href": "/careers#openings",
+        "style": "white"
+      },
+      {
+        "label": "Send your CV",
+        "href": "/careers#apply",
+        "style": "outline"
+      }
+    ]
+  },
+  "nursing": {
+    "tag": "Indira Gandhi College of Nursing",
+    "heading": "B.Sc Nursing, trained on a working hospital's wards.",
+    "link": {
+      "label": "Admissions & eligibility →",
+      "href": "/#nursing"
+    }
+  }
+}

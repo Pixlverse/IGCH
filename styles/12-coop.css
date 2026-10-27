@@ -1,0 +1,38 @@
+/* ---------- Co-operative difference ---------- */
+
+.coop {
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.coop__body {
+  background: var(--green);
+  color: var(--white);
+  padding: 52px 56px;
+}
+.coop__body h2 {
+  font-size: clamp(34px, 3.2vw, 48px);
+  line-height: 1.02;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  margin: 22px 0 18px;
+}
+.coop__body h2 em { font-style: normal; color: var(--lime); }
+.coop__body > p { font-size: 17px; color: rgba(255,255,255,.88); max-width: 600px; }
+.coop__points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 22px 0 22px;
+}
+.coop__points div {
+  background: rgba(255,255,255,.09);
+  border-radius: 14px;
+  padding: 18px;
+}
+.coop__points strong { display: block; font-size: 17px; margin-bottom: 6px; }
+.coop__points span { font-size: 13px; color: rgba(255,255,255,.92); /* a11y: was .78 */ line-height: 1.5; display: block; }
+.coop__ctas { display: flex; gap: 10px; flex-wrap: wrap; }
+.coop__art { background: #f3e6d6; min-height: 420px; }
+.coop__art { overflow: hidden; }

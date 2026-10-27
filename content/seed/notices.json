@@ -1,0 +1,42 @@
+[
+  {
+    "kind": "announcement",
+    "title": "[Announcement title]",
+    "status": "",
+    "link": "#",
+    "order": 1,
+    "published": true
+  },
+  {
+    "kind": "announcement",
+    "title": "[Announcement title]",
+    "status": "",
+    "link": "#",
+    "order": 2,
+    "published": true
+  },
+  {
+    "kind": "announcement",
+    "title": "[Announcement title]",
+    "status": "",
+    "link": "#",
+    "order": 3,
+    "published": true
+  },
+  {
+    "kind": "tender",
+    "title": "[Tender notice title]",
+    "status": "Open",
+    "link": "#",
+    "order": 1,
+    "published": true
+  },
+  {
+    "kind": "tender",
+    "title": "[Tender notice title]",
+    "status": "Open",
+    "link": "#",
+    "order": 2,
+    "published": true
+  }
+]

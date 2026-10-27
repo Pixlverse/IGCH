@@ -1,0 +1,45 @@
+{
+  "seo": {
+    "title": "Careers · Indira Gandhi Co-operative Hospital, Kochi",
+    "description": "Current openings for doctors, nurses, technicians and support staff at Indira Gandhi Co-operative Hospital, Kadavanthra, Kochi."
+  },
+  "hero": {
+    "crumbs": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      },
+      {
+        "label": "Careers",
+        "href": "/careers"
+      }
+    ],
+    "title": {
+      "before": "Build your career where",
+      "accent": "patients come first",
+      "after": "."
+    },
+    "lead": "Doctors, nurses, technicians and support staff: join a co-operative hospital that has served Kochi for over fifty years."
+  },
+  "openings": {
+    "eyebrow": "Current openings",
+    "heading": "Open positions",
+    "countLabel": "{count} open positions",
+    "countLabelOne": "{count} open position",
+    "applyLabel": "Apply now",
+    "detailsLabel": "View details",
+    "lastDateLabel": "Apply by {date}",
+    "emptyHeading": "No openings right now",
+    "emptyText": "We are not hiring for specific roles at the moment, but we keep good applications on file. Send us your CV and we will be in touch when a suitable role opens."
+  },
+  "cv": {
+    "heading": "Don't see the right role?",
+    "text": "Send your CV with the role you are interested in. Our HR team reviews every application.",
+    "buttonLabel": "Send your CV",
+    "fallbackText": "Call us on {phone} to ask about openings."
+  }
+}
