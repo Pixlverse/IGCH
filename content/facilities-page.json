@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Facilities & Services · Indira Gandhi Co-operative Hospital, Kochi",
-    "description": "5G Smart Ambulance, 24/7 emergency, ICU, operation theatres, blood bank, dialysis, cashless insurance & TPA and an on-campus canteen at IGCH, Kochi."
+    "description": "5G Smart Ambulance, 24/7 emergency, ICU, operation theatres, blood storage unit, dialysis, cashless insurance & TPA and an on-campus canteen at IGCH, Kochi."
   },
   "hero": {
     "crumbs": [
@@ -9,7 +9,7 @@
       { "label": "Facilities & Services", "href": "/facilities" }
     ],
     "title": { "before": "Facilities &", "accent": "Services", "after": "" },
-    "lead": "Everything that makes your stay and treatment easier — from emergency response to cashless insurance and a hot meal.",
+    "lead": "Everything that makes your stay and treatment easier - from emergency response to cashless insurance and a hot meal.",
     "links": [
       { "label": "5G Ambulance", "href": "#ambulance" },
       { "label": "Emergency · ICU · OT", "href": "#emergency" },
@@ -22,13 +22,13 @@
   "ambulance": {
     "tag": "A first for Kerala",
     "heading": "5G Smart Ambulance",
-    "body": "Patient vitals and data reach our emergency team while the ambulance is still on the road, so treatment can begin before arrival. [Features and service area — to confirm.]",
+    "body": "Patient vitals and data reach our emergency team while the ambulance is still on the road, so treatment can begin before arrival. [Features and service area - to confirm.]",
     "link": { "label": "Learn more", "href": "#" }
   },
   "critical": {
     "head": {
       "eyebrow": "Always ready",
-      "heading": "Emergency, ICU, theatres and blood bank — all day, every day.",
+      "heading": "Emergency, ICU, theatres and blood storage unit - all day, every day.",
       "wide": false,
       "link": { "label": "", "href": "#" }
     },
@@ -53,7 +53,7 @@
       },
       {
         "tone": "yellow",
-        "title": "Blood Bank",
+        "title": "Blood Storage Unit",
         "body": "Safe blood and components available when needed.",
         "link": { "label": "Know more →", "href": "#" }
       }
@@ -62,7 +62,7 @@
   "dialysis": {
     "tag": "Dialysis Unit",
     "heading": "Dialysis, with a co-operative's heart.",
-    "body": "Our dialysis unit has completed thousands of sessions, including 7,000 provided free to patients in need. [Unit capacity and timings — to confirm.]",
+    "body": "Our dialysis unit has completed thousands of sessions, including 7,000 provided free to patients in need. [Unit capacity and timings - to confirm.]",
     "ctas": [
       { "label": "Support the dialysis fund", "href": "#", "style": "primary" },
       { "label": "Dialysis enquiries", "href": "#", "style": "white" }
@@ -80,7 +80,7 @@
         "title": "Check eligibility",
         "body": "Confirm your policy or scheme covers the treatment."
       },
-      { "title": "Share documents", "body": "[Documents to carry — to confirm.]" },
+      { "title": "Share documents", "body": "[Documents to carry - to confirm.]" },
       {
         "title": "Pre-authorisation",
         "body": "Our desk coordinates approval with your insurer or TPA."
@@ -94,7 +94,7 @@
   "canteen": {
     "tag": "Canteen",
     "heading": "A warm meal for patients and families.",
-    "body": "Fresh, affordable food on campus for patients, bystanders and visitors. [Menu highlights — to confirm.]",
+    "body": "Fresh, affordable food on campus for patients, bystanders and visitors. [Menu highlights - to confirm.]",
     "timings": { "eyebrow": "Timings", "title": "[Opening hours]", "note": "[Location on campus]" }
   },
   "cta": {

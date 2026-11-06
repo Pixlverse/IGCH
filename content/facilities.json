@@ -17,7 +17,7 @@
     {
       "icon": "pulse",
       "tone": "red",
-      "title": "ICU, OT & Blood Bank",
+      "title": "ICU, OT & Blood Storage Unit",
       "body": "Running 24/7 for emergencies and surgery.",
       "href": "#"
     },
@@ -25,7 +25,7 @@
       "icon": "heart",
       "tone": "blue",
       "title": "Dialysis Unit",
-      "body": "15,000+ sessions completed — 7,000 of them free.",
+      "body": "15,000+ sessions completed - 7,000 of them free.",
       "href": "#"
     }
   ]

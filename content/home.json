@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Indira Gandhi Co-operative Hospital · Kadavanthra, Kochi",
-    "description": "Cardiology, cancer care for adults and children, dialysis and 24/7 emergency in Kadavanthra, Kochi — a co-operative hospital serving Kochi for 50+ years."
+    "description": "Cardiology, cancer care for adults and children, dialysis and 24/7 emergency in Kadavanthra, Kochi - a co-operative hospital serving Kochi for 50+ years."
   },
   "hero": {
     "tag": "Kochi's Very Own Hospital. 50+ Years.",
@@ -43,7 +43,7 @@
       { "value": "15,000+", "caption": "haemodialysis sessions completed", "style": "plain" },
       {
         "value": "25+",
-        "caption": "specialities, with 24/7 ICU, operation theatre and blood bank facilities",
+        "caption": "specialities, with 24/7 ICU, operation theatre and blood storage unit facilities",
         "style": "lime"
       }
     ]
@@ -112,7 +112,7 @@
   "walkthrough": {
     "tag": { "label": "IGCH Walk-through", "tone": "blue" },
     "title": "See the hospital before you arrive.",
-    "body": "A short guided tour of reception, OP, wards and the cardiac and cancer centres — so a first visit feels familiar.",
+    "body": "A short guided tour of reception, OP, wards and the cardiac and cancer centres - so a first visit feels familiar.",
     "cta": { "label": "Start the walk-through", "href": "#" },
     "playLabel": "Start the walk-through",
     "image": {
@@ -131,7 +131,7 @@
     },
     "ambulance": {
       "tag": { "label": "5G Smart Ambulance · Emergency 24/7", "tone": "dark" },
-      "heading": "Kerala's first 5G Smart Ambulance — care begins before you reach us.",
+      "heading": "Kerala's first 5G Smart Ambulance - care begins before you reach us.",
       "callLabel": "Call {phone}",
       "image": {
         "src": "/images/ambulance.jpg",

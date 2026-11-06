@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Specialities · Indira Gandhi Co-operative Hospital, Kochi",
-    "description": "Over 25 specialities under one roof — from heart and cancer care to children's health and emergency medicine. Find the right specialist in three steps."
+    "description": "Over 25 specialities under one roof - from heart and cancer care to children's health and emergency medicine. Find the right specialist in three steps."
   },
   "hero": {
     "crumbs": [
@@ -19,12 +19,12 @@
       "accent": "specialist",
       "after": ", in three steps."
     },
-    "lead": "Over 25 specialities under one roof — from heart and cancer care to children's health and emergency medicine.",
+    "lead": "Over 25 specialities under one roof - from heart and cancer care to children's health and emergency medicine.",
     "search": {
       "label": "What do you need help with?",
       "placeholder": "A condition, treatment or doctor",
       "buttonLabel": "Search",
-      "emptyText": "No department matches that yet — call us and we'll guide you to the right one."
+      "emptyText": "No department matches that yet - call us and we'll guide you to the right one."
     },
     "chips": [
       {
@@ -115,8 +115,8 @@
           "label": "Oncology",
           "tone": "purple"
         },
-        "title": "Cancer care led by Dr. V.P. Gangadharan",
-        "body": "Medical and surgical oncology — diagnosis, chemotherapy and surgery coordinated by one team.",
+        "title": "Cancer care led by Dr.\u00a0V.P.\u00a0Gangadharan",
+        "body": "Medical and surgical oncology - diagnosis, chemotherapy and surgery coordinated by one team.",
         "link": {
           "label": "Meet the oncology team",
           "href": "/specialities/super-specialities"
@@ -164,13 +164,13 @@
       },
       {
         "question": "Can I see a doctor without a referral?",
-        "answer": ["[Referral and walk-in policy — to confirm.]"],
+        "answer": ["[Referral and walk-in policy - to confirm.]"],
         "open": false
       },
       {
         "question": "Do you treat children with cancer?",
         "answer": [
-          "Yes — through our Paediatric Oncology centre of excellence. [Details to confirm.]"
+          "Yes - through our Paediatric Oncology centre of excellence. [Details to confirm.]"
         ],
         "open": false
       }

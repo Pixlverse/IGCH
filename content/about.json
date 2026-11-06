@@ -20,7 +20,7 @@
       "accent": "caring for Kochi",
       "after": ", together."
     },
-    "lead": "Indira Gandhi Co-operative Hospital is owned by the community it serves — a hospital built on co-operation, now bringing advanced specialist care to Kadavanthra and beyond.",
+    "lead": "Indira Gandhi Co-operative Hospital is owned by the community it serves - a hospital built on co-operation, now bringing advanced specialist care to Kadavanthra and beyond.",
     "links": [
       {
         "label": "Our story",
@@ -60,7 +60,7 @@
       },
       {
         "value": "24/7",
-        "caption": "emergency, ICU, OT and blood bank",
+        "caption": "emergency, ICU, OT and blood storage unit",
         "style": "plain"
       },
       {
@@ -82,7 +82,7 @@
     },
     "paragraphs": [
       "IGCH began as a co-operative effort: citizens of Kochi pooling together so that good medical care would be within everyone's reach. Five decades on, that idea still shapes how we work.",
-      "[Founding story, the people behind it and the early years — to be supplied by IGCH.]"
+      "[Founding story, the people behind it and the early years - to be supplied by IGCH.]"
     ],
     "society": {
       "name": "Cochin Co-operative Hospitals Society Ltd.",
@@ -159,17 +159,17 @@
     },
     "items": [
       {
-        "quote": "[Message from President — to be supplied.]",
+        "quote": "[Message from President - to be supplied.]",
         "name": "[Name]",
         "role": "President"
       },
       {
-        "quote": "[Message from Secretary — to be supplied.]",
+        "quote": "[Message from Secretary - to be supplied.]",
         "name": "[Name]",
         "role": "Secretary"
       },
       {
-        "quote": "[Message from Medical Superintendent — to be supplied.]",
+        "quote": "[Message from Medical Superintendent - to be supplied.]",
         "name": "[Name]",
         "role": "Medical Superintendent"
       }
@@ -220,7 +220,7 @@
   "careers": {
     "tag": "Careers",
     "heading": "Build your career where patients come first.",
-    "body": "Doctors, nurses, technicians and support staff — see our current openings or send us your CV.",
+    "body": "Doctors, nurses, technicians and support staff - see our current openings or send us your CV.",
     "ctas": [
       {
         "label": "View openings",

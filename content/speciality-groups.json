@@ -4,11 +4,11 @@
       "slug": "super-specialities",
       "seo": {
         "title": "Super Specialities · Indira Gandhi Co-operative Hospital, Kochi",
-        "description": "Advanced, focused care for complex conditions — heart, cancer, brain, kidney and more — delivered by specialist teams under one roof in Kadavanthra, Kochi."
+        "description": "Advanced, focused care for complex conditions - heart, cancer, brain, kidney and more - delivered by specialist teams under one roof in Kadavanthra, Kochi."
       },
       "hero": {
         "title": { "before": "Super", "accent": "Specialities", "after": "" },
-        "lead": "Advanced, focused care for complex conditions — heart, cancer, brain, kidney and more — delivered by specialist teams under one roof."
+        "lead": "Advanced, focused care for complex conditions - heart, cancer, brain, kidney and more - delivered by specialist teams under one roof."
       },
       "count": { "label": "super speciality departments", "tone": "lime" },
       "aside": { "kind": "emergency", "eyebrow": "Emergency · 24 × 7", "text": "" },
@@ -51,17 +51,17 @@
         "items": [
           {
             "question": "Planning an out-of-town visit?",
-            "answer": ["[Visit planning guidance — to confirm.]"],
+            "answer": ["[Visit planning guidance - to confirm.]"],
             "open": true
           },
           {
             "question": "Is cashless treatment available?",
-            "answer": ["[Insurance and TPA details — to confirm.]"],
+            "answer": ["[Insurance and TPA details - to confirm.]"],
             "open": false
           },
           {
             "question": "How do I book a super speciality consult?",
-            "answer": ["[Booking steps — to confirm.]"],
+            "answer": ["[Booking steps - to confirm.]"],
             "open": false
           }
         ]
@@ -72,17 +72,17 @@
       "slug": "broad-specialities",
       "seo": {
         "title": "Broad Specialities · Indira Gandhi Co-operative Hospital, Kochi",
-        "description": "Everyday and family healthcare — medicine, surgery, women's and children's health, bones, eyes, skin and more — with traditional Ayurveda alongside."
+        "description": "Everyday and family healthcare - medicine, surgery, women's and children's health, bones, eyes, skin and more - with traditional Ayurveda alongside."
       },
       "hero": {
         "title": { "before": "Broad", "accent": "Specialities", "after": "" },
-        "lead": "Everyday and family healthcare — medicine, surgery, women's and children's health, bones, eyes, skin and more — with traditional Ayurveda alongside."
+        "lead": "Everyday and family healthcare - medicine, surgery, women's and children's health, bones, eyes, skin and more - with traditional Ayurveda alongside."
       },
       "count": { "label": "broad speciality departments", "tone": "cream" },
       "aside": {
         "kind": "info",
         "eyebrow": "OPD timings",
-        "text": "[Morning and afternoon OPD — to confirm]"
+        "text": "[Morning and afternoon OPD - to confirm]"
       },
       "departments": {
         "eyebrow": "Step 2 · Pick a department",
@@ -92,7 +92,7 @@
       "camp": {
         "tag": "Co-operative care",
         "heading": "Weekly camps with free or subsidised consultations.",
-        "body": "[Camp days, departments and how to register — to be supplied by IGCH.]",
+        "body": "[Camp days, departments and how to register - to be supplied by IGCH.]",
         "cta": { "label": "See camp schedule", "href": "#" },
         "illustration": "family"
       },
@@ -100,8 +100,8 @@
         "eyebrow": "Plan your visit",
         "heading": "OPD timings & booking.",
         "slots": [
-          { "title": "Morning OPD", "text": "[Timings — to confirm]" },
-          { "title": "Afternoon OPD", "text": "[Timings — to confirm]" }
+          { "title": "Morning OPD", "text": "[Timings - to confirm]" },
+          { "title": "Afternoon OPD", "text": "[Timings - to confirm]" }
         ],
         "bookingTitle": "Book your consultation"
       },
@@ -121,18 +121,18 @@
       "slug": "clinical-support",
       "seo": {
         "title": "Clinical Support · Indira Gandhi Co-operative Hospital, Kochi",
-        "description": "The teams and technology behind every diagnosis, operation and recovery — emergency medicine, imaging, laboratory, anaesthesia, physiotherapy and more."
+        "description": "The teams and technology behind every diagnosis, operation and recovery - emergency medicine, imaging, laboratory, anaesthesia, physiotherapy and more."
       },
       "hero": {
         "title": { "before": "Clinical", "accent": "Support", "after": "" },
-        "lead": "The teams and technology behind every diagnosis, operation and recovery — working around the clock so your doctor can do their best."
+        "lead": "The teams and technology behind every diagnosis, operation and recovery - working around the clock so your doctor can do their best."
       },
       "count": { "label": "clinical support departments", "tone": "sky" },
       "aside": { "kind": "none", "eyebrow": "", "text": "" },
       "emergency": {
         "tag": "Emergency Medicine · 24 × 7",
         "heading": "Emergency care, any hour of any day.",
-        "body": "Our emergency team is ready round the clock, backed by ICU, operation theatres and a blood bank — and Kerala's first 5G Smart Ambulance."
+        "body": "Our emergency team is ready round the clock, backed by ICU, operation theatres and a blood storage unit - and Kerala's first 5G Smart Ambulance."
       },
       "departments": {
         "eyebrow": "Step 2 · Pick a department",
