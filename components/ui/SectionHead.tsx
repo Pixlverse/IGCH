@@ -10,6 +10,7 @@ export function SectionHead({ head }: { head: SectionHeadContent }) {
       <div>
         {head.eyebrow && <p className="eyebrow">{head.eyebrow}</p>}
         <h2 className={clsx('h2', head.wide && 'h2--wide')}>{head.heading}</h2>
+        {head.lead && <p className="section-lead">{head.lead}</p>}
       </div>
       {head.link.label && (
         <SmartLink href={head.link.href} className="pill-link">

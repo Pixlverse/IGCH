@@ -7,6 +7,7 @@ import {
 } from '@/components/about/AboutSections'
 import { Illustration } from '@/components/illustrations/Illustration'
 import { RevealOnScroll } from '@/components/motion/RevealOnScroll'
+import { InfoSections } from '@/components/page/InfoSections'
 import { PageHero } from '@/components/page/PageHero'
 import { PillLinks } from '@/components/page/PillLinks'
 import { Doctors } from '@/components/sections/Doctors'
@@ -49,7 +50,10 @@ export default async function AboutPage() {
       >
         <PillLinks links={hero.links} className="page-hero__links" />
       </PageHero>
-      <Stats stats={about.stats} className="stats--4" />
+      <Stats
+        stats={about.stats}
+        className={about.stats.items.length === 5 ? 'stats--5' : 'stats--4'}
+      />
       <Story story={about.story} />
       <CoopBanner coop={about.coop} />
       <Leadership leadership={about.leadership} />
@@ -59,6 +63,7 @@ export default async function AboutPage() {
         doctors={{ items: doctors.items.filter((doctor) => doctor.featured) }}
       />
       <Achievements achievements={about.achievements} />
+      <InfoSections sections={about.sections} site={site} />
       <Careers careers={about.careers} nursing={about.nursing} />
       <RevealOnScroll />
     </main>

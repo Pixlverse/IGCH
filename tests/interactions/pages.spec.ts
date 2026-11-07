@@ -45,7 +45,7 @@ test('header nav marks the current section and opens dropdowns', async ({ page }
 
 test('speciality search lists matching departments', async ({ page }) => {
   await open(page, '/specialities')
-  await page.locator('#speciality-q').fill('kidney')
+  await page.locator('#speciality-q').fill('dialysis')
   await page.locator('#speciality-q').press('Enter')
   const result = page.locator('.search-results a')
   await expect(result).toHaveCount(1)
@@ -95,15 +95,15 @@ test('wellness library filters, searches and pages', async ({ page }) => {
   const cards = page.locator('.article-grid .article-card')
   await expect(cards).toHaveCount(9)
   await page.locator('.pagination').getByRole('button', { name: '2' }).click()
-  await expect(cards).toHaveCount(1)
-  await page.getByRole('button', { name: 'Heart', exact: true }).click()
+  await expect(cards).toHaveCount(7)
+  await page.getByRole('button', { name: 'Heart Health', exact: true }).click()
   await expect(cards).toHaveCount(2)
   await expect(page.locator('.library-feature')).toHaveCount(0)
   await expect(page.locator('.pagination')).toHaveCount(0)
-  await page.getByRole('button', { name: 'All', exact: true }).click()
+  await page.getByRole('button', { name: 'All Articles', exact: true }).click()
   await page.locator('#library-q').fill('dialysis')
   await page.locator('#library-q').press('Enter')
-  await expect(cards.first()).toContainText('Living well on dialysis')
+  await expect(cards.first()).toContainText('Know About Dialysis')
 })
 
 test('mobile menu closes after navigating to another page', async ({ page }) => {

@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Wellness Library · Indira Gandhi Co-operative Hospital, Kochi",
-    "description": "Clear, trustworthy health guidance from the doctors of IGCH - written for patients and families."
+    "description": "Explore health articles and medical guides from Indira Gandhi Co-operative Hospital (IGCH), Kochi. Find information about common symptoms, health conditions, treatments and preventive care, with medical input from our specialists."
   },
   "hero": {
     "crumbs": [
@@ -19,61 +19,75 @@
       "accent": "Library",
       "after": ""
     },
-    "lead": "Clear, trustworthy health guidance from the doctors of IGCH - written for patients and families.",
+    "lead": "Health information for you and your family. Explore health articles and medical guides from Indira Gandhi Co-operative Hospital (IGCH), Kochi. Find information about common symptoms, health conditions, treatments and preventive care, with medical input from our specialists.",
     "search": {
       "label": "Search the library",
-      "placeholder": "A condition, symptom or treatment",
+      "placeholder": "Search a health topic, symptom or condition.",
       "buttonLabel": "Search"
     },
-    "allLabel": "All",
+    "allLabel": "All Articles",
     "filterLabel": "Filter articles by topic"
   },
   "categories": [
     {
       "key": "heart",
-      "label": "Heart",
+      "label": "Heart Health",
       "tone": "red",
       "illustration": "heart",
       "accent": "red"
     },
     {
       "key": "cancer",
-      "label": "Cancer care",
+      "label": "Cancer Care",
       "tone": "purple",
       "illustration": "oncology",
       "accent": "purple"
     },
     {
       "key": "children",
-      "label": "Children's health",
+      "label": "Children's Health",
       "tone": "yellow",
       "illustration": "paediatric",
       "accent": "brown"
     },
     {
       "key": "kidney",
-      "label": "Kidney & dialysis",
+      "label": "Kidney Health",
       "tone": "blue",
       "illustration": "kidney",
       "accent": "teal"
     },
     {
       "key": "mental",
-      "label": "Mental health",
+      "label": "Mental Health",
       "tone": "purple",
       "illustration": "consult",
       "accent": "purple"
     },
     {
       "key": "general",
-      "label": "General health",
+      "label": "General Health",
       "tone": "green",
       "illustration": "consult",
       "accent": "teal"
+    },
+    {
+      "key": "women",
+      "label": "Women's Health",
+      "tone": "red",
+      "illustration": "family",
+      "accent": "red"
+    },
+    {
+      "key": "skin",
+      "label": "Skin Health",
+      "tone": "yellow",
+      "illustration": "consult",
+      "accent": "brown"
     }
   ],
-  "featuredLinkLabel": "Read article →",
-  "latestHeading": "Latest articles",
+  "featuredLinkLabel": "Read the article →",
+  "latestHeading": "Recently published",
   "emptyText": "No articles match your search yet.",
   "pageSize": 9,
   "quickCheck": {
@@ -99,6 +113,150 @@
   },
   "askDoctor": {
     "heading": "Still have a question? Ask a doctor in person.",
-    "note": "Articles are for guidance only and are not a substitute for medical advice."
-  }
+    "note": "Health information published here is intended to help patients and families understand common health conditions and treatments. It does not replace a consultation with a medical professional."
+  },
+  "sections": [
+    {
+      "id": "topics",
+      "heading": "Topic-based sections",
+      "paragraphs": [
+        "Explore the latest health articles, medical guides and specialist-reviewed information from IGCH."
+      ],
+      "cards": [
+        {
+          "title": "Heart Health",
+          "paragraphs": [
+            "Understand heart-related symptoms, conditions, risk factors and available treatment options."
+          ]
+        },
+        {
+          "title": "Cancer Care",
+          "paragraphs": [
+            "Learn about cancer screening, early warning signs, diagnosis, treatment and patient support."
+          ]
+        },
+        {
+          "title": "Children's Health",
+          "paragraphs": [
+            "Find information about childhood illnesses, newborn health, vaccinations and common concerns parents may have."
+          ]
+        },
+        {
+          "title": "Kidney Health",
+          "paragraphs": [
+            "Read about kidney disease, its early signs, diagnosis, treatment and dialysis."
+          ]
+        },
+        {
+          "title": "Women's Health",
+          "paragraphs": [
+            "Explore information on menstrual health, menopause, thyroid conditions and other women's health concerns."
+          ]
+        },
+        {
+          "title": "General Health",
+          "paragraphs": [
+            "Learn more about diabetes, blood pressure, varicose veins and other common health conditions."
+          ]
+        },
+        {
+          "title": "Mental Health",
+          "paragraphs": [
+            "Read about depression, emotional wellbeing, stress and mental health concerns affecting teenagers and adults."
+          ]
+        },
+        {
+          "title": "Skin Health",
+          "paragraphs": [
+            "Understand common skin conditions, allergies, symptoms and available treatment options."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "screening",
+      "tone": "dark",
+      "eyebrow": "Notice",
+      "heading": "Free breast cancer screening every Thursday at IGCH.",
+      "paragraphs": ["[Who can attend, times, how to register.]"],
+      "ctas": [
+        {
+          "label": "Learn about free screening",
+          "href": "#",
+          "style": "primary"
+        }
+      ]
+    },
+    {
+      "id": "find-a-specialist",
+      "heading": "Looking for a specialist in Kochi?",
+      "paragraphs": [
+        "If you have a health concern and need medical advice, you can explore the relevant speciality at Indira Gandhi Co-operative Hospital, Kadavanthra, Kochi."
+      ],
+      "cards": [
+        {
+          "title": "Dermatology",
+          "paragraphs": ["Consult a dermatologist in Kochi for skin, hair and nail conditions."]
+        },
+        {
+          "title": "Psychiatry",
+          "paragraphs": ["Find psychiatric care and support for mental health concerns."]
+        },
+        {
+          "title": "Heart Care",
+          "paragraphs": ["Explore cardiology services and specialist consultations."]
+        },
+        {
+          "title": "Obstetrics & Gynaecology",
+          "paragraphs": ["Find gynaecology care and women's health services."]
+        },
+        {
+          "title": "Cancer Care",
+          "paragraphs": ["Learn about cancer diagnosis and treatment options."]
+        },
+        {
+          "title": "General Medicine",
+          "paragraphs": [
+            "Consult a general physician in Kochi for common illnesses and health concerns."
+          ]
+        },
+        {
+          "title": "Dialysis Unit",
+          "paragraphs": ["Learn about dialysis services at our dialysis centre in Kochi."]
+        },
+        {
+          "title": "Nephrology",
+          "paragraphs": ["Explore kidney care and consultations with a kidney specialist in Kochi."]
+        },
+        {
+          "title": "Paediatrics",
+          "paragraphs": ["Consult a paediatrician in Kochi for your child's healthcare needs."]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Find a Doctor",
+          "href": "/specialities#find-a-doctor",
+          "style": "primary"
+        },
+        {
+          "label": "Explore Specialities",
+          "href": "/specialities",
+          "style": "light"
+        },
+        {
+          "label": "Book an Appointment",
+          "href": "booking",
+          "style": "light"
+        }
+      ]
+    },
+    {
+      "id": "disclaimer",
+      "heading": "Medical Information Disclaimer",
+      "paragraphs": [
+        "The health information published in the Wellness Library is intended to help patients and families understand common health conditions, symptoms and treatments. It does not replace professional medical advice, diagnosis or treatment. Always consult a qualified healthcare professional about your individual health concerns."
+      ]
+    }
+  ]
 }

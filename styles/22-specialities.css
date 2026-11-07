@@ -212,7 +212,7 @@
   color: var(--white);
 }
 .how .eyebrow { color: var(--lime); }
-.how__steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap); margin-top: 28px; }
+.how__steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--gap); margin-top: 28px; }
 .how__steps li { padding: 24px 26px; border-radius: var(--radius); background: #1c3530; }
 .how__steps h3 { font-size: 18px; font-weight: 800; color: var(--lime); margin-bottom: 8px; }
 .how__steps p { font-size: 14.5px; line-height: 1.5; color: rgba(255,255,255,.82); }
@@ -246,3 +246,6 @@
   .finder__form { grid-template-columns: 1fr; }
   .finder, .how { padding: 32px 24px; }
 }
+
+.how__lead { max-width: 760px; margin-top: 12px; font-size: 16px; line-height: 1.55; color: rgba(255,255,255,.82); }
+.how__note { margin-top: 24px; }

@@ -1,6 +1,7 @@
 /* ---------- About ---------- */
 
 .stats--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.stats--5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 
 .story {
   display: grid;
@@ -49,18 +50,22 @@
 .timeline h3 { font-size: 16.5px; font-weight: 700; margin-bottom: 4px; }
 .timeline p { font-size: 14.5px; line-height: 1.5; color: rgba(255,255,255,.75); }
 
-.leaders { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap); }
+.leaders { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--gap); align-items: start; }
 .leader {
   margin: 0;
   padding: 10px 10px 26px;
   border-radius: var(--radius);
   background: var(--white);
 }
-.leader__art { aspect-ratio: 4 / 3; border-radius: 14px; overflow: hidden; }
+.leader__art { aspect-ratio: 4 / 3; max-height: 320px; width: 100%; border-radius: 14px; overflow: hidden; }
 .leader blockquote { margin: 22px 14px 18px; font-size: 16.5px; line-height: 1.4; font-weight: 600; }
 .leader figcaption { display: grid; gap: 2px; margin: 0 14px; }
 .leader figcaption strong { font-size: 15px; }
 .leader figcaption span { font-size: 13.5px; color: var(--muted); }
+.leader__more { margin: 18px 14px 0; }
+.leader__more summary { cursor: pointer; font-weight: 700; font-size: 14.5px; }
+.leader__more summary:hover { color: var(--green); }
+.leader__letter { display: grid; gap: 12px; margin-top: 14px; font-size: 14.5px; line-height: 1.6; color: var(--ink-2); }
 
 .feats {
   display: grid;
@@ -117,8 +122,12 @@
 .careers__link { margin-top: auto; padding-top: 16px; font-weight: 700; }
 .careers__nursing:hover .careers__link { color: var(--green); }
 
+@media (max-width: 1180px) {
+  .stats--5 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
 @media (max-width: 960px) {
-  .stats--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stats--4, .stats--5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .story, .careers { grid-template-columns: 1fr; }
   .leaders { grid-template-columns: 1fr 1fr; }
   .feats { grid-template-columns: 1fr 1fr; }
@@ -127,7 +136,7 @@
 }
 
 @media (max-width: 640px) {
-  .stats--4, .leaders, .feats { grid-template-columns: 1fr; }
+  .stats--4, .stats--5, .leaders, .feats { grid-template-columns: 1fr; }
   .story__text, .timeline { padding: 28px 24px; }
   .timeline li { grid-template-columns: 1fr; gap: 6px; }
   .careers__main { padding: 36px 24px; }

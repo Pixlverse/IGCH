@@ -88,6 +88,16 @@ export function Leadership({ leadership }: { leadership: AboutPage['leadership']
               <strong>{leader.name}</strong>
               <span>{leader.role}</span>
             </figcaption>
+            {leader.message.length > 0 && (
+              <details className="leader__more">
+                <summary>{leader.moreLabel || 'Read full message'}</summary>
+                <div className="leader__letter">
+                  {leader.message.map((paragraph, j) => (
+                    <p key={j}>{paragraph}</p>
+                  ))}
+                </div>
+              </details>
+            )}
           </figure>
         ))}
       </div>

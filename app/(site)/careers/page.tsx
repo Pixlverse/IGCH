@@ -1,4 +1,5 @@
 import { RevealOnScroll } from '@/components/motion/RevealOnScroll'
+import { InfoSections } from '@/components/page/InfoSections'
 import { PageHero } from '@/components/page/PageHero'
 import { Button } from '@/components/ui/Button'
 import { getCareersPage, getJobs, getSiteSettings } from '@/lib/content'
@@ -44,6 +45,8 @@ export default async function CareersPage() {
           )
         }
       />
+
+      <InfoSections sections={page.intro} site={site} />
 
       <section className="section" id="openings">
         <div className="section-head" data-reveal="">

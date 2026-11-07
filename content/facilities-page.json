@@ -1,104 +1,343 @@
 {
   "seo": {
     "title": "Facilities & Services · Indira Gandhi Co-operative Hospital, Kochi",
-    "description": "5G Smart Ambulance, 24/7 emergency, ICU, operation theatres, blood storage unit, dialysis, cashless insurance & TPA and an on-campus canteen at IGCH, Kochi."
+    "description": "5G Smart Ambulance, 24/7 emergency, ICU, operation theatres, blood bank, dialysis, diagnostics, pharmacy, insurance & TPA support and an on-campus canteen at IGCH, Kochi."
   },
   "hero": {
     "crumbs": [
-      { "label": "Home", "href": "/" },
-      { "label": "Facilities & Services", "href": "/facilities" }
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Facilities & Services",
+        "href": "/facilities"
+      }
     ],
-    "title": { "before": "Facilities &", "accent": "Services", "after": "" },
-    "lead": "Everything that makes your stay and treatment easier - from emergency response to cashless insurance and a hot meal.",
+    "title": {
+      "before": "Facilities &",
+      "accent": "Services",
+      "after": ""
+    },
+    "lead": "Along with medical and surgical specialities, the hospital offers a range of facilities to support patients through emergency care, diagnosis, treatment and recovery.",
     "links": [
-      { "label": "5G Ambulance", "href": "#ambulance" },
-      { "label": "Emergency · ICU · OT", "href": "#emergency" },
-      { "label": "Dialysis", "href": "#dialysis" },
-      { "label": "Insurance & TPA", "href": "#insurance" },
-      { "label": "Canteen", "href": "#canteen" }
+      {
+        "label": "5G Ambulance",
+        "href": "#ambulance"
+      },
+      {
+        "label": "Emergency · ICU · OT",
+        "href": "#emergency"
+      },
+      {
+        "label": "Dialysis",
+        "href": "#dialysis"
+      },
+      {
+        "label": "Diagnostics",
+        "href": "#diagnostics"
+      },
+      {
+        "label": "Pharmacy",
+        "href": "#pharmacy"
+      },
+      {
+        "label": "Insurance & TPA",
+        "href": "#insurance"
+      },
+      {
+        "label": "Canteen",
+        "href": "#canteen"
+      }
     ],
     "illustration": "building"
   },
   "ambulance": {
     "tag": "A first for Kerala",
     "heading": "5G Smart Ambulance",
-    "body": "Patient vitals and data reach our emergency team while the ambulance is still on the road, so treatment can begin before arrival. [Features and service area - to confirm.]",
-    "link": { "label": "Learn more", "href": "#" }
+    "subheading": "Emergency care, even before reaching the hospital.",
+    "body": "IGCH's 5G Smart Ambulance connects patients with the hospital's emergency team while they are still on the road. Patient vitals and medical information can be shared during transit, helping the team prepare for the patient's arrival.",
+    "featuresLabel": "Key features",
+    "features": [
+      "Real-time patient vital monitoring",
+      "Live video communication",
+      "Remote medical assessment",
+      "Other verified onboard emergency equipment"
+    ],
+    "facts": [
+      {
+        "label": "Service area",
+        "value": "[Confirm]"
+      },
+      {
+        "label": "Ambulance booking",
+        "value": "[Confirm]"
+      }
+    ],
+    "link": {
+      "label": "",
+      "href": "#"
+    }
   },
   "critical": {
     "head": {
       "eyebrow": "Always ready",
-      "heading": "Emergency, ICU, theatres and blood storage unit - all day, every day.",
+      "heading": "Emergency, ICU, theatres and blood bank - all day, every day.",
       "wide": false,
-      "link": { "label": "", "href": "#" }
+      "link": {
+        "label": "",
+        "href": "#"
+      }
     },
     "items": [
       {
         "tone": "red",
-        "title": "Emergency 24 × 7",
-        "body": "A dedicated emergency team, open every hour of every day.",
-        "link": { "label": "Know more →", "href": "/specialities/clinical-support" }
+        "title": "Emergency & Critical Care",
+        "subtitle": "24-hour emergency care in Kochi.",
+        "body": "IGCH's Emergency Medicine department provides medical attention to patients requiring urgent assessment and treatment. The emergency team is available round the clock.",
+        "note": "Emergency helpline: 0484 294 1600",
+        "link": {
+          "label": "Know more →",
+          "href": "/specialities/clinical-support"
+        }
       },
       {
         "tone": "green",
-        "title": "Intensive Care (ICU)",
-        "body": "Round-the-clock monitoring for critically ill patients.",
-        "link": { "label": "Know more →", "href": "#" }
+        "title": "Intensive Care Unit (ICU)",
+        "subtitle": "Close monitoring and specialised care for critically ill patients.",
+        "body": "The ICU provides continuous monitoring and medical support for patients who require intensive care. The critical care team manages patients who need close observation and specialised treatment.",
+        "note": "[ICU types, bed capacity and available facilities to be confirmed by the hospital.]",
+        "link": {
+          "label": "Know more →",
+          "href": "#"
+        }
       },
       {
         "tone": "purple",
         "title": "Operation Theatres",
-        "body": "Modern theatres supporting every surgical speciality.",
-        "link": { "label": "Know more →", "href": "#" }
+        "subtitle": "Surgical facilities across multiple specialities.",
+        "body": "IGCH's operation theatres support surgical procedures across its medical and surgical departments, including general and laparoscopic surgery, orthopaedics, cardiothoracic and vascular surgery, urology, ENT and surgical oncology.",
+        "note": "[Number of operation theatres, equipment and additional surgical specialities to be confirmed.]",
+        "link": {
+          "label": "Know more →",
+          "href": "#"
+        }
       },
       {
         "tone": "yellow",
-        "title": "Blood Storage Unit",
-        "body": "Safe blood and components available when needed.",
-        "link": { "label": "Know more →", "href": "#" }
+        "title": "Blood Bank",
+        "subtitle": "Blood and blood components for patient care.",
+        "body": "The hospital's blood bank supports transfusion requirements for emergencies, surgeries and planned treatment.",
+        "note": "[Available blood components, operating hours, licensing details and contact information to be provided.]",
+        "link": {
+          "label": "Contact Blood Bank →",
+          "href": "#"
+        }
       }
     ]
   },
   "dialysis": {
     "tag": "Dialysis Unit",
-    "heading": "Dialysis, with a co-operative's heart.",
-    "body": "Our dialysis unit has completed thousands of sessions, including 7,000 provided free to patients in need. [Unit capacity and timings - to confirm.]",
+    "heading": "Making dialysis care more accessible.",
+    "body": "We provide haemodialysis services for patients with kidney failure. The hospital has also provided more than 7,000 free dialysis sessions to economically disadvantaged patients.",
     "ctas": [
-      { "label": "Support the dialysis fund", "href": "#", "style": "primary" },
-      { "label": "Dialysis enquiries", "href": "#", "style": "white" }
+      {
+        "label": "Explore our dialysis centre in Kochi",
+        "href": "#",
+        "style": "primary"
+      }
     ]
   },
   "insurance": {
     "head": {
       "eyebrow": "Insurance & TPA",
-      "heading": "Cashless treatment, step by step.",
+      "heading": "Insurance & TPA Support",
       "wide": false,
-      "link": { "label": "", "href": "#" }
+      "lead": "Help with insurance approvals and hospital payments. IGCH works with insurance companies and Third-Party Administrators (TPAs) to facilitate cashless treatment for eligible patients. The hospital's insurance desk assists patients and families with pre-authorisation, documentation and insurance-related enquiries.",
+      "link": {
+        "label": "Insurance & Payment Information",
+        "href": "#"
+      }
     },
     "steps": [
       {
         "title": "Check eligibility",
         "body": "Confirm your policy or scheme covers the treatment."
       },
-      { "title": "Share documents", "body": "[Documents to carry - to confirm.]" },
+      {
+        "title": "Share documents",
+        "body": "Health insurance card or CGHS card, as applicable, valid photo ID, previous medical reports and investigation results, and a referral letter (for CGHS patients)."
+      },
       {
         "title": "Pre-authorisation",
         "body": "Our desk coordinates approval with your insurer or TPA."
       },
-      { "title": "Cashless care", "body": "Treatment proceeds, with claims settled directly." }
+      {
+        "title": "Cashless care",
+        "body": "Treatment proceeds, with claims settled directly."
+      }
     ],
     "partnersLabel": "Empanelled insurers & TPAs",
     "partners": ["[Insurer logo]", "[Insurer logo]", "[Insurer logo]"],
-    "badge": "CGHS Empanelled"
+    "badge": "CGHS Empanelled",
+    "note": "Cashless treatment is subject to policy coverage, terms and approval from the insurer or TPA."
   },
   "canteen": {
-    "tag": "Canteen",
-    "heading": "A warm meal for patients and families.",
-    "body": "Fresh, affordable food on campus for patients, bystanders and visitors. [Menu highlights - to confirm.]",
-    "timings": { "eyebrow": "Timings", "title": "[Opening hours]", "note": "[Location on campus]" }
+    "tag": "Canteen & Patient Facilities",
+    "heading": "Food and essential services within the hospital campus.",
+    "body": "The hospital canteen serves meals and refreshments for patients' families, bystanders, visitors and hospital staff.",
+    "timings": {
+      "eyebrow": "Timings",
+      "title": "[Opening hours]",
+      "note": "[Location on campus]"
+    }
   },
   "cta": {
     "heading": "Visiting IGCH? See the full patient & visitor guide.",
-    "link": { "label": "Open the guide", "href": "/#guide" }
-  }
+    "link": {
+      "label": "Open the guide",
+      "href": "/#guide"
+    }
+  },
+  "intro": [
+    {
+      "paragraphs": [
+        "Established in 1971, Indira Gandhi Co-operative Hospital (IGCH) was founded on the belief that quality healthcare should be accessible to everyone, irrespective of wealth.",
+        "Located at Kadavanthra, Kochi, IGCH has grown into a multispeciality hospital serving patients from Kochi, Ernakulam and neighbouring districts of Kerala."
+      ]
+    }
+  ],
+  "services": [
+    {
+      "id": "diagnostics",
+      "heading": "Diagnostic & Imaging Services",
+      "paragraphs": [
+        "Investigations and imaging to support diagnosis.",
+        "IGCH's Radiology and Imaging department, including Interventional Radiology and its Microbiology laboratory, supports doctors across different departments in assessing medical conditions and planning treatment."
+      ],
+      "cards": [
+        {
+          "title": "Services include",
+          "items": [
+            "Radiology and imaging",
+            "Interventional radiology",
+            "Microbiology and laboratory investigations"
+          ],
+          "paragraphs": [],
+          "ctas": []
+        },
+        {
+          "title": "Tests, hours and appointments",
+          "paragraphs": [
+            "[Detailed list of imaging services, laboratory tests, operating hours and appointment requirements to be provided by the hospital.]"
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Radiology and Imaging at IGCH",
+          "href": "/specialities/clinical-support#dept-radiology-imaging",
+          "style": "primary"
+        }
+      ]
+    },
+    {
+      "id": "rehabilitation",
+      "heading": "Rehabilitation & Supportive Care",
+      "paragraphs": [
+        "Care that continues beyond medical treatment.",
+        "Recovery and long-term health management may require support beyond consultations and medication. IGCH offers clinical support services to address patients' physical, nutritional and psychological needs."
+      ],
+      "cards": [
+        {
+          "title": "Physiotherapy",
+          "paragraphs": [
+            "Physiotherapy services support rehabilitation, mobility and recovery following illness, injury or surgery."
+          ]
+        },
+        {
+          "title": "Dietetics",
+          "paragraphs": [
+            "Dietary guidance to help patients manage nutritional requirements in line with their medical conditions and treatment plans."
+          ]
+        },
+        {
+          "title": "Clinical Psychology",
+          "paragraphs": [
+            "Psychological assessment and support for patients who need help managing emotional and psychological concerns."
+          ]
+        },
+        {
+          "title": "Pain & Palliative Care",
+          "paragraphs": [
+            "Support for patients living with serious or long-term illnesses, with attention to pain management, symptom relief and quality of life."
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Explore Clinical Support Services",
+          "href": "/specialities/clinical-support",
+          "style": "primary"
+        }
+      ]
+    },
+    {
+      "id": "pharmacy",
+      "heading": "Pharmacy",
+      "paragraphs": [
+        "The hospital pharmacy serves patients who need prescribed medicines as part of their treatment and ongoing care.",
+        "Patients and their families can approach the pharmacy for information about prescription availability and medicine-related enquiries."
+      ],
+      "cards": [
+        {
+          "title": "Practical information",
+          "facts": [
+            {
+              "label": "Pharmacy location",
+              "value": "[To be provided]"
+            },
+            {
+              "label": "Emergency or after-hours availability",
+              "value": "[To be provided]"
+            },
+            {
+              "label": "IP Service",
+              "value": "[To be provided]"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "more": [
+    {
+      "heading": "Additional facilities",
+      "paragraphs": [
+        "IGCH also provides facilities to support patients and visitors during their hospital visits."
+      ],
+      "cards": [
+        {
+          "title": "Patient Waiting Areas",
+          "paragraphs": ["Waiting spaces for patients' families and visitors."]
+        },
+        {
+          "title": "Parking",
+          "paragraphs": [
+            "Parking arrangements for patients and visitors. Wallet parking is also available."
+          ]
+        },
+        {
+          "title": "Help Desk & Admission Support",
+          "paragraphs": [
+            "Assistance with hospital enquiries, department directions and admission procedures."
+          ]
+        },
+        {
+          "title": "Billing & Payment Assistance",
+          "paragraphs": ["Guidance on billing, payment procedures and related enquiries."]
+        }
+      ]
+    }
+  ]
 }

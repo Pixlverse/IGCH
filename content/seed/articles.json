@@ -1,12 +1,12 @@
 [
   {
     "slug": "chest-pain",
-    "title": "Chest pain: when to worry and when to call",
+    "title": "Chest Pain: When Should You Seek Medical Attention?",
     "category": "heart",
-    "summary": "[Article summary - to be written with the Cardiology team.]",
+    "summary": "Learn about common causes of chest pain, heart attack warning signs that need immediate medical attention and when to consult a cardiologist.",
     "body": [],
     "readTime": "5 min read",
-    "reviewedBy": "Reviewed by [Doctor name], Cardiology",
+    "reviewedBy": "Reviewed by: Dr [Name], Cardiology IGCH Kochi",
     "featured": true,
     "link": "#",
     "order": 1,
@@ -14,7 +14,7 @@
   },
   {
     "slug": "childhood-cancer",
-    "title": "Signs of childhood cancer every parent should know",
+    "title": "Early signs of childhood cancer every parent should know.",
     "category": "children",
     "summary": "",
     "body": [],
@@ -27,7 +27,7 @@
   },
   {
     "slug": "cancer-questions",
-    "title": "Questions to ask after a cancer diagnosis",
+    "title": "What happens after a cancer diagnosis? Understanding your treatment options.",
     "category": "cancer",
     "summary": "",
     "body": [],
@@ -40,7 +40,7 @@
   },
   {
     "slug": "dialysis-living",
-    "title": "Living well on dialysis",
+    "title": "Know About Dialysis",
     "category": "kidney",
     "summary": "",
     "body": [],
@@ -66,7 +66,7 @@
   },
   {
     "slug": "heart-2",
-    "title": "[Article title]",
+    "title": "Heart attack warning signs: Symptoms you should never ignore",
     "category": "heart",
     "summary": "",
     "body": [],
@@ -79,7 +79,7 @@
   },
   {
     "slug": "cancer-2",
-    "title": "[Article title]",
+    "title": "Breast cancer screening: When should you get a mammogram?",
     "category": "cancer",
     "summary": "",
     "body": [],
@@ -105,7 +105,7 @@
   },
   {
     "slug": "kidney-2",
-    "title": "[Article title]",
+    "title": "Early signs of kidney disease: When should you get tested?",
     "category": "kidney",
     "summary": "",
     "body": [],
@@ -118,7 +118,7 @@
   },
   {
     "slug": "blood-sugar",
-    "title": "Everyday habits that help control blood sugar",
+    "title": "Diabetes: What happens when blood sugar remains high?",
     "category": "general",
     "summary": "",
     "body": [],
@@ -127,6 +127,84 @@
     "featured": false,
     "link": "#",
     "order": 10,
+    "published": true
+  },
+  {
+    "slug": "high-blood-pressure",
+    "title": "High blood pressure: Symptoms, risks and when to get checked",
+    "category": "general",
+    "summary": "",
+    "body": [],
+    "readTime": "5 min read",
+    "reviewedBy": "",
+    "featured": false,
+    "link": "#",
+    "order": 11,
+    "published": true
+  },
+  {
+    "slug": "varicose-veins",
+    "title": "Varicose veins: Causes, symptoms and available treatment options",
+    "category": "general",
+    "summary": "",
+    "body": [],
+    "readTime": "5 min read",
+    "reviewedBy": "",
+    "featured": false,
+    "link": "#",
+    "order": 12,
+    "published": true
+  },
+  {
+    "slug": "teen-mental-health",
+    "title": "Mental health in teenagers: Signs parents should not ignore",
+    "category": "mental",
+    "summary": "",
+    "body": [],
+    "readTime": "5 min read",
+    "reviewedBy": "",
+    "featured": false,
+    "link": "#",
+    "order": 13,
+    "published": true
+  },
+  {
+    "slug": "caring-for-depression",
+    "title": "Caring for someone with depression: What family members should know",
+    "category": "mental",
+    "summary": "",
+    "body": [],
+    "readTime": "5 min read",
+    "reviewedBy": "",
+    "featured": false,
+    "link": "#",
+    "order": 14,
+    "published": true
+  },
+  {
+    "slug": "menopause",
+    "title": "Menopause: Symptoms, age and what changes to expect",
+    "category": "women",
+    "summary": "",
+    "body": [],
+    "readTime": "5 min read",
+    "reviewedBy": "",
+    "featured": false,
+    "link": "#",
+    "order": 15,
+    "published": true
+  },
+  {
+    "slug": "thyroid-women",
+    "title": "Thyroid problems in women",
+    "category": "women",
+    "summary": "",
+    "body": [],
+    "readTime": "5 min read",
+    "reviewedBy": "",
+    "featured": false,
+    "link": "#",
+    "order": 16,
     "published": true
   }
 ]

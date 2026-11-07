@@ -2,6 +2,7 @@ import { Icon } from '@/components/icons/Icon'
 import { Illustration } from '@/components/illustrations/Illustration'
 import { RevealOnScroll } from '@/components/motion/RevealOnScroll'
 import { CtaBand } from '@/components/page/CtaBand'
+import { InfoSections } from '@/components/page/InfoSections'
 import { PageHero } from '@/components/page/PageHero'
 import { PillLinks } from '@/components/page/PillLinks'
 import { Button } from '@/components/ui/Button'
@@ -36,6 +37,8 @@ export default async function FacilitiesPage() {
         <PillLinks links={hero.links} active={-1} className="page-hero__links" />
       </PageHero>
 
+      <InfoSections sections={page.intro} site={site} />
+
       {ambulance.heading && (
         <section className="section section--tight" id="ambulance">
           <div className="fac-ambulance">
@@ -45,7 +48,28 @@ export default async function FacilitiesPage() {
             <div className="fac-ambulance__body">
               {ambulance.tag && <span className="tag tag--lime">{ambulance.tag}</span>}
               <h2>{ambulance.heading}</h2>
+              {ambulance.subheading && <p className="fac-ambulance__sub">{ambulance.subheading}</p>}
               <p>{ambulance.body}</p>
+              {ambulance.features.length > 0 && (
+                <div className="fac-ambulance__features">
+                  {ambulance.featuresLabel && <strong>{ambulance.featuresLabel}</strong>}
+                  <ul>
+                    {ambulance.features.map((feature) => (
+                      <li key={feature}>{feature}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {ambulance.facts.length > 0 && (
+                <dl className="fac-ambulance__facts">
+                  {ambulance.facts.map((fact) => (
+                    <div key={fact.label}>
+                      <dt>{fact.label}</dt>
+                      <dd>{fact.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              )}
               <div className="btn-row">
                 {phone.tel && (
                   <Button href={`tel:${phone.tel}`} variant="red">
@@ -77,7 +101,9 @@ export default async function FacilitiesPage() {
                   <Icon name="plus" />
                 </span>
                 <h3>{item.title}</h3>
+                {item.subtitle && <p className="critical__sub">{item.subtitle}</p>}
                 <p>{item.body}</p>
+                {item.note && <p className="critical__note">{item.note}</p>}
                 <span className="critical__link">{item.link.label}</span>
               </SmartLink>
             ))}
@@ -107,6 +133,8 @@ export default async function FacilitiesPage() {
         </section>
       )}
 
+      <InfoSections sections={page.services} site={site} />
+
       {insurance.steps.length > 0 && (
         <section className="section" id="insurance">
           <SectionHead head={insurance.head} />
@@ -123,6 +151,11 @@ export default async function FacilitiesPage() {
               </li>
             ))}
           </ol>
+          {insurance.note && (
+            <p className="tpa-note" data-reveal="">
+              {insurance.note}
+            </p>
+          )}
           {(insurance.partners.length > 0 || insurance.badge) && (
             <div className="tpa-partners" data-reveal="">
               <strong>{insurance.partnersLabel}</strong>
@@ -155,6 +188,8 @@ export default async function FacilitiesPage() {
           </div>
         </section>
       )}
+
+      <InfoSections sections={page.more} site={site} />
 
       <CtaBand heading={page.cta.heading} site={site} link={page.cta.link} />
       <RevealOnScroll />

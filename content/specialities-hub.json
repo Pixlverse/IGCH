@@ -1,7 +1,7 @@
 {
   "seo": {
-    "title": "Specialities · Indira Gandhi Co-operative Hospital, Kochi",
-    "description": "Over 25 specialities under one roof - from heart and cancer care to children's health and emergency medicine. Find the right specialist in three steps."
+    "title": "Departments and specialities at Indira Gandhi Co-operative Hospital, Kochi",
+    "description": "Find the right specialist in three steps. 31 departments under one roof at our multi-speciality hospital at Kadavanthra, from heart and cancer care to children's health and emergency medicine."
   },
   "hero": {
     "crumbs": [
@@ -15,14 +15,14 @@
       }
     ],
     "title": {
-      "before": "Find the right",
-      "accent": "specialist",
-      "after": ", in three steps."
+      "before": "Departments and",
+      "accent": "specialities",
+      "after": " at Indira Gandhi Co-operative Hospital, Kochi"
     },
-    "lead": "Over 25 specialities under one roof - from heart and cancer care to children's health and emergency medicine.",
+    "lead": "Find the right specialist in three steps. 31 departments under one roof at our multi-speciality hospital at Kadavanthra. From heart and cancer care to children's health and emergency medicine.",
     "search": {
       "label": "What do you need help with?",
-      "placeholder": "A condition, treatment or doctor",
+      "placeholder": "A condition, treatment or doctor's name",
       "buttonLabel": "Search",
       "emptyText": "No department matches that yet - call us and we'll guide you to the right one."
     },
@@ -32,11 +32,11 @@
         "href": "/specialities/super-specialities"
       },
       {
-        "label": "Cancer care",
+        "label": "Cancer Care",
         "href": "/specialities/super-specialities"
       },
       {
-        "label": "Paediatric cancer care",
+        "label": "Paediatric Cancer Care",
         "href": "/specialities/super-specialities"
       },
       {
@@ -44,7 +44,7 @@
         "href": "/facilities#dialysis"
       },
       {
-        "label": "Emergency care",
+        "label": "Emergency Care",
         "href": "/specialities/clinical-support"
       },
       {
@@ -52,30 +52,30 @@
         "href": "/specialities/broad-specialities"
       }
     ],
-    "countLabel": "departments across three groups",
+    "countLabel": "departments across three groups.",
     "illustration": "consult"
   },
   "steps": [
     {
-      "title": "Choose a group",
-      "hint": "Super, broad or clinical support",
+      "title": "Choose a group.",
+      "hint": "Super specialities, broad specialities or clinical support.",
       "href": "#groups"
     },
     {
-      "title": "Pick a department",
-      "hint": "See what each one treats",
+      "title": "Pick a department.",
+      "hint": "Find out more about each department and the care it provides.",
       "href": "#groups"
     },
     {
-      "title": "Meet doctors & book",
-      "hint": "Profiles, timings, appointment",
+      "title": "Meet doctors & book.",
+      "hint": "View doctor profiles, consultation timings and appointment options.",
       "href": "#find-a-doctor"
     }
   ],
   "groups": {
     "head": {
       "eyebrow": "Step 1 · Choose a group",
-      "heading": "Three ways into the right department.",
+      "heading": "31 departments across three groups.",
       "wide": false,
       "link": {
         "label": "",
@@ -115,7 +115,7 @@
           "label": "Oncology",
           "tone": "purple"
         },
-        "title": "Cancer care led by Dr.\u00a0V.P.\u00a0Gangadharan",
+        "title": "Cancer care led by Dr. V.P. Gangadharan",
         "body": "Medical and surgical oncology - diagnosis, chemotherapy and surgery coordinated by one team.",
         "link": {
           "label": "Meet the oncology team",

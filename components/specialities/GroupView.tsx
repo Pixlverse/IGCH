@@ -7,6 +7,7 @@ import { ArticleCard } from '@/components/page/ArticleCard'
 import { CtaBand } from '@/components/page/CtaBand'
 import { DeptCard } from '@/components/page/DeptCard'
 import { EmergencyCard } from '@/components/page/EmergencyCard'
+import { InfoSections } from '@/components/page/InfoSections'
 import { PageHero } from '@/components/page/PageHero'
 import { PillLinks } from '@/components/page/PillLinks'
 import { QuickCheck } from '@/components/page/QuickCheck'
@@ -95,6 +96,8 @@ export async function GroupView({ slug }: { slug: string }) {
         />
       </PageHero>
 
+      <InfoSections sections={page.intro} site={site} />
+
       {page.emergency.heading && (
         <section className="section section--tight">
           <EmergencyCard
@@ -112,6 +115,7 @@ export async function GroupView({ slug }: { slug: string }) {
           <div>
             {page.departments.eyebrow && <p className="eyebrow">{page.departments.eyebrow}</p>}
             <h2 className="h2">{page.departments.heading}</h2>
+            {page.departments.lead && <p className="section-lead">{page.departments.lead}</p>}
           </div>
         </div>
         {/* five across for the long lists, four when there are eight or fewer */}
@@ -172,6 +176,7 @@ export async function GroupView({ slug }: { slug: string }) {
           <div className="how" data-reveal="">
             {page.how.eyebrow && <p className="eyebrow">{page.how.eyebrow}</p>}
             <h2 className="h2">{page.how.heading}</h2>
+            {page.how.lead && <p className="how__lead">{page.how.lead}</p>}
             <ol className="how__steps">
               {page.how.steps.map((step) => (
                 <li key={step.title}>
@@ -180,6 +185,7 @@ export async function GroupView({ slug }: { slug: string }) {
                 </li>
               ))}
             </ol>
+            {page.how.note && <p className="how__lead how__note">{page.how.note}</p>}
           </div>
         </section>
       )}
@@ -212,6 +218,8 @@ export async function GroupView({ slug }: { slug: string }) {
       )}
 
       <Doctors head={page.doctors} doctors={{ items: team }} />
+
+      <InfoSections sections={page.sections} site={site} />
 
       {articles.length > 0 && (
         <section className="section">

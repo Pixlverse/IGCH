@@ -213,7 +213,7 @@ export const RESOURCES: Resource[] = [
         label: 'Short name',
         help: 'Optional, e.g. "CTVS". Used on cards and chips.',
       },
-      { type: 'textarea', name: 'description', label: 'One-line description', rows: 2 },
+      { type: 'textarea', name: 'description', label: 'Description', rows: 4 },
       {
         type: 'checkbox',
         name: 'featured',
@@ -243,7 +243,7 @@ export const RESOURCES: Resource[] = [
       group: z.enum(GROUPS.map((g) => g.value) as [string, ...string[]]),
       name: required('Name', 120),
       shortName: text(40),
-      description: text(200),
+      description: text(500),
       featured: z.boolean(),
       badge: tag(),
       tone: z.enum(TONES).optional(),

@@ -1,7 +1,7 @@
 {
   "seo": {
-    "title": "Careers · Indira Gandhi Co-operative Hospital, Kochi",
-    "description": "Current openings for doctors, nurses, technicians and support staff at Indira Gandhi Co-operative Hospital, Kadavanthra, Kochi."
+    "title": "Careers at Indira Gandhi Co-operative Hospital, Kochi",
+    "description": "Indira Gandhi Co-operative Hospital (IGCH), a multispeciality hospital in Kadavanthra, Kochi, welcomes applications from qualified and experienced professionals looking for hospital jobs in Kochi."
   },
   "hero": {
     "crumbs": [
@@ -19,11 +19,11 @@
       }
     ],
     "title": {
-      "before": "Build your career where",
-      "accent": "patients come first",
-      "after": "."
+      "before": "Careers at",
+      "accent": "Indira Gandhi Co-operative Hospital",
+      "after": ", Kochi"
     },
-    "lead": "Doctors, nurses, technicians and support staff: join a co-operative hospital that has served Kochi for over fifty years."
+    "lead": "Make a difference through the work you do."
   },
   "openings": {
     "eyebrow": "Current openings",
@@ -37,9 +37,41 @@
     "emptyText": "We are not hiring for specific roles at the moment, but we keep good applications on file. Send us your CV and we will be in touch when a suitable role opens."
   },
   "cv": {
-    "heading": "Don't see the right role?",
-    "text": "Send your CV with the role you are interested in. Our HR team reviews every application.",
-    "buttonLabel": "Send your CV",
+    "heading": "Find your place in our healthcare team.",
+    "text": "Whether you are looking for a current vacancy or wish to be considered for future openings, you can share your resume with our HR team.",
+    "buttonLabel": "Submit Your Resume",
     "fallbackText": "Call us on {phone} to ask about openings."
-  }
+  },
+  "intro": [
+    {
+      "paragraphs": [
+        "Indira Gandhi Co-operative Hospital (IGCH), a multispeciality hospital in Kadavanthra, Kochi, brings together medical professionals, nurses, technicians and administrative staff across various departments.",
+        "We welcome applications from qualified and experienced professionals interested in exploring career opportunities at our hospital.",
+        "We welcome applications from qualified and experienced professionals looking for hospital jobs in Kochi and interested in joining our team."
+      ],
+      "cards": [
+        {
+          "title": "",
+          "facts": [
+            {
+              "label": "Location",
+              "value": "Kadavanthra, Kochi, Keralam"
+            }
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "label": "View Current Openings",
+          "href": "#openings",
+          "style": "primary"
+        },
+        {
+          "label": "Submit Your Resume",
+          "href": "#apply",
+          "style": "light"
+        }
+      ]
+    }
+  ]
 }

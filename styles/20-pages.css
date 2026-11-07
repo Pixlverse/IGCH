@@ -379,3 +379,36 @@
 @media (max-width: 640px) {
   .story-page { padding: 32px 22px 40px; }
 }
+
+/* ---------- Info sections (components/page/InfoSections.tsx) ---------- */
+.info { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; padding: 48px 56px; border-radius: var(--radius-lg); background: var(--white); }
+.info--dark { background: var(--ink); color: var(--white); }
+.info--dark .eyebrow { color: var(--lime); }
+.info__head { display: grid; gap: 14px; max-width: 860px; }
+.info__head p { font-size: 16px; line-height: 1.6; color: var(--ink-2); }
+.info--dark .info__head p { color: rgba(255,255,255,.82); }
+.info-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--gap); }
+.info-card { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 26px 28px; border-radius: var(--radius); background: var(--bg); color: var(--ink); }
+.info--dark .info-card { background: #1c3530; color: var(--white); }
+.info-card h3 { font-size: 18px; font-weight: 800; letter-spacing: -0.01em; }
+.info-card p { font-size: 14.5px; line-height: 1.55; color: var(--ink-2); }
+.info--dark .info-card p, .info--dark .info-card li, .info--dark .info-card dd { color: rgba(255,255,255,.82); }
+.info-card__list { display: grid; gap: 6px; padding-left: 18px; list-style: disc; font-size: 14.5px; line-height: 1.5; color: var(--ink-2); }
+.info-card__facts { display: grid; gap: 8px; width: 100%; }
+.info-card__facts div { display: grid; gap: 2px; }
+.info-card__facts dt { font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.info--dark .info-card__facts dt { color: var(--lime); }
+.info-card__facts dd { margin: 0; font-size: 15px; font-weight: 600; }
+.info-card .btn-row { margin-top: auto; padding-top: 6px; }
+
+@media (max-width: 960px) {
+  .info { padding: 36px; }
+}
+
+@media (max-width: 640px) {
+  .info { padding: 32px 24px; }
+  .info-cards { grid-template-columns: 1fr; }
+}
+
+.section-lead { max-width: 760px; margin-top: 12px; font-size: 16px; line-height: 1.55; color: var(--ink-2); }
+.info .btn { max-width: 100%; white-space: normal; text-align: center; }

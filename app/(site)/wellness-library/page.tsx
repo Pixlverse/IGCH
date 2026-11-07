@@ -1,4 +1,5 @@
 import { LibraryView } from '@/components/library/LibraryView'
+import { InfoSections } from '@/components/page/InfoSections'
 import { QuickCheck } from '@/components/page/QuickCheck'
 import { Button } from '@/components/ui/Button'
 import { getLibrary, getSiteSettings } from '@/lib/content'
@@ -14,6 +15,7 @@ export default async function WellnessLibraryPage() {
   return (
     <main>
       <LibraryView library={library} />
+      <InfoSections sections={library.sections} site={site} />
       <section className="section">
         <div className="help-row">
           <QuickCheck content={library.quickCheck} name="library-faq" />

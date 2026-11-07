@@ -3,7 +3,7 @@
     "group": "super-specialities",
     "name": "Cardiology",
     "shortName": "",
-    "description": "Heart and vascular care, from the first ECG to interventions.",
+    "description": "Diagnosis and management of heart conditions, including coronary artery disease, hypertension, heart failure and heart rhythm disorders. The department also provides cardiac services such as pacemaker implantation, where clinically indicated.",
     "featured": true,
     "badge": {
       "label": "",
@@ -17,7 +17,7 @@
     "group": "super-specialities",
     "name": "Cardiothoracic & Vascular Surgery",
     "shortName": "CTVS",
-    "description": "Cardiothoracic and vascular surgery, including bypass.",
+    "description": "Surgical treatment for conditions affecting the heart, chest and major blood vessels. This includes heart surgery, chest (thoracic) surgery, and vascular and endovascular procedures such as stenting and EVAR, a repair of a swollen aorta from inside the blood vessel.",
     "featured": true,
     "badge": {
       "label": "",
@@ -31,7 +31,7 @@
     "group": "super-specialities",
     "name": "Medical Oncology",
     "shortName": "",
-    "description": "Chemotherapy and medical treatment of cancer.",
+    "description": "Medical treatment for different types of cancer, including chemotherapy and other drug-based therapies. Treatment plans are based on the type and stage of cancer and the individual patient's needs.",
     "featured": true,
     "badge": {
       "label": "",
@@ -45,7 +45,7 @@
     "group": "super-specialities",
     "name": "Surgical Oncology",
     "shortName": "",
-    "description": "Surgery for cancers, planned with the oncology team.",
+    "description": "Surgical treatment for cancer, with procedures planned according to the type, location and stage of the disease. Care may be coordinated with medical oncology and other specialists as part of the patient's treatment plan.",
     "featured": true,
     "badge": {
       "label": "",
@@ -59,7 +59,7 @@
     "group": "super-specialities",
     "name": "Paediatric Oncology",
     "shortName": "",
-    "description": "Specialist cancer care for children.",
+    "description": "Specialist care for infants, children and adolescents diagnosed with cancer. The department focuses on diagnosis, treatment planning and ongoing care for childhood cancers.",
     "featured": true,
     "badge": {
       "label": "",
@@ -73,7 +73,7 @@
     "group": "super-specialities",
     "name": "Neurology",
     "shortName": "",
-    "description": "Care for the brain, nerves and spine.",
+    "description": "Diagnosis and medical treatment of conditions affecting the brain, spinal cord and nerves, including stroke, epilepsy, headaches and migraine, nerve damage (neuropathy) and movement disorders such as Parkinson's disease. The team also provides care for patients with urgent neurological conditions in the emergency department and intensive care unit.",
     "featured": true,
     "badge": {
       "label": "",
@@ -87,7 +87,7 @@
     "group": "super-specialities",
     "name": "Neurosurgery",
     "shortName": "",
-    "description": "Surgery of the brain, spine and nerves.",
+    "description": "Surgical treatment for conditions affecting the brain, spine and nervous system, including brain and spinal tumours, head injuries and spinal disorders.",
     "featured": false,
     "badge": {
       "label": "",
@@ -101,7 +101,7 @@
     "group": "super-specialities",
     "name": "Gastroenterology",
     "shortName": "",
-    "description": "Digestive system and liver care.",
+    "description": "Diagnosis and treatment of problems with the food pipe (oesophagus), stomach, intestines, liver, pancreas and gallbladder, including endoscopy, which uses a thin camera to look inside the digestive tract.",
     "featured": false,
     "badge": {
       "label": "",
@@ -115,7 +115,7 @@
     "group": "super-specialities",
     "name": "Nephrology",
     "shortName": "",
-    "description": "Kidney care, including dialysis.",
+    "description": "Medical care for acute and chronic kidney disease, kidney-related high blood pressure and complications of kidney failure. The department also manages the hospital’s Dialysis Unit, providing regular haemodialysis and dialysis support for critically ill patients in intensive care.",
     "featured": false,
     "badge": {
       "label": "",
@@ -129,7 +129,7 @@
     "group": "super-specialities",
     "name": "Urology",
     "shortName": "",
-    "description": "Urinary tract and male reproductive health.",
+    "description": "Diagnosis and treatment of conditions affecting the kidneys, bladder and urinary tract, as well as the male reproductive system. These include kidney stones, urinary tract infections and prostate conditions. The department also provides care for urinary problems in women and children, along with reconstructive urological procedures.",
     "featured": false,
     "badge": {
       "label": "",
@@ -143,7 +143,7 @@
     "group": "broad-specialities",
     "name": "General Medicine",
     "shortName": "",
-    "description": "Diagnosis and treatment of adult illness.",
+    "description": "Diagnosis and treatment of common illnesses, infections, chronic conditions and other adult health concerns.",
     "featured": true,
     "badge": {
       "label": "",
@@ -157,7 +157,7 @@
     "group": "broad-specialities",
     "name": "General & Laparoscopic Surgery",
     "shortName": "",
-    "description": "Open and keyhole surgery.",
+    "description": "Surgical care for conditions that may require conventional or minimally invasive procedures.",
     "featured": false,
     "badge": {
       "label": "",
@@ -171,7 +171,7 @@
     "group": "broad-specialities",
     "name": "Obstetrics & Gynaecology",
     "shortName": "",
-    "description": "Pregnancy, childbirth and women’s health.",
+    "description": "Healthcare for women at different stages of life, including pregnancy, childbirth and gynaecological conditions.",
     "featured": true,
     "badge": {
       "label": "",
@@ -185,7 +185,7 @@
     "group": "broad-specialities",
     "name": "Paediatrics",
     "shortName": "",
-    "description": "Healthcare for infants, children and teens.",
+    "description": "Medical care for infants, children and adolescents, including the diagnosis and treatment of childhood illnesses.",
     "featured": true,
     "badge": {
       "label": "",
@@ -199,7 +199,7 @@
     "group": "broad-specialities",
     "name": "Orthopaedics",
     "shortName": "",
-    "description": "Bones, joints and sports injuries.",
+    "description": "Treatment and management of conditions affecting bones, joints, muscles and the musculoskeletal system, including injuries and fractures.",
     "featured": true,
     "badge": {
       "label": "",
@@ -213,7 +213,7 @@
     "group": "broad-specialities",
     "name": "Diabetology",
     "shortName": "",
-    "description": "Diabetes and hormone care.",
+    "description": "Care for people with diabetes, including blood sugar management, monitoring and guidance on preventing complications.",
     "featured": false,
     "badge": {
       "label": "",
@@ -227,7 +227,7 @@
     "group": "broad-specialities",
     "name": "Pulmonology",
     "shortName": "",
-    "description": "Lungs and breathing.",
+    "description": "Diagnosis and treatment of conditions affecting the lungs and respiratory system, including asthma and other breathing disorders.",
     "featured": false,
     "badge": {
       "label": "",
@@ -241,7 +241,7 @@
     "group": "broad-specialities",
     "name": "ENT",
     "shortName": "",
-    "description": "Ear, nose and throat.",
+    "description": "Medical and surgical care for conditions affecting the ear, nose and throat.",
     "featured": false,
     "badge": {
       "label": "",
@@ -255,7 +255,7 @@
     "group": "broad-specialities",
     "name": "Ophthalmology",
     "shortName": "",
-    "description": "Eye care and vision.",
+    "description": "Eye examinations, vision care and treatment of eye conditions.",
     "featured": false,
     "badge": {
       "label": "",
@@ -269,7 +269,7 @@
     "group": "broad-specialities",
     "name": "Dermatology",
     "shortName": "",
-    "description": "Skin, hair and nails.",
+    "description": "Diagnosis and treatment of skin, hair and nail conditions.",
     "featured": false,
     "badge": {
       "label": "",
@@ -281,9 +281,9 @@
   },
   {
     "group": "broad-specialities",
-    "name": "Dental",
+    "name": "Dental & Maxillofacial Surgery",
     "shortName": "",
-    "description": "Teeth and oral health.",
+    "description": "Dental care and treatment of conditions affecting the teeth, mouth, jaw and facial structures.",
     "featured": true,
     "badge": {
       "label": "",
@@ -297,7 +297,7 @@
     "group": "broad-specialities",
     "name": "Psychiatry",
     "shortName": "",
-    "description": "Mental health and wellbeing.",
+    "description": "Assessment and treatment of mental health conditions, with support for emotional and psychological wellbeing.",
     "featured": false,
     "badge": {
       "label": "",
@@ -311,7 +311,7 @@
     "group": "broad-specialities",
     "name": "Palliative Medicine",
     "shortName": "",
-    "description": "Comfort and support through serious illness.",
+    "description": "Care focused on relieving pain and other symptoms, improving comfort and supporting patients and families living with serious illnesses.",
     "featured": false,
     "badge": {
       "label": "New",
@@ -325,7 +325,7 @@
     "group": "broad-specialities",
     "name": "Ayurveda",
     "shortName": "",
-    "description": "Traditional Ayurvedic care.",
+    "description": "Traditional Ayurvedic healthcare and treatment based on individual health needs.",
     "featured": true,
     "badge": {
       "label": "Traditional",
@@ -339,7 +339,7 @@
     "group": "clinical-support",
     "name": "Emergency Medicine",
     "shortName": "",
-    "description": "Round-the-clock emergency and trauma care.",
+    "description": "Round-the-clock medical attention for accidents, injuries and sudden illnesses. Our emergency team is available 24 hours a day.",
     "featured": true,
     "badge": {
       "label": "24/7",
@@ -354,7 +354,7 @@
     "group": "clinical-support",
     "name": "Anaesthesiology",
     "shortName": "",
-    "description": "Safe anaesthesia and pain control for surgery.",
+    "description": "Anaesthesia and pain management services for patients undergoing surgical and other medical procedures.",
     "featured": true,
     "badge": {
       "label": "",
@@ -369,7 +369,7 @@
     "group": "clinical-support",
     "name": "Radiology & Imaging",
     "shortName": "",
-    "description": "X-ray, ultrasound, CT and other scans.",
+    "description": "Diagnostic imaging services, including X-rays, ultrasound and CT scans, to help doctors investigate and assess medical conditions.",
     "featured": true,
     "badge": {
       "label": "",
@@ -384,7 +384,7 @@
     "group": "clinical-support",
     "name": "Microbiology",
     "shortName": "",
-    "description": "Laboratory testing to identify infections.",
+    "description": "Laboratory testing to identify bacteria, viruses, fungi and other microorganisms that may cause infections.",
     "featured": true,
     "badge": {
       "label": "",
@@ -399,7 +399,7 @@
     "group": "clinical-support",
     "name": "EECP",
     "shortName": "",
-    "description": "Non-invasive therapy to improve heart circulation.",
+    "description": "Enhanced External Counterpulsation (EECP) is a non-invasive treatment used for selected patients with certain heart conditions. Treatment suitability is assessed by a cardiologist.",
     "featured": true,
     "badge": {
       "label": "",
@@ -414,7 +414,7 @@
     "group": "clinical-support",
     "name": "Physiotherapy",
     "shortName": "",
-    "description": "Rehabilitation to restore movement and strength.",
+    "description": "Rehabilitation and physical therapy to help patients improve movement, strength and function after illness, injury or surgery.",
     "featured": false,
     "badge": {
       "label": "",
@@ -429,7 +429,7 @@
     "group": "clinical-support",
     "name": "Dietetics",
     "shortName": "",
-    "description": "Nutrition planning for recovery and long-term health.",
+    "description": "Personalised nutritional guidance to support patients with medical conditions, during treatment and throughout recovery.",
     "featured": false,
     "badge": {
       "label": "",

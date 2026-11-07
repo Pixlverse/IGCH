@@ -3,35 +3,59 @@
     {
       "slug": "super-specialities",
       "seo": {
-        "title": "Super Specialities · Indira Gandhi Co-operative Hospital, Kochi",
-        "description": "Advanced, focused care for complex conditions - heart, cancer, brain, kidney and more - delivered by specialist teams under one roof in Kadavanthra, Kochi."
+        "title": "Super Specialities at Indira Gandhi Co-operative Hospital, Kochi",
+        "description": "Indira Gandhi Co-operative Hospital (IGCH) in Kadavanthra is a super-speciality hospital in Kochi, with 10 departments for complex conditions of the heart, brain, kidneys and digestive system and for cancer."
       },
       "hero": {
-        "title": { "before": "Super", "accent": "Specialities", "after": "" },
-        "lead": "Advanced, focused care for complex conditions - heart, cancer, brain, kidney and more - delivered by specialist teams under one roof."
+        "title": {
+          "before": "",
+          "accent": "Super Specialities",
+          "after": " at Indira Gandhi Co-operative Hospital, Kochi"
+        },
+        "lead": "Specialist care for complex conditions, on one campus at Kadavanthra, Kochi"
       },
-      "count": { "label": "super speciality departments", "tone": "lime" },
-      "aside": { "kind": "emergency", "eyebrow": "Emergency · 24 × 7", "text": "" },
+      "count": {
+        "label": "super speciality departments",
+        "tone": "lime"
+      },
+      "aside": {
+        "kind": "emergency",
+        "eyebrow": "Emergency · 24 × 7",
+        "text": ""
+      },
       "departments": {
-        "eyebrow": "Step 2 · Pick a department",
-        "heading": "Ten departments, one expert team each.",
+        "eyebrow": "Our speciality departments",
+        "heading": "Find the right super speciality department.",
+        "lead": "Not sure which specialist you need? Explore the departments below or contact our team for help choosing the right consultation.",
         "linkLabel": "View department"
       },
       "centres": [
         {
           "illustration": "heart",
-          "tag": { "label": "Centre of excellence", "tone": "red" },
+          "tag": {
+            "label": "Centre of excellence",
+            "tone": "red"
+          },
           "title": "Karunya Hridayalaya Cardiac Centre",
           "body": "Interventional cardiology and cardiothoracic surgery in one team, including the leadless pacemaker implanted without open surgery.",
-          "link": { "label": "Meet the cardiac team", "href": "#doctors" },
+          "link": {
+            "label": "Meet the cardiac team",
+            "href": "#doctors"
+          },
           "tone": "white"
         },
         {
           "illustration": "oncology",
-          "tag": { "label": "Centre of excellence", "tone": "white" },
+          "tag": {
+            "label": "Centre of excellence",
+            "tone": "white"
+          },
           "title": "Cancer care for adults and children",
           "body": "",
-          "link": { "label": "Meet the oncology team", "href": "#doctors" },
+          "link": {
+            "label": "Meet the oncology team",
+            "href": "#doctors"
+          },
           "tone": "lavender"
         }
       ],
@@ -39,7 +63,10 @@
         "eyebrow": "Step 3 · Meet your doctor",
         "heading": "Our super speciality doctors.",
         "wide": true,
-        "link": { "label": "View all doctors →", "href": "/specialities#find-a-doctor" }
+        "link": {
+          "label": "View all doctors →",
+          "href": "/specialities#find-a-doctor"
+        }
       },
       "wellness": {
         "heading": "From the Wellness Library",
@@ -66,19 +93,123 @@
           }
         ]
       },
-      "cta": { "heading": "Ready to see a specialist?" }
+      "cta": {
+        "heading": "Ready to see a specialist?"
+      },
+      "intro": [
+        {
+          "paragraphs": [
+            "Indira Gandhi Co-operative Hospital (IGCH) in Kadavanthra is a super-speciality hospital in Kochi, with 10 departments for complex conditions of the heart, brain, kidneys and digestive system and for cancer. When a patient needs more than one team, our specialists plan treatment together. Every patient gets the same respect and the same standard of care, whatever they can pay.",
+            "As a multispeciality hospital in Kochi, IGCH brings together specialist doctors and supporting medical teams to help patients receive coordinated care."
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Looking for another speciality in Kochi?",
+          "paragraphs": [
+            "IGCH also provides care through its broad speciality departments and clinical support services. These include general medicine, paediatrics, orthopaedics, obstetrics and gynaecology, dermatology, pulmonology, psychiatry and other areas of healthcare.",
+            "Explore our other departments to find the care you need."
+          ],
+          "ctas": [
+            {
+              "label": "Explore broad specialities",
+              "href": "/specialities/broad-specialities",
+              "style": "primary"
+            },
+            {
+              "label": "Explore clinical support",
+              "href": "/specialities/clinical-support",
+              "style": "light"
+            }
+          ]
+        },
+        {
+          "heading": "Find a Specialist Doctor at IGCH?",
+          "paragraphs": [
+            "Looking for specialist doctors in Kochi? Explore our doctor directory to find consultants by department, view their qualifications and check consultation details.",
+            "You can also contact the hospital for assistance in choosing a specialist and arranging an appointment."
+          ],
+          "ctas": [
+            {
+              "label": "Find a specialist doctor in Kochi",
+              "href": "/specialities#find-a-doctor",
+              "style": "primary"
+            },
+            {
+              "label": "Book an appointment",
+              "href": "booking",
+              "style": "light"
+            }
+          ]
+        },
+        {
+          "id": "visit",
+          "heading": "Plan your visit to IGCH, Kadavanthra",
+          "paragraphs": [
+            "Indira Gandhi Co-operative Hospital is located at Gandhinagar Road, Kadavanthra, Kochi, and serves patients from across Kochi and Ernakulam.",
+            "For hospital appointment booking in Kochi, contact our appointment desk or use the online booking facility.",
+            "Please bring your identification and any previous medical reports, prescriptions or scan results relevant to your consultation."
+          ],
+          "cards": [
+            {
+              "title": "Visit us",
+              "facts": [
+                {
+                  "label": "Address",
+                  "value": "Gandhinagar Road, Kadavanthra, Kochi – 682020"
+                },
+                {
+                  "label": "Appointment Enquiries",
+                  "value": "[Appointment number]"
+                },
+                {
+                  "label": "Online Booking",
+                  "value": "[Booking link]"
+                }
+              ]
+            },
+            {
+              "title": "Emergency Care – Available 24 Hours in Kochi",
+              "paragraphs": [
+                "For medical emergencies, contact the hospital's emergency department at any time."
+              ],
+              "facts": [
+                {
+                  "label": "Emergency",
+                  "value": "0484 294 1600"
+                }
+              ],
+              "ctas": [
+                {
+                  "label": "Call now",
+                  "href": "emergency",
+                  "style": "primary"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "broad-specialities",
       "seo": {
-        "title": "Broad Specialities · Indira Gandhi Co-operative Hospital, Kochi",
-        "description": "Everyday and family healthcare - medicine, surgery, women's and children's health, bones, eyes, skin and more - with traditional Ayurveda alongside."
+        "title": "Broad Specialities at Indira Gandhi Co-operative Hospital (IGCH), Kadavanthra, Kochi",
+        "description": "Indira Gandhi Co-operative Hospital (IGCH), Kadavanthra, Kochi, brings together 14 broad speciality departments to address a wide range of healthcare needs."
       },
       "hero": {
-        "title": { "before": "Broad", "accent": "Specialities", "after": "" },
-        "lead": "Everyday and family healthcare - medicine, surgery, women's and children's health, bones, eyes, skin and more - with traditional Ayurveda alongside."
+        "title": {
+          "before": "",
+          "accent": "Broad Specialities",
+          "after": " at Indira Gandhi Co-operative Hospital (IGCH), Kadavanthra, Kochi"
+        },
+        "lead": "As a co-operative hospital in Kochi, bringing specialist healthcare closer to the people of Kochi."
       },
-      "count": { "label": "broad speciality departments", "tone": "cream" },
+      "count": {
+        "label": "broad speciality departments",
+        "tone": "cream"
+      },
       "aside": {
         "kind": "info",
         "eyebrow": "OPD timings",
@@ -86,22 +217,32 @@
       },
       "departments": {
         "eyebrow": "Step 2 · Pick a department",
-        "heading": "Care for the whole family, close to home.",
+        "heading": "Find the Right Department",
+        "lead": "Explore our broad specialities to learn about the conditions treated, services available and doctors in each department.",
         "linkLabel": "View department"
       },
       "camp": {
         "tag": "Co-operative care",
         "heading": "Weekly camps with free or subsidised consultations.",
         "body": "[Camp days, departments and how to register - to be supplied by IGCH.]",
-        "cta": { "label": "See camp schedule", "href": "#" },
+        "cta": {
+          "label": "See camp schedule",
+          "href": "#"
+        },
         "illustration": "family"
       },
       "opd": {
         "eyebrow": "Plan your visit",
         "heading": "OPD timings & booking.",
         "slots": [
-          { "title": "Morning OPD", "text": "[Timings - to confirm]" },
-          { "title": "Afternoon OPD", "text": "[Timings - to confirm]" }
+          {
+            "title": "Morning OPD",
+            "text": "[Timings - to confirm]"
+          },
+          {
+            "title": "Afternoon OPD",
+            "text": "[Timings - to confirm]"
+          }
         ],
         "bookingTitle": "Book your consultation"
       },
@@ -109,61 +250,169 @@
         "eyebrow": "Step 3 · Meet your doctor",
         "heading": "Our doctors.",
         "wide": true,
-        "link": { "label": "View all doctors →", "href": "/specialities#find-a-doctor" }
+        "link": {
+          "label": "View all doctors →",
+          "href": "/specialities#find-a-doctor"
+        }
       },
       "wellness": {
         "heading": "From the Wellness Library",
         "articles": ["childhood-illness", "blood-sugar", "annual-check"]
       },
-      "cta": { "heading": "Not sure which department you need?" }
+      "cta": {
+        "heading": "Not sure which department you need?"
+      },
+      "intro": [
+        {
+          "paragraphs": [
+            "Indira Gandhi Co-operative Hospital (IGCH), Kadavanthra, Kochi, brings together 14 broad speciality departments to address a wide range of healthcare needs. From general medicine and surgery to women's health, children's care and mental health, patients can access different medical specialities within one hospital."
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Looking for a specialist in Kochi?",
+          "paragraphs": [
+            "Choosing the right department is a useful first step towards getting the care you need. Explore our medical team to find doctors by speciality, view their qualifications and check consultation details.",
+            "For assistance with choosing a department or making an appointment, contact Indira Gandhi Co-operative Hospital, Kadavanthra, Kochi."
+          ],
+          "ctas": [
+            {
+              "label": "Find a doctor",
+              "href": "/specialities#find-a-doctor",
+              "style": "primary"
+            },
+            {
+              "label": "Book an appointment",
+              "href": "booking",
+              "style": "light"
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "clinical-support",
       "seo": {
-        "title": "Clinical Support · Indira Gandhi Co-operative Hospital, Kochi",
-        "description": "The teams and technology behind every diagnosis, operation and recovery - emergency medicine, imaging, laboratory, anaesthesia, physiotherapy and more."
+        "title": "Clinical Support Services at Indira Gandhi Co-operative Hospital, Kochi",
+        "description": "The medical teams and services that support diagnosis, treatment and recovery at Indira Gandhi Co-operative Hospital (IGCH), Kadavanthra, Kochi."
       },
       "hero": {
-        "title": { "before": "Clinical", "accent": "Support", "after": "" },
-        "lead": "The teams and technology behind every diagnosis, operation and recovery - working around the clock so your doctor can do their best."
+        "title": {
+          "before": "",
+          "accent": "Clinical Support Services",
+          "after": " at Indira Gandhi Co-operative Hospital, Kochi"
+        },
+        "lead": "The medical teams and services that support diagnosis, treatment and recovery."
       },
-      "count": { "label": "clinical support departments", "tone": "sky" },
-      "aside": { "kind": "none", "eyebrow": "", "text": "" },
+      "count": {
+        "label": "clinical support departments",
+        "tone": "sky"
+      },
+      "aside": {
+        "kind": "none",
+        "eyebrow": "",
+        "text": ""
+      },
       "emergency": {
-        "tag": "Emergency Medicine · 24 × 7",
-        "heading": "Emergency care, any hour of any day.",
-        "body": "Our emergency team is ready round the clock, backed by ICU, operation theatres and a blood storage unit - and Kerala's first 5G Smart Ambulance."
+        "tag": "Emergency Medicine Available 24/7",
+        "heading": "Medical help in Kochi when every minute matters.",
+        "body": "Our emergency team is available around the clock in Kochi to assess and manage medical emergencies, supported by ICU facilities, operation theatres and a blood bank on the hospital campus."
       },
       "departments": {
-        "eyebrow": "Step 2 · Pick a department",
-        "heading": "Seven teams that keep care moving.",
-        "linkLabel": "View department"
+        "eyebrow": "7 Clinical Support Departments",
+        "heading": "Seven teams that support your care",
+        "lead": "",
+        "linkLabel": "View Department"
       },
       "how": {
-        "eyebrow": "How support works",
-        "heading": "Behind every treatment, a team you never meet.",
+        "eyebrow": "",
+        "heading": "Support across every stage of treatment",
+        "lead": "Clinical support services work alongside the hospital's medical and surgical departments.",
+        "note": "At IGCH, these departments support the wider range of healthcare services available at our hospital in Kadavanthra, Kochi.",
         "steps": [
           {
-            "title": "Diagnose",
-            "body": "Imaging and laboratory teams give your doctor clear answers, fast."
+            "title": "Before treatment",
+            "body": "Diagnostic imaging and laboratory investigations help doctors assess a patient's condition."
           },
           {
-            "title": "Treat safely",
-            "body": "Anaesthesia and emergency teams keep you safe through procedures."
+            "title": "During treatment",
+            "body": "Anaesthesiology supports surgical procedures and patient monitoring."
           },
           {
-            "title": "Recover well",
-            "body": "Physiotherapy, EECP and dietetics support you back to health."
+            "title": "During emergencies",
+            "body": "Emergency Medicine provides immediate medical assessment and care."
+          },
+          {
+            "title": "During recovery",
+            "body": "Physiotherapy and dietetics help patients work towards better mobility, strength and nutritional health."
           }
         ]
       },
       "doctors": {
         "eyebrow": "Step 3 · Meet your team",
-        "heading": "Our support specialists.",
+        "heading": "Our Clinical Support Specialists",
         "wide": true,
-        "link": { "label": "View all →", "href": "/specialities#find-a-doctor" }
+        "link": {
+          "label": "View All Clinical Support Specialists →",
+          "href": "/specialities#find-a-doctor"
+        },
+        "lead": "The clinical professionals supporting diagnosis, treatment and recovery at Indira Gandhi Co-operative Hospital, Kochi. Find doctors and specialists across our clinical support departments. View their qualifications, areas of practice and consultation details to help you plan your visit."
       },
-      "cta": { "heading": "Need a test, scan or consultation?" }
+      "cta": {
+        "heading": "Need a test, scan or consultation?"
+      },
+      "intro": [
+        {
+          "paragraphs": [
+            "At Indira Gandhi Co-operative Hospital (IGCH), Kadavanthra, Kochi, clinical support departments work alongside our medical and surgical specialities at different stages of patient care. From emergency medicine and diagnostic imaging to anaesthesia, physiotherapy and nutritional support, these services help doctors assess conditions, plan treatment and support recovery.",
+            "Explore our seven clinical support departments to learn about the services available at IGCH."
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Looking for a specific clinical service in Kochi?",
+          "paragraphs": [
+            "Find the department that matches your healthcare needs or contact our team for assistance."
+          ],
+          "cards": [
+            {
+              "title": "Emergency care",
+              "paragraphs": ["For sudden illnesses, injuries and medical emergencies."]
+            },
+            {
+              "title": "Diagnostic imaging",
+              "paragraphs": ["For X-rays, ultrasound, CT scans and other available investigations."]
+            },
+            {
+              "title": "Physiotherapy",
+              "paragraphs": ["For rehabilitation, movement and physical recovery."]
+            },
+            {
+              "title": "Dietetics",
+              "paragraphs": ["For nutritional advice related to health conditions and recovery."]
+            }
+          ],
+          "ctas": [
+            {
+              "label": "Explore all departments",
+              "href": "/specialities",
+              "style": "primary"
+            },
+            {
+              "label": "Find a doctor",
+              "href": "/specialities#find-a-doctor",
+              "style": "light"
+            },
+            {
+              "label": "Book an appointment",
+              "href": "booking",
+              "style": "light"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

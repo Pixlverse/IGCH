@@ -129,6 +129,8 @@ const sectionHead = () =>
     heading: str(),
     /** removes the 780px max-width on the heading */
     wide: bool(),
+    /** optional paragraph under the heading */
+    lead: str(),
     link: link(),
   })
 
@@ -478,6 +480,32 @@ const seo = () => obj({ title: str(), description: str() })
 const crumbs = () => list(LinkSchema)
 const ctas = () => list(cta())
 
+/**
+ * Generic text section for copy that has no bespoke layout: heading,
+ * paragraphs, optional cards (paragraphs, bullet points, label/value facts)
+ * and buttons. A CTA href of `booking` uses the site booking link and
+ * `emergency` dials the emergency number.
+ */
+export const InfoSectionSchema = z.object({
+  id: str(),
+  eyebrow: str(),
+  heading: str(),
+  paragraphs: list(z.string()),
+  cards: list(
+    z.object({
+      title: str(),
+      paragraphs: list(z.string()),
+      items: list(z.string()),
+      facts: list(z.object({ label: str(), value: str() })),
+      ctas: ctas(),
+    }),
+  ),
+  ctas: ctas(),
+  /** white panel (default) or dark ink panel */
+  tone: oneOf(['white', 'dark'], 'white'),
+})
+const infoSections = () => list(InfoSectionSchema)
+
 export const AboutPageSchema = obj({
   seo: seo(),
   hero: obj({
@@ -510,7 +538,16 @@ export const AboutPageSchema = obj({
   }),
   leadership: obj({
     head: sectionHead(),
-    items: list(z.object({ quote: str(), name: str(), role: str() })),
+    items: list(
+      z.object({
+        quote: str(),
+        name: str(),
+        role: str(),
+        /** full letter, shown under "Read full message" */
+        message: list(z.string()),
+        moreLabel: str(),
+      }),
+    ),
   }),
   team: obj({ head: sectionHead() }),
   achievements: obj({
@@ -521,6 +558,8 @@ export const AboutPageSchema = obj({
     pacemaker: obj({ title: str() }),
     stat: obj({ value: str(), caption: str() }),
   }),
+  /** text sections after the achievements */
+  sections: infoSections(),
   careers: obj({ tag: str(), heading: str(), body: str(), ctas: ctas() }),
   nursing: obj({ tag: str(), heading: str(), link: link() }),
 })
@@ -584,7 +623,9 @@ export const SpecialityGroupPagesSchema = obj({
         text: str(),
       }),
       emergency: obj({ tag: str(), heading: str(), body: str() }),
-      departments: obj({ eyebrow: str(), heading: str(), linkLabel: str() }),
+      /** text sections between the hero and the department grid */
+      intro: infoSections(),
+      departments: obj({ eyebrow: str(), heading: str(), lead: str(), linkLabel: str() }),
       centres: list(z.object({ ...centreCard, tone: oneOf(['white', 'lavender'], 'white') })),
       camp: obj({
         tag: str(),
@@ -596,6 +637,8 @@ export const SpecialityGroupPagesSchema = obj({
       how: obj({
         eyebrow: str(),
         heading: str(),
+        lead: str(),
+        note: str(),
         steps: list(z.object({ title: str(), body: str() })),
       }),
       opd: obj({
@@ -605,6 +648,8 @@ export const SpecialityGroupPagesSchema = obj({
         bookingTitle: str(),
       }),
       doctors: sectionHead(),
+      /** text sections after the doctors */
+      sections: infoSections(),
       /** article ids from library.json */
       wellness: obj({ heading: str(), articles: list(z.string()) }),
       quickCheck: quickCheck(),
@@ -640,6 +685,8 @@ export const LibrarySchema = obj({
   articles: list(ArticleItemSchema),
   quickCheck: quickCheck(),
   askDoctor: obj({ heading: str(), note: str() }),
+  /** text sections after the article list (topics, notices, disclaimer…) */
+  sections: infoSections(),
 })
 
 export const NewsPageSchema = obj({
@@ -668,20 +715,38 @@ export const FacilitiesPageSchema = obj({
     links: list(LinkSchema),
     illustration: illustration('building'),
   }),
+  /** text sections between the hero and the ambulance */
+  intro: infoSections(),
   ambulance: obj({
     tag: str(),
     heading: str(),
+    subheading: str(),
     body: str(),
+    featuresLabel: str(),
+    features: list(z.string()),
+    facts: list(z.object({ label: str(), value: str() })),
     link: link(),
   }),
   critical: obj({
     head: sectionHead(),
-    items: list(z.object({ tone: oneOf(TONES, 'green'), title: str(), body: str(), link: link() })),
+    items: list(
+      z.object({
+        tone: oneOf(TONES, 'green'),
+        title: str(),
+        subtitle: str(),
+        body: str(),
+        note: str(),
+        link: link(),
+      }),
+    ),
   }),
   dialysis: obj({ tag: str(), heading: str(), body: str(), ctas: ctas() }),
+  /** text sections after the dialysis banner (diagnostics, rehabilitation, pharmacy…) */
+  services: infoSections(),
   insurance: obj({
     head: sectionHead(),
     steps: list(z.object({ title: str(), body: str() })),
+    note: str(),
     partnersLabel: str(),
     partners: list(z.string()),
     badge: str(),
@@ -692,6 +757,8 @@ export const FacilitiesPageSchema = obj({
     body: str(),
     timings: obj({ eyebrow: str(), title: str(), note: str() }),
   }),
+  /** text sections after the canteen */
+  more: infoSections(),
   cta: obj({ heading: str(), link: link() }),
 })
 
@@ -713,6 +780,8 @@ export const JobItemSchema = z.object({
 export const CareersPageSchema = obj({
   seo: seo(),
   hero: obj({ crumbs: crumbs(), title: accentTitle(), lead: str() }),
+  /** text sections between the hero and the openings */
+  intro: infoSections(),
   openings: obj({
     eyebrow: str(),
     heading: str(),
@@ -749,6 +818,7 @@ export type Notices = z.infer<typeof NoticesSchema>
 export type Blogs = z.infer<typeof BlogsSchema>
 export type Faqs = z.infer<typeof FaqsSchema>
 export type Cta = z.infer<ReturnType<typeof cta>>
+export type InfoSection = z.infer<typeof InfoSectionSchema>
 export type AccentTitle = z.infer<ReturnType<typeof accentTitle>>
 export type QuickCheck = z.infer<ReturnType<typeof quickCheck>>
 export type AboutPage = z.infer<typeof AboutPageSchema>
