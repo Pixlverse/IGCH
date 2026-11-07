@@ -67,13 +67,15 @@ export function Footer({ site, nav }: { site: SiteSettings; nav: Navigation }) {
         {site.shortName && <div className="footer__wordmark" data-wordmark={site.shortName} />}
         <div className="footer__meta">
           <span>{site.copyright}</span>
-          {site.social.length > 0 && (
+          {site.social.some((link) => link.href !== '#') && (
             <div className="footer__social">
-              {site.social.map((link) => (
-                <SmartLink key={link.label} href={link.href}>
-                  {link.label}
-                </SmartLink>
-              ))}
+              {site.social
+                .filter((link) => link.href !== '#')
+                .map((link) => (
+                  <SmartLink key={link.label} href={link.href}>
+                    {link.label}
+                  </SmartLink>
+                ))}
             </div>
           )}
         </div>

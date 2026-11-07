@@ -1,0 +1,48 @@
+{
+  "status": 200,
+  "headers": {
+    "link": "</_next/static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(site)/layout,_N_T_/(site)/facilities/layout,_N_T_/(site)/facilities/insurance/layout,_N_T_/(site)/facilities/insurance/page,_N_T_/facilities/insurance,content,content:site,content:navigation,content:figures,content:insurance,content:doctors,content:doctorsPage"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/_index",
+    "/!KHNpdGUp",
+    "/!KHNpdGUp/facilities/insurance/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 49152,
+    "slots": {
+      "children": {
+        "hints": 49152,
+        "slots": {
+          "children": {
+            "hints": 49216,
+            "slots": {
+              "children": {
+                "hints": 49248,
+                "slots": {
+                  "children": {
+                    "hints": 49312,
+                    "slots": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/28e6a991ce9908a5c79142584ebfbf120b468098b2e8e93e7eee039da93317ef/$/facilities/insurance",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/(site)/facilities/insurance/page"
+    },
+    "isFallback": false
+  }
+}

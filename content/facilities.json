@@ -5,28 +5,28 @@
       "tone": "green",
       "title": "Insurance & TPA",
       "body": "CGHS empanelled, with cashless treatment through major TPAs.",
-      "href": "#"
+      "href": "/facilities/insurance"
     },
     {
       "icon": "cup",
       "tone": "amber",
       "title": "Canteen",
       "body": "Fresh meals and refreshments for patients and visitors.",
-      "href": "#"
+      "href": "/facilities/canteen"
     },
     {
       "icon": "pulse",
       "tone": "red",
       "title": "ICU, OT & Blood Storage Unit",
       "body": "Running 24/7 for emergencies and surgery.",
-      "href": "#"
+      "href": "/facilities#emergency"
     },
     {
       "icon": "heart",
       "tone": "blue",
       "title": "Dialysis Unit",
-      "body": "15,000+ sessions completed - 7,000 of them free.",
-      "href": "#"
+      "body": "{{haemodialysis-sessions}} sessions completed - {{free-dialysis.number}} of them free.",
+      "href": "/facilities/dialysis"
     }
   ]
 }

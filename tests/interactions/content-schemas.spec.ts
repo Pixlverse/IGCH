@@ -17,6 +17,7 @@ import careersSeed from '../../content/seed/careers.json'
 import departments from '../../content/seed/departments.json'
 import doctors from '../../content/seed/doctors.json'
 import faqs from '../../content/seed/faqs.json'
+import figures from '../../content/seed/figures.json'
 import newsSeed from '../../content/seed/news.json'
 import noticesSeed from '../../content/seed/notices.json'
 import settings from '../../content/seed/settings.json'
@@ -55,10 +56,11 @@ const SEEDS: Record<string, Record<string, unknown>[]> = {
   articles,
   faqs,
   careers: careersSeed,
+  figures,
 }
 
 /** Collections that may start empty (no real data to seed yet). */
-const MAY_BE_EMPTY = new Set(['careers'])
+const MAY_BE_EMPTY = new Set(['careers', 'appointments', 'messages'])
 
 test.describe('seed data', () => {
   for (const resource of RESOURCES) {

@@ -1,0 +1,66 @@
+[
+  {
+    "key": "years",
+    "value": "50+",
+    "label": "Years of healthcare",
+    "note": "Home hero tag and stats",
+    "order": 1,
+    "published": true
+  },
+  {
+    "key": "haemodialysis-sessions",
+    "value": "15,000+",
+    "label": "Haemodialysis sessions completed",
+    "note": "Home, About, Facilities, Dialysis",
+    "order": 2,
+    "published": true
+  },
+  {
+    "key": "free-dialysis",
+    "value": "7,000+",
+    "label": "Free dialysis sessions",
+    "note": "Home, About, Facilities, Dialysis, Insurance",
+    "order": 3,
+    "published": true
+  },
+  {
+    "key": "specialities",
+    "value": "25+",
+    "label": "Specialities",
+    "note": "Home stats",
+    "order": 4,
+    "published": true
+  },
+  {
+    "key": "departments",
+    "value": "30",
+    "label": "Medical departments",
+    "note": "About stats and team intro, Doctors page intro",
+    "order": 5,
+    "published": true
+  },
+  {
+    "key": "specialist-doctors",
+    "value": "39",
+    "label": "Specialist doctors",
+    "note": "About stats",
+    "order": 6,
+    "published": true
+  },
+  {
+    "key": "hospital-beds",
+    "value": "[XX]",
+    "label": "Hospital beds",
+    "note": "About stats",
+    "order": 7,
+    "published": true
+  },
+  {
+    "key": "cardiothoracic-surgeries",
+    "value": "200",
+    "label": "Cardiothoracic surgeries in 15 months",
+    "note": "About achievements and impact",
+    "order": 8,
+    "published": true
+  }
+]

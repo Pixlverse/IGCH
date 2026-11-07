@@ -2,18 +2,19 @@
 
 .hero {
   display: grid;
-  grid-template-columns: 1.59fr 1fr;
+  /* the photo gets nearly half the row */
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
   gap: var(--gap);
   margin-top: var(--gap);
 }
 .hero__main {
   background: var(--white);
   border-radius: var(--radius-lg);
-  padding: 44px 52px;
+  padding: 40px 52px;
 }
 .hero__title {
-  margin: 20px 0 18px;
-  font-size: clamp(42px, 4.6vw, 70px);
+  margin: 18px 0 16px;
+  font-size: clamp(42px, 4.2vw, 64px);
   line-height: 1;
   font-weight: 800;
   letter-spacing: -0.055em;
@@ -23,10 +24,11 @@
 .hero__lead {
   font-size: 18px;
   color: var(--ink-2);
-  max-width: 560px;
+  /* wide enough for ~4 lines, so the whole hero fits on a laptop screen */
+  max-width: 720px;
   line-height: 1.5;
 }
-.hero__ctas { display: flex; gap: 12px; margin: 24px 0 28px; flex-wrap: wrap; }
+.hero__ctas { display: flex; gap: 12px; margin: 22px 0 24px; flex-wrap: wrap; }
 .hero__ctas .btn { padding: 14px 24px; font-size: 16px; }
 
 .search-label { font-size: 14px; font-weight: 700; color: var(--ink-2); margin-bottom: 12px; display: block; }
@@ -51,7 +53,7 @@
 .search input::placeholder { color: #8b9592; }
 .search .btn { padding: 11px 22px; font-size: 15px; }
 
-.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; max-width: 640px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; max-width: 780px; }
 .chip {
   padding: 8px 14px;
   border: 1px solid #dfe3e1;
@@ -76,7 +78,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 100%;
+  /* frame the whole building: roof in view, less pavement under the 5G card */
+  object-position: 50% 57%;
   transition: transform 1.2s cubic-bezier(.2,.8,.2,1);
 }
 .hero__art:hover .hero__photo { transform: scale(1.03); }
@@ -144,18 +147,18 @@
   font-weight: 700;
   padding: 3px 9px;
   border-radius: 6px;
-  background: var(--lime);
+  background: var(--accent);
   color: var(--ink);
 }
 .hero__5g-text strong { display: block; font-size: 20px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; }
 .hero__5g-sub { display: block; font-size: 13px; color: rgba(255,255,255,.7); margin-top: 2px; }
-.hero__5g-sub u { text-decoration: none; color: var(--lime); font-weight: 700; white-space: nowrap; }
+.hero__5g-sub u { text-decoration: none; color: var(--accent); font-weight: 700; white-space: nowrap; }
 
 .hero__5g-art { position: relative; width: 130px; height: 78px; flex-shrink: 0; overflow: hidden; }
 .hero__5g-art .amb { position: absolute; left: 4px; bottom: 8px; width: 100px; animation: drive 1.2s ease-in-out infinite; will-change: transform; }
 .siren-red { animation: siren .8s steps(1) infinite; }
 
-.hero__5g-art .waves { position: absolute; right: 4px; top: 0; width: 40px; fill: none; stroke: var(--lime); stroke-width: 3; stroke-linecap: round; }
+.hero__5g-art .waves { position: absolute; right: 4px; top: 0; width: 40px; fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; }
 .hero__5g-art .waves path { opacity: .15; animation: wave 1.8s infinite; }
 .hero__5g-art .waves path:nth-child(2) { animation-delay: .3s; }
 .hero__5g-art .waves path:nth-child(3) { animation-delay: .6s; }
@@ -203,4 +206,62 @@
 @media (prefers-reduced-motion: reduce) {
   .hero__5g-art *, .hero__5g-art .waves path, .siren-red { animation: none !important; }
   .emergency-pill .ep-dot::after, .hero__5g-call small .dot::after, .is-active .journey__icon::after { animation: none; display: none; }
+}
+
+/* short laptop screens: keep the search and quick links above the fold */
+@media (min-width: 961px) and (max-height: 920px) {
+  /* more room for the text column: shorter paragraph, chips on one row */
+  .hero { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+  .hero__art { min-height: 440px; }
+  .hero__main { padding: 32px 44px; }
+  .hero__title { margin: 14px 0 12px; font-size: clamp(40px, 3.6vw, 56px); }
+  .hero__lead { font-size: 16.5px; line-height: 1.5; }
+  .hero__ctas { margin: 18px 0 18px; }
+  .hero__ctas .btn { padding: 12px 22px; font-size: 15.5px; }
+  .search-label { margin-bottom: 8px; }
+  .search { padding-block: 4px; }
+  .chips { margin-top: 12px; }
+  .chip { padding: 6px 12px; font-size: 13.5px; }
+}
+@media (min-width: 961px) and (max-height: 740px) {
+  .hero__main { padding-block: 18px; }
+  .hero__title { margin: 12px 0 10px; font-size: clamp(36px, 3.2vw, 48px); }
+  .hero__lead { font-size: 15.5px; }
+  .hero__ctas { margin: 14px 0; }
+  .chips { margin-top: 10px; }
+}
+
+/* slim ambulance bar: one row along the photo's bottom edge (5G service +
+   emergency line), so nearly the whole building stays in view */
+.hero__5g { left: 12px; right: 12px; bottom: 12px; display: flex; align-items: center; padding: 5px; border-radius: 16px; }
+.hero__5g-main { flex: 1; min-width: 0; padding: 8px 12px; background: none; }
+.hero__5g-text { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+.hero__5g-chips { margin: 0; }
+.hero__5g-chips .chip-new { display: none; }
+.hero__5g-text strong { font-size: 16px; }
+/* keep just "Learn more →" from the subtitle line */
+.hero__5g-sub { margin: 0; font-size: 0; }
+.hero__5g-sub u { font-size: 13px; }
+.hero__5g-art { display: none; }
+.hero__5g-call { flex-shrink: 0; gap: 14px; padding: 4px 4px 4px 16px; border-top: 0; border-left: 1px solid rgba(255,255,255,.12); }
+.hero__5g-call small { font-size: 10px; letter-spacing: .08em; }
+.hero__5g-call b { font-size: 17px; }
+.hero__5g-call .call-btn { width: 40px; height: 40px; }
+@media (max-width: 640px) {
+  .hero__5g { flex-direction: column; align-items: stretch; }
+  .hero__5g-call { padding: 8px 4px 4px 12px; border-left: 0; border-top: 1px solid rgba(255,255,255,.12); }
+}
+
+/* desktop: chips stay on one row beside the narrower text column */
+@media (min-width: 961px) {
+  .hero .chips { gap: 6px; }
+  .hero .chip { padding: 6px 11px; font-size: 13.5px; }
+}
+
+/* smallest laptops (≤800px tall): a touch more room for the text so the
+   search and chips stay above the fold; the photo keeps ~43% of the row */
+@media (min-width: 961px) and (max-height: 800px) {
+  .hero { grid-template-columns: minmax(0, 1.32fr) minmax(0, 1fr); }
+  .hero__lead { font-size: 15.5px; line-height: 1.48; }
+  .hero__ctas { margin: 14px 0; }
 }

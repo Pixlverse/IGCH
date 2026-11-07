@@ -3,6 +3,7 @@
 import { useRef, useState, type KeyboardEvent } from 'react'
 
 import { Icon } from '@/components/icons/Icon'
+import { SmartLink } from '@/components/ui/SmartLink'
 import type { Notices } from '@/lib/content/schemas'
 
 /**
@@ -69,7 +70,7 @@ export function NoticeBoard({ notices }: { notices: Notices }) {
         <ul>
           {notices.announcements.items.map((item, i) => (
             <li key={i}>
-              <a href={item.href}>
+              <SmartLink href={item.href}>
                 <span className="board__date">
                   <b>{item.day}</b>
                   {item.month}
@@ -79,7 +80,7 @@ export function NoticeBoard({ notices }: { notices: Notices }) {
                   <small>{item.kind}</small>
                 </span>
                 <Icon name="arrow" />
-              </a>
+              </SmartLink>
             </li>
           ))}
         </ul>
@@ -94,7 +95,7 @@ export function NoticeBoard({ notices }: { notices: Notices }) {
         <ul>
           {notices.tenders.items.map((item, i) => (
             <li key={i}>
-              <a href={item.href}>
+              <SmartLink href={item.href}>
                 <span className="board__date board__date--tender">
                   <b>{item.day}</b>
                   {item.month}
@@ -106,15 +107,15 @@ export function NoticeBoard({ notices }: { notices: Notices }) {
                   </small>
                 </span>
                 <Icon name="arrow" />
-              </a>
+              </SmartLink>
             </li>
           ))}
         </ul>
       </div>
 
-      <a href={current.viewAll.href} className="board__all" id="board-all">
+      <SmartLink href={current.viewAll.href} className="board__all" id="board-all">
         {current.viewAll.label} <Icon name="arrow" />
-      </a>
+      </SmartLink>
     </aside>
   )
 }

@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 
 import { Icon } from '@/components/icons/Icon'
-import { Illustration } from '@/components/illustrations/Illustration'
+import { ContentImage } from '@/components/ui/ContentImage'
 import { SectionHead } from '@/components/ui/SectionHead'
 import { SmartLink } from '@/components/ui/SmartLink'
 import { Tag } from '@/components/ui/Tag'
@@ -50,9 +50,6 @@ export function GroupCards({
           const more = group.departments.length - chips.length
           return (
             <article key={group.title} className={`group-card group-card--${group.color}`}>
-              <div className="group-card__art">
-                <Illustration name={group.illustration} />
-              </div>
               <div className="group-card__body">
                 <h3>
                   <SmartLink href={href}>{group.title}</SmartLink>
@@ -86,9 +83,15 @@ export function CentreCards({ centres }: { centres: SpecialitiesHub['centres'] }
       <div className="centre-cards" data-reveal="">
         {centres.items.map((centre) => (
           <article key={centre.title} className="centre-tile">
-            <div className="centre-tile__art">
-              <Illustration name={centre.illustration} />
-            </div>
+            {centre.image && (
+              <div className="centre-tile__art">
+                <ContentImage
+                  image={centre.image}
+                  sizes="(max-width: 960px) 100vw, 33vw"
+                  className="art-photo"
+                />
+              </div>
+            )}
             <div className="centre-tile__body">
               <Tag {...centre.tag} />
               <h3>{centre.title}</h3>

@@ -93,15 +93,21 @@ for (const [site, url] of Object.entries(SITES)) {
       await expect(page.locator('#journey-dept')).toHaveText('Paediatrics')
       await expect(page.locator('#journey-step')).toHaveText('3')
 
-      await dept.click()
-      await expect(page).toHaveURL(url) // placeholder link does not navigate
-      await expect(steps.nth(2)).toHaveClass(/is-done/)
-      await expect(page.locator('#journey-step')).toHaveText('3')
-      await expect(page.locator('#journey-bar')).toHaveAttribute('style', /width:\s*100%/)
-
       await page.locator('.spec-group').nth(2).locator('.dept').nth(0).focus()
       await expect(page.locator('#journey-group')).toHaveText('Clinical Support')
       await expect(page.locator('#journey-dept')).toHaveText('Emergency Medicine')
+
+      if (site === 'legacy') {
+        await dept.click()
+        await expect(page).toHaveURL(url) // placeholder link does not navigate
+        await expect(steps.nth(2)).toHaveClass(/is-done/)
+        await expect(page.locator('#journey-step')).toHaveText('3')
+        await expect(page.locator('#journey-bar')).toHaveAttribute('style', /width:\s*100%/)
+      } else {
+        // the rebuild links each department to its doctors (step 3: meet doctors & book)
+        await dept.click()
+        await expect(page).toHaveURL(/\/doctors\?q=Paediatrics$/)
+      }
     })
 
     test('notice board tabs: click, keyboard, pill, view-all label', async ({ page }) => {
@@ -144,7 +150,12 @@ for (const [site, url] of Object.entries(SITES)) {
     test('in-page anchors scroll to their sections', async ({ page }) => {
       await page.setViewportSize({ width: 1440, height: 900 })
       await open(page, url)
-      // the header nav now links to pages, so use the hero's in-page link
+      if (site === 'next') {
+        // the rebuild's "Meet your doctor" opens the doctor directory instead
+        await page.locator('.hero a[href="/doctors"]').first().click()
+        await expect(page).toHaveURL(/\/doctors$/)
+        return
+      }
       await page.locator('.hero a[href="#doctors"]').click()
       await expect(page).toHaveURL(/#doctors$/)
       await expect
@@ -159,6 +170,17 @@ for (const [site, url] of Object.entries(SITES)) {
     test('search submit stays on the page', async ({ page }) => {
       await page.setViewportSize({ width: 1440, height: 900 })
       await open(page, url)
+      if (site === 'next') {
+        // the rebuild's hero search lists matching departments and doctors as links
+        await page.locator('#speciality-q').fill('cardiology')
+        await page.locator('#speciality-q').press('Enter')
+        await expect(page).toHaveURL(url)
+        await expect(page.locator('.hero .search-results a').first()).toHaveAttribute(
+          'href',
+          '/doctors?q=Cardiology',
+        )
+        return
+      }
       await page.locator('#q').fill('cardiology')
       await page.locator('.search-form button[type=submit]').click()
       await expect(page).toHaveURL(url)

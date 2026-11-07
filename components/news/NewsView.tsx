@@ -3,7 +3,6 @@
 import clsx from 'clsx'
 import { useState } from 'react'
 
-import { Illustration } from '@/components/illustrations/Illustration'
 import { ArticleCard } from '@/components/page/ArticleCard'
 import { PageHero } from '@/components/page/PageHero'
 import { ContentImage } from '@/components/ui/ContentImage'
@@ -66,9 +65,15 @@ export function NewsView({
       {showNews && featured && (
         <section className="news-top">
           <SmartLink href={featured.href} className="news-feature">
-            <span className="news-feature__art">
-              <NewsArt item={featured} sizes="(max-width: 960px) 100vw, 60vw" />
-            </span>
+            {featured.image && (
+              <span className="news-feature__art">
+                <ContentImage
+                  image={featured.image}
+                  sizes="(max-width: 960px) 100vw, 60vw"
+                  className="cover-img"
+                />
+              </span>
+            )}
             <span className="news-feature__body">
               <span className="news-meta">
                 {page.featured.badge && (
@@ -84,9 +89,15 @@ export function NewsView({
           <div className="news-highlights">
             {highlights.map((item) => (
               <SmartLink key={item.id} href={item.href} className="news-highlight">
-                <span className="news-highlight__art">
-                  <NewsArt item={item} sizes="(max-width: 960px) 100vw, 38vw" />
-                </span>
+                {item.image && (
+                  <span className="news-highlight__art">
+                    <ContentImage
+                      image={item.image}
+                      sizes="(max-width: 960px) 100vw, 38vw"
+                      className="cover-img"
+                    />
+                  </span>
+                )}
                 <span className="news-highlight__body">
                   <span className="news-meta">{item.date}</span>
                   <h2>{item.title}</h2>
@@ -109,7 +120,6 @@ export function NewsView({
                   article={{
                     href: item.href,
                     title: item.title,
-                    illustration: item.illustration,
                     image: item.image,
                     tag: item.tag.label ? item.tag : undefined,
                     meta: item.date,
@@ -173,14 +183,5 @@ export function NewsView({
         )}
       </section>
     </>
-  )
-}
-
-/** Uploaded photo when there is one, otherwise the item's illustration. */
-function NewsArt({ item, sizes }: { item: NewsItem; sizes: string }) {
-  return item.image ? (
-    <ContentImage image={item.image} sizes={sizes} className="cover-img" />
-  ) : (
-    <Illustration name={item.illustration} />
   )
 }

@@ -1,10 +1,10 @@
 import { Icon } from '@/components/icons/Icon'
 import { Tag } from '@/components/ui/Tag'
 import { SmartLink } from '@/components/ui/SmartLink'
-import { slugify } from '@/lib/content/format'
+import { deptHref, slugify } from '@/lib/content/format'
 import { TONES, type Department } from '@/lib/content/schemas'
 
-/** Department tile: tinted "+" icon, name, one-line description, link. */
+/** Department tile: coloured top edge, name with its number, description, doctors link. */
 export function DeptCard({
   department,
   index,
@@ -16,14 +16,18 @@ export function DeptCard({
 }) {
   const tone = department.tone ?? TONES[index % TONES.length]
   return (
-    <SmartLink href={department.href} className="dept-card" id={`dept-${slugify(department.name)}`}>
+    <SmartLink
+      href={deptHref(department.href, department.name)}
+      className={`dept-card dept-card--${tone}`}
+      id={`dept-${slugify(department.name)}`}
+    >
       <span className="dept-card__top">
-        <span className={`tone-box tone-box--${tone}`}>
-          <Icon name="plus" />
+        <h3>{department.shortName || department.name}</h3>
+        <span className="dept-card__no" aria-hidden="true">
+          {String(index + 1).padStart(2, '0')}
         </span>
-        <Tag {...department.badge} />
       </span>
-      <h3>{department.shortName || department.name}</h3>
+      <Tag {...department.badge} />
       {department.description && <p>{department.description}</p>}
       {linkLabel && (
         <span className="dept-card__link">

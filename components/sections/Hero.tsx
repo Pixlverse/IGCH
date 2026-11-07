@@ -4,9 +4,19 @@ import { ContentImage } from '@/components/ui/ContentImage'
 import { SmartLink } from '@/components/ui/SmartLink'
 import type { HomePage, SiteSettings } from '@/lib/content/schemas'
 
-import { SearchForm } from './SearchForm'
+import { SpecialitySearch } from '@/components/specialities/SpecialitySearch'
+import type { SearchEntry } from '@/lib/content/search'
 
-export function Hero({ hero, site }: { hero: HomePage['hero']; site: SiteSettings }) {
+export function Hero({
+  hero,
+  site,
+  entries,
+}: {
+  hero: HomePage['hero']
+  site: SiteSettings
+  /** departments and doctors the search box looks through */
+  entries: SearchEntry[]
+}) {
   const { title, fiveG } = hero
   const phone = site.emergency.phone
   return (
@@ -33,11 +43,7 @@ export function Hero({ hero, site }: { hero: HomePage['hero']; site: SiteSetting
             </Button>
           )}
         </div>
-        <SearchForm
-          label={hero.search.label}
-          placeholder={hero.search.placeholder}
-          buttonLabel={hero.search.buttonLabel}
-        />
+        <SpecialitySearch {...hero.search} entries={entries} />
         {hero.chips.length > 0 && (
           <div className="chips">
             {hero.chips.map((chip) => (

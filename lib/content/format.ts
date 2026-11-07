@@ -34,3 +34,37 @@ export function formatDate(
   if (Number.isNaN(date.getTime())) return ''
   return new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Kolkata', ...options }).format(date)
 }
+
+type Figure = { key: string; value: string; label: string }
+
+/**
+ * Replaces {{key}}, {{key.label}} and {{key.number}} (the value without a
+ * trailing "+", for sentences like "more than 7,000") in every string of a
+ * content document. Unknown keys become empty so a deleted figure never shows
+ * raw braces.
+ */
+export function fillFigures<T>(doc: T, figures: Figure[]): T {
+  const byKey = new Map(figures.map((f) => [f.key, f]))
+  const token = /\{\{\s*([a-z0-9-]+)(?:\.(label|number))?\s*\}\}/g
+  const walk = (value: unknown): unknown => {
+    if (typeof value === 'string')
+      return value.includes('{{')
+        ? value.replace(token, (_, key: string, part?: string) => {
+            const figure = byKey.get(key)
+            if (!figure) return ''
+            if (part === 'label') return figure.label
+            if (part === 'number') return figure.value.replace(/\+$/, '')
+            return figure.value
+          })
+        : value
+    if (Array.isArray(value)) return value.map(walk)
+    if (value && typeof value === 'object')
+      return Object.fromEntries(Object.entries(value).map(([k, v]) => [k, walk(v)]))
+    return value
+  }
+  return walk(doc) as T
+}
+
+/** A department's own page when it has one, otherwise its doctors in the directory. */
+export const deptHref = (href: string, name: string) =>
+  href && href !== '#' ? href : `/doctors?q=${encodeURIComponent(name)}`

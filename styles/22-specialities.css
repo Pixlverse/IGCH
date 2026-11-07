@@ -43,7 +43,7 @@
   transition: transform .2s;
 }
 .hub-step:hover { transform: translateY(-2px); }
-.hub-step.is-lit { background: var(--lime); }
+.hub-step.is-lit { background: var(--accent); }
 .hub-step__no {
   width: 40px;
   height: 40px;
@@ -127,7 +127,7 @@
   background: var(--ink);
   color: var(--white);
 }
-.finder .eyebrow { color: var(--lime); }
+.finder .eyebrow { color: var(--accent); }
 .finder__form {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
@@ -149,7 +149,7 @@
   color: var(--ink);
 }
 .finder__form select:focus-visible,
-.finder__form input:focus-visible { outline: 3px solid var(--lime); outline-offset: 1px; }
+.finder__form input:focus-visible { outline: 3px solid var(--accent); outline-offset: 1px; }
 .finder__form .btn { height: 50px; }
 .finder__results { margin-top: var(--gap); }
 .finder__empty { margin-top: 24px; padding: 28px; border-radius: var(--radius); background: var(--white); color: var(--ink-2); }
@@ -171,7 +171,7 @@
 }
 .count-card strong { font-size: clamp(64px, 6vw, 92px); line-height: .9; font-weight: 800; letter-spacing: -0.05em; }
 .count-card span { font-size: 17px; font-weight: 700; }
-.count-card--lime { background: var(--lime); }
+.count-card--lime { background: var(--green-soft); }
 .count-card--cream { background: #fdf1c8; }
 .count-card--cream span { color: #6d4b05; }
 .count-card--sky { background: var(--sky); }
@@ -211,10 +211,10 @@
   background: var(--ink);
   color: var(--white);
 }
-.how .eyebrow { color: var(--lime); }
+.how .eyebrow { color: var(--accent); }
 .how__steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--gap); margin-top: 28px; }
 .how__steps li { padding: 24px 26px; border-radius: var(--radius); background: #1c3530; }
-.how__steps h3 { font-size: 18px; font-weight: 800; color: var(--lime); margin-bottom: 8px; }
+.how__steps h3 { font-size: 18px; font-weight: 800; color: var(--accent); margin-bottom: 8px; }
 .how__steps p { font-size: 14.5px; line-height: 1.5; color: rgba(255,255,255,.82); }
 
 .opd { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap); }

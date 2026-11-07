@@ -1,0 +1,216 @@
+{
+  "seo": {
+    "title": "Karunya Hridayalaya Cardiac Centre, Kochi | Cardiology & Heart Surgery at IGCH",
+    "description": "Interventional cardiology and cardiothoracic surgery at Indira Gandhi Co-operative Hospital, Kadavanthra, Kochi. Angioplasty, pacemaker implantation, heart surgery and 24-hour cardiac emergency care."
+  },
+  "hero": {
+    "image": {
+      "src": "/images/cardiology.jpg",
+      "alt": "Patient resting beside a cardiac monitor showing heart rhythm and blood pressure",
+      "width": 1400,
+      "height": 1050
+    },
+    "crumbs": [
+      { "label": "Home", "href": "/" },
+      { "label": "Specialities", "href": "/specialities" },
+      { "label": "Heart Care", "href": "/specialities/super-specialities#departments" },
+      { "label": "Karunya Hridayalaya", "href": "/specialities/karunya-hridayalaya" }
+    ],
+    "tag": "",
+    "title": { "before": "", "accent": "Karunya Hridayalaya", "after": " Cardiac Centre, Kochi" },
+    "lead": "Interventional cardiology and cardiothoracic surgery at Indira Gandhi Co-operative Hospital, Kadavanthra.",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "heading": "Both working together",
+      "paragraphs": [
+        "Looking for a cardiologist in Kochi? Karunya Hridayalaya Cardiac Centre at Indira Gandhi Co-operative Hospital (IGCH), Kadavanthra, brings together interventional cardiology and cardiothoracic surgery under one cardiac team.",
+        "From diagnosing heart conditions and performing catheter-based procedures to surgical treatment, the centre provides cardiac care based on each patient's condition and medical needs.",
+        "Patients can access cardiology consultations, cardiac investigations and specialist evaluation for conditions that may require angioplasty, pacemaker implantation or heart surgery."
+      ],
+      "ctas": [
+        {
+          "label": "Meet Cardiac Specialists in Kochi",
+          "href": "/doctors?q=Cardio",
+          "style": "primary"
+        },
+        { "label": "Book a cardiology appointment", "href": "booking", "style": "light" }
+      ]
+    },
+    {
+      "id": "leadless-pacemaker",
+      "eyebrow": "A significant step in cardiac care",
+      "heading": "Leadless Pacemaker Implantation at Indira Gandhi Co-operative Hospital (IGCH), Kadavanthra, Kochi",
+      "paragraphs": [
+        "Karunya Hridayalaya has successfully performed a leadless pacemaker implantation at Indira Gandhi Co-operative Hospital, Kochi in 2026.",
+        "Unlike a conventional pacemaker, a leadless pacemaker is a small device placed directly inside the heart through a catheter-based procedure. It does not require a traditional chest incision or leads running through veins to the heart.",
+        "This procedure represents an important development in the cardiac services available at IGCH and adds to the range of treatment options offered by its cardiac team."
+      ],
+      "ctas": [
+        {
+          "label": "Read about the leadless pacemaker procedure",
+          "href": "/news",
+          "style": "primary"
+        }
+      ],
+      "tone": "dark"
+    },
+    {
+      "id": "services",
+      "heading": "Cardiac care under one team",
+      "paragraphs": [
+        "Karunya Hridayalaya brings together two important areas of cardiac treatment: interventional cardiology and cardiothoracic surgery."
+      ],
+      "cards": [
+        {
+          "title": "Interventional Cardiology",
+          "paragraphs": [
+            "Interventional cardiology deals with the diagnosis and treatment of heart and blood vessel conditions using catheter-based procedures. These procedures can help improve blood flow, manage certain heart rhythm problems and treat selected cardiovascular conditions.",
+            "Depending on the patient's diagnosis, available procedures include:"
+          ],
+          "items": [
+            "Coronary angiography",
+            "Coronary angioplasty and stenting",
+            "Primary angioplasty for eligible heart attack patients",
+            "Pacemaker implantation",
+            "Peripheral angioplasty",
+            "Cardiac device procedures",
+            "Diagnostic cardiac investigations"
+          ],
+          "after": [
+            "Patients looking for an angioplasty hospital in Kochi can contact the cardiac team for an assessment and information about available procedures."
+          ]
+        },
+        {
+          "title": "Cardiothoracic & Vascular Surgery",
+          "paragraphs": [
+            "Some heart and blood vessel conditions require surgical treatment. The cardiothoracic and vascular surgery team evaluates patients who may benefit from surgery and works with cardiologists to plan appropriate treatment.",
+            "The department's surgical services include:"
+          ],
+          "items": [
+            "Coronary artery bypass surgery",
+            "Heart valve surgery",
+            "Surgery for selected congenital heart conditions",
+            "Thoracic surgery",
+            "Vascular surgery",
+            "Surgical treatment of selected aortic conditions"
+          ],
+          "after": [
+            "The appropriate treatment depends on the patient's diagnosis, overall health and clinical assessment.",
+            "For patients looking for a heart surgery hospital in Kochi, the cardiac team can provide information about surgical consultations and treatment options."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "investigations",
+      "heading": "Cardiac Investigations and Diagnostic Services",
+      "paragraphs": [
+        "Accurate diagnosis helps doctors understand the nature of a heart condition and decide on the next steps.",
+        "The cardiac team uses investigations such as:"
+      ],
+      "items": [
+        "Electrocardiogram (ECG)",
+        "Echocardiography",
+        "Colour Doppler",
+        "Treadmill Test (TMT)",
+        "Holter monitoring",
+        "Coronary angiography",
+        "Other cardiac investigations as clinically required"
+      ],
+      "after": [
+        "For information about investigation availability and appointments, contact the hospital [Number]."
+      ]
+    },
+    {
+      "id": "specialists",
+      "heading": "Meet Our Cardiac Specialists",
+      "paragraphs": [
+        "Choosing the right cardiologist is an important step in managing a heart condition.",
+        "At Karunya Hridayalaya, patients can consult specialists in interventional cardiology and cardiothoracic and vascular surgery. The cardiac team evaluates each patient's condition, explains available treatment options and helps plan the next steps."
+      ],
+      "doctors": ["Cardiology", "Cardiothoracic & Vascular Surgery"],
+      "ctas": [
+        { "label": "Find a cardiologist in Kochi", "href": "/doctors?q=Cardio", "style": "primary" }
+      ]
+    },
+    {
+      "id": "symptoms",
+      "heading": "When should you consult a cardiologist?",
+      "paragraphs": [
+        "Certain symptoms may indicate an underlying heart condition and should not be ignored. Medical assessment is important if you experience:"
+      ],
+      "items": [
+        "Chest pain or discomfort",
+        "Breathlessness during routine activities",
+        "Palpitations or an irregular heartbeat",
+        "Dizziness or fainting episodes",
+        "Unusual fatigue",
+        "Swelling in the legs or ankles"
+      ],
+      "after": [
+        "These symptoms can have different causes. A cardiologist can assess them and recommend further investigations if required."
+      ],
+      "note": "Important: Sudden chest pain, severe breathlessness, fainting or symptoms suggestive of a heart attack require immediate emergency medical attention. Do not wait for a routine cardiology appointment."
+    },
+    {
+      "id": "emergency",
+      "heading": "Cardiac Emergency Care",
+      "paragraphs": [
+        "Heart emergencies require prompt medical attention. Indira Gandhi Co-operative Hospital provides round-the-clock emergency services in Kochi.",
+        "If you or someone nearby experiences symptoms of a heart attack, seek emergency medical assistance immediately."
+      ],
+      "facts": [{ "label": "24-hour Emergency", "value": "0484 294 1600", "href": "emergency" }],
+      "ctas": [{ "label": "Call 0484 294 1600", "href": "emergency", "style": "primary" }],
+      "tone": "dark"
+    },
+    {
+      "id": "plan",
+      "heading": "Plan your cardiac consultation",
+      "paragraphs": [
+        "If you are looking for a cardiologist or cardiac treatment in Kochi, contact Karunya Hridayalaya at Indira Gandhi Co-operative Hospital, Kadavanthra, Kochi",
+        "Our team can help you with specialist consultation enquiries, appointment details and information about available cardiac services."
+      ],
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Indira Gandhi Co-operative Hospital, Gandhinagar Road, Kadavanthra, Kochi – 682020."
+        },
+        { "label": "Appointment Enquiries", "value": "[Number]" },
+        { "label": "Emergency", "value": "0484 294 1600", "href": "emergency" }
+      ],
+      "after": [
+        "Karunya Hridayalaya Cardiac Centre",
+        "Indira Gandhi Co-operative Hospital, Kochi."
+      ],
+      "ctas": [{ "label": "Book a cardiology appointment", "href": "booking", "style": "primary" }]
+    },
+    {
+      "id": "faq",
+      "heading": "Frequently Asked Questions",
+      "faqs": [
+        {
+          "question": "When should I consult a cardiologist?",
+          "answer": [
+            "Consult a cardiologist if you experience recurring chest discomfort, breathlessness, palpitations, dizziness or unexplained fatigue. Sudden or severe symptoms require immediate emergency assessment."
+          ],
+          "open": true
+        },
+        {
+          "question": "What is the difference between angioplasty and bypass surgery?",
+          "answer": [
+            "Angioplasty is a catheter-based procedure used to open narrowed or blocked coronary arteries, usually with a balloon and stent. Bypass surgery creates an alternative route for blood to flow around blocked coronary arteries. The appropriate treatment depends on the patient's condition and medical assessment."
+          ]
+        },
+        {
+          "question": "What is a leadless pacemaker?",
+          "answer": [
+            "A leadless pacemaker is a small cardiac device implanted directly inside the heart through a catheter. Unlike a conventional pacemaker, it does not require leads running from a device placed under the skin of the chest to the heart."
+          ]
+        }
+      ]
+    }
+  ],
+  "cta": { "heading": "", "link": { "label": "", "href": "#" } }
+}

@@ -41,7 +41,7 @@
       },
       {
         "label": "Dialysis",
-        "href": "/facilities#dialysis"
+        "href": "/facilities/dialysis"
       },
       {
         "label": "Emergency Care",
@@ -52,24 +52,23 @@
         "href": "/specialities/broad-specialities"
       }
     ],
-    "countLabel": "departments across three groups.",
-    "illustration": "consult"
+    "countLabel": "departments across three groups."
   },
   "steps": [
     {
       "title": "Choose a group.",
       "hint": "Super specialities, broad specialities or clinical support.",
-      "href": "#groups"
+      "href": "#"
     },
     {
       "title": "Pick a department.",
       "hint": "Find out more about each department and the care it provides.",
-      "href": "#groups"
+      "href": "#"
     },
     {
       "title": "Meet doctors & book.",
       "hint": "View doctor profiles, consultation timings and appointment options.",
-      "href": "#find-a-doctor"
+      "href": "/doctors"
     }
   ],
   "groups": {
@@ -97,23 +96,33 @@
     },
     "items": [
       {
-        "illustration": "heart",
         "tag": {
           "label": "Cardiology",
           "tone": "red"
+        },
+        "image": {
+          "src": "/images/cardiology.jpg",
+          "alt": "Patient resting beside a cardiac monitor showing heart rhythm and blood pressure",
+          "width": 1400,
+          "height": 1050
         },
         "title": "Karunya Hridayalaya Cardiac Centre",
         "body": "Interventional cardiology and cardiothoracic surgery in one team, including the leadless pacemaker.",
         "link": {
           "label": "Meet the cardiac team",
-          "href": "/specialities/super-specialities"
+          "href": "/specialities/karunya-hridayalaya"
         }
       },
       {
-        "illustration": "oncology",
         "tag": {
           "label": "Oncology",
           "tone": "purple"
+        },
+        "image": {
+          "src": "/images/gangadharan.jpg",
+          "alt": "Dr. V.P. Gangadharan, oncologist",
+          "width": 660,
+          "height": 570
         },
         "title": "Cancer care led by Dr. V.P. Gangadharan",
         "body": "Medical and surgical oncology - diagnosis, chemotherapy and surgery coordinated by one team.",
@@ -123,10 +132,15 @@
         }
       },
       {
-        "illustration": "paediatric",
         "tag": {
           "label": "Paediatric Oncology",
           "tone": "yellow"
+        },
+        "image": {
+          "src": "/images/paediatric-oncology.jpg",
+          "alt": "Child receiving cancer care",
+          "width": 1000,
+          "height": 563
         },
         "title": "Cancer care for children",
         "body": "Specialist treatment for childhood cancers, with families supported at every step.",

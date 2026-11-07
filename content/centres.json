@@ -9,7 +9,7 @@
     "tag": { "label": "Cardiology · Karunya Hridayalaya Cardiac Centre", "tone": "red" },
     "title": "Comprehensive Cardiac Care",
     "body": "IGCH offers cardiology and cardiothoracic and vascular surgery, alongside specialised services such as interventional cardiology and leadless pacemaker implantation.",
-    "link": { "label": "Meet the cardiac team", "href": "#" }
+    "link": { "label": "Meet the cardiac team", "href": "/specialities/karunya-hridayalaya" }
   },
   "cards": [
     {
@@ -23,7 +23,7 @@
       "tag": { "label": "Oncology", "tone": "purple" },
       "title": "Cancer care led by Dr.\u00a0V.P.\u00a0Gangadharan.",
       "body": "Medical and surgical oncology - diagnosis, chemotherapy and surgery coordinated by one team.",
-      "link": { "label": "Meet the oncology team", "href": "#" }
+      "link": { "label": "Meet the oncology team", "href": "/doctors?q=Oncology" }
     },
     {
       "variant": "cream",
@@ -36,7 +36,7 @@
       "tag": { "label": "Paediatric Oncology", "tone": "yellow" },
       "title": "Specialist cancer care for little ones.",
       "body": "IGCH provides specialised cancer care for children, with support for their families throughout treatment.",
-      "link": { "label": "Learn more", "href": "#" }
+      "link": { "label": "Learn more", "href": "/doctors?q=Paediatric%20Oncology" }
     }
   ]
 }

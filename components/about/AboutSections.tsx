@@ -1,5 +1,8 @@
-import { DoctorAvatar, Illustration } from '@/components/illustrations/Illustration'
+import clsx from 'clsx'
+
 import { Button } from '@/components/ui/Button'
+import { ContentImage } from '@/components/ui/ContentImage'
+import { Initials } from '@/components/ui/Initials'
 import { SectionHead } from '@/components/ui/SectionHead'
 import { SmartLink } from '@/components/ui/SmartLink'
 import type { AboutPage } from '@/lib/content/schemas'
@@ -42,10 +45,19 @@ export function CoopBanner({ coop }: { coop: AboutPage['coop'] }) {
   if (!coop.heading) return null
   return (
     <section className="section section--tight">
-      <div className="split-banner split-banner--sage" data-reveal="">
-        <div className="split-banner__art split-banner__art--peach">
-          <Illustration name={coop.illustration} />
-        </div>
+      <div
+        className={clsx('split-banner split-banner--sage', !coop.image && 'split-banner--text')}
+        data-reveal=""
+      >
+        {coop.image && (
+          <div className="split-banner__art">
+            <ContentImage
+              image={coop.image}
+              sizes="(max-width: 960px) 100vw, 38vw"
+              className="art-photo"
+            />
+          </div>
+        )}
         <div className="split-banner__body">
           {coop.tag && <span className="tag tag--white">{coop.tag}</span>}
           <h2 className="h2 h2--sm">{coop.heading}</h2>
@@ -78,10 +90,10 @@ export function Leadership({ leadership }: { leadership: AboutPage['leadership']
     <section className="section" id="leadership">
       <SectionHead head={leadership.head} />
       <div className="leaders" data-reveal="">
-        {leadership.items.map((leader, i) => (
+        {leadership.items.map((leader) => (
           <figure key={leader.role} className="leader">
             <div className="leader__art">
-              <DoctorAvatar index={i} />
+              <Initials name={leader.name} />
             </div>
             <blockquote>“{leader.quote}”</blockquote>
             <figcaption>
@@ -120,9 +132,15 @@ export function Achievements({ achievements }: { achievements: AboutPage['achiev
           <h3>{empanelment.title}</h3>
         </div>
         <div className="feat feat--story">
-          <div className="feat__art">
-            <Illustration name="ambulance" />
-          </div>
+          {first.image && (
+            <div className="feat__art">
+              <ContentImage
+                image={first.image}
+                sizes="(max-width: 960px) 100vw, 33vw"
+                className="art-photo"
+              />
+            </div>
+          )}
           <div className="feat__body">
             <span className="tag tag--red">{first.tag}</span>
             <h3>{first.title}</h3>
@@ -130,9 +148,15 @@ export function Achievements({ achievements }: { achievements: AboutPage['achiev
           </div>
         </div>
         <div className="feat feat--media">
-          <div className="feat__art">
-            <Illustration name="pacemaker" fit="meet" />
-          </div>
+          {pacemaker.image && (
+            <div className="feat__art">
+              <ContentImage
+                image={pacemaker.image}
+                sizes="(max-width: 960px) 40vw, 14vw"
+                className="art-photo"
+              />
+            </div>
+          )}
           <h3>{pacemaker.title}</h3>
         </div>
         <div className="feat feat--dark">
@@ -168,9 +192,15 @@ export function Careers({
         </div>
         {nursing.heading && (
           <SmartLink href={nursing.link.href} className="careers__nursing">
-            <span className="careers__art">
-              <Illustration name="nurses" />
-            </span>
+            {nursing.image && (
+              <span className="careers__art">
+                <ContentImage
+                  image={nursing.image}
+                  sizes="(max-width: 960px) 100vw, 38vw"
+                  className="art-photo"
+                />
+              </span>
+            )}
             <span className="careers__nursing-body">
               {nursing.tag && <span className="tag tag--white">{nursing.tag}</span>}
               <h3>{nursing.heading}</h3>

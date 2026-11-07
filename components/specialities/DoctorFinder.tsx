@@ -89,11 +89,7 @@ export function DoctorFinder({
       {shown.length > 0 ? (
         <div className="doctors finder__results">
           {shown.map((doctor, i) => (
-            <DoctorCard
-              key={`${doctor.name}-${doctor.department}-${i}`}
-              doctor={doctor}
-              index={i}
-            />
+            <DoctorCard key={`${doctor.name}-${doctor.department}-${i}`} doctor={doctor} />
           ))}
         </div>
       ) : (

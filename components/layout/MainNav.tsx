@@ -19,7 +19,7 @@ function isCurrent(href: string, pathname: string) {
 
 /**
  * Main navigation. Items with `hasMenu` reveal their links on hover and on
- * keyboard focus (CSS :focus-within), so the dropdowns need no JS state.
+ * keyboard focus (CSS :has(:focus-visible)), so the dropdowns need no JS state.
  */
 export function MainNav({ items }: { items: Navigation['header'] }) {
   const pathname = usePathname()

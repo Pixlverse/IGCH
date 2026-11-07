@@ -27,34 +27,44 @@
         "eyebrow": "Our speciality departments",
         "heading": "Find the right super speciality department.",
         "lead": "Not sure which specialist you need? Explore the departments below or contact our team for help choosing the right consultation.",
-        "linkLabel": "View department"
+        "linkLabel": "Find a doctor"
       },
       "centres": [
         {
-          "illustration": "heart",
           "tag": {
             "label": "Centre of excellence",
             "tone": "red"
+          },
+          "image": {
+            "src": "/images/cardiology.jpg",
+            "alt": "Patient resting beside a cardiac monitor showing heart rhythm and blood pressure",
+            "width": 1400,
+            "height": 1050
           },
           "title": "Karunya Hridayalaya Cardiac Centre",
           "body": "Interventional cardiology and cardiothoracic surgery in one team, including the leadless pacemaker implanted without open surgery.",
           "link": {
             "label": "Meet the cardiac team",
-            "href": "#doctors"
+            "href": "/specialities/karunya-hridayalaya"
           },
           "tone": "white"
         },
         {
-          "illustration": "oncology",
           "tag": {
             "label": "Centre of excellence",
             "tone": "white"
+          },
+          "image": {
+            "src": "/images/gangadharan.jpg",
+            "alt": "Dr. V.P. Gangadharan, oncologist",
+            "width": 660,
+            "height": 570
           },
           "title": "Cancer care for adults and children",
           "body": "",
           "link": {
             "label": "Meet the oncology team",
-            "href": "#doctors"
+            "href": "/doctors?q=Oncology"
           },
           "tone": "lavender"
         }
@@ -65,7 +75,7 @@
         "wide": true,
         "link": {
           "label": "View all doctors →",
-          "href": "/specialities#find-a-doctor"
+          "href": "/doctors"
         }
       },
       "wellness": {
@@ -133,7 +143,7 @@
           "ctas": [
             {
               "label": "Find a specialist doctor in Kochi",
-              "href": "/specialities#find-a-doctor",
+              "href": "/doctors",
               "style": "primary"
             },
             {
@@ -219,7 +229,7 @@
         "eyebrow": "Step 2 · Pick a department",
         "heading": "Find the Right Department",
         "lead": "Explore our broad specialities to learn about the conditions treated, services available and doctors in each department.",
-        "linkLabel": "View department"
+        "linkLabel": "Find a doctor"
       },
       "camp": {
         "tag": "Co-operative care",
@@ -228,8 +238,7 @@
         "cta": {
           "label": "See camp schedule",
           "href": "#"
-        },
-        "illustration": "family"
+        }
       },
       "opd": {
         "eyebrow": "Plan your visit",
@@ -252,7 +261,7 @@
         "wide": true,
         "link": {
           "label": "View all doctors →",
-          "href": "/specialities#find-a-doctor"
+          "href": "/doctors"
         }
       },
       "wellness": {
@@ -279,7 +288,7 @@
           "ctas": [
             {
               "label": "Find a doctor",
-              "href": "/specialities#find-a-doctor",
+              "href": "/doctors",
               "style": "primary"
             },
             {
@@ -323,7 +332,7 @@
         "eyebrow": "7 Clinical Support Departments",
         "heading": "Seven teams that support your care",
         "lead": "",
-        "linkLabel": "View Department"
+        "linkLabel": "Find a doctor"
       },
       "how": {
         "eyebrow": "",
@@ -355,7 +364,7 @@
         "wide": true,
         "link": {
           "label": "View All Clinical Support Specialists →",
-          "href": "/specialities#find-a-doctor"
+          "href": "/doctors"
         },
         "lead": "The clinical professionals supporting diagnosis, treatment and recovery at Indira Gandhi Co-operative Hospital, Kochi. Find doctors and specialists across our clinical support departments. View their qualifications, areas of practice and consultation details to help you plan your visit."
       },
@@ -402,7 +411,7 @@
             },
             {
               "label": "Find a doctor",
-              "href": "/specialities#find-a-doctor",
+              "href": "/doctors",
               "style": "light"
             },
             {

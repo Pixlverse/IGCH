@@ -158,8 +158,15 @@ export async function saveItem(
       )
     else savedId = String((await model.create(update))._id)
   } catch (error) {
-    if (isDuplicateKey(error))
-      return { errors: { slug: 'Another item already uses this URL slug.' }, values }
+    if (isDuplicateKey(error)) {
+      // the unique field that clashed (slug for pages, key for key figures)
+      const field = Object.keys((error as { keyPattern?: object }).keyPattern ?? {})[0] ?? 'slug'
+      const message =
+        field === 'slug'
+          ? 'Another item already uses this URL slug.'
+          : 'Another item already uses this key.'
+      return { errors: { [field]: message }, values }
+    }
     throw error
   }
 

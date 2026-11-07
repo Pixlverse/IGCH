@@ -4,6 +4,7 @@
  *
  *   pnpm seed            fill empty collections only (safe to re-run in production)
  *   pnpm seed --reset    replace ALL content collections with the seed data
+ *                        (appointment requests and messages are never touched)
  *                        (users are never touched)
  *
  * Env: MONGODB_URI (required), ADMIN_EMAIL + ADMIN_PASSWORD (+ ADMIN_NAME)
@@ -15,7 +16,10 @@ import articles from '../content/seed/articles.json'
 import careers from '../content/seed/careers.json'
 import departments from '../content/seed/departments.json'
 import doctors from '../content/seed/doctors.json'
+import appointments from '../content/seed/appointments.json'
 import faqs from '../content/seed/faqs.json'
+import messages from '../content/seed/messages.json'
+import figures from '../content/seed/figures.json'
 import news from '../content/seed/news.json'
 import notices from '../content/seed/notices.json'
 import settings from '../content/seed/settings.json'
@@ -30,9 +34,13 @@ const SEEDS: Record<CollectionName, Record<string, unknown>[]> = {
   articles,
   faqs,
   careers,
+  figures,
+  appointments,
+  messages,
 }
 
 const reset = process.argv.includes('--reset')
+const VISITOR_DATA = new Set<CollectionName>(['appointments', 'messages'])
 
 async function main() {
   const uri = process.env.MONGODB_URI
@@ -43,6 +51,11 @@ async function main() {
   for (const name of Object.keys(COLLECTIONS) as CollectionName[]) {
     const model = collectionModel(name)
     await model.syncIndexes()
+    // visitor submissions are real data: never cleared, even with --reset
+    if (VISITOR_DATA.has(name)) {
+      console.log(`  ${name}: visitor submissions, never reset`)
+      continue
+    }
     const count = await model.countDocuments()
     if (count > 0 && !reset) {
       console.log(`  ${name}: ${count} existing, left as is`)

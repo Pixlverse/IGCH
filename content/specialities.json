@@ -7,7 +7,6 @@
       "summary": "Advanced, single-organ expertise for complex conditions.",
       "icon": "pulse",
       "color": "green",
-      "illustration": "heart",
       "viewAll": {
         "label": "View all super specialities",
         "href": "/specialities/super-specialities"
@@ -20,7 +19,6 @@
       "summary": "Everyday and family care, from medicine and surgery to Ayurveda.",
       "icon": "heart",
       "color": "amber",
-      "illustration": "consult",
       "viewAll": {
         "label": "View all broad specialities",
         "href": "/specialities/broad-specialities"
@@ -33,7 +31,6 @@
       "summary": "The teams and technology behind every diagnosis and treatment.",
       "icon": "clipboard",
       "color": "blue",
-      "illustration": "support",
       "viewAll": {
         "label": "View all clinical support",
         "href": "/specialities/clinical-support"

@@ -1,8 +1,7 @@
-import { Illustration } from '@/components/illustrations/Illustration'
 import { ContentImage } from '@/components/ui/ContentImage'
 import { Tag } from '@/components/ui/Tag'
 import { TextLink } from '@/components/ui/TextLink'
-import type { IllustrationName, Image, Link, TagTone } from '@/lib/content/schemas'
+import type { Image, Link, TagTone } from '@/lib/content/schemas'
 
 import { Breadcrumbs } from './Breadcrumbs'
 
@@ -14,7 +13,6 @@ export function StoryPage({
   meta,
   summary,
   image,
-  illustration,
   body,
   footnote,
   back,
@@ -25,7 +23,6 @@ export function StoryPage({
   meta: string[]
   summary?: string
   image?: Image
-  illustration: IllustrationName
   body: string[]
   footnote?: string
   back: Link
@@ -41,18 +38,16 @@ export function StoryPage({
         <h1>{title}</h1>
         {summary && <p className="story-page__summary">{summary}</p>}
       </header>
-      <div className="story-page__art">
-        {image ? (
+      {image && (
+        <div className="story-page__art">
           <ContentImage
             image={image}
             sizes="(max-width: 960px) 100vw, 900px"
             priority
             className="cover-img"
           />
-        ) : (
-          <Illustration name={illustration} />
-        )}
-      </div>
+        </div>
+      )}
       <div className="story-page__body">
         {body.map((paragraph, i) => (
           <p key={i}>{paragraph}</p>

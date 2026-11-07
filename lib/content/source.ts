@@ -1,22 +1,33 @@
 import 'server-only'
 
 import about from '@/content/about.json'
+import booking from '@/content/booking.json'
+import canteen from '@/content/canteen.json'
 import careers from '@/content/careers.json'
 import centres from '@/content/centres.json'
+import contact from '@/content/contact.json'
+import dialysis from '@/content/dialysis.json'
+import doctorsPage from '@/content/doctors-page.json'
 import facilities from '@/content/facilities.json'
 import facilitiesPage from '@/content/facilities-page.json'
 import guide from '@/content/guide.json'
 import home from '@/content/home.json'
+import insurance from '@/content/insurance.json'
+import karunya from '@/content/karunya.json'
 import library from '@/content/library.json'
 import navigation from '@/content/navigation.json'
 import news from '@/content/news.json'
 import newsPage from '@/content/news-page.json'
 import notices from '@/content/notices.json'
+import nursingCollege from '@/content/nursing-college.json'
+import appointmentsSeed from '@/content/seed/appointments.json'
 import articlesSeed from '@/content/seed/articles.json'
 import careersSeed from '@/content/seed/careers.json'
 import departmentsSeed from '@/content/seed/departments.json'
 import doctorsSeed from '@/content/seed/doctors.json'
 import faqsSeed from '@/content/seed/faqs.json'
+import messagesSeed from '@/content/seed/messages.json'
+import figuresSeed from '@/content/seed/figures.json'
 import newsSeed from '@/content/seed/news.json'
 import noticesSeed from '@/content/seed/notices.json'
 import settingsSeed from '@/content/seed/settings.json'
@@ -56,6 +67,14 @@ const COPY_DOCUMENTS = {
   newsPage,
   facilitiesPage,
   careers,
+  doctorsPage,
+  karunya,
+  dialysis,
+  insurance,
+  canteen,
+  nursingCollege,
+  booking,
+  contact,
 } as const
 
 export type DocumentKey = keyof typeof COPY_DOCUMENTS
@@ -73,6 +92,9 @@ const SEEDS: Record<CollectionName, unknown[]> = {
   articles: articlesSeed,
   faqs: faqsSeed,
   careers: careersSeed,
+  figures: figuresSeed,
+  appointments: appointmentsSeed,
+  messages: messagesSeed,
 }
 
 /** Plain JSON: ObjectIds → strings, Dates → ISO strings, no `__v`. */

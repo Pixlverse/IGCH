@@ -1,0 +1,78 @@
+{
+  "seo": {
+    "title": "Book an Appointment | Indira Gandhi Co-operative Hospital, Kochi",
+    "description": "Request an appointment with a specialist at Indira Gandhi Co-operative Hospital (IGCH), Kadavanthra, Kochi. Choose a doctor, a preferred date and time, and our appointment desk will confirm."
+  },
+  "hero": {
+    "crumbs": [
+      { "label": "Home", "href": "/" },
+      { "label": "Book an Appointment", "href": "/book-appointment" }
+    ],
+    "title": { "before": "Book an", "accent": "appointment", "after": "" },
+    "lead": "Choose a doctor and a preferred time. Our appointment desk will call you to confirm your slot."
+  },
+  "steps": [
+    { "title": "Select the doctor", "hint": "Speciality and doctor" },
+    { "title": "Date and time", "hint": "Your preferred slot" },
+    { "title": "Patient details", "hint": "Who is the appointment for" },
+    { "title": "Confirm", "hint": "Review and send" }
+  ],
+  "labels": {
+    "speciality": "Speciality",
+    "anySpeciality": "Any speciality",
+    "doctor": "Doctor",
+    "anyDoctor": "Any available doctor",
+    "doctorHint": "Not sure who to see? Leave this as “Any available doctor” and tell us your symptoms in the next steps.",
+    "date": "Preferred date",
+    "slot": "Preferred time",
+    "slot.Morning": "Morning · 9 am - 12 pm",
+    "slot.Afternoon": "Afternoon · 12 pm - 4 pm",
+    "slot.Evening": "Evening · 4 pm - 7 pm",
+    "slotHint": "Exact consultation times depend on the doctor's OPD schedule. We will confirm the time when we call.",
+    "name": "Patient's full name",
+    "phone": "Mobile number",
+    "phoneHint": "We will call or message this number to confirm.",
+    "age": "Age",
+    "gender": "Gender",
+    "genderNone": "Select (optional)",
+    "reason": "Reason for consultation (optional)",
+    "reasonPlaceholder": "Symptoms, a previous diagnosis or anything the doctor should know",
+    "consent": "I agree that IGCH may contact me on this number about this appointment.",
+    "review": "Please check your details",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Continue",
+    "submit": "Request appointment",
+    "sending": "Sending…",
+    "stepOf": "Step {step} of {total}"
+  },
+  "side": {
+    "emergencyTitle": "In an emergency, do not book",
+    "emergencyBody": "For chest pain, breathlessness, injury or any medical emergency, come straight to the Emergency department or call us. Open 24 hours.",
+    "helpTitle": "Prefer to talk to us?",
+    "helpBody": "The appointment desk can book for you, check a doctor's OPD days or help you choose the right specialist.",
+    "deskLabel": "Appointment desk",
+    "deskDisplay": "[Appointment number]",
+    "deskTel": "",
+    "bringTitle": "What to bring",
+    "bring": [
+      "A photo ID",
+      "Previous prescriptions and medical reports",
+      "Your insurance or CGHS card, if you have one",
+      "A list of the medicines you take"
+    ],
+    "hoursTitle": "OPD hours",
+    "hours": [
+      { "label": "Monday - Saturday", "value": "[OPD hours]" },
+      { "label": "Sunday", "value": "[OPD hours]" },
+      { "label": "Emergency", "value": "24 hours, every day" }
+    ]
+  },
+  "success": {
+    "title": "Thank you, we have your request",
+    "body": "Our appointment desk will call you on {phone} to confirm the date and time. If the hospital supports it, you will also get the confirmation by SMS or WhatsApp.",
+    "referenceLabel": "Your reference",
+    "note": "Please keep this reference handy when you call or visit.",
+    "again": "Book another appointment"
+  }
+}

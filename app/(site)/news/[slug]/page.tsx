@@ -40,7 +40,6 @@ async function Story({ params }: Props) {
       meta={[item.date, item.readTime]}
       summary={item.summary}
       image={item.image}
-      illustration={item.illustration}
       body={item.body}
       back={{ label: `All ${index?.label ?? 'news'}`, href: index?.href ?? '/news' }}
     />

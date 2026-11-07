@@ -1,0 +1,35 @@
+2:"$Sreact.fragment"
+3:"/_next/static/chunks/2reu-tb6wmecy.js"
+4:I[9619,["$3"],"default"]
+5:I[23615,["$3"],"default"]
+d:"$Sreact.suspense"
+f:I[52085,["$3"],"OutletBoundary"]
+13:"ViewportBoundary"
+14:I[52085,["$3"],"$13"]
+15:"MetadataBoundary"
+16:I[52085,["$3"],"$15"]
+17:I[3142,["$3"],"IconMark"]
+:HL["/_next/static/chunks/1i3ideuqsdl9h.css","style"]
+7:X
+8:X
+8:300
+b:X
+b:C
+12:X
+c:[["children",{"s":"__PAGE__","h":16546,"d":{"r":["$","$2","c",{"children":[["$","main",null,{"className":"admin-login","children":["$","div",null,{"className":"admin-card admin-login__card","children":[["$","p",null,{"className":"admin-eyebrow","children":"Indira Gandhi Co-operative Hospital"}],["$","h1",null,{"children":"Website admin"}],["$","$d",null,{"fallback":["$","p",null,{"className":"admin-help","children":"Loading…"}],"children":"$Le"}]]}]}],[["$","script","script-0",{"src":"/_next/static/chunks/13n398tnk0nxa.js","async":true}]],["$","$Lf",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}],"p":"$@11","v":"$12","s":"$8"}}]]
+9:[["children",{"s":"login","h":16482,"d":{"r":["$","$2","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}],"p":"$@a","v":"$b","s":"$8"},"c":"$Qc"}]]
+1:[["children",{"s":"admin","h":16450,"d":{"r":["$","$2","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1i3ideuqsdl9h.css","precedence":"next"}]],["$","div",null,{"className":"admin","children":["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]}]]}],"p":"$@6","v":"$7","s":"$8"},"c":"$Q9"}]]
+19:X
+1c:X
+0:{"t":{"t":{"s":"","h":16402,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L14",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L16",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$d",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Sign in · IGCH Admin"}],["$","meta","1",{"name":"robots","content":"noindex, nofollow"}],["$","link","2",{"rel":"icon","href":"/icon.png?icon.2s3stz-1r8nqy.png","sizes":"256x256","type":"image/png"}],["$","link","3",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.0fe1-m4im1789.png","sizes":"180x180","type":"image/png"}],["$","$L17","4",{}]]}]}],null]}],null]}],"p":"$@18","v":"$19","s":"$8"}},"a":"$@1a","u":"$@1b","b":"wAq49VZFddiNR7EIVGLyT","r":"$1c"}
+10:null
+8:C
+19:C
+1c:C
+12:C
+7:C
+1b:true
+1a:2500
+a:"$undefined"
+6:"$undefined"
+18:"$undefined"

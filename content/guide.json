@@ -1,10 +1,10 @@
 {
   "hero": {
     "image": {
-      "src": "/images/front-desk.jpg",
-      "alt": "Smiling doctor in a white coat with a stethoscope, ready to help",
-      "width": 1000,
-      "height": 667
+      "src": "/images/igch-building.jpg",
+      "alt": "Indira Gandhi Co-operative Hospital building with the 24/7 Emergency entrance, Kadavanthra",
+      "width": 1024,
+      "height": 1536
     },
     "title": "Everything you'd ask at the front desk, in one place.",
     "body": "Seven short guides - from reaching us to what happens after your consultation."
@@ -15,14 +15,14 @@
       "tone": "sky",
       "title": "How to reach",
       "body": "Gandhinagar Road, opposite Rajiv Gandhi Indoor Stadium, Kadavanthra.",
-      "href": "#"
+      "href": "/contact#visit"
     },
     {
       "icon": "doc",
       "tone": "lav",
       "title": "Documents to carry",
       "body": "ID proof, past reports, referral letter, insurance or CGHS card.",
-      "href": "#"
+      "href": "/facilities/insurance#help"
     },
     {
       "icon": "parking",
@@ -44,7 +44,7 @@
       "tone": "mint",
       "title": "Approximate visit process",
       "body": "A typical visit, step by step.",
-      "href": "#",
+      "href": "/book-appointment",
       "steps": ["Register", "Consult", "Tests", "Follow-up"]
     },
     {
@@ -59,8 +59,8 @@
       "tone": "grey",
       "title": "Other facilities",
       "body": "Canteen, pharmacy and more, within the campus.",
-      "href": "#"
+      "href": "/facilities"
     }
   ],
-  "cta": { "label": "See the complete visitor guide", "href": "#" }
+  "cta": { "label": "Plan your visit: directions, timings & contacts", "href": "/contact" }
 }

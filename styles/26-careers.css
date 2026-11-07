@@ -1,6 +1,6 @@
 /* ---------- Careers ---------- */
 
-.jobs-count { display: flex; align-items: baseline; gap: 10px; padding: 14px 22px; border-radius: var(--radius); background: var(--lime); font-weight: 700; white-space: nowrap; }
+.jobs-count { display: flex; align-items: baseline; gap: 10px; padding: 14px 22px; border-radius: var(--radius); background: var(--accent); font-weight: 700; white-space: nowrap; }
 .jobs-count strong { font-size: 40px; line-height: 1; font-weight: 800; letter-spacing: -0.04em; }
 
 .jobs { display: grid; gap: var(--gap); }
@@ -20,7 +20,7 @@
 .job__summary { margin-top: 14px; max-width: 760px; color: var(--ink-2); }
 .job__details { margin-top: 12px; max-width: 760px; }
 .job__details summary { cursor: pointer; font-weight: 700; color: var(--green); }
-.job__details summary:focus-visible { outline: 3px solid var(--lime); outline-offset: 2px; border-radius: 6px; }
+.job__details summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
 .job__details p { margin-top: 12px; line-height: 1.65; color: var(--ink-2); }
 .job__side { display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 12px; flex-shrink: 0; }
 .job__date { font-size: 14px; font-weight: 600; color: #b0302a; }

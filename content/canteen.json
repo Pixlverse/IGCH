@@ -1,0 +1,70 @@
+{
+  "seo": {
+    "title": "Canteen at IGCH, Kochi | Meals & Refreshments on Campus",
+    "description": "The canteen at Indira Gandhi Co-operative Hospital (IGCH), Kadavanthra, Kochi serves meals, snacks and refreshments for patients' families, bystanders, visitors and hospital staff."
+  },
+  "hero": {
+    "crumbs": [
+      { "label": "Home", "href": "/" },
+      { "label": "Facilities", "href": "/facilities" },
+      { "label": "Canteen", "href": "/facilities/canteen" }
+    ],
+    "tag": "Canteen",
+    "title": {
+      "before": "Meals and refreshments at",
+      "accent": "Indira Gandhi Co-operative Hospital (IGCH)",
+      "after": " campus"
+    },
+    "lead": "The canteen at Indira Gandhi Co-operative Hospital (IGCH) serves meals, snacks and refreshments for patients' families, bystanders, visitors and hospital staff.",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "essential-information",
+      "heading": "Essential information",
+      "facts": [
+        { "label": "Location", "value": "[To be provided]" },
+        { "label": "Timing", "value": "[To be provided]" },
+        { "label": "Breakfast Timing", "value": "[To be provided]" },
+        { "label": "Lunch Timing", "value": "[To be provided]" },
+        { "label": "Evening Facility", "value": "[To be provided]" },
+        { "label": "Takeaway Facility", "value": "[To be provided]" },
+        { "label": "Payment Methods", "value": "[To be provided]" },
+        { "label": "Contact", "value": "[To be provided]" }
+      ]
+    },
+    {
+      "id": "who-can-use",
+      "heading": "Who can use the canteen?",
+      "paragraphs": ["The canteen is available to:"],
+      "cards": [
+        {
+          "title": "Patients' families and bystanders",
+          "paragraphs": ["Convenient access to meals while accompanying patients."]
+        },
+        { "title": "Visitors", "paragraphs": ["Food and refreshments during hospital visits."] },
+        {
+          "title": "Hospital staff",
+          "paragraphs": ["Meals and refreshments during working hours."]
+        }
+      ]
+    },
+    {
+      "id": "hygiene",
+      "heading": "Food hygiene",
+      "paragraphs": [
+        "We maintain attention to cleanliness, food handling and preparation practices to provide a hygienic dining environment."
+      ]
+    },
+    {
+      "id": "dietary-guidance",
+      "eyebrow": "Patient Dietary Guidance",
+      "heading": "A Note for Patients",
+      "paragraphs": [
+        "Patients following a prescribed diet should consult their treating doctor or dietitian before purchasing food from the canteen. Dietary requirements may vary depending on the patient's medical condition and treatment plan."
+      ],
+      "tone": "dark"
+    }
+  ],
+  "cta": { "heading": "", "link": { "label": "", "href": "#" } }
+}

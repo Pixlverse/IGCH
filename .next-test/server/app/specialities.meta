@@ -1,0 +1,43 @@
+{
+  "status": 200,
+  "headers": {
+    "link": "</_next/static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(site)/layout,_N_T_/(site)/specialities/layout,_N_T_/(site)/specialities/page,_N_T_/specialities,content,content:site,content:navigation,content:figures,content:specialitiesHub,content:specialities,content:departments,content:doctors"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/_index",
+    "/!KHNpdGUp",
+    "/!KHNpdGUp/specialities/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 49152,
+    "slots": {
+      "children": {
+        "hints": 49152,
+        "slots": {
+          "children": {
+            "hints": 49216,
+            "slots": {
+              "children": {
+                "hints": 49312,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/244d587563913dd4f2b77433b1ecbe844844796c19fcd533867e42142d39c418/$/specialities",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/(site)/specialities/page"
+    },
+    "isFallback": false
+  }
+}

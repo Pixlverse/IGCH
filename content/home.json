@@ -4,22 +4,23 @@
     "description": "Cardiology, cancer care for adults and children, dialysis and 24/7 emergency in Kadavanthra, Kochi - a co-operative hospital serving Kochi for 50+ years."
   },
   "hero": {
-    "tag": "Kochi's Very Own Hospital. 50+ Years.",
+    "tag": "Kochi's Very Own Hospital. {{years}} Years.",
     "title": { "line1": "Advanced care.", "accent": "Co-operative", "rest": "at heart." },
     "lead": "For over 50 years, IGCH has provided specialist healthcare with a people-first approach, guided by its co-operative values. We believe everyone deserves equal respect and care that responds to their individual needs. From heart and cancer care to dialysis and 24/7 emergency services, we strive to make quality healthcare accessible to individuals and families from all walks of life.",
-    "secondaryCta": { "label": "Meet your doctor", "href": "#doctors" },
+    "secondaryCta": { "label": "Meet your doctor", "href": "/doctors" },
     "search": {
       "label": "What do you need today?",
       "placeholder": "A condition, treatment or doctor",
-      "buttonLabel": "Search"
+      "buttonLabel": "Search",
+      "emptyText": "No match yet. Try a speciality such as cardiology or dialysis, or call 0484 294 1600 and we will guide you."
     },
     "chips": [
-      { "label": "Cardiology", "href": "#" },
-      { "label": "Cancer care", "href": "#" },
-      { "label": "Paediatric cancer care", "href": "#" },
-      { "label": "Dialysis", "href": "#" },
-      { "label": "Emergency care", "href": "#" },
-      { "label": "Psychiatry", "href": "#" }
+      { "label": "Cardiology", "href": "/specialities/karunya-hridayalaya" },
+      { "label": "Cancer care", "href": "/doctors?q=Oncology" },
+      { "label": "Paediatric cancer care", "href": "/doctors?q=Paediatric%20Oncology" },
+      { "label": "Dialysis", "href": "/facilities/dialysis" },
+      { "label": "Emergency care", "href": "/facilities#emergency" },
+      { "label": "Psychiatry", "href": "/doctors?q=Psychiatry" }
     ],
     "image": {
       "src": "/images/igch-building.jpg",
@@ -33,16 +34,24 @@
       "title": "5G Smart Ambulance",
       "subtitle": "Care begins before you reach us.",
       "linkLabel": "Learn more →",
-      "href": "#ambulance"
+      "href": "/facilities#ambulance"
     }
   },
   "stats": {
     "ariaLabel": "IGCH in numbers",
     "items": [
-      { "value": "50+", "caption": "years of healthcare built around people", "style": "green" },
-      { "value": "15,000+", "caption": "haemodialysis sessions completed", "style": "plain" },
       {
-        "value": "25+",
+        "value": "{{years}}",
+        "caption": "years of healthcare built around people",
+        "style": "green"
+      },
+      {
+        "value": "{{haemodialysis-sessions}}",
+        "caption": "haemodialysis sessions completed",
+        "style": "plain"
+      },
+      {
+        "value": "{{specialities}}",
         "caption": "specialities, with 24/7 ICU, operation theatre and blood storage unit facilities",
         "style": "lime"
       }
@@ -98,7 +107,7 @@
       "eyebrow": "Our doctors",
       "heading": "The Strength of IGCH.",
       "wide": true,
-      "link": { "label": "Meet your doctors →", "href": "/specialities#find-a-doctor" }
+      "link": { "label": "Meet your doctors →", "href": "/doctors" }
     }
   },
   "guide": {
@@ -143,7 +152,10 @@
   },
   "coop": {
     "tag": { "label": "The co-operative difference", "tone": "glass" },
-    "heading": { "main": "7,000 free dialysis sessions", "emphasis": "for those in need." },
+    "heading": {
+      "main": "{{free-dialysis.number}} free dialysis sessions",
+      "emphasis": "for those in need."
+    },
     "body": "We believe everyone deserves access to essential healthcare, regardless of their financial circumstances. As a co-operative hospital in Kochi, IGCH works to make healthcare more accessible through community care initiatives, including free dialysis services and subsidised specialist consultations. Through this model, we aim to reduce the financial burden of medical treatment and help more patients and families access the care they need.",
     "points": [
       { "title": "Free dialysis", "caption": "for economically disadvantaged patients" },
@@ -185,7 +197,7 @@
       "Indira Gandhi College of Nursing offers B.Sc Nursing in Kadavanthra, Ernakulam, with classroom learning and clinical training in our own multi-speciality hospital. Students gain clinical experience and build the skills to give quality nursing care.",
       "Check course details, eligibility criteria and the admission process."
     ],
-    "cta": { "label": "B.Sc Nursing Admission & Eligibility", "href": "#" },
+    "cta": { "label": "B.Sc Nursing Admission & Eligibility", "href": "/college-of-nursing" },
     "image": {
       "src": "/images/nursing.jpg",
       "alt": "Healthcare trainees in blue scrubs practising with a stethoscope",

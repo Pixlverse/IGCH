@@ -2,7 +2,7 @@ import { z } from 'zod'
 
 import library from '@/content/library.json'
 import specialities from '@/content/specialities.json'
-import { ILLUSTRATIONS, TAG_TONES, TONES } from '@/lib/content/schemas'
+import { PROFILE_SECTIONS, TAG_TONES, TONES } from '@/lib/content/schemas'
 import type { CollectionName } from '@/lib/db/models'
 
 /*
@@ -76,7 +76,6 @@ const opts = (values: readonly string[]): Option[] =>
 const GROUPS: Option[] = specialities.groups.map((g) => ({ value: g.slug, label: g.title }))
 const CATEGORIES: Option[] = library.categories.map((c) => ({ value: c.key, label: c.label }))
 const DAYS = opts(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'])
-const ILLUSTRATION_OPTIONS = opts(ILLUSTRATIONS)
 /** Tone choices for the badge/tag field. */
 export const TAG_TONE_OPTIONS = opts(TAG_TONES)
 
@@ -97,6 +96,24 @@ const slug = () =>
     .toLowerCase()
     .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, 'Use lowercase letters, numbers and hyphens')
 const tag = () => z.object({ label: text(60), tone: z.enum(TAG_TONES) })
+const PROFILE_LABELS: Record<(typeof PROFILE_SECTIONS)[number], string> = {
+  overview: 'professional overview',
+  education: 'educational qualifications',
+  journey: 'professional journey',
+  expertise: 'areas of expertise',
+  interests: 'clinical interests',
+  achievements: 'achievements and contributions',
+  research: 'research and publications',
+  memberships: 'professional memberships',
+  awards: 'awards and recognition',
+  approach: 'approach to patient care',
+  community: 'community and social contributions',
+  beyond: 'beyond medicine',
+}
+
+const REQUEST_STATUS_VALUES = ['new', 'contacted', 'confirmed', 'closed'] as const
+const REQUEST_STATUS = opts(REQUEST_STATUS_VALUES)
+
 const listMeta = {
   order: z.number().int().min(0).max(100000),
   published: z.boolean(),
@@ -108,7 +125,7 @@ export const RESOURCES: Resource[] = [
     label: 'Doctors',
     singular: 'Doctor',
     description:
-      'Doctor cards on the home, About, Specialities and group pages, and the doctor finder.',
+      'Doctor cards on the home, About, Specialities and group pages, the /doctors directory and doctor profile pages.',
     titleField: 'name',
     columns: [
       { field: 'department', label: 'Speciality' },
@@ -143,7 +160,42 @@ export const RESOURCES: Resource[] = [
         name: 'href',
         half: true,
         label: 'Profile link',
-        help: 'Optional. A page or external profile.',
+        help: 'Optional. A page or external profile. Ignored when the profile below is filled in.',
+      },
+      {
+        type: 'text',
+        name: 'title',
+        half: true,
+        label: 'Speciality title',
+        placeholder: 'Medical & Paediatric Oncologist',
+      },
+      {
+        type: 'text',
+        name: 'designation',
+        half: true,
+        label: 'Designation',
+        placeholder: 'Head of Department, Oncology',
+      },
+      {
+        type: 'text',
+        name: 'experience',
+        half: true,
+        label: 'Experience',
+        placeholder: '15+ years',
+      },
+      {
+        type: 'text',
+        name: 'languages',
+        half: true,
+        label: 'Languages spoken',
+        placeholder: 'English, Malayalam, Hindi',
+      },
+      {
+        type: 'text',
+        name: 'timings',
+        label: 'OPD timings',
+        placeholder: 'Mon, Wed, Fri · 9 am - 1 pm',
+        help: 'Shown on the doctor card with the OPD days.',
       },
       {
         type: 'image',
@@ -172,6 +224,27 @@ export const RESOURCES: Resource[] = [
         help: 'Leave all unticked if not fixed.',
       },
       {
+        type: 'text',
+        name: 'slug',
+        label: 'Profile page address',
+        placeholder: 'dr-firstname-lastname',
+        help: 'Fill this in and add an introduction to give the doctor a page at /doctors/<address>.',
+      },
+      {
+        type: 'paragraphs',
+        name: 'intro',
+        label: 'Profile: introduction',
+        rows: 4,
+        help: 'Separate paragraphs with a blank line.',
+      },
+      ...PROFILE_SECTIONS.map((name): Field => ({
+        type: 'paragraphs',
+        name,
+        label: `Profile: ${PROFILE_LABELS[name]}`,
+        rows: 4,
+        help: 'Separate paragraphs with a blank line. Start lines with "- " for a bulleted list; a line just above the bullets becomes its heading. Leave empty to hide.',
+      })),
+      {
         type: 'number',
         name: 'order',
         half: true,
@@ -184,6 +257,20 @@ export const RESOURCES: Resource[] = [
       name: required('Name', 120),
       department: text(120),
       qualifications: text(200),
+      // profile fields are optional: older records and the seed may not have them
+      title: text(120).default(''),
+      designation: text(120).default(''),
+      experience: text(60).default(''),
+      languages: text(120).default(''),
+      timings: text(200).default(''),
+      slug: text(120)
+        .toLowerCase()
+        .refine((v) => !v || /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(v), {
+          message: 'Use lowercase letters, numbers and hyphens',
+        })
+        .default(''),
+      intro: z.array(text(3000)).default([]),
+      ...Object.fromEntries(PROFILE_SECTIONS.map((key) => [key, z.array(text(5000)).default([])])),
       groups: z.array(z.enum(GROUPS.map((g) => g.value) as [string, ...string[]])),
       featured: z.boolean(),
       days: z.array(z.string()),
@@ -298,14 +385,7 @@ export const RESOURCES: Resource[] = [
         type: 'image',
         name: 'image',
         label: 'Image',
-        help: 'Landscape photo. Without one, the illustration below is used.',
-      },
-      {
-        type: 'select',
-        name: 'illustration',
-        half: true,
-        label: 'Illustration',
-        options: ILLUSTRATION_OPTIONS,
+        help: 'Landscape photo. Without one, the card shows text only.',
       },
       {
         type: 'text',
@@ -332,7 +412,6 @@ export const RESOURCES: Resource[] = [
       body: z.array(text(5000)),
       tag: tag(),
       readTime: text(30),
-      illustration: z.enum(ILLUSTRATIONS),
       link: link(),
       featured: z.boolean(),
       ...listMeta,
@@ -440,7 +519,7 @@ export const RESOURCES: Resource[] = [
         type: 'image',
         name: 'image',
         label: 'Image',
-        help: 'Optional. Without one, the topic illustration is used.',
+        help: 'Optional. Without one, the card shows text only.',
       },
       { type: 'checkbox', name: 'featured', label: 'Featured at the top of the Wellness Library' },
       {
@@ -492,6 +571,145 @@ export const RESOURCES: Resource[] = [
       question: required('Question', 300),
       answer: z.array(text(3000)).min(1, 'Answer is required'),
       open: z.boolean(),
+      ...listMeta,
+    }),
+  },
+  {
+    key: 'appointments',
+    label: 'Appointment requests',
+    singular: 'Appointment request',
+    description:
+      'Requests from the Book Appointment form. Call the patient to confirm a slot, then update the status.',
+    titleField: 'name',
+    columns: [
+      { field: 'date', label: 'Preferred date' },
+      { field: 'doctor', label: 'Doctor' },
+      { field: 'status', label: 'Status' },
+    ],
+    sort: { createdAt: -1 },
+    fields: [
+      {
+        type: 'select',
+        name: 'status',
+        half: true,
+        label: 'Status',
+        options: REQUEST_STATUS,
+      },
+      { type: 'text', name: 'reference', half: true, label: 'Reference', required: true },
+      { type: 'text', name: 'name', half: true, label: 'Patient name', required: true },
+      { type: 'text', name: 'phone', half: true, label: 'Mobile', required: true },
+      { type: 'number', name: 'age', half: true, label: 'Age' },
+      { type: 'text', name: 'gender', half: true, label: 'Gender' },
+      { type: 'text', name: 'speciality', half: true, label: 'Speciality', suggest: 'departments' },
+      { type: 'text', name: 'doctor', half: true, label: 'Doctor' },
+      { type: 'text', name: 'date', half: true, label: 'Preferred date', help: 'YYYY-MM-DD' },
+      { type: 'text', name: 'slot', half: true, label: 'Preferred time' },
+      { type: 'textarea', name: 'reason', label: 'Reason for consultation', rows: 3 },
+      { type: 'textarea', name: 'notes', label: 'Staff notes', rows: 3, help: 'Internal only.' },
+    ],
+    schema: z.object({
+      status: z.enum(REQUEST_STATUS_VALUES),
+      reference: required('Reference', 20),
+      name: required('Patient name', 120),
+      phone: required('Mobile', 20),
+      age: z.number().int().min(0).max(120),
+      gender: text(30),
+      speciality: text(120),
+      doctor: text(120),
+      date: text(10).regex(/^\d{4}-\d{2}-\d{2}$/, 'Use YYYY-MM-DD'),
+      slot: text(30),
+      reason: text(600),
+      notes: text(2000),
+      ...listMeta,
+    }),
+  },
+  {
+    key: 'messages',
+    label: 'Messages',
+    singular: 'Message',
+    description: 'Messages sent from the Contact page.',
+    titleField: 'name',
+    columns: [
+      { field: 'topic', label: 'Topic' },
+      { field: 'status', label: 'Status' },
+    ],
+    sort: { createdAt: -1 },
+    fields: [
+      {
+        type: 'select',
+        name: 'status',
+        half: true,
+        label: 'Status',
+        options: REQUEST_STATUS,
+      },
+      { type: 'text', name: 'reference', half: true, label: 'Reference', required: true },
+      { type: 'text', name: 'name', half: true, label: 'Name', required: true },
+      { type: 'text', name: 'phone', half: true, label: 'Mobile', required: true },
+      { type: 'text', name: 'email', half: true, label: 'Email' },
+      { type: 'text', name: 'topic', half: true, label: 'Topic' },
+      { type: 'textarea', name: 'message', label: 'Message', rows: 6, required: true },
+      { type: 'textarea', name: 'notes', label: 'Staff notes', rows: 3, help: 'Internal only.' },
+    ],
+    schema: z.object({
+      status: z.enum(REQUEST_STATUS_VALUES),
+      reference: required('Reference', 20),
+      name: required('Name', 120),
+      phone: required('Mobile', 20),
+      email: text(160),
+      topic: text(60),
+      message: required('Message', 2000),
+      notes: text(2000),
+      ...listMeta,
+    }),
+  },
+  {
+    key: 'figures',
+    label: 'Key figures',
+    singular: 'Key figure',
+    description:
+      'Numbers shown across the site (dialysis sessions, doctors, beds…). Change a value here and every page that shows it updates.',
+    titleField: 'label',
+    columns: [
+      { field: 'value', label: 'Value' },
+      { field: 'note', label: 'Shown on' },
+    ],
+    sort: { order: 1, createdAt: -1 },
+    fields: [
+      {
+        type: 'text',
+        name: 'value',
+        half: true,
+        label: 'Value',
+        required: true,
+        placeholder: '15,000+',
+        help: 'As it should read, e.g. "15,000+". Sentences like "more than 15,000" drop the "+" automatically.',
+      },
+      {
+        type: 'text',
+        name: 'label',
+        half: true,
+        label: 'Label',
+        placeholder: 'Haemodialysis sessions completed',
+        help: 'Shown under the number where a page uses it as a stat.',
+      },
+      {
+        type: 'text',
+        name: 'key',
+        half: true,
+        label: 'Key',
+        required: true,
+        placeholder: 'haemodialysis-sessions',
+        help: 'Pages refer to the figure by this key. Do not change or delete a key that is in use.',
+      },
+      { type: 'text', name: 'note', half: true, label: 'Shown on', help: 'For reference only.' },
+      { type: 'number', name: 'order', half: true, label: 'Display order' },
+      { type: 'checkbox', name: 'published', half: true, label: 'Visible on the website' },
+    ],
+    schema: z.object({
+      key: slug(),
+      value: required('Value', 40),
+      label: text(120),
+      note: text(160),
       ...listMeta,
     }),
   },

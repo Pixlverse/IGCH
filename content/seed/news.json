@@ -15,7 +15,6 @@
       "width": 750,
       "height": 400
     },
-    "illustration": "pacemaker",
     "link": "#",
     "featured": true,
     "order": 1,
@@ -37,7 +36,6 @@
       "width": 1200,
       "height": 1800
     },
-    "illustration": "ambulance",
     "link": "#",
     "featured": false,
     "order": 2,
@@ -59,7 +57,6 @@
       "width": 800,
       "height": 521
     },
-    "illustration": "support",
     "link": "#",
     "featured": false,
     "order": 3,
@@ -75,7 +72,6 @@
       "tone": "green"
     },
     "readTime": "",
-    "illustration": "pacemaker",
     "link": "#",
     "featured": false,
     "order": 10,
@@ -91,7 +87,6 @@
       "tone": "green"
     },
     "readTime": "",
-    "illustration": "ambulance",
     "link": "#",
     "featured": false,
     "order": 11,
@@ -107,7 +102,6 @@
       "tone": "green"
     },
     "readTime": "",
-    "illustration": "support",
     "link": "#",
     "featured": false,
     "order": 12,
@@ -123,7 +117,6 @@
       "tone": "green"
     },
     "readTime": "",
-    "illustration": "pacemaker",
     "link": "#",
     "featured": false,
     "order": 13,
@@ -139,7 +132,6 @@
       "tone": "green"
     },
     "readTime": "",
-    "illustration": "ambulance",
     "link": "#",
     "featured": false,
     "order": 14,
@@ -155,7 +147,6 @@
       "tone": "green"
     },
     "readTime": "",
-    "illustration": "support",
     "link": "#",
     "featured": false,
     "order": 15,

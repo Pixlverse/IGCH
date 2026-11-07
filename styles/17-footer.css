@@ -45,7 +45,7 @@
   border-radius: var(--radius);
   background: #1c3530;
 }
-.footer__emergency h3 { margin-bottom: 8px; color: var(--lime); font-size: 13px; text-transform: uppercase; letter-spacing: .06em; }
+.footer__emergency h3 { margin-bottom: 8px; color: var(--accent); font-size: 13px; text-transform: uppercase; letter-spacing: .06em; }
 .footer .phone {
   display: block;
   font-size: clamp(28px, 2.6vw, 38px);
@@ -54,7 +54,7 @@
   line-height: 1.05;
   transition: color .2s;
 }
-.footer .phone:hover { color: var(--lime); }
+.footer .phone:hover { color: var(--accent); }
 .footer .open { font-size: 14px; color: rgba(255,255,255,.75); margin-top: 8px; }
 .footer__ctas { display: flex; flex-wrap: wrap; gap: 10px; }
 .footer__ctas .btn { padding: 11px 20px; font-size: 14.5px; }
@@ -68,7 +68,7 @@
 .footer__col h3 { color: var(--white); }
 .footer ul li { margin-bottom: 10px; }
 .footer ul a { font-size: 14.5px; color: rgba(255,255,255,.75); transition: color .2s; }
-.footer ul a:hover { color: var(--lime); }
+.footer ul a:hover { color: var(--accent); }
 
 .footer__bottom {
   display: flex;
@@ -98,7 +98,7 @@
 }
 .footer__social { display: flex; gap: 20px; }
 .footer__social a { color: rgba(255,255,255,.85); transition: color .2s; }
-.footer__social a:hover { color: var(--lime); }
+.footer__social a:hover { color: var(--accent); }
 
 @media (max-width: 1180px) {
   .footer__top { grid-template-columns: 1fr; }

@@ -57,6 +57,22 @@ const PATHS = {
       <path d="M12 17.5h.01" />
     </>
   ),
+  appointments: (
+    <>
+      <rect x="3" y="5" width="18" height="16" rx="2" />
+      <path d="M16 3v4M8 3v4M3 10h18M9 15l2 2 4-4" />
+    </>
+  ),
+  messages: (
+    <>
+      <path d="M4 5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H9l-5 4V6a1 1 0 0 1 1-1z" />
+    </>
+  ),
+  figures: (
+    <>
+      <path d="M4 20V10M10 20V4M16 20v-7M22 20H2" />
+    </>
+  ),
   settings: (
     <>
       <circle cx="12" cy="12" r="3" />

@@ -1,0 +1,102 @@
+{
+  "seo": {
+    "title": "Contact Us | Indira Gandhi Co-operative Hospital, Kadavanthra, Kochi",
+    "description": "Phone numbers, address and directions for Indira Gandhi Co-operative Hospital (IGCH), Gandhinagar Road, Kadavanthra, Kochi. 24-hour emergency: 0484 294 1600."
+  },
+  "hero": {
+    "crumbs": [
+      { "label": "Home", "href": "/" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "title": { "before": "We're here to", "accent": "help", "after": "" },
+    "lead": "Call us, visit us at Kadavanthra or send a message. For a medical emergency, call the emergency line at any time."
+  },
+  "cards": [
+    {
+      "title": "Emergency & Ambulance",
+      "body": "24 hours, every day",
+      "value": "0484 294 1600",
+      "href": "emergency",
+      "tone": "red",
+      "icon": "phone"
+    },
+    {
+      "title": "Book an appointment",
+      "body": "Request a consultation online; the desk calls to confirm",
+      "value": "Book online",
+      "href": "booking",
+      "tone": "green",
+      "icon": "calendar"
+    },
+    {
+      "title": "Appointment desk",
+      "body": "OPD bookings and doctor availability",
+      "value": "[Appointment number]",
+      "href": "",
+      "tone": "purple",
+      "icon": "clipboard"
+    },
+    {
+      "title": "Insurance desk",
+      "body": "Cashless approvals, CGHS and estimates",
+      "value": "[Insurance desk number]",
+      "href": "/facilities/insurance",
+      "tone": "blue",
+      "icon": "shield"
+    },
+    {
+      "title": "Dialysis enquiries",
+      "body": "Sessions, eligibility for free dialysis",
+      "value": "[Dialysis enquiries number]",
+      "href": "/facilities/dialysis",
+      "tone": "yellow",
+      "icon": "pulse"
+    },
+    {
+      "title": "College of Nursing",
+      "body": "Admissions and college office",
+      "value": "0484 2204110",
+      "href": "tel:04842204110",
+      "tone": "green",
+      "icon": "doc"
+    }
+  ],
+  "visit": {
+    "title": "Visit us",
+    "lines": [
+      "Indira Gandhi Co-operative Hospital",
+      "Gandhinagar Road, Kadavanthra",
+      "Kochi, Kerala 682020"
+    ],
+    "landmark": "Opposite Rajiv Gandhi Indoor Stadium",
+    "mapQuery": "Indira Gandhi Co-operative Hospital, Kadavanthra, Kochi",
+    "directionsLabel": "Get directions",
+    "hoursTitle": "Opening hours",
+    "hours": [
+      { "label": "Emergency", "value": "24 hours, every day" },
+      { "label": "OPD", "value": "[OPD hours]" },
+      { "label": "Visiting hours", "value": "[Visiting hours]" }
+    ]
+  },
+  "form": {
+    "heading": "Send us a message",
+    "lead": "For questions about services, billing, feedback or careers. We reply on working days. Please do not use this form for emergencies.",
+    "labels": {
+      "name": "Your name",
+      "phone": "Mobile number",
+      "email": "Email (optional)",
+      "topic": "Topic",
+      "topicNone": "Choose a topic",
+      "message": "Message",
+      "consent": "I agree that IGCH may contact me about this message.",
+      "submit": "Send message",
+      "sending": "Sending…"
+    }
+  },
+  "success": {
+    "title": "Message sent",
+    "body": "Thank you. Our team will get back to you on {phone}.",
+    "referenceLabel": "Reference",
+    "again": "Send another message"
+  }
+}

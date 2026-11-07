@@ -1,0 +1,43 @@
+{
+  "status": 200,
+  "headers": {
+    "link": "</_next/static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(site)/layout,_N_T_/(site)/contact/layout,_N_T_/(site)/contact/page,_N_T_/contact,content,content:site,content:navigation,content:figures,content:contact"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/_index",
+    "/!KHNpdGUp",
+    "/!KHNpdGUp/contact/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 49152,
+    "slots": {
+      "children": {
+        "hints": 49152,
+        "slots": {
+          "children": {
+            "hints": 49216,
+            "slots": {
+              "children": {
+                "hints": 49312,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/2a170c49fdd93e72f49619f97c7bc742a1254171f5140dde763f9ba2bbd0df90/$/contact",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/(site)/contact/page"
+    },
+    "isFallback": false
+  }
+}

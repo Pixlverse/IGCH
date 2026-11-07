@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import type { ReactNode } from 'react'
 
-import { SmartLink } from './SmartLink'
+import { isPlaceholder, SmartLink } from './SmartLink'
 
 export type ButtonVariant = 'primary' | 'light' | 'white' | 'outline' | 'red' | 'dark' | 'lime'
 
@@ -14,6 +14,8 @@ type ButtonProps = {
 }
 
 export function Button({ href, variant, children, className, ...rest }: ButtonProps) {
+  // a button with nowhere to go is hidden rather than shown dead
+  if (isPlaceholder(href)) return null
   return (
     <SmartLink href={href} className={clsx('btn', `btn--${variant}`, className)} {...rest}>
       {children}

@@ -1,5 +1,7 @@
 import mongoose, { Schema, type InferSchemaType, type Model } from 'mongoose'
 
+import { PROFILE_SECTIONS } from '@/lib/content/schemas'
+
 /*
  * Collections the admin panel edits. Page copy (headings, hero text) stays in
  * /content JSON; these are the lists that change week to week.
@@ -36,6 +38,22 @@ const doctorSchema = new Schema(
     days: { type: [String], default: [] },
     image: { type: image, required: false },
     href: { type: String, default: '#' },
+    /** profile page /doctors/<slug>; unique when set */
+    slug: {
+      type: String,
+      default: '',
+      trim: true,
+      index: { unique: true, partialFilterExpression: { slug: { $gt: '' } } },
+    },
+    title: { type: String, default: '', trim: true },
+    designation: { type: String, default: '', trim: true },
+    experience: { type: String, default: '', trim: true },
+    languages: { type: String, default: '', trim: true },
+    timings: { type: String, default: '', trim: true },
+    // profile text: lists of blocks (see PROFILE_SECTIONS in lib/content/schemas)
+    ...Object.fromEntries(
+      ['intro', ...PROFILE_SECTIONS].map((key) => [key, { type: [String], default: [] }]),
+    ),
     ...listFields,
   },
   { timestamps: true },
@@ -67,7 +85,6 @@ const newsSchema = new Schema(
     date: { type: Date, required: false },
     readTime: { type: String, default: '' },
     image: { type: image, required: false },
-    illustration: { type: String, default: 'consult' },
     /** external link used when there is no body */
     link: { type: String, default: '#' },
     featured: { type: Boolean, default: false },
@@ -104,7 +121,6 @@ const articleSchema = new Schema(
     reviewedBy: { type: String, default: '' },
     date: { type: Date, required: false },
     image: { type: image, required: false },
-    illustration: { type: String, required: false },
     link: { type: String, default: '#' },
     featured: { type: Boolean, default: false },
     ...listFields,
@@ -137,6 +153,62 @@ const jobSchema = new Schema(
     date: { type: Date, required: false },
     /** application form URL or mailto:; empty → the careers email in site settings */
     applyLink: { type: String, default: '' },
+    ...listFields,
+  },
+  { timestamps: true },
+)
+
+/** Key figures used in page copy as {{key}} (e.g. "15,000+" haemodialysis sessions). */
+const figureSchema = new Schema(
+  {
+    key: { type: String, required: true, unique: true, trim: true },
+    value: { type: String, required: true, trim: true },
+    label: { type: String, default: '', trim: true },
+    /** admin-only: where the figure appears */
+    note: { type: String, default: '', trim: true },
+    ...listFields,
+  },
+  { timestamps: true },
+)
+
+const requestStatus = {
+  type: String,
+  enum: ['new', 'contacted', 'confirmed', 'closed'],
+  default: 'new',
+}
+
+/** Appointment requests from /book-appointment (the desk calls back to confirm). */
+const appointmentSchema = new Schema(
+  {
+    reference: { type: String, required: true, unique: true },
+    speciality: { type: String, default: '' },
+    doctor: { type: String, default: '' },
+    date: { type: String, required: true },
+    slot: { type: String, required: true },
+    name: { type: String, required: true, trim: true },
+    phone: { type: String, required: true },
+    age: { type: Number, required: true },
+    gender: { type: String, default: '' },
+    reason: { type: String, default: '' },
+    status: requestStatus,
+    /** staff notes, never shown on the site */
+    notes: { type: String, default: '' },
+    ...listFields,
+  },
+  { timestamps: true },
+)
+
+/** Messages from the /contact form. */
+const messageSchema = new Schema(
+  {
+    reference: { type: String, required: true, unique: true },
+    name: { type: String, required: true, trim: true },
+    phone: { type: String, required: true },
+    email: { type: String, default: '' },
+    topic: { type: String, default: '' },
+    message: { type: String, required: true },
+    status: requestStatus,
+    notes: { type: String, default: '' },
     ...listFields,
   },
   { timestamps: true },
@@ -175,6 +247,9 @@ export const Notice = model('Notice', noticeSchema)
 export const Article = model('Article', articleSchema)
 export const Faq = model('Faq', faqSchema)
 export const Job = model('Job', jobSchema)
+export const Figure = model('Figure', figureSchema)
+export const Appointment = model('Appointment', appointmentSchema)
+export const Message = model('Message', messageSchema)
 export const Setting = model('Setting', settingSchema)
 export const User = model('User', userSchema)
 
@@ -187,6 +262,9 @@ export const COLLECTIONS = {
   articles: Article,
   faqs: Faq,
   careers: Job,
+  figures: Figure,
+  appointments: Appointment,
+  messages: Message,
 } as const
 export type CollectionName = keyof typeof COLLECTIONS
 

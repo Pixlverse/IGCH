@@ -9,6 +9,7 @@
         { "label": "Leadership", "href": "/about#leadership" },
         { "label": "Team", "href": "/about#team" },
         { "label": "Achievements", "href": "/about#achievements" },
+        { "label": "College of Nursing", "href": "/college-of-nursing" },
         { "label": "Careers", "href": "/careers" }
       ]
     },
@@ -20,37 +21,36 @@
         { "label": "Super Specialities", "href": "/specialities/super-specialities" },
         { "label": "Broad Specialities", "href": "/specialities/broad-specialities" },
         { "label": "Clinical Support", "href": "/specialities/clinical-support" },
-        { "label": "Find a doctor", "href": "/specialities#find-a-doctor" }
+        { "label": "Karunya Hridayalaya", "href": "/specialities/karunya-hridayalaya" }
       ]
     },
+    { "label": "Find a Doctor", "href": "/doctors", "hasMenu": false },
     {
-      "label": "Patient & Visitor Guide",
-      "href": "/#guide",
-      "hasMenu": true,
-      "children": [
-        { "label": "How to reach", "href": "/#guide" },
-        { "label": "Documents to carry", "href": "/#guide" },
-        { "label": "Parking", "href": "/#guide" },
-        { "label": "Visit process", "href": "/#guide" },
-        { "label": "Insurance & TPA", "href": "/facilities#insurance" }
-      ]
-    },
-    {
-      "label": "Facilities & Services",
+      "label": "Facilities",
       "href": "/facilities",
       "hasMenu": true,
       "children": [
         { "label": "5G Ambulance", "href": "/facilities#ambulance" },
         { "label": "Emergency · ICU · OT", "href": "/facilities#emergency" },
-        { "label": "Dialysis", "href": "/facilities#dialysis" },
-        { "label": "Insurance & TPA", "href": "/facilities#insurance" },
-        { "label": "Canteen", "href": "/facilities#canteen" }
+        { "label": "Dialysis", "href": "/facilities/dialysis" },
+        { "label": "Insurance & Payment", "href": "/facilities/insurance" },
+        { "label": "Canteen", "href": "/facilities/canteen" }
       ]
     },
-    { "label": "IGCH Walk-through", "href": "/#walkthrough", "hasMenu": false },
-    { "label": "Wellness Library", "href": "/wellness-library", "hasMenu": false },
+    {
+      "label": "Patients & Visitors",
+      "href": "/contact",
+      "hasMenu": true,
+      "children": [
+        { "label": "How to reach", "href": "/contact#visit" },
+        { "label": "Book an appointment", "href": "/book-appointment" },
+        { "label": "Insurance & payment", "href": "/facilities/insurance" },
+        { "label": "Hospital facilities", "href": "/facilities" },
+        { "label": "Wellness Library", "href": "/wellness-library" }
+      ]
+    },
     { "label": "News & Updates", "href": "/news", "hasMenu": false },
-    { "label": "College of Nursing", "href": "/#nursing", "hasMenu": false }
+    { "label": "Contact", "href": "/contact", "hasMenu": false }
   ],
   "footer": [
     {
@@ -69,28 +69,28 @@
         { "label": "Super Specialities", "href": "/specialities/super-specialities" },
         { "label": "Broad Specialities", "href": "/specialities/broad-specialities" },
         { "label": "Clinical Support", "href": "/specialities/clinical-support" },
-        { "label": "Find a doctor", "href": "/specialities#find-a-doctor" }
+        { "label": "Find a doctor", "href": "/doctors" },
+        { "label": "Book an appointment", "href": "/book-appointment" }
       ]
     },
     {
       "heading": "Visitors",
       "links": [
-        { "label": "How to reach", "href": "/#guide" },
-        { "label": "Documents to carry", "href": "/#guide" },
-        { "label": "Parking", "href": "/#guide" },
-        { "label": "Visit process", "href": "/#guide" },
-        { "label": "Insurance & TPA", "href": "/facilities#insurance" }
+        { "label": "How to reach", "href": "/contact#visit" },
+        { "label": "Book an appointment", "href": "/book-appointment" },
+        { "label": "Insurance & payment", "href": "/facilities/insurance" },
+        { "label": "Dialysis centre", "href": "/facilities/dialysis" },
+        { "label": "Canteen", "href": "/facilities/canteen" }
       ]
     },
     {
       "heading": "More",
       "links": [
-        { "label": "Walk-through", "href": "/#walkthrough" },
         { "label": "Wellness Library", "href": "/wellness-library" },
         { "label": "News & Updates", "href": "/news" },
         { "label": "Tenders", "href": "/news#tenders" },
-        { "label": "College of Nursing", "href": "/#nursing" },
-        { "label": "Donate", "href": "#" }
+        { "label": "Contact us", "href": "/contact" },
+        { "label": "College of Nursing", "href": "/college-of-nursing" }
       ]
     }
   ]

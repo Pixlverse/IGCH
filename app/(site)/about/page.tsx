@@ -5,8 +5,8 @@ import {
   Leadership,
   Story,
 } from '@/components/about/AboutSections'
-import { Illustration } from '@/components/illustrations/Illustration'
 import { RevealOnScroll } from '@/components/motion/RevealOnScroll'
+import { HeroPhoto } from '@/components/page/HeroPhoto'
 import { InfoSections } from '@/components/page/InfoSections'
 import { PageHero } from '@/components/page/PageHero'
 import { PillLinks } from '@/components/page/PillLinks'
@@ -36,16 +36,17 @@ export default async function AboutPage() {
         title={hero.title}
         lead={hero.lead}
         aside={
-          <div className="page-hero__art">
-            <Illustration name={hero.illustration} />
-            {site.accreditations.length > 0 && (
-              <div className="page-hero__badges">
-                {site.accreditations.map((label) => (
-                  <span key={label}>{label}</span>
-                ))}
-              </div>
-            )}
-          </div>
+          hero.image && (
+            <HeroPhoto image={hero.image}>
+              {site.accreditations.length > 0 && (
+                <div className="page-hero__badges">
+                  {site.accreditations.map((label) => (
+                    <span key={label}>{label}</span>
+                  ))}
+                </div>
+              )}
+            </HeroPhoto>
+          )
         }
       >
         <PillLinks links={hero.links} className="page-hero__links" />

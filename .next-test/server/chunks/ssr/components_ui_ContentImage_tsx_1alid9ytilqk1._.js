@@ -1,0 +1,3 @@
+module.exports=[65214,a=>{"use strict";var b=a.i(98949),c=a.i(89902),c=c;a.s(["f",0,function({image:a,sizes:d,className:e,priority:f,width:g,height:h,alt:i}){return a?(0,b.jsx)(c.Image,{src:a.src,alt:i??a.alt,width:g??a.width,height:h??a.height,sizes:d,className:e,quality:80,decoding:"async",...f?{preload:!0,fetchPriority:"high",loading:"eager"}:{loading:"lazy"}}):null}],65214)}];
+
+//# sourceMappingURL=components_ui_ContentImage_tsx_1alid9ytilqk1._.js.map

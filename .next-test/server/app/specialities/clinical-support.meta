@@ -1,0 +1,48 @@
+{
+  "status": 200,
+  "headers": {
+    "link": "</_next/static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(site)/layout,_N_T_/(site)/specialities/layout,_N_T_/(site)/specialities/clinical-support/layout,_N_T_/(site)/specialities/clinical-support/page,_N_T_/specialities/clinical-support,content,content:site,content:navigation,content:figures,content:specialities,content:departments,content:specialitiesHub,content:specialityGroups,content:doctors,content:library,content:articles"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/_index",
+    "/!KHNpdGUp",
+    "/!KHNpdGUp/specialities/clinical-support/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 49152,
+    "slots": {
+      "children": {
+        "hints": 49152,
+        "slots": {
+          "children": {
+            "hints": 49216,
+            "slots": {
+              "children": {
+                "hints": 49248,
+                "slots": {
+                  "children": {
+                    "hints": 49312,
+                    "slots": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/6ebb275e9cdb1265d72504dbf1a3d994db60631181637c185524e88df5ae4957/$/specialities/clinical-support",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/(site)/specialities/clinical-support/page"
+    },
+    "isFallback": false
+  }
+}

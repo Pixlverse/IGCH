@@ -1,11 +1,12 @@
 import { Icon } from '@/components/icons/Icon'
-import { Illustration } from '@/components/illustrations/Illustration'
 import { RevealOnScroll } from '@/components/motion/RevealOnScroll'
 import { CtaBand } from '@/components/page/CtaBand'
+import { HeroPhoto } from '@/components/page/HeroPhoto'
 import { InfoSections } from '@/components/page/InfoSections'
 import { PageHero } from '@/components/page/PageHero'
 import { PillLinks } from '@/components/page/PillLinks'
 import { Button } from '@/components/ui/Button'
+import { ContentImage } from '@/components/ui/ContentImage'
 import { SectionHead } from '@/components/ui/SectionHead'
 import { SmartLink } from '@/components/ui/SmartLink'
 import { getFacilitiesPage, getSiteSettings, TONES } from '@/lib/content'
@@ -28,11 +29,7 @@ export default async function FacilitiesPage() {
         crumbs={hero.crumbs}
         title={hero.title}
         lead={hero.lead}
-        aside={
-          <div className="page-hero__art page-hero__art--sky">
-            <Illustration name={hero.illustration} />
-          </div>
-        }
+        aside={hero.image && <HeroPhoto image={hero.image} />}
       >
         <PillLinks links={hero.links} active={-1} className="page-hero__links" />
       </PageHero>
@@ -42,9 +39,15 @@ export default async function FacilitiesPage() {
       {ambulance.heading && (
         <section className="section section--tight" id="ambulance">
           <div className="fac-ambulance">
-            <div className="fac-ambulance__art">
-              <Illustration name="ambulance" />
-            </div>
+            {ambulance.image && (
+              <div className="fac-ambulance__art">
+                <ContentImage
+                  image={ambulance.image}
+                  sizes="(max-width: 960px) 100vw, 45vw"
+                  className="art-photo"
+                />
+              </div>
+            )}
             <div className="fac-ambulance__body">
               {ambulance.tag && <span className="tag tag--lime">{ambulance.tag}</span>}
               <h2>{ambulance.heading}</h2>
@@ -97,14 +100,20 @@ export default async function FacilitiesPage() {
                 href={item.link.href}
                 className={`critical__card critical__card--${item.tone}`}
               >
-                <span className="critical__icon">
-                  <Icon name="plus" />
+                {/* banded card: coloured header with the title, white body */}
+                <span className="critical__band">
+                  <h3>{item.title}</h3>
+                  {item.subtitle && <span className="critical__sub">{item.subtitle}</span>}
                 </span>
-                <h3>{item.title}</h3>
-                {item.subtitle && <p className="critical__sub">{item.subtitle}</p>}
-                <p>{item.body}</p>
-                {item.note && <p className="critical__note">{item.note}</p>}
-                <span className="critical__link">{item.link.label}</span>
+                <span className="critical__body">
+                  <p>{item.body}</p>
+                  {item.note && <p className="critical__note">{item.note}</p>}
+                  {item.link.href !== '#' && (
+                    <span className="critical__link">
+                      {item.link.label.replace(/\s*→$/, '')} <Icon name="arrow" />
+                    </span>
+                  )}
+                </span>
               </SmartLink>
             ))}
           </div>
@@ -126,9 +135,15 @@ export default async function FacilitiesPage() {
                 ))}
               </div>
             </div>
-            <div className="fac-dialysis__art">
-              <Illustration name="kidney" />
-            </div>
+            {dialysis.image && (
+              <div className="fac-dialysis__art">
+                <ContentImage
+                  image={dialysis.image}
+                  sizes="(max-width: 960px) 100vw, 40vw"
+                  className="art-photo"
+                />
+              </div>
+            )}
           </div>
         </section>
       )}
@@ -177,6 +192,11 @@ export default async function FacilitiesPage() {
               {canteen.tag && <span className="tag tag--white">{canteen.tag}</span>}
               <h2 className="h2 h2--sm">{canteen.heading}</h2>
               <p>{canteen.body}</p>
+              {canteen.link.label && (
+                <Button href={canteen.link.href} variant="dark" className="fac-canteen__link">
+                  {canteen.link.label}
+                </Button>
+              )}
             </div>
             {canteen.timings.title && (
               <div className="fac-canteen__timings">

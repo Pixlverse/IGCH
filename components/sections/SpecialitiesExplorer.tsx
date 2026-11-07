@@ -4,7 +4,7 @@ import clsx from 'clsx'
 import { useState, type CSSProperties, type MouseEvent } from 'react'
 
 import { Icon } from '@/components/icons/Icon'
-import { fill, splitAround } from '@/lib/content/format'
+import { deptHref, fill, splitAround } from '@/lib/content/format'
 import type { HomePage, SpecialityGroup } from '@/lib/content/schemas'
 
 type Copy = HomePage['specialities']
@@ -16,6 +16,9 @@ type Props = {
 }
 
 const pad = (n: number) => String(n).padStart(2, '0')
+
+/** Departments shown per group before searching. */
+const PREVIEW = 7
 
 /**
  * Department filter + live "How it works" tracker. The server render matches
@@ -46,8 +49,6 @@ export function SpecialitiesExplorer({ groups, copy, phone }: Props) {
     setDone(2)
   }
   const clickDept = (e: MouseEvent<HTMLAnchorElement>, group: SpecialityGroup, name: string) => {
-    // Placeholder links stay on the page (as in the original); real URLs navigate.
-    if (e.currentTarget.getAttribute('href') === '#') e.preventDefault()
     pickDept(group, name)
     setDone(3)
   }
@@ -144,9 +145,12 @@ export function SpecialitiesExplorer({ groups, copy, phone }: Props) {
               </header>
               <ul className="dept-list">
                 {group.departments.map((dept, i) => (
-                  <li key={dept.name} hidden={!matches[i]}>
+                  // without a search, the first few per group keep the three columns
+                  // level; "View all" (below) lists the rest
+                  <li key={dept.name} hidden={!matches[i] || (!q && i >= PREVIEW)}>
                     <a
-                      href={dept.href}
+                      // step 3 of "how it works": meet the department's doctors and book
+                      href={deptHref(dept.href, dept.name)}
                       className="dept"
                       style={{ '--i': i } as CSSProperties}
                       onMouseEnter={() => pickDept(group, dept.name)}

@@ -33,56 +33,48 @@
       "key": "heart",
       "label": "Heart Health",
       "tone": "red",
-      "illustration": "heart",
       "accent": "red"
     },
     {
       "key": "cancer",
       "label": "Cancer Care",
       "tone": "purple",
-      "illustration": "oncology",
       "accent": "purple"
     },
     {
       "key": "children",
       "label": "Children's Health",
       "tone": "yellow",
-      "illustration": "paediatric",
       "accent": "brown"
     },
     {
       "key": "kidney",
       "label": "Kidney Health",
       "tone": "blue",
-      "illustration": "kidney",
       "accent": "teal"
     },
     {
       "key": "mental",
       "label": "Mental Health",
       "tone": "purple",
-      "illustration": "consult",
       "accent": "purple"
     },
     {
       "key": "general",
       "label": "General Health",
       "tone": "green",
-      "illustration": "consult",
       "accent": "teal"
     },
     {
       "key": "women",
       "label": "Women's Health",
       "tone": "red",
-      "illustration": "family",
       "accent": "red"
     },
     {
       "key": "skin",
       "label": "Skin Health",
       "tone": "yellow",
-      "illustration": "consult",
       "accent": "brown"
     }
   ],
@@ -236,7 +228,7 @@
       "ctas": [
         {
           "label": "Find a Doctor",
-          "href": "/specialities#find-a-doctor",
+          "href": "/doctors",
           "style": "primary"
         },
         {

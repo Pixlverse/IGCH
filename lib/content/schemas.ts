@@ -75,23 +75,6 @@ export const TAG_TONES = [
 ] as const
 export type TagTone = (typeof TAG_TONES)[number]
 
-/** Inline SVG illustrations (components/illustrations) that content can pick from. */
-export const ILLUSTRATIONS = [
-  'heart',
-  'ambulance',
-  'building',
-  'family',
-  'consult',
-  'oncology',
-  'paediatric',
-  'kidney',
-  'pacemaker',
-  'nurses',
-  'support',
-] as const
-export type IllustrationName = (typeof ILLUSTRATIONS)[number]
-const illustration = (fallback: IllustrationName = 'consult') => oneOf(ILLUSTRATIONS, fallback)
-
 /** Soft colour families used for icon boxes and tinted cards. */
 export const TONES = ['green', 'purple', 'yellow', 'red', 'blue'] as const
 export type Tone = (typeof TONES)[number]
@@ -205,7 +188,7 @@ export const HomePageSchema = obj({
     title: obj({ line1: str(), accent: str(), rest: str() }),
     lead: str(),
     secondaryCta: link(),
-    search: obj({ label: str(), placeholder: str(), buttonLabel: str() }),
+    search: obj({ label: str(), placeholder: str(), buttonLabel: str(), emptyText: str() }),
     chips: list(LinkSchema),
     image: image(),
     fiveG: obj({
@@ -308,7 +291,6 @@ export const SpecialitiesSchema = obj({
       summary: str(),
       icon: oneOf(ICONS, 'pulse'),
       color: oneOf(['green', 'amber', 'blue'], 'green'),
-      illustration: illustration(),
       viewAll: link(),
       departments: list(
         z.object({
@@ -328,6 +310,43 @@ export const SpecialitiesSchema = obj({
   ),
 })
 
+/**
+ * Profile sections, in page order. Each is a list of blocks; a block may mix a
+ * lead-in line and "- " bullet lines (see components/doctors/RichBlocks).
+ */
+export const PROFILE_SECTIONS = [
+  'overview',
+  'education',
+  'journey',
+  'expertise',
+  'interests',
+  'achievements',
+  'research',
+  'memberships',
+  'awards',
+  'approach',
+  'community',
+  'beyond',
+] as const
+export type ProfileSection = (typeof PROFILE_SECTIONS)[number]
+
+const paragraphs = () => list(z.string())
+const profileSections = () =>
+  ({
+    overview: paragraphs(),
+    education: paragraphs(),
+    journey: paragraphs(),
+    expertise: paragraphs(),
+    interests: paragraphs(),
+    achievements: paragraphs(),
+    research: paragraphs(),
+    memberships: paragraphs(),
+    awards: paragraphs(),
+    approach: paragraphs(),
+    community: paragraphs(),
+    beyond: paragraphs(),
+  }) satisfies Record<ProfileSection, unknown>
+
 export const DoctorsSchema = obj({
   items: list(
     z.object({
@@ -342,6 +361,18 @@ export const DoctorsSchema = obj({
       featured: bool(true),
       /** OPD days, for the doctor finder; empty means "any day" */
       days: list(z.string()),
+      /** profile page (/doctors/<slug>); only when the profile has text */
+      slug: str(),
+      /** speciality line under the name, e.g. "Medical & Paediatric Oncologist" */
+      title: str(),
+      designation: str(),
+      experience: str(),
+      languages: str(),
+      /** OPD timings as free text, e.g. "Mon, Wed, Fri · 9 am - 1 pm" */
+      timings: str(),
+      /** the opening introduction on the profile page */
+      intro: list(z.string()),
+      ...profileSections(),
     }),
   ),
 })
@@ -390,7 +421,6 @@ export const NewsItemSchema = z.object({
   readTime: str(),
   tag: tag(),
   image: image(),
-  illustration: illustration(),
   featured: bool(),
 })
 
@@ -408,8 +438,6 @@ export const ArticleItemSchema = z.object({
   href: href(),
   featured: bool(),
   image: image(),
-  /** overrides the category's illustration */
-  illustration: oneOf(ILLUSTRATIONS, 'consult').optional().catch(undefined),
 })
 
 export const NewsSchema = obj({
@@ -486,25 +514,157 @@ const ctas = () => list(cta())
  * and buttons. A CTA href of `booking` uses the site booking link and
  * `emergency` dials the emergency number.
  */
+const facts = () => list(z.object({ label: str(), value: str(), href: str() }))
+
 export const InfoSectionSchema = z.object({
   id: str(),
   eyebrow: str(),
   heading: str(),
   paragraphs: list(z.string()),
+  /** highlighted callout under the intro (e.g. "Important: …") */
+  note: str(),
+  stats: list(z.object({ value: str(), label: str() })),
+  /** bulleted list under the intro */
+  items: list(z.string()),
+  /** label/value rows (timings, course details, contacts) */
+  facts: facts(),
   cards: list(
     z.object({
       title: str(),
       paragraphs: list(z.string()),
       items: list(z.string()),
-      facts: list(z.object({ label: str(), value: str() })),
+      /** paragraphs after the bullet list */
+      after: list(z.string()),
+      facts: facts(),
       ctas: ctas(),
     }),
   ),
+  /** doctor cards for these departments (matched against the doctor's speciality) */
+  doctors: list(z.string()),
+  faqs: qa(),
+  /** paragraphs after the cards */
+  after: list(z.string()),
   ctas: ctas(),
   /** white panel (default) or dark ink panel */
   tone: oneOf(['white', 'dark'], 'white'),
 })
 const infoSections = () => list(InfoSectionSchema)
+
+/**
+ * A standalone service page (Karunya Hridayalaya, Dialysis, Insurance,
+ * Canteen, College of Nursing): hero, then text sections, then a closing band.
+ */
+export const ServicePageSchema = obj({
+  seo: seo(),
+  hero: obj({
+    crumbs: crumbs(),
+    tag: str(),
+    title: accentTitle(),
+    lead: str(),
+    /** photo beside the heading; without one the hero is full width */
+    image: image(),
+    ctas: ctas(),
+  }),
+  sections: infoSections(),
+  cta: obj({ heading: str(), link: link() }),
+})
+
+/** Free-form labels (form field names, messages) keyed by name; missing keys fall back in code. */
+const labels = () => z.record(z.string(), z.string()).catch({})
+
+/** /book-appointment: the 4-step request form and its help panel. */
+export const BookingPageSchema = obj({
+  seo: seo(),
+  hero: obj({ crumbs: crumbs(), title: accentTitle(), lead: str() }),
+  steps: list(z.object({ title: z.string().min(1), hint: str() })),
+  labels: labels(),
+  side: obj({
+    emergencyTitle: str(),
+    emergencyBody: str(),
+    helpTitle: str(),
+    helpBody: str(),
+    deskLabel: str(),
+    deskDisplay: str(),
+    deskTel: str(),
+    bringTitle: str(),
+    bring: list(z.string()),
+    hoursTitle: str(),
+    hours: list(z.object({ label: str(), value: str() })),
+  }),
+  success: obj({ title: str(), body: str(), referenceLabel: str(), note: str(), again: str() }),
+})
+
+/** /contact: contact cards, address + map, and the message form. */
+export const ContactPageSchema = obj({
+  seo: seo(),
+  hero: obj({ crumbs: crumbs(), title: accentTitle(), lead: str() }),
+  cards: list(
+    z.object({
+      title: z.string().min(1),
+      body: str(),
+      value: str(),
+      /** `emergency` / `booking` resolve to the site settings */
+      href: str(),
+      tone: oneOf(['red', 'green', 'purple', 'blue', 'yellow'], 'green'),
+      icon: oneOf(ICONS, 'phone'),
+    }),
+  ),
+  visit: obj({
+    title: str(),
+    lines: list(z.string()),
+    landmark: str(),
+    mapQuery: str(),
+    directionsLabel: str(),
+    hoursTitle: str(),
+    hours: list(z.object({ label: str(), value: str() })),
+  }),
+  form: obj({ heading: str(), lead: str(), labels: labels() }),
+  success: obj({ title: str(), body: str(), referenceLabel: str(), again: str() }),
+})
+
+/** /doctors directory, card labels and the profile-page section headings. */
+export const DoctorsPageSchema = obj({
+  seo: seo(),
+  hero: obj({ crumbs: crumbs(), title: accentTitle(), lead: str(), image: image() }),
+  directory: obj({
+    heading: str(),
+    lead: str(),
+    searchLabel: str(),
+    searchPlaceholder: str(),
+    quickLabel: str(),
+    /** `match` is looked for in the doctor's speciality */
+    quick: list(z.object({ label: z.string().min(1), match: str(), href: str() })),
+    specialityLabel: str(),
+    allSpecialities: str(),
+    availabilityLabel: str(),
+    anyDay: str(),
+    todayOption: str(),
+    days: list(z.string()),
+    resetLabel: str(),
+    /** `{count}` is replaced with the number of doctors shown */
+    resultsLabel: str(),
+    emptyText: str(),
+  }),
+  card: obj({
+    qualifications: str(),
+    experience: str(),
+    languages: str(),
+    opd: str(),
+    opdFallback: str(),
+    inToday: str(),
+    book: str(),
+    profile: str(),
+  }),
+  profile: obj({
+    backLabel: str(),
+    designation: str(),
+    callLabel: str(),
+    tocLabel: str(),
+    sections: list(z.object({ key: oneOf(PROFILE_SECTIONS, 'overview'), heading: str() })),
+    note: str(),
+  }),
+  cta: obj({ heading: str() }),
+})
 
 export const AboutPageSchema = obj({
   seo: seo(),
@@ -515,7 +675,7 @@ export const AboutPageSchema = obj({
     lead: str(),
     /** in-page jump links under the lead */
     links: list(LinkSchema),
-    illustration: illustration('building'),
+    image: image(),
   }),
   stats: obj({
     ariaLabel: str(),
@@ -534,7 +694,7 @@ export const AboutPageSchema = obj({
     heading: str(),
     points: list(z.object({ title: str(), caption: str() })),
     ctas: ctas(),
-    illustration: illustration('family'),
+    image: image(),
   }),
   leadership: obj({
     head: sectionHead(),
@@ -554,18 +714,18 @@ export const AboutPageSchema = obj({
     head: sectionHead(),
     accreditation: obj({ tag: str(), title: str() }),
     empanelment: obj({ tag: str(), title: str() }),
-    first: obj({ tag: str(), title: str(), body: str() }),
-    pacemaker: obj({ title: str() }),
+    first: obj({ tag: str(), title: str(), body: str(), image: image() }),
+    pacemaker: obj({ title: str(), image: image() }),
     stat: obj({ value: str(), caption: str() }),
   }),
   /** text sections after the achievements */
   sections: infoSections(),
   careers: obj({ tag: str(), heading: str(), body: str(), ctas: ctas() }),
-  nursing: obj({ tag: str(), heading: str(), link: link() }),
+  nursing: obj({ tag: str(), heading: str(), link: link(), image: image() }),
 })
 
 const centreCard = {
-  illustration: illustration('heart'),
+  image: image(),
   tag: tag(),
   title: str(),
   body: str(),
@@ -581,7 +741,7 @@ export const SpecialitiesHubSchema = obj({
     search: obj({ label: str(), placeholder: str(), buttonLabel: str(), emptyText: str() }),
     chips: list(LinkSchema),
     countLabel: str(),
-    illustration: illustration('consult'),
+    image: image(),
   }),
   steps: list(z.object({ title: str(), hint: str(), href: href() })),
   groups: obj({
@@ -632,7 +792,7 @@ export const SpecialityGroupPagesSchema = obj({
         heading: str(),
         body: str(),
         cta: link(),
-        illustration: illustration('family'),
+        image: image(),
       }),
       how: obj({
         eyebrow: str(),
@@ -673,7 +833,6 @@ export const LibrarySchema = obj({
       key: z.string().min(1),
       label: z.string().min(1),
       tone: oneOf(TAG_TONES, 'green'),
-      illustration: illustration(),
       /** colour of the home-page article card */
       accent: oneOf(['red', 'brown', 'purple', 'teal'], 'teal'),
     }),
@@ -713,11 +872,12 @@ export const FacilitiesPageSchema = obj({
     title: accentTitle(),
     lead: str(),
     links: list(LinkSchema),
-    illustration: illustration('building'),
+    image: image(),
   }),
   /** text sections between the hero and the ambulance */
   intro: infoSections(),
   ambulance: obj({
+    image: image(),
     tag: str(),
     heading: str(),
     subheading: str(),
@@ -740,7 +900,7 @@ export const FacilitiesPageSchema = obj({
       }),
     ),
   }),
-  dialysis: obj({ tag: str(), heading: str(), body: str(), ctas: ctas() }),
+  dialysis: obj({ tag: str(), heading: str(), body: str(), ctas: ctas(), image: image() }),
   /** text sections after the dialysis banner (diagnostics, rehabilitation, pharmacy…) */
   services: infoSections(),
   insurance: obj({
@@ -756,6 +916,7 @@ export const FacilitiesPageSchema = obj({
     heading: str(),
     body: str(),
     timings: obj({ eyebrow: str(), title: str(), note: str() }),
+    link: link(),
   }),
   /** text sections after the canteen */
   more: infoSections(),
@@ -833,3 +994,7 @@ export type NewsItem = z.infer<typeof NewsItemSchema>
 export type ArticleItem = z.infer<typeof ArticleItemSchema>
 export type JobItem = z.infer<typeof JobItemSchema>
 export type CareersPage = z.infer<typeof CareersPageSchema>
+export type ServicePage = z.infer<typeof ServicePageSchema>
+export type DoctorsPage = z.infer<typeof DoctorsPageSchema>
+export type BookingPage = z.infer<typeof BookingPageSchema>
+export type ContactPage = z.infer<typeof ContactPageSchema>

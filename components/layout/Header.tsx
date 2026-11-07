@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import { Suspense } from 'react'
 
 import { Icon } from '@/components/icons/Icon'
@@ -30,31 +31,45 @@ export function Header({ site, nav }: { site: SiteSettings; nav: Navigation }) {
           <Brand site={site} />
           <div className="header__actions">
             <LanguageToggle languages={site.languages} label={site.languageGroupLabel} />
+            {/* phones: icon-only emergency button beside the menu toggle */}
             {emergency.phone.tel && (
-              <a href={`tel:${emergency.phone.tel}`} className="emergency-pill">
-                <span className="ep-dot" aria-hidden="true"></span>
-                <span className="ep-ico">
-                  <Icon name="phone" />
-                </span>
-                <span className="ep-text">
-                  {emergency.headerLabel} · {emergency.phone.display}
-                </span>
-              </a>
+              <EmergencyPill site={site} className="emergency-pill--mobile" />
             )}
+            <MenuToggle label={site.menuLabel} />
+          </div>
+        </div>
+        <div className="header__bar">
+          {/* usePathname can suspend on pages with runtime params (news / article pages) */}
+          <Suspense fallback={<MainNavFallback items={nav.header} />}>
+            <MainNav items={nav.header} />
+          </Suspense>
+          <div className="header__cta">
+            {emergency.phone.tel && <EmergencyPill site={site} />}
             {booking.label && (
               <Button href={booking.href} variant="dark" className="header__book">
                 <Icon name="calendar" />
                 {booking.label}
               </Button>
             )}
-            <MenuToggle label={site.menuLabel} />
           </div>
         </div>
-        {/* usePathname can suspend on pages with runtime params (news / article pages) */}
-        <Suspense fallback={<MainNavFallback items={nav.header} />}>
-          <MainNav items={nav.header} />
-        </Suspense>
       </HeaderShell>
     </>
+  )
+}
+
+function EmergencyPill({ site, className }: { site: SiteSettings; className?: string }) {
+  const { emergency } = site
+  return (
+    <a href={`tel:${emergency.phone.tel}`} className={clsx('emergency-pill', className)}>
+      <span className="ep-dot" aria-hidden="true"></span>
+      <span className="ep-ico">
+        <Icon name="phone" />
+      </span>
+      <span className="ep-text">
+        <span className="ep-label">{emergency.headerLabel} · </span>
+        {emergency.phone.display}
+      </span>
+    </a>
   )
 }

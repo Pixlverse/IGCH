@@ -30,11 +30,20 @@ export function Guide({ head, guide, walkthrough }: Props) {
         </div>
 
         {guide.cards.map((card) => (
-          <SmartLink key={card.title} href={card.href} className="guide-card">
-            <span className={clsx('icon-box', `icon-box--${card.tone}`)}>
-              <Icon name={card.icon} />
+          <SmartLink
+            key={card.title}
+            href={card.href}
+            className={clsx('guide-card', `guide-card--${card.tone}`)}
+          >
+            {/* banded card: coloured header with the title, white body */}
+            <span className="guide-card__band">
+              <h3>{card.title}</h3>
+              {card.href !== '#' && (
+                <span className="guide-card__go" aria-hidden="true">
+                  <Icon name="arrow" />
+                </span>
+              )}
             </span>
-            <h3>{card.title}</h3>
             <p>{card.body}</p>
             {card.tag && <span className="tag">{card.tag}</span>}
             {card.steps.length > 0 && (

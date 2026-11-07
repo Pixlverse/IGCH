@@ -1,0 +1,72 @@
+{
+  "seo": {
+    "title": "Find a Doctor in Kochi | Specialist Doctors at IGCH, Kadavanthra",
+    "description": "Explore the specialist doctors at Indira Gandhi Co-operative Hospital (IGCH), Kochi. View their qualifications, specialities and consultation details, and book an appointment."
+  },
+  "hero": {
+    "crumbs": [
+      { "label": "Home", "href": "/" },
+      { "label": "Doctors", "href": "/doctors" }
+    ],
+    "title": { "before": "Care you can", "accent": "count on", "after": "" },
+    "lead": "Our doctors work across {{departments}} medical and surgical specialities, with one shared commitment: every patient gets the same attention, clear guidance and good care."
+  },
+  "directory": {
+    "heading": "Find a specialist. Plan your consultation.",
+    "lead": "Explore the specialist doctors at Indira Gandhi Co-operative Hospital (IGCH). View their qualifications, specialities and consultation details, and book an appointment directly.",
+    "searchLabel": "Search doctors",
+    "searchPlaceholder": "Search by doctor name or speciality.",
+    "quickLabel": "Quick speciality filters",
+    "quick": [
+      { "label": "Cardiology", "match": "Cardio" },
+      { "label": "Oncology", "match": "Oncology" },
+      { "label": "Neurology", "match": "Neuro" },
+      { "label": "Orthopaedics", "match": "Orthopaedics" },
+      { "label": "General Medicine", "match": "General Medicine" },
+      { "label": "Gynaecology", "match": "Gynaecology" },
+      { "label": "Paediatrics", "match": "Paediatric" },
+      { "label": "More Specialities", "href": "/specialities" }
+    ],
+    "specialityLabel": "Speciality",
+    "allSpecialities": "All specialities",
+    "availabilityLabel": "Consultation availability",
+    "anyDay": "Any day",
+    "todayOption": "Available today",
+    "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "resetLabel": "Clear filters",
+    "resultsLabel": "{count} doctors found",
+    "emptyText": "No doctors match these filters. Try another speciality, or call the appointment desk and we will help you find the right specialist."
+  },
+  "card": {
+    "qualifications": "Qualifications",
+    "experience": "Experience",
+    "languages": "Languages",
+    "opd": "OPD days & timings",
+    "opdFallback": "Call the appointment desk",
+    "inToday": "In today",
+    "book": "Book appointment",
+    "profile": "View profile"
+  },
+  "profile": {
+    "backLabel": "All doctors",
+    "designation": "Designation",
+    "callLabel": "Call the hospital",
+    "tocLabel": "On this page",
+    "sections": [
+      { "key": "overview", "heading": "Professional Overview" },
+      { "key": "education", "heading": "Educational Qualifications" },
+      { "key": "journey", "heading": "Professional Journey" },
+      { "key": "expertise", "heading": "Areas of Expertise" },
+      { "key": "interests", "heading": "Clinical Interests" },
+      { "key": "achievements", "heading": "Professional Contributions and Achievements" },
+      { "key": "research", "heading": "Research and Publications" },
+      { "key": "memberships", "heading": "Professional Memberships" },
+      { "key": "awards", "heading": "Awards and Recognition" },
+      { "key": "approach", "heading": "Approach to Patient Care" },
+      { "key": "community", "heading": "Community and Social Contributions" },
+      { "key": "beyond", "heading": "Beyond Medicine" }
+    ],
+    "note": ""
+  },
+  "cta": { "heading": "Not sure which specialist you need? Our appointment desk can help." }
+}

@@ -1,0 +1,48 @@
+{
+  "status": 200,
+  "headers": {
+    "link": "</_next/static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(site)/layout,_N_T_/(site)/facilities/layout,_N_T_/(site)/facilities/canteen/layout,_N_T_/(site)/facilities/canteen/page,_N_T_/facilities/canteen,content,content:site,content:navigation,content:figures,content:canteen,content:doctors,content:doctorsPage"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/_index",
+    "/!KHNpdGUp",
+    "/!KHNpdGUp/facilities/canteen/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 49152,
+    "slots": {
+      "children": {
+        "hints": 49152,
+        "slots": {
+          "children": {
+            "hints": 49216,
+            "slots": {
+              "children": {
+                "hints": 49248,
+                "slots": {
+                  "children": {
+                    "hints": 49312,
+                    "slots": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/77e6ef3302d25ba8faf0a9f34b4ae775e753948b765c7de103b83585d9133110/$/facilities/canteen",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/(site)/facilities/canteen/page"
+    },
+    "isFallback": false
+  }
+}

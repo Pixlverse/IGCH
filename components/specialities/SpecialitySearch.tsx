@@ -11,13 +11,7 @@ import { SmartLink } from '@/components/ui/SmartLink'
 const SearchSchema = z.object({ q: z.string().trim().max(200) })
 type SearchValues = z.infer<typeof SearchSchema>
 
-export type SearchEntry = {
-  name: string
-  group: string
-  href: string
-  /** extra text to match against (short name, description) */
-  keywords: string
-}
+import type { SearchEntry } from '@/lib/content/search'
 
 type SpecialitySearchProps = {
   label: string
@@ -44,9 +38,16 @@ export function SpecialitySearch({
   })
 
   const needle = query?.toLowerCase() ?? ''
+  // name matches first ("cardiology" → the Cardiology department before the
+  // cardiologists who only match on their speciality)
   const results = needle
     ? entries
         .filter((entry) => `${entry.name} ${entry.keywords}`.toLowerCase().includes(needle))
+        .sort(
+          (a, b) =>
+            Number(!a.name.toLowerCase().includes(needle)) -
+            Number(!b.name.toLowerCase().includes(needle)),
+        )
         .slice(0, MAX_RESULTS)
     : []
 
@@ -77,7 +78,7 @@ export function SpecialitySearch({
           (results.length > 0 ? (
             <ul>
               {results.map((entry) => (
-                <li key={entry.name}>
+                <li key={`${entry.group}-${entry.name}`}>
                   <SmartLink href={entry.href}>
                     <strong>{entry.name}</strong>
                     <span>{entry.group}</span>

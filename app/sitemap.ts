@@ -1,15 +1,32 @@
 import type { MetadataRoute } from 'next'
 
-import { getLibrary, getNewsItems, getSiteSettings, getSpecialities } from '@/lib/content'
+import {
+  getDoctors,
+  getLibrary,
+  getNewsItems,
+  getSiteSettings,
+  getSpecialities,
+  SERVICE_PAGES,
+} from '@/lib/content'
 
-const PAGES = ['/about', '/specialities', '/facilities', '/news', '/wellness-library', '/careers']
+const PAGES = [
+  '/about',
+  '/specialities',
+  '/doctors',
+  '/facilities',
+  '/news',
+  '/wellness-library',
+  '/careers',
+  ...Object.values(SERVICE_PAGES),
+]
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [site, specialities, news, library] = await Promise.all([
+  const [site, specialities, news, library, doctors] = await Promise.all([
     getSiteSettings(),
     getSpecialities(),
     getNewsItems(),
     getLibrary(),
+    getDoctors(),
   ])
   const url = process.env.NEXT_PUBLIC_SITE_URL || site.seo.siteUrl
   const abs = (path: string) => new URL(path, url).toString()
@@ -20,9 +37,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const stories = [...news, ...library.articles]
     .map((item) => item.href)
     .filter((href) => href.startsWith('/news/') || href.startsWith('/wellness-library/'))
+  const profiles = doctors.items
+    .map((doctor) => doctor.href)
+    .filter((href) => href.startsWith('/doctors/'))
   return [
     { url: abs('/'), changeFrequency: 'weekly', priority: 1 },
-    ...[...PAGES, ...groups, ...stories].map((path) => ({
+    ...[...PAGES, ...groups, ...stories, ...profiles].map((path) => ({
       url: abs(path),
       changeFrequency: path === '/news' ? ('weekly' as const) : ('monthly' as const),
       priority: 0.8,

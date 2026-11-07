@@ -24,6 +24,7 @@ import {
   getSiteSettings,
   getSpecialities,
 } from '@/lib/content'
+import { searchEntries } from '@/lib/content/search'
 import { buildHomeMetadata, buildJsonLd } from '@/lib/seo'
 
 export const generateMetadata = buildHomeMetadata
@@ -63,7 +64,7 @@ export default async function HomePage() {
 
   return (
     <main>
-      <Hero hero={home.hero} site={site} />
+      <Hero hero={home.hero} site={site} entries={searchEntries(specialities, doctors)} />
       <Stats stats={home.stats} />
       <Centres head={home.centres.head} centres={centres} />
       <Specialities copy={home.specialities} specialities={specialities} site={site} />

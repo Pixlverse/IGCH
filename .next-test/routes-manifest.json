@@ -1,0 +1,351 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/index\\.html(?:/)?$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/admin/[resource]",
+      "regex": "^/admin/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPresource": "nxtPresource"
+      },
+      "namedRegex": "^/admin/(?<nxtPresource>[^/]+?)(?:/)?$",
+      "prefetchSegmentDataRoutes": [
+        {
+          "destination": "/admin/[resource].segments/admin/!KHBhbmVsKQ/$d$resource$segment",
+          "source": "^/admin/(?<nxtPresource>[^/]+?)\\.segments/admin/!KHBhbmVsKQ/\\$d\\$resource(?<segment>/__PAGE__\\.segment\\.rsc|\\.segment\\.rsc)(?:/)?$",
+          "routeKeys": {
+            "nxtPresource": "nxtPresource"
+          }
+        }
+      ]
+    },
+    {
+      "page": "/admin/[resource]/new",
+      "regex": "^/admin/([^/]+?)/new(?:/)?$",
+      "routeKeys": {
+        "nxtPresource": "nxtPresource"
+      },
+      "namedRegex": "^/admin/(?<nxtPresource>[^/]+?)/new(?:/)?$",
+      "prefetchSegmentDataRoutes": [
+        {
+          "destination": "/admin/[resource]/new.segments/admin/!KHBhbmVsKQ/$d$resource/new$segment",
+          "source": "^/admin/(?<nxtPresource>[^/]+?)/new\\.segments/admin/!KHBhbmVsKQ/\\$d\\$resource/new(?<segment>/__PAGE__\\.segment\\.rsc|\\.segment\\.rsc)(?:/)?$",
+          "routeKeys": {
+            "nxtPresource": "nxtPresource"
+          }
+        }
+      ]
+    },
+    {
+      "page": "/admin/[resource]/[id]",
+      "regex": "^/admin/([^/]+?)/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPresource": "nxtPresource",
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/(?<nxtPresource>[^/]+?)/(?<nxtPid>[^/]+?)(?:/)?$",
+      "prefetchSegmentDataRoutes": [
+        {
+          "destination": "/admin/[resource]/[id].segments/admin/!KHBhbmVsKQ/$d$resource/$d$id$segment",
+          "source": "^/admin/(?<nxtPresource>[^/]+?)/(?<nxtPid>[^/]+?)\\.segments/admin/!KHBhbmVsKQ/\\$d\\$resource/\\$d\\$id(?<segment>/__PAGE__\\.segment\\.rsc|\\.segment\\.rsc)(?:/)?$",
+          "routeKeys": {
+            "nxtPresource": "nxtPresource",
+            "nxtPid": "nxtPid"
+          }
+        }
+      ]
+    },
+    {
+      "page": "/doctors/[slug]",
+      "regex": "^/doctors/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/doctors/(?<nxtPslug>[^/]+?)(?:/)?$",
+      "prefetchSegmentDataRoutes": [
+        {
+          "destination": "/doctors/[slug].segments/!KHNpdGUp/doctors/$d$slug$segment",
+          "source": "^/doctors/(?<nxtPslug>[^/]+?)\\.segments/!KHNpdGUp/doctors/\\$d\\$slug(?<segment>/__PAGE__\\.segment\\.rsc|\\.segment\\.rsc)(?:/)?$",
+          "routeKeys": {
+            "nxtPslug": "nxtPslug"
+          }
+        }
+      ]
+    },
+    {
+      "page": "/news/[slug]",
+      "regex": "^/news/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/news/(?<nxtPslug>[^/]+?)(?:/)?$",
+      "prefetchSegmentDataRoutes": [
+        {
+          "destination": "/news/[slug].segments/!KHNpdGUp/news/$d$slug$segment",
+          "source": "^/news/(?<nxtPslug>[^/]+?)\\.segments/!KHNpdGUp/news/\\$d\\$slug(?<segment>/__PAGE__\\.segment\\.rsc|\\.segment\\.rsc)(?:/)?$",
+          "routeKeys": {
+            "nxtPslug": "nxtPslug"
+          }
+        }
+      ]
+    },
+    {
+      "page": "/uploads/[file]",
+      "regex": "^/uploads/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPfile": "nxtPfile"
+      },
+      "namedRegex": "^/uploads/(?<nxtPfile>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/wellness-library/[slug]",
+      "regex": "^/wellness\\-library/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/wellness\\-library/(?<nxtPslug>[^/]+?)(?:/)?$",
+      "prefetchSegmentDataRoutes": [
+        {
+          "destination": "/wellness-library/[slug].segments/!KHNpdGUp/wellness-library/$d$slug$segment",
+          "source": "^/wellness\\-library/(?<nxtPslug>[^/]+?)\\.segments/!KHNpdGUp/wellness\\-library/\\$d\\$slug(?<segment>/__PAGE__\\.segment\\.rsc|\\.segment\\.rsc)(?:/)?$",
+          "routeKeys": {
+            "nxtPslug": "nxtPslug"
+          }
+        }
+      ]
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
+    },
+    {
+      "page": "/admin/account",
+      "regex": "^/admin/account(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/account(?:/)?$"
+    },
+    {
+      "page": "/admin/login",
+      "regex": "^/admin/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/login(?:/)?$"
+    },
+    {
+      "page": "/admin/settings",
+      "regex": "^/admin/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/settings(?:/)?$"
+    },
+    {
+      "page": "/admin/users",
+      "regex": "^/admin/users(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/users(?:/)?$"
+    },
+    {
+      "page": "/api/revalidate",
+      "regex": "^/api/revalidate(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/revalidate(?:/)?$"
+    },
+    {
+      "page": "/apple-icon.png",
+      "regex": "^/apple\\-icon\\.png(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apple\\-icon\\.png(?:/)?$"
+    },
+    {
+      "page": "/book-appointment",
+      "regex": "^/book\\-appointment(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/book\\-appointment(?:/)?$"
+    },
+    {
+      "page": "/careers",
+      "regex": "^/careers(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/careers(?:/)?$"
+    },
+    {
+      "page": "/college-of-nursing",
+      "regex": "^/college\\-of\\-nursing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/college\\-of\\-nursing(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/doctors",
+      "regex": "^/doctors(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/doctors(?:/)?$"
+    },
+    {
+      "page": "/facilities",
+      "regex": "^/facilities(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/facilities(?:/)?$"
+    },
+    {
+      "page": "/facilities/canteen",
+      "regex": "^/facilities/canteen(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/facilities/canteen(?:/)?$"
+    },
+    {
+      "page": "/facilities/dialysis",
+      "regex": "^/facilities/dialysis(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/facilities/dialysis(?:/)?$"
+    },
+    {
+      "page": "/facilities/insurance",
+      "regex": "^/facilities/insurance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/facilities/insurance(?:/)?$"
+    },
+    {
+      "page": "/icon.png",
+      "regex": "^/icon\\.png(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/icon\\.png(?:/)?$"
+    },
+    {
+      "page": "/news",
+      "regex": "^/news(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/news(?:/)?$"
+    },
+    {
+      "page": "/robots.txt",
+      "regex": "^/robots\\.txt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/robots\\.txt(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
+    },
+    {
+      "page": "/specialities",
+      "regex": "^/specialities(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/specialities(?:/)?$"
+    },
+    {
+      "page": "/specialities/broad-specialities",
+      "regex": "^/specialities/broad\\-specialities(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/specialities/broad\\-specialities(?:/)?$"
+    },
+    {
+      "page": "/specialities/clinical-support",
+      "regex": "^/specialities/clinical\\-support(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/specialities/clinical\\-support(?:/)?$"
+    },
+    {
+      "page": "/specialities/karunya-hridayalaya",
+      "regex": "^/specialities/karunya\\-hridayalaya(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/specialities/karunya\\-hridayalaya(?:/)?$"
+    },
+    {
+      "page": "/specialities/super-specialities",
+      "regex": "^/specialities/super\\-specialities(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/specialities/super\\-specialities(?:/)?$"
+    },
+    {
+      "page": "/wellness-library",
+      "regex": "^/wellness\\-library(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/wellness\\-library(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": true,
+    "dynamicRSCPrerender": true
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "ppr": {
+    "chain": {
+      "headers": {
+        "next-resume": "1"
+      }
+    }
+  }
+}

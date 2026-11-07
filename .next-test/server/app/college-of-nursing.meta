@@ -1,0 +1,43 @@
+{
+  "status": 200,
+  "headers": {
+    "link": "</_next/static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(site)/layout,_N_T_/(site)/college-of-nursing/layout,_N_T_/(site)/college-of-nursing/page,_N_T_/college-of-nursing,content,content:site,content:navigation,content:figures,content:nursingCollege,content:doctors,content:doctorsPage"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/_index",
+    "/!KHNpdGUp",
+    "/!KHNpdGUp/college-of-nursing/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 49152,
+    "slots": {
+      "children": {
+        "hints": 49152,
+        "slots": {
+          "children": {
+            "hints": 49216,
+            "slots": {
+              "children": {
+                "hints": 49312,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/b0071b805075be886f86ee6fa86d40c78c48c33576e54981b9ec12ce5507f350/$/college-of-nursing",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/(site)/college-of-nursing/page"
+    },
+    "isFallback": false
+  }
+}

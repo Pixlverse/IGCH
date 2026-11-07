@@ -1,0 +1,10 @@
+var R=require("../../../chunks/[turbopack]_runtime.js")("server/app/api/revalidate/route.js")
+R.c("server/chunks/[externals]__0z0tjaj9r9uqu._.js")
+R.c("server/chunks/13xc_next_dist_1rd2xbbgj7s4z._.js")
+R.c("server/chunks/_1e1nker0v19mm._.js")
+R.c("server/chunks/13xc_next_dist_14oap-oyzkcen._.js")
+R.c("server/chunks/[root-of-the-server]__0cena9scka6aa._.js")
+R.c("server/chunks/_1u2f8k08tob6z._.js")
+R.c("server/chunks/_next-internal_server_app_api_revalidate_route_actions_0js558tcn8ds0.js")
+R.m(61354)
+module.exports=R.m(61354).exports

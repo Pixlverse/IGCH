@@ -1,0 +1,31 @@
+2:"$Sreact.fragment"
+3:"/_next/static/chunks/2reu-tb6wmecy.js"
+4:I[9619,["$3"],"default"]
+5:I[23615,["$3"],"default"]
+a:I[52085,["$3"],"OutletBoundary"]
+b:"$Sreact.suspense"
+f:"ViewportBoundary"
+10:I[52085,["$3"],"$f"]
+11:"MetadataBoundary"
+12:I[52085,["$3"],"$11"]
+13:I[3142,["$3"],"IconMark"]
+7:X
+7:C
+8:X
+8:300
+8:C
+e:X
+e:C
+9:[["children",{"s":"__PAGE__","h":49314,"d":{"r":["$","$2","c",{"children":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],null,["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]]}],"p":"$@d","v":"$e","s":"$8"}}]]
+1:[["children",{"s":"/_not-found","h":49218,"d":{"r":["$","$2","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}],"p":"$@6","v":"$7","s":"$8"},"c":"$Q9"}]]
+15:X
+15:C
+18:X
+18:C
+0:{"t":{"t":{"s":"","h":49170,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L10",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L12",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$b",null,{"name":"Next.Metadata","children":[["$","link","0",{"rel":"icon","href":"/icon.png?icon.2s3stz-1r8nqy.png","sizes":"256x256","type":"image/png"}],["$","link","1",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.0fe1-m4im1789.png","sizes":"180x180","type":"image/png"}],["$","$L13","2",{}]]}]}],null]}],null]}],"p":"$@14","v":"$15","s":"$8"}},"a":"$@16","u":"$@17","b":"wAq49VZFddiNR7EIVGLyT","r":"$18"}
+c:null
+17:false
+16:null
+6:"$undefined"
+14:"$undefined"
+d:"$undefined"

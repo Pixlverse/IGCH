@@ -5,13 +5,16 @@ import type { z } from 'zod'
 
 import type { CollectionName } from '@/lib/db/models'
 
-import { fill, formatDate } from './format'
+import { fill, fillFigures, formatDate } from './format'
 import {
   AboutPageSchema,
   ArticleItemSchema,
   CareersPageSchema,
   BlogsSchema,
   CentresSchema,
+  BookingPageSchema,
+  ContactPageSchema,
+  DoctorsPageSchema,
   DoctorsSchema,
   FacilitiesPageSchema,
   FacilitiesSchema,
@@ -26,10 +29,12 @@ import {
   NewsPageSchema,
   NewsSchema,
   NoticesSchema,
+  ServicePageSchema,
   SiteSettingsSchema,
   SpecialitiesHubSchema,
   SpecialitiesSchema,
   SpecialityGroupPagesSchema,
+  PROFILE_SECTIONS,
   type ArticleItem,
   type JobItem,
   type NewsItem,
@@ -56,6 +61,14 @@ const COPY_SCHEMAS = {
   newsPage: NewsPageSchema,
   facilitiesPage: FacilitiesPageSchema,
   careers: CareersPageSchema,
+  doctorsPage: DoctorsPageSchema,
+  karunya: ServicePageSchema,
+  dialysis: ServicePageSchema,
+  insurance: ServicePageSchema,
+  canteen: ServicePageSchema,
+  nursingCollege: ServicePageSchema,
+  booking: BookingPageSchema,
+  contact: ContactPageSchema,
 } satisfies Record<DocumentKey, z.ZodType>
 
 type Copy<K extends DocumentKey> = z.output<(typeof COPY_SCHEMAS)[K]>
@@ -67,7 +80,8 @@ type Row = Record<string, unknown>
  */
 async function loadCopy<K extends DocumentKey>(key: K): Promise<Copy<K>> {
   'use cache'
-  cacheTag(CONTENT_TAG, tagFor(key))
+  // key figures ({{free-dialysis}}…) are filled in, so an admin edit to them refreshes the copy
+  cacheTag(CONTENT_TAG, tagFor(key), tagFor('figures'))
   cacheLife('max')
 
   let raw: unknown = {}
@@ -76,8 +90,13 @@ async function loadCopy<K extends DocumentKey>(key: K): Promise<Copy<K>> {
   } catch (error) {
     console.error(`[content] failed to load "${key}"`, error)
   }
+  const figures = (await loadCollection('figures')).map((row) => ({
+    key: asText(row.key),
+    value: asText(row.value),
+    label: asText(row.label),
+  }))
   // Schemas never throw (see schemas.ts): bad fields become empty values.
-  return COPY_SCHEMAS[key].parse(raw) as Copy<K>
+  return COPY_SCHEMAS[key].parse(fillFigures(raw, figures)) as Copy<K>
 }
 
 /**
@@ -105,6 +124,20 @@ export const getSpecialityGroupPages = () => loadCopy('specialityGroups')
 export const getNewsPage = () => loadCopy('newsPage')
 export const getFacilitiesPage = () => loadCopy('facilitiesPage')
 export const getCareersPage = () => loadCopy('careers')
+export const getDoctorsPage = () => loadCopy('doctorsPage')
+export const getBookingPage = () => loadCopy('booking')
+export const getContactPage = () => loadCopy('contact')
+
+/** Standalone service pages that share one layout (components/page/ServicePageView). */
+export const SERVICE_PAGES = {
+  karunya: '/specialities/karunya-hridayalaya',
+  dialysis: '/facilities/dialysis',
+  insurance: '/facilities/insurance',
+  canteen: '/facilities/canteen',
+  nursingCollege: '/college-of-nursing',
+} as const
+export type ServicePageKey = keyof typeof SERVICE_PAGES
+export const getServicePage = (key: ServicePageKey) => loadCopy(key)
 
 // ---------- admin-managed ----------
 
@@ -112,11 +145,31 @@ export async function getSiteSettings() {
   'use cache'
   cacheTag(CONTENT_TAG, tagFor('site'))
   cacheLife('max')
-  return SiteSettingsSchema.parse(await readSetting('site'))
+  const site = SiteSettingsSchema.parse(await readSetting('site'))
+  // settings saved before the booking page existed still point at '#'
+  if (site.booking.href === '#') site.booking.href = '/book-appointment'
+  return site
 }
 
+const PROFILE_FIELDS = ['intro', ...PROFILE_SECTIONS] as const
+
+/** A doctor has a profile page when it has a slug and some profile text. */
+const hasProfile = (row: Row) =>
+  Boolean(row.slug) && PROFILE_FIELDS.some((key) => asList(row[key]).length > 0)
+
 export async function getDoctors() {
-  return DoctorsSchema.parse({ items: await loadCollection('doctors') })
+  const rows = await loadCollection('doctors')
+  return DoctorsSchema.parse({
+    items: rows.map((row) =>
+      hasProfile(row) ? { ...row, href: `/doctors/${asText(row.slug)}` } : row,
+    ),
+  })
+}
+
+/** Doctor with a profile page, by slug. */
+export async function getDoctor(slug: string) {
+  const { items } = await getDoctors()
+  return items.find((doctor) => doctor.slug === slug && doctor.href === `/doctors/${slug}`)
 }
 
 /** Speciality groups (copy) with their departments (collection). */

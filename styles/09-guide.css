@@ -38,15 +38,32 @@
 .guide-hero__body p { color: rgba(255,255,255,.8); font-size: 15px; }
 
 .guide-card {
-  background: var(--white);
+  --tone: var(--green);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
   border-radius: var(--radius-lg);
-  padding: 26px 26px 28px;
+  background: var(--white);
   transition: transform .2s, box-shadow .2s;
 }
-.guide-card:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(13,31,28,.25); }
-.guide-card h3 { font-size: 19px; font-weight: 800; letter-spacing: -0.01em; margin: 26px 0 12px; line-height: 1.35; }
-.guide-card p { font-size: 15px; color: var(--ink-2); }
-.guide-card .tag { margin-top: 12px; }
+.guide-card--sky { --tone: #1d5e73; }
+.guide-card--lav { --tone: #4b3a8c; }
+.guide-card--lime, .guide-card--yellow { --tone: #7a5208; }
+.guide-card--rose { --tone: #b0302a; }
+.guide-card--grey { --tone: #2d4560; }
+a.guide-card:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(13,31,28,.3); }
+/* banded header: the title on the card's colour */
+.guide-card__band { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 20px; background: var(--tone); color: var(--white); }
+.guide-card h3 { margin: 0; font-size: 17.5px; line-height: 1.25; font-weight: 800; letter-spacing: -0.01em; }
+.guide-card > :not(.guide-card__band) { margin-inline: 20px; }
+.guide-card > :last-child { margin-bottom: 22px; }
+.guide-card p { font-size: 14.5px; line-height: 1.55; color: var(--ink-2); }
+.guide-card .tag { align-self: flex-start; }
+.guide-card__go { display: grid; place-items: center; flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: rgba(255,255,255,.18); color: var(--white); transition: transform .25s, background .25s; }
+.guide-card__go svg { width: 14px; height: 14px; }
+a.guide-card:hover .guide-card__go { background: var(--white); color: var(--tone); transform: translateX(3px); }
 
 .steps {
   display: grid;
@@ -75,7 +92,7 @@
   transition: background .2s;
 }
 .guide-cta:hover { background: #0b5c49; }
-.guide-cta:hover .round { background: var(--lime); }
+.guide-cta:hover .round { background: var(--accent); }
 .guide-cta .round { transition: background .25s; }
 .guide-cta h3 { font-size: 22px; line-height: 1.2; font-weight: 800; letter-spacing: -0.02em; }
 .guide-cta .round {
@@ -87,7 +104,7 @@
 
 .icon-box--sky { background: #dfeef3; color: #1d5e73; }
 .icon-box--lav { background: #e9e5f5; color: #4b3a8c; }
-.icon-box--lime { background: var(--lime); color: var(--ink); }
+.icon-box--lime { background: #fbf1cf; color: #8a6200; }
 .icon-box--yellow { background: #fbe6a8; color: #7a5208; }
 .icon-box--mint { background: #e3efe9; color: var(--green); }
 .icon-box--rose { background: #fde4e1; color: #b0302a; }

@@ -17,6 +17,15 @@ export const PAGES = [
   '/wellness-library',
   '/facilities',
   '/careers',
+  '/doctors',
+  '/doctors/dr-v-p-gangadharan',
+  '/specialities/karunya-hridayalaya',
+  '/facilities/dialysis',
+  '/facilities/insurance',
+  '/facilities/canteen',
+  '/college-of-nursing',
+  '/book-appointment',
+  '/contact',
 ] as const
 
 export const BREAKPOINTS = [320, 375, 768, 1024, 1280, 1440, 1920] as const

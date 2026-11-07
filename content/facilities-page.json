@@ -4,6 +4,12 @@
     "description": "5G Smart Ambulance, 24/7 emergency, ICU, operation theatres, blood bank, dialysis, diagnostics, pharmacy, insurance & TPA support and an on-campus canteen at IGCH, Kochi."
   },
   "hero": {
+    "image": {
+      "src": "/images/reception.jpg",
+      "alt": "Hospital reception desk",
+      "width": 1200,
+      "height": 817
+    },
     "crumbs": [
       {
         "label": "Home",
@@ -49,10 +55,15 @@
         "label": "Canteen",
         "href": "#canteen"
       }
-    ],
-    "illustration": "building"
+    ]
   },
   "ambulance": {
+    "image": {
+      "src": "/images/ambulance.jpg",
+      "alt": "Ambulance on a city road",
+      "width": 1200,
+      "height": 1800
+    },
     "tag": "A first for Kerala",
     "heading": "5G Smart Ambulance",
     "subheading": "Emergency care, even before reaching the hospital.",
@@ -137,13 +148,19 @@
     ]
   },
   "dialysis": {
+    "image": {
+      "src": "/images/dialysis.jpg",
+      "alt": "Dialysis machine beside a treatment chair",
+      "width": 1000,
+      "height": 1500
+    },
     "tag": "Dialysis Unit",
     "heading": "Making dialysis care more accessible.",
-    "body": "We provide haemodialysis services for patients with kidney failure. The hospital has also provided more than 7,000 free dialysis sessions to economically disadvantaged patients.",
+    "body": "We provide haemodialysis services for patients with kidney failure. The hospital has also provided more than {{free-dialysis.number}} free dialysis sessions to economically disadvantaged patients.",
     "ctas": [
       {
         "label": "Explore our dialysis centre in Kochi",
-        "href": "#",
+        "href": "/facilities/dialysis",
         "style": "primary"
       }
     ]
@@ -156,7 +173,7 @@
       "lead": "Help with insurance approvals and hospital payments. IGCH works with insurance companies and Third-Party Administrators (TPAs) to facilitate cashless treatment for eligible patients. The hospital's insurance desk assists patients and families with pre-authorisation, documentation and insurance-related enquiries.",
       "link": {
         "label": "Insurance & Payment Information",
-        "href": "#"
+        "href": "/facilities/insurance"
       }
     },
     "steps": [
@@ -190,13 +207,17 @@
       "eyebrow": "Timings",
       "title": "[Opening hours]",
       "note": "[Location on campus]"
+    },
+    "link": {
+      "label": "Canteen timings & information →",
+      "href": "/facilities/canteen"
     }
   },
   "cta": {
-    "heading": "Visiting IGCH? See the full patient & visitor guide.",
+    "heading": "Visiting IGCH? Find directions, timings and every desk's number.",
     "link": {
-      "label": "Open the guide",
-      "href": "/#guide"
+      "label": "Contact & directions",
+      "href": "/contact"
     }
   },
   "intro": [

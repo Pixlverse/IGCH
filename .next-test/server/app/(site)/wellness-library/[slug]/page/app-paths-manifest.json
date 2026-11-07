@@ -1,0 +1,3 @@
+{
+  "/(site)/wellness-library/[slug]/page": "app/(site)/wellness-library/[slug]/page.js"
+}

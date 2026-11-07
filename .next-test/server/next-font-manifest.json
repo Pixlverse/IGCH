@@ -1,0 +1,97 @@
+{
+  "app": {
+    "[project]/app/(site)/about/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/book-appointment/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/careers/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/college-of-nursing/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/contact/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/doctors/[slug]/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/doctors/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/facilities/canteen/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/facilities/dialysis/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/facilities/insurance/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/facilities/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/news/[slug]/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/news/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/specialities/broad-specialities/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/specialities/clinical-support/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/specialities/karunya-hridayalaya/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/specialities/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/specialities/super-specialities/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/wellness-library/[slug]/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/(site)/wellness-library/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/_not-found/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/admin/(panel)/[resource]/[id]/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/admin/(panel)/[resource]/new/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/admin/(panel)/[resource]/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/admin/(panel)/account/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/admin/(panel)/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/admin/(panel)/settings/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/admin/(panel)/users/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ],
+    "[project]/app/admin/login/page": [
+      "static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": false,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

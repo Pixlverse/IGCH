@@ -1,7 +1,6 @@
 import clsx from 'clsx'
 import { notFound } from 'next/navigation'
 
-import { Illustration } from '@/components/illustrations/Illustration'
 import { RevealOnScroll } from '@/components/motion/RevealOnScroll'
 import { ArticleCard } from '@/components/page/ArticleCard'
 import { CtaBand } from '@/components/page/CtaBand'
@@ -13,6 +12,7 @@ import { PillLinks } from '@/components/page/PillLinks'
 import { QuickCheck } from '@/components/page/QuickCheck'
 import { Doctors } from '@/components/sections/Doctors'
 import { Button } from '@/components/ui/Button'
+import { ContentImage } from '@/components/ui/ContentImage'
 import { Tag } from '@/components/ui/Tag'
 import { TextLink } from '@/components/ui/TextLink'
 import {
@@ -135,10 +135,23 @@ export async function GroupView({ slug }: { slug: string }) {
         {page.centres.length > 0 && (
           <div className="group-centres" data-reveal="">
             {page.centres.map((centre) => (
-              <article key={centre.title} className={`group-centre group-centre--${centre.tone}`}>
-                <div className="group-centre__art">
-                  <Illustration name={centre.illustration} />
-                </div>
+              <article
+                key={centre.title}
+                className={clsx(
+                  'group-centre',
+                  `group-centre--${centre.tone}`,
+                  !centre.image && 'group-centre--text',
+                )}
+              >
+                {centre.image && (
+                  <div className="group-centre__art">
+                    <ContentImage
+                      image={centre.image}
+                      sizes="(max-width: 960px) 100vw, 25vw"
+                      className="art-photo"
+                    />
+                  </div>
+                )}
                 <div className="group-centre__body">
                   <Tag {...centre.tag} />
                   <h3>{centre.title}</h3>
@@ -153,10 +166,22 @@ export async function GroupView({ slug }: { slug: string }) {
 
       {page.camp.heading && (
         <section className="section">
-          <div className="split-banner split-banner--sage" data-reveal="">
-            <div className="split-banner__art split-banner__art--peach">
-              <Illustration name={page.camp.illustration} />
-            </div>
+          <div
+            className={clsx(
+              'split-banner split-banner--sage',
+              !page.camp.image && 'split-banner--text',
+            )}
+            data-reveal=""
+          >
+            {page.camp.image && (
+              <div className="split-banner__art">
+                <ContentImage
+                  image={page.camp.image}
+                  sizes="(max-width: 960px) 100vw, 38vw"
+                  className="art-photo"
+                />
+              </div>
+            )}
             <div className="split-banner__body">
               {page.camp.tag && <span className="tag tag--white">{page.camp.tag}</span>}
               <h2 className="h2 h2--sm">{page.camp.heading}</h2>

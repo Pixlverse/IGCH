@@ -1,0 +1,642 @@
+{
+  "node": {
+    "8083a58332f0a9d89f62e60af09f729c05656222ef": {
+      "workers": {
+        "app/(site)/about/page": {
+          "moduleId": 78323,
+          "async": false
+        },
+        "app/(site)/book-appointment/page": {
+          "moduleId": 45604,
+          "async": false
+        },
+        "app/(site)/careers/page": {
+          "moduleId": 71988,
+          "async": false
+        },
+        "app/(site)/college-of-nursing/page": {
+          "moduleId": 65482,
+          "async": false
+        },
+        "app/(site)/contact/page": {
+          "moduleId": 3545,
+          "async": false
+        },
+        "app/(site)/doctors/[slug]/page": {
+          "moduleId": 57455,
+          "async": false
+        },
+        "app/(site)/doctors/page": {
+          "moduleId": 67735,
+          "async": false
+        },
+        "app/(site)/facilities/canteen/page": {
+          "moduleId": 38915,
+          "async": false
+        },
+        "app/(site)/facilities/dialysis/page": {
+          "moduleId": 1131,
+          "async": false
+        },
+        "app/(site)/facilities/insurance/page": {
+          "moduleId": 78809,
+          "async": false
+        },
+        "app/(site)/facilities/page": {
+          "moduleId": 73962,
+          "async": false
+        },
+        "app/(site)/news/[slug]/page": {
+          "moduleId": 51473,
+          "async": false
+        },
+        "app/(site)/news/page": {
+          "moduleId": 98126,
+          "async": false
+        },
+        "app/(site)/page": {
+          "moduleId": 53424,
+          "async": false
+        },
+        "app/(site)/specialities/broad-specialities/page": {
+          "moduleId": 95996,
+          "async": false
+        },
+        "app/(site)/specialities/clinical-support/page": {
+          "moduleId": 51986,
+          "async": false
+        },
+        "app/(site)/specialities/karunya-hridayalaya/page": {
+          "moduleId": 94721,
+          "async": false
+        },
+        "app/(site)/specialities/page": {
+          "moduleId": 20266,
+          "async": false
+        },
+        "app/(site)/specialities/super-specialities/page": {
+          "moduleId": 91321,
+          "async": false
+        },
+        "app/(site)/wellness-library/[slug]/page": {
+          "moduleId": 71033,
+          "async": false
+        },
+        "app/(site)/wellness-library/page": {
+          "moduleId": 14850,
+          "async": false
+        },
+        "app/robots.txt/route": {
+          "moduleId": 8354,
+          "async": false
+        },
+        "app/sitemap.xml/route": {
+          "moduleId": 70133,
+          "async": false
+        }
+      },
+      "filename": "lib/content/index.ts",
+      "exportedName": "$$RSC_SERVER_CACHE_2"
+    },
+    "c06b1aa61ba01f9a04cefbed3b53f68c915e1a8d31": {
+      "workers": {
+        "app/(site)/about/page": {
+          "moduleId": 78323,
+          "async": false
+        },
+        "app/(site)/book-appointment/page": {
+          "moduleId": 45604,
+          "async": false
+        },
+        "app/(site)/careers/page": {
+          "moduleId": 71988,
+          "async": false
+        },
+        "app/(site)/college-of-nursing/page": {
+          "moduleId": 65482,
+          "async": false
+        },
+        "app/(site)/contact/page": {
+          "moduleId": 3545,
+          "async": false
+        },
+        "app/(site)/doctors/[slug]/page": {
+          "moduleId": 57455,
+          "async": false
+        },
+        "app/(site)/doctors/page": {
+          "moduleId": 67735,
+          "async": false
+        },
+        "app/(site)/facilities/canteen/page": {
+          "moduleId": 38915,
+          "async": false
+        },
+        "app/(site)/facilities/dialysis/page": {
+          "moduleId": 1131,
+          "async": false
+        },
+        "app/(site)/facilities/insurance/page": {
+          "moduleId": 78809,
+          "async": false
+        },
+        "app/(site)/facilities/page": {
+          "moduleId": 73962,
+          "async": false
+        },
+        "app/(site)/news/[slug]/page": {
+          "moduleId": 51473,
+          "async": false
+        },
+        "app/(site)/news/page": {
+          "moduleId": 98126,
+          "async": false
+        },
+        "app/(site)/page": {
+          "moduleId": 53424,
+          "async": false
+        },
+        "app/(site)/specialities/broad-specialities/page": {
+          "moduleId": 95996,
+          "async": false
+        },
+        "app/(site)/specialities/clinical-support/page": {
+          "moduleId": 51986,
+          "async": false
+        },
+        "app/(site)/specialities/karunya-hridayalaya/page": {
+          "moduleId": 94721,
+          "async": false
+        },
+        "app/(site)/specialities/page": {
+          "moduleId": 20266,
+          "async": false
+        },
+        "app/(site)/specialities/super-specialities/page": {
+          "moduleId": 91321,
+          "async": false
+        },
+        "app/(site)/wellness-library/[slug]/page": {
+          "moduleId": 71033,
+          "async": false
+        },
+        "app/(site)/wellness-library/page": {
+          "moduleId": 14850,
+          "async": false
+        },
+        "app/robots.txt/route": {
+          "moduleId": 8354,
+          "async": false
+        },
+        "app/sitemap.xml/route": {
+          "moduleId": 70133,
+          "async": false
+        }
+      },
+      "filename": "lib/content/index.ts",
+      "exportedName": "$$RSC_SERVER_CACHE_0"
+    },
+    "c0e53702a99784bdfb37b8ca915a6a1b2cb6c6532a": {
+      "workers": {
+        "app/(site)/about/page": {
+          "moduleId": 78323,
+          "async": false
+        },
+        "app/(site)/book-appointment/page": {
+          "moduleId": 45604,
+          "async": false
+        },
+        "app/(site)/careers/page": {
+          "moduleId": 71988,
+          "async": false
+        },
+        "app/(site)/college-of-nursing/page": {
+          "moduleId": 65482,
+          "async": false
+        },
+        "app/(site)/contact/page": {
+          "moduleId": 3545,
+          "async": false
+        },
+        "app/(site)/doctors/[slug]/page": {
+          "moduleId": 57455,
+          "async": false
+        },
+        "app/(site)/doctors/page": {
+          "moduleId": 67735,
+          "async": false
+        },
+        "app/(site)/facilities/canteen/page": {
+          "moduleId": 38915,
+          "async": false
+        },
+        "app/(site)/facilities/dialysis/page": {
+          "moduleId": 1131,
+          "async": false
+        },
+        "app/(site)/facilities/insurance/page": {
+          "moduleId": 78809,
+          "async": false
+        },
+        "app/(site)/facilities/page": {
+          "moduleId": 73962,
+          "async": false
+        },
+        "app/(site)/news/[slug]/page": {
+          "moduleId": 51473,
+          "async": false
+        },
+        "app/(site)/news/page": {
+          "moduleId": 98126,
+          "async": false
+        },
+        "app/(site)/page": {
+          "moduleId": 53424,
+          "async": false
+        },
+        "app/(site)/specialities/broad-specialities/page": {
+          "moduleId": 95996,
+          "async": false
+        },
+        "app/(site)/specialities/clinical-support/page": {
+          "moduleId": 51986,
+          "async": false
+        },
+        "app/(site)/specialities/karunya-hridayalaya/page": {
+          "moduleId": 94721,
+          "async": false
+        },
+        "app/(site)/specialities/page": {
+          "moduleId": 20266,
+          "async": false
+        },
+        "app/(site)/specialities/super-specialities/page": {
+          "moduleId": 91321,
+          "async": false
+        },
+        "app/(site)/wellness-library/[slug]/page": {
+          "moduleId": 71033,
+          "async": false
+        },
+        "app/(site)/wellness-library/page": {
+          "moduleId": 14850,
+          "async": false
+        },
+        "app/robots.txt/route": {
+          "moduleId": 8354,
+          "async": false
+        },
+        "app/sitemap.xml/route": {
+          "moduleId": 70133,
+          "async": false
+        }
+      },
+      "filename": "lib/content/index.ts",
+      "exportedName": "$$RSC_SERVER_CACHE_1"
+    },
+    "403bebbd830f8baa62c19ebf749d5fd54c05d6db0c": {
+      "workers": {
+        "app/(site)/book-appointment/page": {
+          "moduleId": 45604,
+          "async": false
+        }
+      },
+      "filename": "lib/requests/actions.ts",
+      "exportedName": "requestAppointment"
+    },
+    "4040b8df967f26e64f8dd010add9a308099f45bd38": {
+      "workers": {
+        "app/(site)/contact/page": {
+          "moduleId": 3545,
+          "async": false
+        }
+      },
+      "filename": "lib/requests/actions.ts",
+      "exportedName": "sendMessage"
+    },
+    "005f03f828391775a62b3a50a6a01485b44b06e39e": {
+      "workers": {
+        "app/admin/(panel)/[resource]/[id]/page": {
+          "moduleId": 66291,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/new/page": {
+          "moduleId": 85078,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/page": {
+          "moduleId": 93887,
+          "async": true
+        },
+        "app/admin/(panel)/account/page": {
+          "moduleId": 98516,
+          "async": true
+        },
+        "app/admin/(panel)/page": {
+          "moduleId": 34866,
+          "async": true
+        },
+        "app/admin/(panel)/settings/page": {
+          "moduleId": 42679,
+          "async": true
+        },
+        "app/admin/(panel)/users/page": {
+          "moduleId": 51110,
+          "async": true
+        }
+      },
+      "filename": "lib/admin/actions.ts",
+      "exportedName": "logout"
+    },
+    "4048c0c8a438df3c3e53d0a987cbd2399da0a99ebe": {
+      "workers": {
+        "app/admin/(panel)/[resource]/[id]/page": {
+          "moduleId": 66291,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/new/page": {
+          "moduleId": 85078,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/page": {
+          "moduleId": 93887,
+          "async": true
+        },
+        "app/admin/(panel)/account/page": {
+          "moduleId": 98516,
+          "async": true
+        },
+        "app/admin/(panel)/page": {
+          "moduleId": 34866,
+          "async": true
+        },
+        "app/admin/(panel)/settings/page": {
+          "moduleId": 42679,
+          "async": true
+        },
+        "app/admin/(panel)/users/page": {
+          "moduleId": 51110,
+          "async": true
+        }
+      },
+      "filename": "lib/admin/actions.ts",
+      "exportedName": "deleteUser"
+    },
+    "6003af6466a1564c3275a5407be35032eecf977275": {
+      "workers": {
+        "app/admin/(panel)/[resource]/[id]/page": {
+          "moduleId": 66291,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/new/page": {
+          "moduleId": 85078,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/page": {
+          "moduleId": 93887,
+          "async": true
+        },
+        "app/admin/(panel)/account/page": {
+          "moduleId": 98516,
+          "async": true
+        },
+        "app/admin/(panel)/page": {
+          "moduleId": 34866,
+          "async": true
+        },
+        "app/admin/(panel)/settings/page": {
+          "moduleId": 42679,
+          "async": true
+        },
+        "app/admin/(panel)/users/page": {
+          "moduleId": 51110,
+          "async": true
+        },
+        "app/admin/login/page": {
+          "moduleId": 62185,
+          "async": true
+        }
+      },
+      "filename": "lib/admin/actions.ts",
+      "exportedName": "changePassword"
+    },
+    "602694759b8e53567b61899a1eb6b5074c3f193f13": {
+      "workers": {
+        "app/admin/(panel)/[resource]/[id]/page": {
+          "moduleId": 66291,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/new/page": {
+          "moduleId": 85078,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/page": {
+          "moduleId": 93887,
+          "async": true
+        },
+        "app/admin/(panel)/account/page": {
+          "moduleId": 98516,
+          "async": true
+        },
+        "app/admin/(panel)/page": {
+          "moduleId": 34866,
+          "async": true
+        },
+        "app/admin/(panel)/settings/page": {
+          "moduleId": 42679,
+          "async": true
+        },
+        "app/admin/(panel)/users/page": {
+          "moduleId": 51110,
+          "async": true
+        },
+        "app/admin/login/page": {
+          "moduleId": 62185,
+          "async": true
+        }
+      },
+      "filename": "lib/admin/actions.ts",
+      "exportedName": "createUser"
+    },
+    "605f1917a54cfe85247f278ed2396e677767226674": {
+      "workers": {
+        "app/admin/(panel)/[resource]/[id]/page": {
+          "moduleId": 66291,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/new/page": {
+          "moduleId": 85078,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/page": {
+          "moduleId": 93887,
+          "async": true
+        },
+        "app/admin/(panel)/account/page": {
+          "moduleId": 98516,
+          "async": true
+        },
+        "app/admin/(panel)/page": {
+          "moduleId": 34866,
+          "async": true
+        },
+        "app/admin/(panel)/settings/page": {
+          "moduleId": 42679,
+          "async": true
+        },
+        "app/admin/(panel)/users/page": {
+          "moduleId": 51110,
+          "async": true
+        },
+        "app/admin/login/page": {
+          "moduleId": 62185,
+          "async": true
+        }
+      },
+      "filename": "lib/admin/actions.ts",
+      "exportedName": "saveSettings"
+    },
+    "606912cf19feca2c8e2de1ac54a1ed155d28a864a7": {
+      "workers": {
+        "app/admin/(panel)/[resource]/[id]/page": {
+          "moduleId": 66291,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/new/page": {
+          "moduleId": 85078,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/page": {
+          "moduleId": 93887,
+          "async": true
+        },
+        "app/admin/(panel)/account/page": {
+          "moduleId": 98516,
+          "async": true
+        },
+        "app/admin/(panel)/page": {
+          "moduleId": 34866,
+          "async": true
+        },
+        "app/admin/(panel)/settings/page": {
+          "moduleId": 42679,
+          "async": true
+        },
+        "app/admin/(panel)/users/page": {
+          "moduleId": 51110,
+          "async": true
+        },
+        "app/admin/login/page": {
+          "moduleId": 62185,
+          "async": true
+        }
+      },
+      "filename": "lib/admin/actions.ts",
+      "exportedName": "login"
+    },
+    "60be995cb14dde25cf254b0a66e53d38138489a87f": {
+      "workers": {
+        "app/admin/(panel)/[resource]/[id]/page": {
+          "moduleId": 66291,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/new/page": {
+          "moduleId": 85078,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/page": {
+          "moduleId": 93887,
+          "async": true
+        },
+        "app/admin/(panel)/account/page": {
+          "moduleId": 98516,
+          "async": true
+        },
+        "app/admin/(panel)/page": {
+          "moduleId": 34866,
+          "async": true
+        },
+        "app/admin/(panel)/settings/page": {
+          "moduleId": 42679,
+          "async": true
+        },
+        "app/admin/(panel)/users/page": {
+          "moduleId": 51110,
+          "async": true
+        }
+      },
+      "filename": "lib/admin/actions.ts",
+      "exportedName": "deleteItem"
+    },
+    "708656b3bea323059adc326159da9786949911d34f": {
+      "workers": {
+        "app/admin/(panel)/[resource]/[id]/page": {
+          "moduleId": 66291,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/new/page": {
+          "moduleId": 85078,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/page": {
+          "moduleId": 93887,
+          "async": true
+        },
+        "app/admin/(panel)/account/page": {
+          "moduleId": 98516,
+          "async": true
+        },
+        "app/admin/(panel)/page": {
+          "moduleId": 34866,
+          "async": true
+        },
+        "app/admin/(panel)/settings/page": {
+          "moduleId": 42679,
+          "async": true
+        },
+        "app/admin/(panel)/users/page": {
+          "moduleId": 51110,
+          "async": true
+        }
+      },
+      "filename": "lib/admin/actions.ts",
+      "exportedName": "togglePublished"
+    },
+    "7886b2c3b47fbf2eb4d80fb1bcb10b8437a5df1b15": {
+      "workers": {
+        "app/admin/(panel)/[resource]/[id]/page": {
+          "moduleId": 66291,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/new/page": {
+          "moduleId": 85078,
+          "async": true
+        },
+        "app/admin/(panel)/[resource]/page": {
+          "moduleId": 93887,
+          "async": true
+        },
+        "app/admin/(panel)/account/page": {
+          "moduleId": 98516,
+          "async": true
+        },
+        "app/admin/(panel)/page": {
+          "moduleId": 34866,
+          "async": true
+        },
+        "app/admin/(panel)/settings/page": {
+          "moduleId": 42679,
+          "async": true
+        },
+        "app/admin/(panel)/users/page": {
+          "moduleId": 51110,
+          "async": true
+        }
+      },
+      "filename": "lib/admin/actions.ts",
+      "exportedName": "saveItem"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "p93KQEY/2wWLlqYdf5yO/NhijQd/QhLPYSR3nphQDQs="
+}

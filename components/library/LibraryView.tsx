@@ -6,10 +6,10 @@ import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
 import { Icon } from '@/components/icons/Icon'
-import { Illustration } from '@/components/illustrations/Illustration'
 import { ArticleCard } from '@/components/page/ArticleCard'
 import { PageHero } from '@/components/page/PageHero'
 import { Pagination } from '@/components/page/Pagination'
+import { ContentImage } from '@/components/ui/ContentImage'
 import { SmartLink } from '@/components/ui/SmartLink'
 import { Tag } from '@/components/ui/Tag'
 import { articleCardData } from '@/lib/content/library'
@@ -93,11 +93,15 @@ export function LibraryView({ library }: { library: Library }) {
 
       {featured && (
         <SmartLink href={featured.href} className="library-feature">
-          <span className="library-feature__art">
-            <Illustration
-              name={featured.illustration ?? featuredCategory?.illustration ?? 'heart'}
-            />
-          </span>
+          {featured.image && (
+            <span className="library-feature__art">
+              <ContentImage
+                image={featured.image}
+                sizes="(max-width: 960px) 100vw, 45vw"
+                className="cover-img"
+              />
+            </span>
+          )}
           <span className="library-feature__body">
             <span className="news-meta">
               {featuredCategory && (

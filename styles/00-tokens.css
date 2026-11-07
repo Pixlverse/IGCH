@@ -13,7 +13,9 @@
   --green: #0e6e58;
   --green-2: #1f7f69;
   --green-soft: #e3efe9;
-  --lime: #d9f26a;
+  /* warm marigold accent (was lime #d9f26a) */
+  --accent: #f6bf4f;
+  --accent-rgb: 246, 191, 79;
   --red: #e5484d;
   --red-soft: #fde8e6;
   --red-text-bg: #d93a40; /* a11y: AA (4.5:1) for white text; was var(--red) #e5484d */

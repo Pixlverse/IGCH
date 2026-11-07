@@ -5,7 +5,7 @@
     "tabLabel": "Announcements",
     "viewAll": {
       "label": "View all announcements",
-      "href": "#"
+      "href": "/news"
     },
     "kindLabel": "Announcement"
   },
@@ -13,7 +13,7 @@
     "tabLabel": "Tenders",
     "viewAll": {
       "label": "View all tenders",
-      "href": "#"
+      "href": "/news#tenders"
     },
     "lastDateLabel": "Last date: {date}"
   },

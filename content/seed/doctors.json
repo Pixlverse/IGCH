@@ -2,7 +2,7 @@
   {
     "name": "Dr. V.P. Gangadharan",
     "department": "Oncology",
-    "qualifications": "MD (Radiotherapy), DM (Medical Oncology)",
+    "qualifications": "MBBS, MD (Radiotherapy), MD (Internal Medicine), DM (Medical Oncology)",
     "groups": ["super-specialities"],
     "featured": true,
     "days": [],
@@ -14,7 +14,55 @@
       "alt": "Portrait of Dr. V.P. Gangadharan",
       "width": 660,
       "height": 570
-    }
+    },
+    "slug": "dr-v-p-gangadharan",
+    "title": "Medical & Paediatric Oncologist",
+    "designation": "Head of Department, Oncology",
+    "experience": "30+ years",
+    "languages": "",
+    "timings": "",
+    "intro": [
+      "Dr. V. P. Gangadharan is a medical oncologist associated with Indira Gandhi Co-operative Hospital (IGCH), Kochi. With more than three decades of experience in oncology, he has contributed to the development of specialised cancer care in Kerala through clinical practice, medical education, research and community initiatives."
+    ],
+    "overview": [
+      "His career includes establishing the Medical Oncology Department at the Regional Cancer Centre (RCC), Thiruvananthapuram, and leading the Medical and Paediatric Oncology Department at VPS Lakeshore Hospital, Kochi. Beyond clinical practice, his work has focused on cancer awareness, early detection and improving access to treatment for patients from economically disadvantaged backgrounds."
+    ],
+    "education": [
+      "Academic qualifications include:\n- MBBS: Government Medical College, Kottayam.\n- MD (Radiotherapy): All India Institute of Medical Sciences (AIIMS), New Delhi, 1984.\n- MD (Internal Medicine): 1986 – institution to be confirmed.\n- DM (Medical Oncology): Cancer Institute (WIA), Adyar, Chennai, 1989.",
+      "International Training\n- Bone Marrow Transplantation Training, Georgetown University Hospital, Washington, DC, USA, 1995.\n- Bone Marrow Transplantation Training, Royal Marsden Hospital, Sutton, UK, 1997.\n- Fellowships associated with the National Cancer Institute, USA, and the World Health Organization."
+    ],
+    "journey": [
+      "Dr. Gangadharan began his career as a tutor in Radiotherapy and Medical Oncology at Medical College, Thrissur.",
+      "In 1989, he joined the Regional Cancer Centre, Thiruvananthapuram, as Assistant Professor and Head of Medical Oncology. During his tenure, he established Kerala's first Medical Oncology Department at the centre.",
+      "His professional development included specialised training in bone marrow transplantation in the USA and UK. Following his tenure at RCC, he led the Medical and Paediatric Oncology Department at VPS Lakeshore Hospital, Kochi.",
+      "He is now associated with the Medical & Paediatric Oncology team at IGCH, where he contributes to the hospital's oncology services."
+    ],
+    "expertise": [
+      "- Medical Oncology\n- Paediatric Oncology\n- Medical management of adult cancers\n- Medical management of childhood cancers\n- Cancer counselling and treatment guidance\n- Bone marrow and stem cell transplantation"
+    ],
+    "interests": [],
+    "achievements": [
+      "Dr. Gangadharan has played a role in developing medical oncology services and advancing cancer care in Kerala. His contributions include establishing the Medical Oncology Department at RCC and participating in the development of blood stem cell transplantation in the state.",
+      "He also established the Cochin Cancer Society to support patients who face financial difficulties in accessing cancer treatment. The society's initiatives include patient support, counselling and cancer awareness programmes.",
+      "His research contributions include serving as Principal Investigator in 38 national and international multicentre clinical trials. He has also been involved in postgraduate medical education, research supervision and academic assessment."
+    ],
+    "research": [
+      "Academic and research contributions include:\n- More than 40 publications in national and international medical and oncology journals.\n- Chapters in three medical textbooks.\n- Principal Investigator in 38 national and international multicentre clinical trials.\n- Guidance for ten postgraduate research theses, including studies relating to Ayurveda and music therapy.\n- Peer reviewer for the Journal of Medical and Paediatric Oncology.\n- Invited speaker at more than 60 scientific meetings and seminars.\n- Teaching graduate and postgraduate medical students and examining DM Medical Oncology candidates at universities across India.",
+      "Book\n- Jeevithamenna Athbhutham – A Malayalam book published by DC Books, inspired by his experiences and interactions with patients."
+    ],
+    "memberships": [],
+    "awards": [
+      "His professional and social contributions have been recognised by various organisations. Awards listed in published profiles include:\n- Kerala Sree Award: Government of Kerala, 2023.\n- Kairali Ananthapuri Award: 2012.\n- Basheer Award: Pravasi Doha, 2015.\n- NSH Global Harmony Award: Kuwait, 2017.",
+      "His professional profile also records more than 60 awards and recognitions at state, national and international levels."
+    ],
+    "approach": [
+      "Dr. Gangadharan's work in oncology reflects an emphasis on patient awareness, early detection and access to treatment. His community initiatives also highlight the importance of supporting patients and families through the challenges of cancer care."
+    ],
+    "community": [
+      "Dr. Gangadharan has been actively involved in cancer awareness, early detection and patient support. Through the Cochin Cancer Society, he has contributed to initiatives that help economically disadvantaged patients access cancer treatment, counselling and other support services.",
+      "His public awareness efforts include medical camps, educational programmes and media engagement. He has also been associated with IGCH's cancer care initiatives in collaboration with the society."
+    ],
+    "beyond": []
   },
   {
     "name": "Dr. Nigil Cletus",
@@ -68,10 +116,10 @@
     }
   },
   {
-    "name": "[Doctor name]",
-    "department": "General Medicine",
-    "qualifications": "",
-    "groups": ["broad-specialities"],
+    "name": "Dr. Bibin Johny",
+    "department": "Nephrology",
+    "qualifications": "MBBS, MD (General Medicine), DM (Nephrology)",
+    "groups": ["super-specialities"],
     "featured": false,
     "days": [],
     "href": "#",
@@ -80,7 +128,7 @@
   },
   {
     "name": "[Doctor name]",
-    "department": "Paediatrics",
+    "department": "General Medicine",
     "qualifications": "",
     "groups": ["broad-specialities"],
     "featured": false,
@@ -91,7 +139,7 @@
   },
   {
     "name": "[Doctor name]",
-    "department": "Orthopaedics",
+    "department": "Paediatrics",
     "qualifications": "",
     "groups": ["broad-specialities"],
     "featured": false,
@@ -102,7 +150,7 @@
   },
   {
     "name": "[Doctor name]",
-    "department": "Obstetrics & Gynaecology",
+    "department": "Orthopaedics",
     "qualifications": "",
     "groups": ["broad-specialities"],
     "featured": false,
@@ -113,9 +161,9 @@
   },
   {
     "name": "[Doctor name]",
-    "department": "Emergency Medicine",
+    "department": "Obstetrics & Gynaecology",
     "qualifications": "",
-    "groups": ["clinical-support"],
+    "groups": ["broad-specialities"],
     "featured": false,
     "days": [],
     "href": "#",
@@ -124,7 +172,7 @@
   },
   {
     "name": "[Doctor name]",
-    "department": "Anaesthesiology",
+    "department": "Emergency Medicine",
     "qualifications": "",
     "groups": ["clinical-support"],
     "featured": false,
@@ -135,7 +183,7 @@
   },
   {
     "name": "[Doctor name]",
-    "department": "Radiology & Imaging",
+    "department": "Anaesthesiology",
     "qualifications": "",
     "groups": ["clinical-support"],
     "featured": false,
@@ -146,13 +194,24 @@
   },
   {
     "name": "[Doctor name]",
-    "department": "Microbiology",
+    "department": "Radiology & Imaging",
     "qualifications": "",
     "groups": ["clinical-support"],
     "featured": false,
     "days": [],
     "href": "#",
     "order": 12,
+    "published": true
+  },
+  {
+    "name": "[Doctor name]",
+    "department": "Microbiology",
+    "qualifications": "",
+    "groups": ["clinical-support"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 13,
     "published": true
   }
 ]

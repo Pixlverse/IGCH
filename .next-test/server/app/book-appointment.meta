@@ -1,0 +1,43 @@
+{
+  "status": 200,
+  "headers": {
+    "link": "</_next/static/media/PlusJakartaSans_latin_var.p.18rizl4rsrl42.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(site)/layout,_N_T_/(site)/book-appointment/layout,_N_T_/(site)/book-appointment/page,_N_T_/book-appointment,content,content:site,content:navigation,content:figures,content:booking,content:doctors,content:specialities,content:departments"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/_index",
+    "/!KHNpdGUp",
+    "/!KHNpdGUp/book-appointment/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 49152,
+    "slots": {
+      "children": {
+        "hints": 49152,
+        "slots": {
+          "children": {
+            "hints": 49216,
+            "slots": {
+              "children": {
+                "hints": 49312,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/ec6fe9ca3dabe97ab33c2198df898b56f65ddd7897947d68443b7306bb0e48ad/$/book-appointment",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/(site)/book-appointment/page"
+    },
+    "isFallback": false
+  }
+}

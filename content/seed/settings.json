@@ -40,7 +40,7 @@
   },
   "booking": {
     "label": "Book appointment",
-    "href": "#"
+    "href": "/book-appointment"
   },
   "languages": [
     {

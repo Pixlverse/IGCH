@@ -18,7 +18,7 @@ export function Doctors({
       <SectionHead head={head} />
       <div className="doctors" data-reveal="">
         {doctors.items.map((doctor, i) => (
-          <DoctorCard key={`${doctor.name}-${i}`} doctor={doctor} index={i} />
+          <DoctorCard key={`${doctor.name}-${i}`} doctor={doctor} />
         ))}
       </div>
     </section>

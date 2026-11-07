@@ -20,32 +20,23 @@
   --tone: var(--green);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  min-height: 290px;
-  padding: 28px;
+  overflow: hidden;
   border-radius: var(--radius-lg);
-  background: var(--green-soft);
-  transition: transform .2s;
-}
-.critical__card:hover { transform: translateY(-3px); }
-.critical__card--red { --tone: #b0302a; background: var(--red-soft); }
-.critical__card--purple { --tone: #4b3a8c; background: #ebe7f7; }
-.critical__card--yellow { --tone: #6d4b05; background: #fdf1c8; }
-.critical__card--blue { --tone: #1d4e6e; background: var(--sky); }
-.critical__icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 11px;
-  display: grid;
-  place-items: center;
   background: var(--white);
-  color: var(--tone);
+  transition: transform .2s, box-shadow .2s;
 }
-.critical__icon svg { width: 18px; height: 18px; }
-.critical__card h3 { font-size: 20px; font-weight: 800; letter-spacing: -0.02em; margin: 20px 0 8px; }
-.critical__card p { font-size: 14.5px; line-height: 1.5; color: var(--ink-2); }
-.critical__link { margin-top: auto; padding-top: 20px; font-weight: 700; }
-.critical__card:hover .critical__link { color: var(--tone); }
+a.critical__card:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -26px rgba(13,31,28,.4); }
+.critical__card--red { --tone: #b0302a; }
+.critical__card--purple { --tone: #4b3a8c; }
+.critical__card--yellow { --tone: #6d4b05; }
+.critical__card--blue { --tone: #1d4e6e; }
+.critical__band { display: grid; gap: 6px; padding: 24px 24px 22px; background: var(--tone); color: var(--white); }
+.critical__card h3 { font-size: 20px; line-height: 1.2; font-weight: 800; letter-spacing: -0.02em; }
+.critical__body { display: flex; flex: 1; flex-direction: column; gap: 10px; padding: 20px 24px 24px; }
+.critical__card p { font-size: 14.5px; line-height: 1.55; color: var(--ink-2); }
+.critical__link { display: inline-flex; align-items: center; gap: 8px; margin-top: auto; padding-top: 10px; font-weight: 700; color: var(--tone); }
+.critical__link svg { width: 15px; height: 15px; transition: transform .2s; }
+a.critical__card:hover .critical__link svg { transform: translateX(4px); }
 
 .fac-dialysis {
   display: grid;
@@ -73,7 +64,7 @@
 .tpa-steps__no--yellow { background: #fdf0c8; color: #6d4b05; }
 .tpa-steps__no--red { background: #fbe3df; color: #b0302a; }
 .tpa-steps__no--blue { background: #e1ebf3; color: #1d4e6e; }
-.tpa-steps__no--lime { background: var(--lime); color: var(--ink); }
+.tpa-steps__no--lime { background: var(--accent); color: var(--ink); }
 .tpa-steps h3 { font-size: 18px; font-weight: 800; margin: 20px 0 8px; }
 .tpa-steps p { font-size: 14.5px; line-height: 1.5; color: var(--ink-2); }
 
@@ -109,15 +100,15 @@
 .fac-canteen__timings span { font-size: 13.5px; color: var(--muted); }
 
 /* PDF content additions */
-.fac-ambulance .fac-ambulance__sub { font-size: 18px; font-weight: 700; color: var(--lime); }
+.fac-ambulance .fac-ambulance__sub { font-size: 18px; font-weight: 700; color: var(--accent); }
 .fac-ambulance__features { display: grid; gap: 8px; }
-.fac-ambulance__features strong { font-size: 14px; text-transform: uppercase; letter-spacing: .04em; color: var(--lime); }
+.fac-ambulance__features strong { font-size: 14px; text-transform: uppercase; letter-spacing: .04em; color: var(--accent); }
 .fac-ambulance__features ul { display: grid; gap: 4px; padding-left: 18px; list-style: disc; color: rgba(255,255,255,.85); font-size: 15px; }
 .fac-ambulance__facts { display: flex; flex-wrap: wrap; gap: 10px 28px; }
 .fac-ambulance__facts dt { font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: rgba(255,255,255,.7); }
 .fac-ambulance__facts dd { margin: 0; font-size: 15px; font-weight: 700; }
-.critical__card .critical__sub { margin-bottom: 8px; font-weight: 700; color: var(--tone); }
-.critical__card .critical__note { margin-top: 10px; font-size: 13.5px; color: var(--ink-2); }
+.critical__card .critical__sub { font-size: 14px; font-weight: 600; color: rgba(255,255,255,.88); }
+.critical__card .critical__note { font-size: 13.5px; color: var(--muted); }
 .tpa-note { max-width: 860px; margin-top: 18px; font-size: 14.5px; line-height: 1.55; color: var(--ink-2); }
 
 @media (max-width: 960px) {
@@ -131,3 +122,4 @@
   .fac-ambulance__body, .fac-dialysis__body, .fac-canteen { padding: 32px 24px; }
   .fac-canteen__timings { min-width: 0; width: 100%; }
 }
+.fac-canteen__link { margin-top: 18px; }

@@ -42,7 +42,6 @@ async function Article({ params }: Props) {
       meta={[article.date, article.readTime]}
       summary={article.summary}
       image={article.image}
-      illustration={article.illustration ?? category?.illustration ?? 'consult'}
       body={article.body}
       footnote={[article.reviewedBy, library.askDoctor.note].filter(Boolean).join(' — ')}
       back={{

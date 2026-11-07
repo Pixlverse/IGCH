@@ -23,6 +23,14 @@ export const CONTENT_TAGS = [
   'library',
   'newsPage',
   'facilitiesPage',
+  'doctorsPage',
+  'karunya',
+  'dialysis',
+  'insurance',
+  'canteen',
+  'nursingCollege',
+  'booking',
+  'contact',
   // admin-managed (MongoDB)
   'site',
   'doctors',
@@ -30,6 +38,7 @@ export const CONTENT_TAGS = [
   'articles',
   'faqs',
   'careers',
+  'figures',
 ] as const satisfies readonly ContentKey[]
 
 export const tagFor = (key: ContentKey) => `content:${key}`

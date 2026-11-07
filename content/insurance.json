@@ -1,0 +1,104 @@
+{
+  "seo": {
+    "title": "Insurance & Payment Options | Cashless Treatment & CGHS at IGCH, Kochi",
+    "description": "How to pay for care at Indira Gandhi Co-operative Hospital, Kadavanthra, Kochi: private health insurance, CGHS, government health insurance cards, self-payment and the help available."
+  },
+  "hero": {
+    "crumbs": [
+      { "label": "Home", "href": "/" },
+      { "label": "Facilities", "href": "/facilities" },
+      { "label": "Insurance & Payment", "href": "/facilities/insurance" }
+    ],
+    "tag": "Insurance & Payment Options",
+    "title": { "before": "Know before", "accent": "you come", "after": "" },
+    "lead": "Whether insurance will cover it is usually the first worry. The answer depends on your policy, so here is what to do if you have private insurance, a CGHS card, or are paying yourself.",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "paying",
+      "heading": "Paying for your care at Indira Gandhi Co-operative Hospital in Kadavanthra, Kochi",
+      "note": "In an emergency, come straight to us. Emergency: 0484 294 1600 (24/7)",
+      "cards": [
+        {
+          "title": "If you have private health insurance",
+          "paragraphs": [
+            "For a planned admission, contact our insurance desk before you come in. We send your details to your insurer or TPA and ask for approval. Once approved, eligible expenses are settled directly with the hospital by your insurer. Any expenses not covered under your policy will have to be paid by you."
+          ]
+        },
+        {
+          "title": "If you have a CGHS card",
+          "paragraphs": [
+            "IGCH is CGHS empanelled. For planned treatment, bring the referral letter from your CGHS wellness centre along with your card."
+          ]
+        },
+        {
+          "title": "If you have a government health insurance card",
+          "paragraphs": [
+            "Bring your government health insurance card and any required supporting documents. Our insurance desk will check your eligibility and explain the approval process and treatment coverage under your scheme. Cashless treatment is subject to scheme guidelines and approval."
+          ]
+        },
+        {
+          "title": "If you are paying yourself",
+          "paragraphs": [
+            "Before treatment begins, ask the insurance desk for an estimate. If the cost is a concern, tell us at that stage."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "cards": [
+        {
+          "title": "Help available includes",
+          "items": [
+            "Subsidised treatment",
+            "Over {{free-dialysis.number}} free dialysis sessions for economically disadvantaged patients",
+            "Free breast cancer screening (mammograms) every Thursday, with subsidised treatment if a case is diagnosed",
+            "Discounts and free nutritious meals for cancer patients, with the Cochin Cancer Society",
+            "Weekly outreach medical camps"
+          ],
+          "ctas": [
+            {
+              "label": "Explore our dialysis centre",
+              "href": "/facilities/dialysis",
+              "style": "light"
+            }
+          ]
+        },
+        {
+          "title": "Documents to bring",
+          "items": [
+            "Health insurance card or CGHS card, as applicable",
+            "Valid photo ID",
+            "Previous medical reports and investigation results",
+            "Referral letter (for CGHS patients)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reminders",
+      "heading": "A few reminders",
+      "items": [
+        "Cashless treatment is subject to your policy terms, coverage limits and approval from your insurer or TPA.",
+        "If cashless approval is not granted, you may need to pay the hospital directly and submit a reimbursement claim to your insurer, subject to your policy conditions."
+      ]
+    },
+    {
+      "id": "partners",
+      "heading": "Insurers and TPAs we work with",
+      "paragraphs": ["[List to be provided by the insurance desk]"],
+      "facts": [
+        {
+          "label": "Insurance desk",
+          "value": "[Phone number], [timings], [location in the hospital]"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "heading": "Have a question about your policy? Talk to our insurance desk before you come in.",
+    "link": { "label": "", "href": "#" }
+  }
+}

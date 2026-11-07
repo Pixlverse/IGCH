@@ -31,6 +31,8 @@ import '@/styles/23-news.css'
 import '@/styles/24-library.css'
 import '@/styles/25-facilities.css'
 import '@/styles/26-careers.css'
+import '@/styles/27-doctors.css'
+import '@/styles/28-booking-contact.css'
 import '@/styles/90-responsive.css'
 import '@/styles/99-performance.css'
 

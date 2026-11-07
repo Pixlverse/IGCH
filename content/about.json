@@ -4,6 +4,12 @@
     "description": "Every patient is equal. Every patient is heard. Since 1971, Indira Gandhi Co-operative Hospital (IGCH), Kadavanthra, Kochi, has offered equal respect for everyone and extra support for those who need it most."
   },
   "hero": {
+    "image": {
+      "src": "/images/igch-building.jpg",
+      "alt": "Indira Gandhi Co-operative Hospital building in Kadavanthra, Kochi",
+      "width": 1024,
+      "height": 1536
+    },
     "crumbs": [
       {
         "label": "Home",
@@ -42,35 +48,34 @@
         "label": "Careers",
         "href": "#careers"
       }
-    ],
-    "illustration": "building"
+    ]
   },
   "stats": {
     "ariaLabel": "A record of healthcare services, community support and institutional recognition of IGCH.",
     "items": [
       {
-        "value": "7,000+",
-        "caption": "Free dialysis sessions",
+        "value": "{{free-dialysis}}",
+        "caption": "{{free-dialysis.label}}",
         "style": "lime"
       },
       {
-        "value": "15,000+",
-        "caption": "Haemodialysis sessions completed",
+        "value": "{{haemodialysis-sessions}}",
+        "caption": "{{haemodialysis-sessions.label}}",
         "style": "plain"
       },
       {
-        "value": "30",
-        "caption": "Medical departments",
+        "value": "{{departments}}",
+        "caption": "{{departments.label}}",
         "style": "plain"
       },
       {
-        "value": "39",
-        "caption": "Specialist doctors",
+        "value": "{{specialist-doctors}}",
+        "caption": "{{specialist-doctors.label}}",
         "style": "plain"
       },
       {
-        "value": "[XX]",
-        "caption": "Hospital beds",
+        "value": "{{hospital-beds}}",
+        "caption": "{{hospital-beds.label}}",
         "style": "plain"
       }
     ]
@@ -151,8 +156,7 @@
         "href": "#",
         "style": "white"
       }
-    ],
-    "illustration": "family"
+    ]
   },
   "leadership": {
     "head": {
@@ -207,9 +211,9 @@
       "wide": false,
       "link": {
         "label": "Meet all doctors →",
-        "href": "/specialities#find-a-doctor"
+        "href": "/doctors"
       },
-      "lead": "Our doctors work across 30 medical and surgical specialities, with one shared commitment: every patient gets the same attention, clear guidance and good care."
+      "lead": "Our doctors work across {{departments}} medical and surgical specialities, with one shared commitment: every patient gets the same attention, clear guidance and good care."
     }
   },
   "achievements": {
@@ -232,15 +236,27 @@
       "title": "CGHS Empanelled"
     },
     "first": {
+      "image": {
+        "src": "/images/ambulance.jpg",
+        "alt": "Ambulance on a city road",
+        "width": 1200,
+        "height": 1800
+      },
       "tag": "A first for Kerala",
       "title": "Kerala's first 5G Smart Ambulance.",
       "body": "Patient data reaches the ER team before the vehicle reaches the door."
     },
     "pacemaker": {
+      "image": {
+        "src": "/images/smallest-pacemaker.jpg",
+        "alt": "Leadless pacemaker placed inside the heart's right ventricle",
+        "width": 750,
+        "height": 400
+      },
       "title": "World's smallest pacemaker, implanted without open surgery."
     },
     "stat": {
-      "value": "200",
+      "value": "{{cardiothoracic-surgeries}}",
       "caption": "cardiothoracic surgeries in 15 months"
     }
   },
@@ -262,11 +278,17 @@
     ]
   },
   "nursing": {
+    "image": {
+      "src": "/images/nursing.jpg",
+      "alt": "Healthcare trainees in blue scrubs practising with a stethoscope",
+      "width": 1200,
+      "height": 800
+    },
     "tag": "Indira Gandhi College of Nursing",
     "heading": "A four-year B.Sc. Nursing course, taught inside a multispeciality hospital.",
     "link": {
       "label": "Admissions & eligibility →",
-      "href": "/#nursing"
+      "href": "/college-of-nursing"
     }
   },
   "sections": [
@@ -281,15 +303,15 @@
         {
           "title": "Medical Care and Achievements",
           "items": [
-            "15,000+ Haemodialysis sessions delivered to patients.",
-            "7,000+ Free dialysis sessions provided to economically disadvantaged patients.",
-            "200 Cardiothoracic surgeries performed within 15 months.",
+            "{{haemodialysis-sessions}} Haemodialysis sessions delivered to patients.",
+            "{{free-dialysis}} Free dialysis sessions provided to economically disadvantaged patients.",
+            "{{cardiothoracic-surgeries.number}} Cardiothoracic surgeries performed within 15 months.",
             "5G Introduction of Kerala's first 5G Smart Ambulance."
           ],
           "ctas": [
             {
               "label": "Explore our Dialysis Centre in Kochi",
-              "href": "/facilities#dialysis",
+              "href": "/facilities/dialysis",
               "style": "light"
             }
           ]
@@ -322,7 +344,7 @@
           "ctas": [
             {
               "label": "Nursing College in Kochi",
-              "href": "/#nursing",
+              "href": "/college-of-nursing",
               "style": "light"
             }
           ]

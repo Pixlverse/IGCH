@@ -49,7 +49,7 @@ test('speciality search lists matching departments', async ({ page }) => {
   await page.locator('#speciality-q').press('Enter')
   const result = page.locator('.search-results a')
   await expect(result).toHaveCount(1)
-  await expect(result).toHaveAttribute('href', '/specialities/super-specialities#dept-nephrology')
+  await expect(result).toHaveAttribute('href', '/doctors?q=Nephrology')
 })
 
 test('doctor finder filters by speciality and name', async ({ page }) => {

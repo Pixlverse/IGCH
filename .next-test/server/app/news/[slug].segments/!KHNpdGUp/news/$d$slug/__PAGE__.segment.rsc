@@ -1,0 +1,31 @@
+3:"$Sreact.fragment"
+4:"/_next/static/chunks/2reu-tb6wmecy.js"
+5:I[9619,["$4"],"default"]
+6:I[23615,["$4"],"default"]
+d:"$Sreact.suspense"
+f:I[52085,["$4"],"OutletBoundary"]
+13:"ViewportBoundary"
+14:I[52085,["$4"],"$13"]
+15:"MetadataBoundary"
+16:I[52085,["$4"],"$15"]
+8:X
+8:C
+9:X
+9:300
+9:300
+12:X
+c:[["children",{"s":"__PAGE__","h":16546,"d":{"r":["$","$3","c",{"children":[["$","main",null,{"children":["$","$d",null,{"fallback":["$","div",null,{"className":"story-page story-page--loading"}],"children":"$Le"}]}],null,["$","$Lf",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}],"p":"$@11","v":"$12","s":"$9"}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":null,"s":[]},"h":16482,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@b","v":"$8","s":"$9"},"c":"$Qc"}]]
+2:[["children",{"s":"news","h":16450,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":"(site)","h":16386,"c":"$Q2"}]]
+19:X
+1c:X
+0:{"t":{"t":{"s":"","h":16402,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L14",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L16",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$d",null,{"name":"Next.Metadata","children":"$L17"}]}],null]}],null]}],"p":"$@18","v":"$19","s":"$9"}},"a":"$@1a","u":"$@1b","b":"wAq49VZFddiNR7EIVGLyT","r":"$1c"}
+9:C
+19:C
+1c:C
+12:C
+1b:true
+1a:1631
+b:"$undefined"
+7:"$undefined"

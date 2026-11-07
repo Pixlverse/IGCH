@@ -1,0 +1,186 @@
+{
+  "seo": {
+    "title": "Indira Gandhi College of Nursing, Kochi | B.Sc. Nursing in Kadavanthra",
+    "description": "A four-year B.Sc. Nursing course at Indira Gandhi College of Nursing, Kadavanthra, Kochi, with clinical training at Indira Gandhi Co-operative Hospital. Affiliated with KUHS; approved by INC and KNC."
+  },
+  "hero": {
+    "image": {
+      "src": "/images/nursing.jpg",
+      "alt": "Healthcare trainees in blue scrubs practising with a stethoscope",
+      "width": 1200,
+      "height": 800
+    },
+    "crumbs": [
+      { "label": "Home", "href": "/" },
+      { "label": "College of Nursing", "href": "/college-of-nursing" }
+    ],
+    "tag": "",
+    "title": { "before": "", "accent": "Indira Gandhi College of Nursing", "after": ", Kochi" },
+    "lead": "A four-year B.Sc. Nursing course, taught inside a multispeciality hospital.",
+    "ctas": [
+      { "label": "Explore Admissions", "href": "#admission", "style": "primary" },
+      { "label": "Visit College Website", "href": "#", "style": "light" },
+      { "label": "Download Prospectus", "href": "#", "style": "light" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "about",
+      "paragraphs": [
+        "Indira Gandhi College of Nursing, established in 2006 at Kadavanthra, Kochi, offers a four-year Bachelor of Science in Nursing programme. Students receive academic instruction at the college and clinical training at Indira Gandhi Co-operative Hospital (IGCH), gaining experience in different areas of patient care.",
+        "The college is affiliated with Kerala University of Health Sciences and approved by the Indian Nursing Council and the Kerala Nursing Council."
+      ]
+    },
+    {
+      "id": "why",
+      "heading": "Why choose Indira Gandhi College of Nursing?",
+      "cards": [
+        {
+          "title": "Clinical training at a multi-speciality hospital",
+          "paragraphs": [
+            "Students gain clinical experience at Indira Gandhi Co-operative Hospital, with exposure to different medical and surgical departments. Their training includes patient care in general wards, OPD, ICU, CCU, operation theatres and emergency services."
+          ]
+        },
+        {
+          "title": "Learning across specialised departments",
+          "paragraphs": [
+            "The hospital's specialist departments provide students with exposure to different areas of nursing practice, including heart care, cancer care and dialysis and kidney care."
+          ]
+        },
+        {
+          "title": "A co-operative healthcare environment",
+          "paragraphs": [
+            "IGCH is managed by Cochin Co-operative Hospitals Society Ltd. The hospital follows a co-operative approach to healthcare, with a focus on accessible treatment and patient support. Students learn in an environment where patient care and community health are important parts of hospital practice."
+          ]
+        },
+        {
+          "title": "Faculty, hostel and campus facilities",
+          "paragraphs": [
+            "Students are guided by experienced nursing faculty and have access to classrooms, a library, computer facilities, hostel accommodation and a dining facility. The hostel is supervised by a warden, and transport is provided for community health postings."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "course",
+      "heading": "B.Sc. Nursing Course Details",
+      "facts": [
+        { "label": "Course", "value": "Bachelor of Science (B.Sc.) Nursing" },
+        { "label": "Duration", "value": "Four years" },
+        { "label": "Intake", "value": "50 seats" },
+        { "label": "Affiliation", "value": "Kerala University of Health Sciences" },
+        { "label": "Approvals", "value": "Indian Nursing Council and Kerala Nursing Council" },
+        { "label": "Admission", "value": "LBS allotment" },
+        { "label": "Hostel", "value": "Warden-supervised accommodation with dining facilities" },
+        { "label": "Location", "value": "Gandhinagar, Kadavanthra, Kochi, Keralam – 682020" }
+      ],
+      "tone": "dark"
+    },
+    {
+      "id": "clinical-training",
+      "heading": "Clinical Training at IGCH",
+      "paragraphs": [
+        "Clinical training at a multispeciality hospital gives nursing students opportunities to learn about different conditions, treatments and patient care requirements.",
+        "Some of the key areas of exposure include:"
+      ],
+      "cards": [
+        {
+          "title": "Heart Care",
+          "paragraphs": [
+            "Students gain exposure to cardiology and cardiothoracic and vascular surgery, including patient care before and after cardiac procedures."
+          ],
+          "ctas": [
+            {
+              "label": "Explore Heart Care",
+              "href": "/specialities/karunya-hridayalaya",
+              "style": "light"
+            }
+          ]
+        },
+        {
+          "title": "Cancer Care",
+          "paragraphs": [
+            "Training includes exposure to medical and surgical oncology, chemotherapy-related care and the nursing support required by cancer patients and their families."
+          ],
+          "ctas": [
+            {
+              "label": "Explore Cancer Care",
+              "href": "/specialities/super-specialities#departments",
+              "style": "light"
+            }
+          ]
+        },
+        {
+          "title": "Dialysis and Kidney Care",
+          "paragraphs": [
+            "Students learn about related conditions and the nursing care involved in dialysis and the management of patients with kidney disease."
+          ],
+          "ctas": [
+            {
+              "label": "Explore Dialysis and Kidney Care",
+              "href": "/facilities/dialysis",
+              "style": "light"
+            }
+          ]
+        }
+      ],
+      "after": [
+        "Other clinical postings include emergency care, ICU, operation theatre, obstetrics, paediatrics and general medicine."
+      ]
+    },
+    {
+      "id": "campus",
+      "heading": "Campus Facilities",
+      "paragraphs": [
+        "The college provides facilities to support academic learning and student life, including:"
+      ],
+      "items": [
+        "Classrooms and smart learning facilities",
+        "Library with nursing textbooks and journals",
+        "Computer laboratory",
+        "Experienced nursing faculty",
+        "Warden-supervised hostel",
+        "Dining facility and canteen",
+        "Transport for community health postings",
+        "Anti-Ragging Cell"
+      ]
+    },
+    {
+      "id": "admission",
+      "heading": "Admission to B.Sc. Nursing",
+      "paragraphs": [
+        "Admission to the B.Sc. Nursing programme is through LBS allotment, subject to the applicable eligibility criteria and admission guidelines.",
+        "Students can refer to the latest admission notifications and college prospectus for information about eligibility, application procedures, fees and available seats."
+      ],
+      "ctas": [
+        { "label": "Admission Details", "href": "#", "style": "primary" },
+        { "label": "Download Prospectus", "href": "#", "style": "light" }
+      ],
+      "after": ["For admission enquiries, contact the college office."]
+    },
+    {
+      "id": "contact",
+      "heading": "Location and Contact",
+      "paragraphs": [
+        "Indira Gandhi College of Nursing is located on the campus of Indira Gandhi Co-operative Hospital, Gandhinagar, Kadavanthra, Kochi, Ernakulam, Keralam – 682020.",
+        "The hospital is opposite Rajiv Gandhi Indoor Stadium."
+      ],
+      "facts": [
+        { "label": "Phone", "value": "0484 2204110, 2206734", "href": "tel:04842204110" },
+        {
+          "label": "Email",
+          "value": "igcon.cochin@yahoo.com",
+          "href": "mailto:igcon.cochin@yahoo.com"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "View location on map",
+          "href": "https://www.google.com/maps/search/?api=1&query=Indira+Gandhi+Co-operative+Hospital+Kadavanthra+Kochi",
+          "style": "light"
+        }
+      ]
+    }
+  ],
+  "cta": { "heading": "", "link": { "label": "", "href": "#" } }
+}

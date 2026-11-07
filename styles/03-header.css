@@ -22,7 +22,7 @@
 .topbar__badge {
   padding: 3px 10px;
   border-radius: 999px;
-  background: var(--lime);
+  background: var(--accent);
   font-size: 11.5px;
   font-weight: 800;
   letter-spacing: .02em;
@@ -44,9 +44,13 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--line);
 }
+/* second row: menu on the left, emergency + booking on the right */
+.header__bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 8px; }
+.header__cta { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.header__actions .emergency-pill--mobile { display: none; }
 .brand { display: flex; align-items: center; gap: 12px; }
 .brand__logo {
   width: 46px;
@@ -109,7 +113,8 @@
   80%, 100% { transform: scale(2); opacity: 0; }
 }
 
-.header__book.btn { padding: 12px 22px; font-size: 16px; }
+.header__book.btn { padding: 11px 20px; font-size: 15px; }
+.header__cta .emergency-pill { padding: 11px 18px; font-size: 15px; }
 
 /* ---------- Main navigation ---------- */
 
@@ -117,7 +122,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2px 4px;
-  padding-top: 8px;
 }
 .nav__item { position: relative; }
 .nav__link {
@@ -134,7 +138,7 @@
 .nav__link.is-current { background: var(--green-soft); color: var(--green); font-weight: 600; }
 .nav__link svg { width: 13px; height: 13px; opacity: .7; flex-shrink: 0; transition: transform .2s; }
 .nav__link:focus-visible,
-.nav__menu a:focus-visible { outline: 3px solid var(--lime); outline-offset: 1px; }
+.nav__menu a:focus-visible { outline: 3px solid var(--accent); outline-offset: 1px; }
 
 .nav__menu {
   position: absolute;
@@ -162,21 +166,31 @@
   transition: background .2s, color .2s;
 }
 .nav__menu a:hover { background: var(--green-soft); color: var(--green); }
+/* keyboard focus (not a mouse click) keeps a menu open, so a clicked link
+   doesn't pin its dropdown open after client-side navigation */
 .nav__item--menu:hover .nav__menu,
-.nav__item--menu:focus-within .nav__menu {
+.nav__item--menu:has(:focus-visible) .nav__menu {
   opacity: 1;
   visibility: visible;
   transform: none;
   transition: opacity .18s, transform .18s;
 }
 .nav__item--menu:hover .nav__link svg,
-.nav__item--menu:focus-within .nav__link svg { transform: rotate(180deg); }
+.nav__item--menu:has(:focus-visible) .nav__link svg { transform: rotate(180deg); }
 
 .menu-toggle { display: none; }
 
+/* the menu row holds 7 links + 2 buttons: below 1500px the pill shows just the number */
+@media (max-width: 1500px) {
+  .header__cta .ep-label { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
+@media (max-width: 1360px) {
+  .nav__link { padding: 9px 9px; font-size: 14.5px; }
+  .nav { gap: 2px; }
+}
 @media (max-width: 1180px) {
-  .nav__link { font-size: 14px; padding: 8px 10px; }
-  .emergency-pill { font-size: 15px; padding: 11px 18px; }
+  .nav__link { font-size: 14px; padding: 8px 8px; }
+  .header__cta .emergency-pill, .header__book.btn { font-size: 14px; padding: 10px 14px; }
 }
 
 @media (max-width: 960px) {
@@ -184,6 +198,9 @@
   .lang { display: none; }
   .header__top { border-bottom: 0; padding-bottom: 6px; }
   .header .nav { display: none; }
+  .header__bar { padding-top: 0; }
+  .header__cta { display: none; }
+  .header__actions .emergency-pill--mobile { display: inline-flex; }
   .header.is-open .header__top { border-bottom: 1px solid var(--line); padding-bottom: 12px; }
   .header.is-open .nav { display: flex; flex-direction: column; padding: 8px 0 6px; }
   .header.is-open .nav__link { width: 100%; }
