@@ -34,6 +34,7 @@
     "todayOption": "Available today",
     "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
     "resetLabel": "Clear filters",
+    "opdNote": "OPD days and timings for each doctor are being added. To check when a doctor is available, call the appointment desk.",
     "resultsLabel": "{count} doctors found",
     "emptyText": "No doctors match these filters. Try another speciality, or call the appointment desk and we will help you find the right specialist."
   },

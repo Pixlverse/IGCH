@@ -43,10 +43,15 @@ function NavList({
   pathname: string
   onNavigate?: () => void
 }) {
+  // one current item: an exact page match wins over a section match, so
+  // /contact marks "Contact" and not also "Patients & Visitors" (/contact#visit)
+  const exact = items.findIndex((item) => item.href === pathname)
+  const currentIndex =
+    exact >= 0 ? exact : items.findIndex((item) => isCurrent(item.href, pathname))
   return (
     <nav className="nav" aria-label="Main" id="main-nav">
-      {items.map((item) => {
-        const current = isCurrent(item.href, pathname)
+      {items.map((item, index) => {
+        const current = index === currentIndex
         const menu = item.hasMenu && item.children.length > 0
         return (
           <div key={item.label} className={clsx('nav__item', menu && 'nav__item--menu')}>

@@ -18,8 +18,12 @@
 .critical { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--gap); }
 .critical__card {
   --tone: var(--green);
-  display: flex;
-  flex-direction: column;
+  /* subgrid: the coloured headers in a row share one height, so the white
+     bodies start on the same line even when a subtitle wraps */
+  display: grid;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
+  row-gap: 0;
   overflow: hidden;
   border-radius: var(--radius-lg);
   background: var(--white);

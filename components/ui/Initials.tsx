@@ -1,10 +1,11 @@
 import clsx from 'clsx'
 
-/** "Dr. V.P. Gangadharan" → "VG"; titles and placeholder brackets are ignored. */
+/** "Dr. V.P. Gangadharan" → "VG", "Mrs. Susan Roby" → "SR"; titles and brackets are ignored. */
 export function initialsOf(name: string) {
   const words = name
     .replace(/[[\]()]/g, '')
-    .replace(/^(dr|mr|mrs|ms|prof)\.?\s+/i, '')
+    // drop every leading title: "Prof. Dr. V.I. Paul" → "V.I. Paul"
+    .replace(/^((dr|mr|mrs|ms|prof)\.?\s+)+/i, '')
     .split(/[\s.]+/)
     .filter(Boolean)
   const first = words[0]?.[0] ?? ''

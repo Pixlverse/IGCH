@@ -116,3 +116,8 @@
   .profile__intro, .profile__section { padding: 32px 24px; }
   .doc-grid { grid-template-columns: 1fr; }
 }
+
+/* one line above the list instead of the same "call the desk" box in every card */
+.directory__note { display: flex; align-items: center; gap: 12px; margin-top: var(--gap); padding: 14px 20px; border-radius: 14px; background: var(--green-soft); font-size: 14.5px; font-weight: 600; color: var(--ink); }
+.directory__note svg { flex-shrink: 0; width: 18px; height: 18px; color: var(--green); }
+.doc-card__opd-slot { display: block; }

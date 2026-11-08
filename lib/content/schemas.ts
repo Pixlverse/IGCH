@@ -641,6 +641,8 @@ export const DoctorsPageSchema = obj({
     todayOption: str(),
     days: list(z.string()),
     resetLabel: str(),
+    /** shown once above the list while doctors have no OPD days on record */
+    opdNote: str(),
     /** `{count}` is replaced with the number of doctors shown */
     resultsLabel: str(),
     emptyText: str(),

@@ -1,5 +1,6 @@
 import { expect, test, type Page } from '@playwright/test'
 
+import doctorsSeed from '../../content/seed/doctors.json'
 import { PAGES, SITES } from '../support/sites'
 
 /* Phase 1 inner pages (Next.js only: there is no legacy original). */
@@ -49,7 +50,7 @@ test('speciality search lists matching departments', async ({ page }) => {
   await page.locator('#speciality-q').press('Enter')
   const result = page.locator('.search-results a')
   await expect(result).toHaveCount(1)
-  await expect(result).toHaveAttribute('href', '/doctors?q=Nephrology')
+  await expect(result).toHaveAttribute('href', '/doctors?speciality=Nephrology')
 })
 
 test('doctor finder filters by speciality and name', async ({ page }) => {
@@ -71,7 +72,12 @@ test('group pages list their own departments and doctors', async ({ page }) => {
   await expect(page.locator('.dept-card')).toHaveCount(14)
   await expect(page.locator('.count-card strong')).toHaveText('14')
   await expect(page.locator('.pills [aria-current=page]')).toHaveText('Broad Specialities')
-  await expect(page.locator('#doctors .doctor')).toHaveCount(4)
+  // every published doctor listed under this group in the doctor data
+  const listed = doctorsSeed.filter(
+    (d) => d.published !== false && d.groups.includes('broad-specialities'),
+  ).length
+  expect(listed).toBeGreaterThan(0)
+  await expect(page.locator('#doctors .doctor')).toHaveCount(listed)
 })
 
 test('news filters show only the chosen kind of update', async ({ page }) => {

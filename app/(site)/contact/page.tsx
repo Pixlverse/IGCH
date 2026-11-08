@@ -26,9 +26,10 @@ export default async function ContactPage() {
     <main>
       <PageHero crumbs={page.hero.crumbs} title={page.hero.title} lead={page.hero.lead} />
 
-      <section className="section section--tight" aria-label="Phone numbers">
-        {/* a phone directory: emergency first and full width, then every desk */}
-        <div className="directory-panel">
+      {/* numbers on the left, address and map on the right: one compact block */}
+      <section className="section section--tight contact-grid" id="visit">
+        {/* a phone directory: emergency first, then every desk */}
+        <div className="directory-panel" aria-label="Phone numbers">
           {page.cards.map((card) => {
             const href = resolve(card.href)
             const isPhone = href.startsWith('tel:')
@@ -39,7 +40,7 @@ export default async function ContactPage() {
                   <span>{card.body}</span>
                 </span>
                 <span className="dir-row__value">
-                  {href && <Icon name={isPhone ? 'phone' : 'arrow'} />}
+                  {isPhone && <Icon name="phone" />}
                   {card.value}
                 </span>
               </>
@@ -55,9 +56,6 @@ export default async function ContactPage() {
             )
           })}
         </div>
-      </section>
-
-      <section className="section section--tight" id="visit">
         <div className="visit">
           <div className="visit__info">
             <h2 className="h2 h2--sm">{visit.title}</h2>

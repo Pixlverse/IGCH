@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import { notFound } from 'next/navigation'
 
+import { Icon } from '@/components/icons/Icon'
 import { RevealOnScroll } from '@/components/motion/RevealOnScroll'
 import { ArticleCard } from '@/components/page/ArticleCard'
 import { CtaBand } from '@/components/page/CtaBand'
@@ -13,6 +14,7 @@ import { QuickCheck } from '@/components/page/QuickCheck'
 import { Doctors } from '@/components/sections/Doctors'
 import { Button } from '@/components/ui/Button'
 import { ContentImage } from '@/components/ui/ContentImage'
+import { SmartLink } from '@/components/ui/SmartLink'
 import { Tag } from '@/components/ui/Tag'
 import { TextLink } from '@/components/ui/TextLink'
 import {
@@ -23,10 +25,14 @@ import {
   getSpecialitiesHub,
   getSpecialityGroupPages,
 } from '@/lib/content'
+import { deptHref } from '@/lib/content/format'
 import { articleCardData } from '@/lib/content/library'
 import { buildPageMetadata } from '@/lib/seo'
 
 const groupPath = (slug: string) => `/specialities/${slug}`
+
+/** Departments listed in the hero panel before "+N more". */
+const ASIDE_DEPTS = 8
 
 export async function buildGroupMetadata(slug: string) {
   const { pages } = await getSpecialityGroupPages()
@@ -70,8 +76,30 @@ export async function GroupView({ slug }: { slug: string }) {
         aside={
           <div className="group-aside">
             <div className={`count-card count-card--${page.count.tone}`}>
-              <strong>{group.departments.length}</strong>
-              <span>{page.count.label}</span>
+              <p className="count-card__head">
+                <strong>{group.departments.length}</strong>
+                <span>{page.count.label}</span>
+              </p>
+              {/* the group's departments, each opening its doctors */}
+              <ul className="count-card__list">
+                {group.departments.slice(0, ASIDE_DEPTS).map((dept) => (
+                  <li key={dept.name}>
+                    <SmartLink href={deptHref(dept.href, dept.name)}>
+                      {dept.shortName || dept.name}
+                    </SmartLink>
+                  </li>
+                ))}
+                {group.departments.length > ASIDE_DEPTS && (
+                  <li>
+                    <SmartLink href="#departments" className="count-card__more">
+                      +{group.departments.length - ASIDE_DEPTS} more
+                    </SmartLink>
+                  </li>
+                )}
+              </ul>
+              <SmartLink href="/doctors" className="count-card__cta">
+                Find a doctor <Icon name="arrow" />
+              </SmartLink>
             </div>
             {page.aside.kind === 'emergency' && phone.tel && (
               <a href={`tel:${phone.tel}`} className="aside-card aside-card--emergency">

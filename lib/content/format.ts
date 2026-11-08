@@ -67,4 +67,4 @@ export function fillFigures<T>(doc: T, figures: Figure[]): T {
 
 /** A department's own page when it has one, otherwise its doctors in the directory. */
 export const deptHref = (href: string, name: string) =>
-  href && href !== '#' ? href : `/doctors?q=${encodeURIComponent(name)}`
+  href && href !== '#' ? href : `/doctors?speciality=${encodeURIComponent(name)}`

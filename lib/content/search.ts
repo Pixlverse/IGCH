@@ -1,4 +1,4 @@
-import { slugify } from './format'
+import { deptHref, slugify } from './format'
 import type { Doctors, Specialities } from './schemas'
 
 export type SearchEntry = {
@@ -19,7 +19,7 @@ export function searchEntries(specialities: Specialities, doctors: Doctors): Sea
     group.departments.map((dept) => ({
       name: dept.name,
       group: group.title,
-      href: `/doctors?q=${encodeURIComponent(dept.name)}`,
+      href: deptHref('', dept.name),
       keywords: `${dept.shortName} ${dept.description} ${slugify(dept.name)}`,
     })),
   )

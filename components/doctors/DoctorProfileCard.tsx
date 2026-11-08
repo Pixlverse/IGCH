@@ -33,7 +33,8 @@ export function DoctorProfileCard({
   inToday?: boolean
 }) {
   const hasProfile = doctor.href.startsWith('/doctors/')
-  const opd = opdText(doctor, labels.opdFallback)
+  // only real OPD days/timings; "call the desk" is said once above the list
+  const opd = opdText(doctor, '')
   // the booking form pre-selects this doctor
   const bookHref = bookingHref.startsWith('/')
     ? `${bookingHref}?doctor=${encodeURIComponent(doctor.name)}`
@@ -77,13 +78,18 @@ export function DoctorProfileCard({
             </span>
           )}
         </p>
-        <p className="doc-card__opd">
-          <Icon name="calendar" />
-          <span>
-            <small>{labels.opd}</small>
-            {opd}
-          </span>
-        </p>
+        {opd ? (
+          <p className="doc-card__opd">
+            <Icon name="calendar" />
+            <span>
+              <small>{labels.opd}</small>
+              {opd}
+            </span>
+          </p>
+        ) : (
+          // keeps the card's row so names and buttons still line up across the grid
+          <span className="doc-card__opd-slot" />
+        )}
         <div className="doc-card__actions">
           {labels.book && (
             <Button href={bookHref} variant="dark">

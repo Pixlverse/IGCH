@@ -17,10 +17,10 @@
     "chips": [
       { "label": "Cardiology", "href": "/specialities/karunya-hridayalaya" },
       { "label": "Cancer care", "href": "/doctors?q=Oncology" },
-      { "label": "Paediatric cancer care", "href": "/doctors?q=Paediatric%20Oncology" },
+      { "label": "Paediatric cancer care", "href": "/doctors?speciality=Paediatric%20Oncology" },
       { "label": "Dialysis", "href": "/facilities/dialysis" },
       { "label": "Emergency care", "href": "/facilities#emergency" },
-      { "label": "Psychiatry", "href": "/doctors?q=Psychiatry" }
+      { "label": "Psychiatry", "href": "/doctors?speciality=Psychiatry" }
     ],
     "image": {
       "src": "/images/igch-building.jpg",

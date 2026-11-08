@@ -39,7 +39,7 @@
     },
     {
       "label": "Patients & Visitors",
-      "href": "/contact",
+      "href": "/contact#visit",
       "hasMenu": true,
       "children": [
         { "label": "How to reach", "href": "/contact#visit" },

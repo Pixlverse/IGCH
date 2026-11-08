@@ -3,6 +3,7 @@
 import clsx from 'clsx'
 import { useMemo, useState, useSyncExternalStore } from 'react'
 
+import { Icon } from '@/components/icons/Icon'
 import { SmartLink } from '@/components/ui/SmartLink'
 import { fill } from '@/lib/content/format'
 import type { Doctor, DoctorsPage } from '@/lib/content/schemas'
@@ -21,7 +22,11 @@ const EMPTY: Filters = { query: '', quick: '', speciality: '', day: '' }
 // Browser-only values read without an effect; the server render sees ''.
 const noSubscribe = () => () => {}
 const useBrowserValue = (read: () => string) => useSyncExternalStore(noSubscribe, read, () => '')
-const readQuery = () => new URLSearchParams(window.location.search).get('q') ?? ''
+const readParam = (name: string) => () =>
+  new URLSearchParams(window.location.search).get(name) ?? ''
+const readQuery = readParam('q')
+/** `?speciality=` (from a department link) selects that speciality exactly */
+const readSpeciality = readParam('speciality')
 
 function matches(doctor: Doctor, filters: Filters, today: string) {
   const dept = doctor.department.toLowerCase()
@@ -50,15 +55,19 @@ export function DoctorDirectory({
   doctors: Doctor[]
   bookingHref: string
 }) {
-  // `query: null` until the visitor types: falls back to the `?q=` in the URL
-  const [state, setFilters] = useState<Omit<Filters, 'query'> & { query: string | null }>({
-    ...EMPTY,
-    query: null,
-  })
+  // `null` until the visitor changes it: falls back to `?q=` / `?speciality=` in the URL
+  const [state, setFilters] = useState<
+    Omit<Filters, 'query' | 'speciality'> & { query: string | null; speciality: string | null }
+  >({ ...EMPTY, query: null, speciality: null })
   const urlQuery = useBrowserValue(readQuery)
+  const urlSpeciality = useBrowserValue(readSpeciality)
   // the weekday is only known in the browser (the prerender must not guess it)
   const today = useBrowserValue(kochiToday)
-  const filters: Filters = { ...state, query: state.query ?? urlQuery }
+  const filters: Filters = {
+    ...state,
+    query: state.query ?? urlQuery,
+    speciality: state.speciality ?? urlSpeciality,
+  }
 
   const specialities = useMemo(
     () => [...new Set(doctors.map((d) => d.department).filter(Boolean))].sort(),
@@ -148,6 +157,12 @@ export function DoctorDirectory({
       <p className="visually-hidden" role="status">
         {filtered ? fill(copy.resultsLabel, { count: shown.length }) : ''}
       </p>
+      {copy.opdNote && shown.some((d) => d.days.length === 0 && !d.timings) && (
+        <p className="directory__note">
+          <Icon name="phone" />
+          <span>{copy.opdNote}</span>
+        </p>
+      )}
       {shown.length > 0 ? (
         <div className="doc-grid">
           {shown.map((doctor) => (

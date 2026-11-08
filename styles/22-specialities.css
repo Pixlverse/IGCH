@@ -162,15 +162,20 @@
 .count-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: flex-start;
+  gap: 22px;
   flex: 1;
   min-height: 240px;
   padding: 30px 32px;
   border-radius: var(--radius-lg);
 }
-.count-card strong { font-size: clamp(64px, 6vw, 92px); line-height: .9; font-weight: 800; letter-spacing: -0.05em; }
-.count-card span { font-size: 17px; font-weight: 700; }
+.count-card__head { display: flex; align-items: flex-end; gap: 14px; }
+.count-card strong { font-size: clamp(56px, 5vw, 80px); line-height: .85; font-weight: 800; letter-spacing: -0.05em; }
+.count-card__head span { max-width: 14ch; padding-bottom: 4px; font-size: 16px; line-height: 1.25; font-weight: 700; }
+.count-card__list { display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px; }
+.count-card__list a { display: inline-block; padding: 7px 13px; border-radius: 999px; background: rgba(255,255,255,.75); font-size: 13.5px; font-weight: 600; color: var(--ink); transition: background .2s, color .2s; }
+.count-card__list a:hover { background: var(--ink); color: var(--white); }
+.count-card__list .count-card__more { background: transparent; box-shadow: inset 0 0 0 1.5px rgba(13,31,28,.25); }
 .count-card--lime { background: var(--green-soft); }
 .count-card--cream { background: #fdf1c8; }
 .count-card--cream span { color: #6d4b05; }
@@ -249,3 +254,8 @@
 
 .how__lead { max-width: 760px; margin-top: 12px; font-size: 16px; line-height: 1.55; color: rgba(255,255,255,.82); }
 .how__note { margin-top: 24px; }
+
+.count-card__cta { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; margin-top: auto; padding: 11px 18px; border-radius: 999px; background: var(--ink); font-size: 14.5px; font-weight: 700; color: var(--white); transition: background .2s; }
+.count-card__cta svg { width: 15px; height: 15px; transition: transform .2s; }
+.count-card__cta:hover { background: var(--green); }
+.count-card__cta:hover svg { transform: translateX(3px); }

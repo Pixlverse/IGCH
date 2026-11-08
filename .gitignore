@@ -1,6 +1,8 @@
 node_modules
 .next
 .next-admin
+# local test build (NEXT_DIST_DIR=.next-test)
+.next-test
 out
 next-env.d.ts
 *.tsbuildinfo

@@ -36,7 +36,7 @@
       "tag": { "label": "Paediatric Oncology", "tone": "yellow" },
       "title": "Specialist cancer care for little ones.",
       "body": "IGCH provides specialised cancer care for children, with support for their families throughout treatment.",
-      "link": { "label": "Learn more", "href": "/doctors?q=Paediatric%20Oncology" }
+      "link": { "label": "Learn more", "href": "/doctors?speciality=Paediatric%20Oncology" }
     }
   ]
 }

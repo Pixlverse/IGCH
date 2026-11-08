@@ -141,7 +141,7 @@ export function ContactForm({ copy }: { copy: Pick<ContactPage, 'form' | 'succes
         <label htmlFor="c-message">{t('message')}</label>
         <textarea
           id="c-message"
-          rows={5}
+          rows={4}
           maxLength={2000}
           {...register('message')}
           {...message.props}

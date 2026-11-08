@@ -1,7 +1,7 @@
 [
   {
     "name": "Dr. V.P. Gangadharan",
-    "department": "Oncology",
+    "department": "Medical Oncology",
     "qualifications": "MBBS, MD (Radiotherapy), MD (Internal Medicine), DM (Medical Oncology)",
     "groups": ["super-specialities"],
     "featured": true,
@@ -65,14 +65,48 @@
     "beyond": []
   },
   {
-    "name": "Dr. Nigil Cletus",
-    "department": "Cardiology",
-    "qualifications": "MBBS, MD (General Medicine), DM (Cardiology)",
+    "name": "Dr. Jojo V. Joseph",
+    "department": "Surgical Oncology",
+    "qualifications": "MBBS, MS (General Surgery), MCh (Surgical Oncology)",
     "groups": ["super-specialities"],
     "featured": true,
     "days": [],
     "href": "#",
     "order": 2,
+    "published": true,
+    "image": {
+      "src": "/images/jojo.jpg",
+      "alt": "Portrait of Dr. Jojo V. Joseph",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Anupama G",
+    "department": "Paediatric Oncology",
+    "qualifications": "MD (Pediatrics), DM (Medical Oncology)",
+    "groups": ["super-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 3,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/anupama.png",
+      "alt": "Portrait of Dr. Anupama G",
+      "width": 650,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Nigil Cletus",
+    "department": "Cardiology",
+    "qualifications": "MBBS, DM (Cardiology), MD (General Medicine)",
+    "groups": ["super-specialities"],
+    "featured": true,
+    "days": [],
+    "href": "#",
+    "order": 4,
     "published": true,
     "image": {
       "src": "/images/nigil.jpg",
@@ -84,12 +118,12 @@
   {
     "name": "Dr. George J. Valooran",
     "department": "Cardiothoracic & Vascular Surgery",
-    "qualifications": "MBBS, MS (Gen. Surgery), MCh (CTVS)",
+    "qualifications": "MBBS, MS (Gen. Surgery), JIPMER, MCh (Cardiothoracic & Vascular Surgery), Fellowship in Adult Cardiovascular Surgery",
     "groups": ["super-specialities"],
     "featured": true,
     "days": [],
     "href": "#",
-    "order": 3,
+    "order": 5,
     "published": true,
     "image": {
       "src": "/images/george.jpg",
@@ -99,18 +133,120 @@
     }
   },
   {
-    "name": "Dr. Jojo V. Joseph",
-    "department": "Surgical Oncology",
-    "qualifications": "MBBS, MS (General Surgery), MCh (Surgical Oncology)",
-    "groups": ["super-specialities"],
-    "featured": true,
+    "name": "Dr. S.R. Mohan",
+    "department": "General & Laparoscopic Surgery",
+    "qualifications": "MBBS, MS (General Surgery)",
+    "groups": ["broad-specialities"],
+    "featured": false,
     "days": [],
     "href": "#",
-    "order": 4,
+    "order": 6,
     "published": true,
     "image": {
-      "src": "/images/jojo.jpg",
-      "alt": "Portrait of Dr. Jojo V. Joseph",
+      "src": "/images/doctors/mohan.png",
+      "alt": "Portrait of Dr. S.R. Mohan",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Binil Kesavan Babu",
+    "department": "General & Laparoscopic Surgery",
+    "qualifications": "MBBS, MS, FMAS, DMAS, FIAGES, FAIS, FULGS",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 7,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/binil.png",
+      "alt": "Portrait of Dr. Binil Kesavan Babu",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Sivaprakash S. Pillai",
+    "department": "General & Laparoscopic Surgery",
+    "qualifications": "MBBS, MS (General Surgery), FMAS, DMAS (Minimal Access Surgery)",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 8,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/sivaprakash.png",
+      "alt": "Portrait of Dr. Sivaprakash S. Pillai",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Mary George",
+    "department": "Gastroenterology",
+    "qualifications": "MBBS, MD (Pediatrics), DNB (Gastroenterology)",
+    "groups": ["super-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 9,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/mary.png",
+      "alt": "Portrait of Dr. Mary George",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Ebin Thomas",
+    "department": "Gastroenterology",
+    "qualifications": "MBBS, DNB (Medicine), DrNB (Gastroenterology)",
+    "groups": ["super-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 10,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/ebin.png",
+      "alt": "Portrait of Dr. Ebin Thomas",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. K. John Alexander",
+    "department": "Neurology",
+    "qualifications": "MBBS, MD (General Medicine), DM (Neurology)",
+    "groups": ["super-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 11,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/john.png",
+      "alt": "Portrait of Dr. K. John Alexander",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Baiju V.",
+    "department": "Neurosurgery",
+    "qualifications": "MBBS, MS (General Surgery), MCh (Neuro Surgery)",
+    "groups": ["super-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 12,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/baiju.png",
+      "alt": "Portrait of Dr. Baiju V.",
       "width": 660,
       "height": 570
     }
@@ -123,95 +259,437 @@
     "featured": false,
     "days": [],
     "href": "#",
-    "order": 5,
-    "published": true
-  },
-  {
-    "name": "[Doctor name]",
-    "department": "General Medicine",
-    "qualifications": "",
-    "groups": ["broad-specialities"],
-    "featured": false,
-    "days": [],
-    "href": "#",
-    "order": 6,
-    "published": true
-  },
-  {
-    "name": "[Doctor name]",
-    "department": "Paediatrics",
-    "qualifications": "",
-    "groups": ["broad-specialities"],
-    "featured": false,
-    "days": [],
-    "href": "#",
-    "order": 7,
-    "published": true
-  },
-  {
-    "name": "[Doctor name]",
-    "department": "Orthopaedics",
-    "qualifications": "",
-    "groups": ["broad-specialities"],
-    "featured": false,
-    "days": [],
-    "href": "#",
-    "order": 8,
-    "published": true
-  },
-  {
-    "name": "[Doctor name]",
-    "department": "Obstetrics & Gynaecology",
-    "qualifications": "",
-    "groups": ["broad-specialities"],
-    "featured": false,
-    "days": [],
-    "href": "#",
-    "order": 9,
-    "published": true
-  },
-  {
-    "name": "[Doctor name]",
-    "department": "Emergency Medicine",
-    "qualifications": "",
-    "groups": ["clinical-support"],
-    "featured": false,
-    "days": [],
-    "href": "#",
-    "order": 10,
-    "published": true
-  },
-  {
-    "name": "[Doctor name]",
-    "department": "Anaesthesiology",
-    "qualifications": "",
-    "groups": ["clinical-support"],
-    "featured": false,
-    "days": [],
-    "href": "#",
-    "order": 11,
-    "published": true
-  },
-  {
-    "name": "[Doctor name]",
-    "department": "Radiology & Imaging",
-    "qualifications": "",
-    "groups": ["clinical-support"],
-    "featured": false,
-    "days": [],
-    "href": "#",
-    "order": 12,
-    "published": true
-  },
-  {
-    "name": "[Doctor name]",
-    "department": "Microbiology",
-    "qualifications": "",
-    "groups": ["clinical-support"],
-    "featured": false,
-    "days": [],
-    "href": "#",
     "order": 13,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/bibin.png",
+      "alt": "Portrait of Dr. Bibin Johny",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. I.C. Benjamin",
+    "department": "Urology",
+    "qualifications": "MBBS, MS (General Surgery), MCh (Genito Urinary Surgery)",
+    "groups": ["super-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 14,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/benjamin.png",
+      "alt": "Portrait of Dr. I.C. Benjamin",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Biren J. Thompunkal",
+    "department": "General Medicine",
+    "qualifications": "MBBS, DCH, MD",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 15,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/biren.png",
+      "alt": "Portrait of Dr. Biren J. Thompunkal",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Megha Isac",
+    "department": "General Medicine",
+    "qualifications": "MBBS, MD (General Medicine), DNB (General Medicine)",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 16,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/megha.png",
+      "alt": "Portrait of Dr. Megha Isac",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Abraham K. Paul",
+    "department": "Paediatrics",
+    "qualifications": "MBBS, MD (Paed.), DCH, FIAP, FNNF",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 17,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/abraham.png",
+      "alt": "Portrait of Dr. Abraham K. Paul",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. S. Sachidananda Kamath",
+    "department": "Paediatrics",
+    "qualifications": "MBBS, DCH, MD (Paed.), DHHM, PGDAP",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 18,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/sachidanandan.png",
+      "alt": "Portrait of Dr. S. Sachidananda Kamath",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Antony Clement",
+    "department": "Paediatrics",
+    "qualifications": "MBBS, DCH, Fellow in Neonatology",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 19,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/antony.png",
+      "alt": "Portrait of Dr. Antony Clement",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Mammen Alexander",
+    "department": "Orthopaedics",
+    "qualifications": "MBBS, D'Ortho, MS (Ortho)",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 20,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/mammen.png",
+      "alt": "Portrait of Dr. Mammen Alexander",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. M.B. Nitheesh",
+    "department": "Orthopaedics",
+    "qualifications": "MBBS, D'Ortho, DNB (Ortho), MNAMS, Fellowship in Joint Reconstruction Surgery",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 21,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/nitheesh.png",
+      "alt": "Portrait of Dr. M.B. Nitheesh",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Nitya Cherukavil",
+    "department": "Obstetrics & Gynaecology",
+    "qualifications": "MBBS, DGO, DNB (Obst. & Gynaec.)",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 22,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/nitya.png",
+      "alt": "Portrait of Dr. Nitya Cherukavil",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Zubaida Sayeed",
+    "department": "Obstetrics & Gynaecology",
+    "qualifications": "MBBS, MD",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 23,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/zubaida.png",
+      "alt": "Portrait of Dr. Zubaida Sayeed",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Nithin Kailash",
+    "department": "Pulmonology",
+    "qualifications": "MBBS, MD (Pulmonology)",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 24,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/nithinkailash.png",
+      "alt": "Portrait of Dr. Nithin Kailash",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Prof. Dr. V.I. Paul",
+    "department": "Dental & Maxillofacial Surgery",
+    "qualifications": "BDS, MDS",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 25,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/paul.jpeg",
+      "alt": "Portrait of Prof. Dr. V.I. Paul",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Mohammed Sageer A.S.",
+    "department": "Dental & Maxillofacial Surgery",
+    "qualifications": "BDS, MDS (Oral & Maxillofacial Surgery)",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 26,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/sageer.png",
+      "alt": "Portrait of Dr. Mohammed Sageer A.S.",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Sachin Suresh",
+    "department": "ENT",
+    "qualifications": "MBBS, MS (ENT)",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 27,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/sachin.png",
+      "alt": "Portrait of Dr. Sachin Suresh",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Melwin Tom",
+    "department": "ENT",
+    "qualifications": "MBBS, MS (ENT)",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 28,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/melwin.png",
+      "alt": "Portrait of Dr. Melwin Tom",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Miriyam Joseph",
+    "department": "Psychiatry",
+    "qualifications": "MBBS, MD (Psychiatry)",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 29,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/miriyam.png",
+      "alt": "Portrait of Dr. Miriyam Joseph",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Bavij Balan",
+    "department": "Psychiatry",
+    "qualifications": "MBBS, DPM, PGD (Child Psychology), PGD (Counselling Psychology), Fellowship in Family Medicine (AFPI)",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 30,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/bavij.png",
+      "alt": "Portrait of Dr. Bavij Balan",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Narayanan Harimohan",
+    "department": "Palliative Medicine",
+    "qualifications": "MBBS, DMRT (Dip. in Medical Radiotherapy), CCPPM (Certificate Course in Pain & Palliative Medicine), Fellowship in Palliative Medicine",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 31,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/narayanan.png",
+      "alt": "Portrait of Dr. Narayanan Harimohan",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Elizabeth K. Paul",
+    "department": "Dermatology",
+    "qualifications": "MBBS, MD (Venereology & Leprosy)",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 32,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/elizabeth.png",
+      "alt": "Portrait of Dr. Elizabeth K. Paul",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Aleyamma Thomas",
+    "department": "Ophthalmology",
+    "qualifications": "MBBS, MS (Ophthalmology)",
+    "groups": ["broad-specialities"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 33,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/aleyamma.png",
+      "alt": "Portrait of Dr. Aleyamma Thomas",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Dr. Asha Mathew",
+    "department": "Microbiology",
+    "qualifications": "MBBS, MD (Microbiology)",
+    "groups": ["clinical-support"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 34,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/asha.png",
+      "alt": "Portrait of Dr. Asha Mathew",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Mrs. Maya B. Nair",
+    "department": "Clinical Psychology",
+    "qualifications": "BSc, MSc in Psychiatric Medicine, MSc in Clinical Psychology, MPhil in Clinical Psychology",
+    "groups": ["clinical-support"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 35,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/maya.png",
+      "alt": "Portrait of Mrs. Maya B. Nair",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Mrs. K.P. Sajina",
+    "department": "Clinical Psychology",
+    "qualifications": "PG Diploma in Guidance & Counselling, MA, MPhil (Counselling & Guidance)",
+    "groups": ["clinical-support"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 36,
+    "published": true
+  },
+  {
+    "name": "Mr. Anoob Jacob John",
+    "department": "Physiotherapy",
+    "qualifications": "Bachelor of Physiotherapy (BPT)",
+    "groups": ["clinical-support"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 37,
+    "published": true
+  },
+  {
+    "name": "Mrs. Alphonsa Prabha Soloman",
+    "department": "Dietetics",
+    "qualifications": "MSc (Food & Nutrition)",
+    "groups": ["clinical-support"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 38,
+    "published": true,
+    "image": {
+      "src": "/images/doctors/alphonsa.jpeg",
+      "alt": "Portrait of Mrs. Alphonsa Prabha Soloman",
+      "width": 660,
+      "height": 570
+    }
+  },
+  {
+    "name": "Mrs. Susan Roby",
+    "department": "Dietetics",
+    "qualifications": "BSc, PG Diploma in Dietetics",
+    "groups": ["clinical-support"],
+    "featured": false,
+    "days": [],
+    "href": "#",
+    "order": 39,
     "published": true
   }
 ]

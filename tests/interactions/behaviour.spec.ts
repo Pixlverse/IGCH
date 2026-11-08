@@ -106,7 +106,7 @@ for (const [site, url] of Object.entries(SITES)) {
       } else {
         // the rebuild links each department to its doctors (step 3: meet doctors & book)
         await dept.click()
-        await expect(page).toHaveURL(/\/doctors\?q=Paediatrics$/)
+        await expect(page).toHaveURL(/\/doctors\?speciality=Paediatrics$/)
       }
     })
 
@@ -177,7 +177,7 @@ for (const [site, url] of Object.entries(SITES)) {
         await expect(page).toHaveURL(url)
         await expect(page.locator('.hero .search-results a').first()).toHaveAttribute(
           'href',
-          '/doctors?q=Cardiology',
+          '/doctors?speciality=Cardiology',
         )
         return
       }
